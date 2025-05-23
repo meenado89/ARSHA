@@ -12,8 +12,6 @@
     <style>
         /* -23may2503 */
 
-        /* testing code */
-
         /* navbar */
 
         #navbar {
@@ -124,21 +122,49 @@
         }
 
         /* brand-carousel */
-        .brandcarouselm-container {
+        .brandcarousel-container {
             background-color: #f5f6f8;
-            width: 100%;
+            overflow: hidden;
+            padding: 1.5rem 0;
+        }
+
+        .brandcarousel-track {
+
+            display: flex;
+           
+            animation: slide 20s steps(10) infinite ;
+            gap: 5rem;
 
         }
 
-        .brandcarousel-item {
-            width: 150px;
-            height: 60px;
-            transition: transform 0.3s ease-out;
+        .brandcarousel-track img {
+            height: 38px;
+            transition: transform 0.3s ease-in-out;
         }
 
-        .brandcarousel-item:hover {
-            cursor: pointer;
+        .brandcarousel-track img:hover {
             transform: scale(1.05);
+            cursor: pointer;
+        }
+
+        .brandcarousel-container:hover .brandcarousel-track {
+            animation-play-state: paused;
+        }
+
+        @keyframes slide {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        .brand-wrapper {
+            overflow: hidden;
+            margin-left: 12rem;
+            margin-right: 15rem;
         }
 
         /* about */
@@ -835,7 +861,7 @@
 
         .submit-btn {
             position: absolute;
-            left: 52.8rem;
+            left: 57.8rem;
         }
 
         .submit-btn:hover {
@@ -984,39 +1010,28 @@
 
     </div>
     <!-- creat carousel -->
-    <div class="brandcarouselm-container">
-        <div class="container-fluid ">
-            <div class="container ">
-                <div id="carouselExampleSlidesOnly" class="carousel slide w-100 " data-bs-ride="carousel"
-                    style="overflow: hidden;" data-bs-interval="2000">
-                    <div class=" brandcarousel-inner d-flex w-100 justify-content-center"
-                        style="padding: 0%; padding-top: 1rem; padding-left: 2rem; padding-right: 2rem; gap: 8rem; align-items: center;">
-                        <div class="brandcarousel-item active ">
-                            <img src="carousel-1.webp" class="d-block" alt="..." height="30px">
-                        </div>
-                        <div class="brandcarousel-item ">
-                            <img src="carousel-2.webp" class="d-block " alt="..." height="30px">
-                        </div>
-                        <div class="brandcarousel-item ">
-                            <img src="carousel-3.webp" class="d-block " alt="..." height="30px">
-                        </div>
-                        <div class="brandcarousel-item ">
-                            <img src="carousel-4.webp" class="d-block " alt="..." height="30px">
-                        </div>
-                        <div class="brandcarousel-item ">
-                            <img src="carousel-5.webp" class="d-block " alt="..." height="30px">
-                        </div>
-                        <div class="brandcarousel-item ">
-                            <img src="carousel-6.webp" class="d-block " alt="..." height="30px">
-                        </div>
-                        <div class="brandcarousel-item ">
-                            <img src="carousel-7.webp" class="d-block " alt="..." height="30px">
-                        </div>
-                        <div class="brandcarousel-item ">
-                            <img src="carousel-8.webp" class="d-block " alt="..." height="30px">
-                        </div>
-                    </div>
-                </div>
+     <div class="brandcarousel-container">
+        <div class="brand-wrapper">
+            <div class="brandcarousel-track ">
+                <!-- First set of logos -->
+                <img src="carousel-1.webp" alt="brand1">
+                <img src="carousel-2.webp" alt="brand2">
+                <img src="carousel-3.webp" alt="brand3">
+                <img src="carousel-4.webp" alt="brand4">
+                <img src="carousel-5.webp" alt="brand5">
+                <img src="carousel-6.webp" alt="brand6">
+                <img src="carousel-7.webp" alt="brand7">
+                <img src="carousel-8.webp" alt="brand8">
+
+                <!-- Repeat logos to create infinite loop illusion -->
+                <img src="carousel-1.webp" alt="brand1">
+                <img src="carousel-2.webp" alt="brand2">
+                <img src="carousel-3.webp" alt="brand3">
+                <img src="carousel-4.webp" alt="brand4">
+                <img src="carousel-5.webp" alt="brand5">
+                <img src="carousel-6.webp" alt="brand6">
+                <img src="carousel-7.webp" alt="brand7">
+                <img src="carousel-8.webp" alt="brand8">
             </div>
         </div>
     </div>
@@ -1421,7 +1436,7 @@
             </div>
         </div>
     </div>
-    </div>
+    
     <!--portfolio-->
     <div class="portfoliomcontainer p-5" id="portfolio">
         <div class="container-fluid">
