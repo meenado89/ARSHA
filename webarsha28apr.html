@@ -100,6 +100,19 @@
 
         }
 
+        .playbtn i,
+        .playbtn span {
+            color: white;
+
+        }
+
+        .playbtn:hover i,
+        .playbtn:hover span {
+            color: #40c6f3;
+            cursor: pointer;
+        }
+
+
         .progress {
             border-radius: 0px !important;
         }
@@ -131,8 +144,8 @@
         .brandcarousel-track {
 
             display: flex;
-           
-            animation: slide 20s steps(10) infinite ;
+
+            animation: slide 20s steps(10) infinite;
             gap: 5rem;
 
         }
@@ -894,7 +907,7 @@
         }
 
         #follow-icons {
-            border: 0.4px solid #767474;
+
             width: 43px;
             height: 43px;
             border-radius: 50%;
@@ -905,7 +918,6 @@
 
             opacity: 0.9;
         }
-        
     </style>
 
 
@@ -998,6 +1010,12 @@
                             style="width: 125px; height: 45px; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; background-color: #40c6f3; font-size: 15px; font-weight: 500; text-align: center; justify-items: center;"
                             id="animetext-btn">Get
                             Started</button>
+                        <div class="playbtn d-flex">
+                            <i class='bx bx-play-circle bx-lg  ' style="padding-left: 3rem;"> </i>
+                            <span style="padding: 10px;">
+                                WATCH VIDEO
+                            </span>
+                        </div>
                     </div>
 
 
@@ -1010,7 +1028,7 @@
 
     </div>
     <!-- creat carousel -->
-     <div class="brandcarousel-container">
+    <div class="brandcarousel-container">
         <div class="brand-wrapper">
             <div class="brandcarousel-track ">
                 <!-- First set of logos -->
@@ -1436,8 +1454,8 @@
             </div>
         </div>
     </div>
-    
-    <!--portfolio-->
+
+    <!--portfolio  ADD LINKS--> 
     <div class="portfoliomcontainer p-5" id="portfolio">
         <div class="container-fluid">
             <div class="container" style="padding-top: 6rem;">
@@ -1473,7 +1491,8 @@
                                     <div class="imagetext p-2" style="top: 19.2rem;">
                                         <h4>App</h4>
                                         <p>description of image1</p>
-
+                                          <i class='bx bx-link bx-sm'></i>
+                                          <i class='bx bx-zoom-in bx-sm'></i>
 
                                     </div>
                                 </div>
@@ -2456,10 +2475,12 @@
                             <h4 style="color: #2e4368; font-size: 16px; font-weight: 700;">Follow Us</h4>
                             <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
                             <div class="social-links d-flex p-3" style="gap: 0.6rem;">
-                                <i class='bx bxl-xing bx-sm text-muted p-2 m-1' id="follow-icons"></i>
-                                <i class='bx bxl-facebook-circle bx-sm text-muted p-2 m-1' id="follow-icons"></i>
-                                <i class='bx bxl-instagram bx-sm text-muted p-2 m-1' id="follow-icons"></i>
-                                <i class='bx bxl-linkedin-square bx-sm text-muted p-2 m-1' id="follow-icons"></i>
+                                <i class='bx bxl-xing bx-sm text-muted  bx-border p-2 m-1' id="follow-icons"></i>
+                                <i class='bx bxl-facebook-circle bx-sm text-muted  bx-border p-2 m-1'
+                                    id="follow-icons"></i>
+                                <i class='bx bxl-instagram bx-sm text-muted  bx-border p-2 m-1' id="follow-icons"></i>
+                                <i class='bx bxl-linkedin-square bx-sm text-muted  bx-border p-2 m-1'
+                                    id="follow-icons"></i>
                             </div>
                         </div>
 
