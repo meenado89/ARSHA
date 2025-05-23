@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        #navbar {
+            background-color: rgb(61, 61, 92);
+            opacity: 0.6px;
+        }
+
+        #first {
+            background-color: rgb(74, 74, 114);
+            width: 100%;
+            height: 500px;
+            display: flex;
+        }
+
+        #animeing {
+            animation: heroimg 5s infinite linear;
+            width: 1rem;
+            height: 1rem;
+
+        }
+
+        @keyframes heroimg {
+
+            0%,
+            100% {
+                transform: translateY(o);
+
+            }
+
+            50% {
+                transform: translateY(-30px);
+            }
+        }
+
+        #textarea {
+            display: flex;
+        }
+
+        .about {
+            background-color: rgb(252, 247, 242);
+            width: 100%;
+            height: 430px;
+        }
+
+        #accordian-container {
+            background-color: rgb(226, 244, 247);
+            width: 100%;
+            height: 530px;
+        }
+
+        #graph-container {
+            background-color: rgb(253, 252, 252);
+            width: 100%;
+            height: 530px;
+            padding: 0%;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!--nav-->
+    <nav class="navbar navbar-expand-lg" id="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand " href="#">
+                <h3 style="color: black; font-size: 36px;">Arsha</h3>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  text-white" href="#">About</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link text-white" href="#">Services</a>
+                    </li>
+                    <li class="nav-item  ">
+                        <a class="nav-link text-white" href="#">Portfolio</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link text-white" href="#">Team</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link text-white" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link text-white" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown link
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Second Dropdown</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link text-white" href="#">Contact</a>
+                    </li>
+                    <!--button-->
+                    <div class=" gap-3 d-md-flex justify-content-md-end">
+                        <button class="btn btn-primary btn-border-radius" type="button">Get Started</button>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--animediv-->
+    <div class="container-fluid p-5 " id="first">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-lg-6 text-justified m-3 p-3 ">
+                    <p class=" fw-bolder ">
+                    <h1 style="color: aliceblue;">Better Solutions For Your Business</h1>
+                    <h3 class="text-white text-muted">We are team of talented designers making websites with Bootstrap
+                    </h3>
+                    </p>
+                    <br><br>
+                    <button type="button" class="btn btn-primary">Get Started</button>
+                </div>
+                <div class="col-lg-6 text-center p-4 m-1" id="animeing">
+                    <img src="hero-img.png" alt="animeing" width="400px" height="400px">
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--about us-->
+    <div class="about">
+        <div class=" text-center p-5">
+            <p><b>
+                    <h1>About Us</h1>
+                </b></p>
+        </div>
+        <div class="container p-4">
+            <div class="container-fluid text-justified">
+                <div class="row">
+                    <div class="col-6 ">
+                        <ul>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.
+                            </p>
+                            <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                            <li>Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                            <li>Ullamco laboris nisi ut aliquip ex ea commodo</li>
+                        </ul>
+                    </div>
+                    <div class="col-6 gap-5">
+                        <p>
+                            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                            reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                        <button type="button" class="btn btn-outline-primary btn-lg">Read More</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!--accordian-container-->
+        <div class="container-fluid" id="accordian-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <p><b>
+                                <h1 class="text-white">Eum ipsam laborum deleniti velit pariatur architecto aut nihil
+                                </h1>
+                            </b>
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut
+                            labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit</p>
+                        </p>
+                        <br><br>
+                        <!--accordian-->
+                        <div class="accordion accordion-flush " id="accordionFlushExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                        aria-controls="flush-collapseOne">
+                                        01 Non consectetur a erat nam at lectus urna duis?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Placeholder content for this accordion, which is
+                                        intended to demonstrate the <code>.accordion-flush</code> class. This is the
+                                        first item's accordion body.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                        aria-controls="flush-collapseTwo">
+                                        02 Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Placeholder content for this accordion, which is
+                                        intended to demonstrate the <code>.accordion-flush</code> class. This is the
+                                        second item's accordion body. Let's imagine this being filled with some actual
+                                        content.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                        aria-controls="flush-collapseThree">
+                                        03 Dolor sit amet consectetur adipiscing elit pellentesque?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Placeholder content for this accordion, which is
+                                        intended to demonstrate the <code>.accordion-flush</code> class. This is the
+                                        third item's accordion body. Nothing more exciting happening here in terms of
+                                        content, but just filling up the space to make it look, at least at first
+                                        glance, a bit more representative of how this would look in a real-world
+                                        application.</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-6 p-3 g-3">
+                        <img src="why-us.png" alt="whyimg" width="360px" height="360px">
+                    </div>
+
+                    <!--graph-container-->
+                    <div class="graph p-5 m-0 gap-3 w-0 ">
+                        <div class="container " id="graph-container">
+                            <div class="container-fluid ">
+                                <div class="row">
+                                    <div class="col-6  p-5 g-3">
+                                        <img src="download (1).jpg" alt="img" width="360px" height="360px">
+                                    </div>
+
+                                    <div class="col-6 p-5 ">
+                                        <p>
+                                        <h2 class="fw-bolder">Voluptatem dignissimos provident quasi corporis voluptas
+                                        </h2>
+                                        </p>
+                                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                            sed do eiusmod tempor
+                                            incididunt ut labore et dolore magna aliqua.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+                        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+                        crossorigin="anonymous"></script>
+</body>
+
+
+</html>

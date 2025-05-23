@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            background-color: aquamarine;
+            height: 150px;
+            width: 100px;
+            animation: movebox 0.8s linear 0.3s infinite;
+        }
+
+        @keyframes movebox {
+            0% {
+                transform: translate(0px, 0px);
+            }
+
+            25% {
+                transform: translate(220px, 0px);
+            }
+
+            50% {
+                transform: translate(220px, 220px);
+
+            }
+
+            70% {
+                transform: translate(-220px, 220px);
+            }
+
+            100% {
+                transform: translate(0px, 0px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">box1</div>
+
+</body>
+
+</html>

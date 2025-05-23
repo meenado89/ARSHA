@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Mystborn</title>
+    <style>
+        /* navbar */
+        #navbar {
+            background: #334b74;
+            opacity: 0.9;
+            position: fixed;
+            z-index: 9999;
+            width: 100%;
+            top: 0;
+            left: 0;
+            max-height: 25%;
+            text-align: center;
+            justify-content: center;
+            justify-items: center;
+        }
+
+        #navbarNavDropdown {
+            font-size: 26px;
+            font-family: fantasy;
+            font-weight: 100;
+            justify-content: center !important;
+            text-shadow: 0 0 4px #e5ebeb;
+        }
+
+        /* hero */
+        .hero {
+            height: auto;
+            position: relative;
+            z-index: 1;
+            background: linear-gradient(to left, #6a68b1, #333399);
+            justify-content: center;
+            justify-items: center;
+            padding-top: 14rem;
+            padding-bottom: 5rem;
+            font-family: g;
+        }
+
+        .hero h1 {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 6.5rem;
+            text-shadow: 0 0 38px hsla(182, 100%, 56%, 0.864);
+            color: rgb(0, 216, 216);
+            font-weight: 100;
+
+        }
+
+        .btn-myst {
+            background-color: #8bf6fb;
+            color: black;
+            font-weight: bold;
+            border: none;
+        }
+
+        .lore-container {
+            background: linear-gradient(to top, #333399, #6a68b1);
+            height: auto;
+            padding-top: 2rem;
+            padding-bottom: 6rem;
+            padding-left: 7.5rem;
+            padding-top: 9rem;
+        }
+
+        .lore-card {
+            background-color: #a7a7b0;
+            border: 2px solid #a7a7b0;
+            color: #fff;
+            transition: transform 0.6 ease;
+            height: fit-content;
+            width: 20rem;
+            border-radius: 30px;
+        }
+
+        .lore-heading {
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+        }
+
+        .lore-card:hover {
+            transform: translateY(-18px);
+            box-shadow: 0 0 20px rgb(189, 189, 189);
+            border: 2px solid gainsboro;
+        }
+
+        .lorecard-title {
+            color: #29dce5;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 28px;
+        }
+
+        .lorecard-text {
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 19px;
+        }
+
+        .characterprofile-container {
+            background-color: #9393a4;
+            padding-top: 4rem;
+            padding-bottom: 4rem;
+            height: auto;
+        }
+
+        .characterprofile-container {
+            justify-items: center;
+            padding-top: 6rem;
+            padding-bottom: 3rem;
+
+        }
+
+        .abilitym-container {
+            background-color: #e5ebeb;
+            padding-top: 6rem;
+            padding-bottom: 6rem;
+
+        }
+
+        .ability-card {
+            top: 3rem;
+            background-color: #a7a7b0;
+            border: 2px solid #a7a7b0;
+            color: #fff;
+            height: fit-content;
+            width: 18rem;
+            border-radius: 3px;
+            padding: 2rem;
+            height: 12rem;
+            position: relative;
+        }
+
+        .ability-card:hover {
+            transform: translateY(-12px);
+        }
+    </style>
+
+<body>
+    <!-- navbar -->
+
+    <nav class="navbar navbar-expand-lg" id="navbar">
+        <div class="container-fluid ">
+            <a class="navbar-brand  text-white px-3" href="#"
+                style="font-family: fantasy; font-size: 48px;">MYSTBORN</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item px-3">
+                        <a class="nav-link active text-white" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item px-3 ">
+                        <a class="nav-link text-white" href="#lore">Lore</a>
+                    </li>
+                    <li class="nav-item  px-3">
+                        <a class="nav-link text-white" href="#profile">Profile</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a class="nav-link text-white" href="#abilities">Abilities</a>
+                    </li>
+
+                    <li class="nav-item dropdown px-3">
+                        <a class="nav-link dropdown-toggle text-white" href="realm" id="navbarDropdownMenuLink"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Realms
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#" frostveil>FROSTVEIL MARSHES</a></li>
+                            <li><a class="dropdown-item" href="#" emberroot">EMBERROOT KEEP</a></li>
+                            <li><a class="dropdown-item" href="#" hollow>THE HOLLOW SKY</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- herosection -->
+    <div class="hero " id="home">
+        <div class="text" style="justify-items: center;">
+            <h1>Mystborn</h1>
+            <p style="font-size: 34px; text-shadow: 0 0 8px whitesmoke;">Awaken Your Power</p>
+            <button class="btn btn-myst btn-lg mt-3">
+                Enter the Mist
+            </button>
+        </div>
+    </div>
+
+    <!-- lore -->
+    <section class="lore-container" id="lore">
+        <div class="lore-heading ">
+            <H1 style=" color: #29dce5; font-size: 3rem;">THE WORLD OF MYSTBORN</H1>
+        </div>
+        <div class="row p-5 g-4">
+            <div class="col">
+                <div class="lore-card h-100 p-4">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="lorecard-body">
+                        <h5 class="lorecard-title">THE MISTFALL</h5>
+                        <p class="lorecard-text">A magical cataclysm that changed the face of the realm forever.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="lore-card h-100 p-4">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="lorecard-body">
+                        <h5 class="lorecard-title">RISE OF THE MYSTBORN</h5>
+                        <p class="lorecard-text">Heroes awakened with the powers shaped by ancient relics.</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col">
+                <div class="lore-card h-100 p-4">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="lorecard-body">
+                        <h5 class="lorecard-title">THE SHATTERED LANDS</h5>
+                        <p class="lorecard-text">A land devided into mystical regions,each with secrets to uncover.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- character profile -->
+    <div class="characterprofile-container" id="profile">
+        <div class="profile-text" style="text-align: center;">
+            <h1 style=" color: #29dce5; font-size: 2.5rem;">Meet The Mystborn</h1>
+            <p style="color: white; font-size: 20px;"><b>Faction:</b>Shadowbound |<b>Origin:</b>Emberroot Keep </p>
+            <p style="color: white; font-size: 20px;"><b>Weapon:</b>Runblade |<b>Power:</b>Miststep</p>
+        </div>
+    </div>
+    <!-- abilities -->
+    <div class="abilitym-container" id="abilities">
+        <div class="ability-heading " style="font-size: 40px;text-align: center;">
+            <h1 style=" color: #29dce5; font-size: 2.5rem;">ABILITIES</h1>
+        </div>
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3">
+                        <div class="ability-card">
+                            <div class="abilitycard-body">
+                                <h5 class="abilitycard-title">MISTSTEP</h5>
+                                <p class="abilitycard-text">Teleport short distances through fog.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="ability-card">
+                            <div class="abilitycard-body">
+                                <h5 class="abilitycard-title">FOGVEIL</h5>
+                                <p class="abilitycard-text">Become invisible in the mist.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="ability-card">
+                            <div class="abilitycard-body">
+                                <h5 class="abilitycard-title">ECHOFIRE</h5>
+                                <p class="abilitycard-text">Cast explosive runes that echo damage.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="ability-card">
+                            <div class="abilitycard-body">
+                                <h5 class="abilitycard-title">MOONBIND</h5>
+                                <p class="abilitycard-text">Stun foes under moonlight.</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Realms-->
+    <div class="regions-container" id="realm">
+        <div class="realm-heading">
+            <h1 style=" color: #29dce5; font-size: 2.5rem;">EXPLORE THE REALMS</h1>
+        </div>
+        <!-- ACCORDIAN -->
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        <div class="realm-text">
+                            <h3> FROSTVEIL MARSHES</h3>
+                            <br>
+                            <p>A frozen,fog-choked swamp haunted by whispers of the dead</p>
+                    </button>
+            </div>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+                    <code>.accordion-flush</code> class. This is the first item's accordion body.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    <div class="realm-text">
+                        <h3>EMBERROOT KEEP</h3>
+                        <br>
+                        <p>The birth place of fire magic and the last fortress of the Emberlords.</p>
+                </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+                    <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this
+                    being filled with some actual content.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    <div class="realm-text">
+                        <h3>THE HOLLOW SKY</h3>
+                        <br>
+                        <p>A shattered mountain where stars fell and dreams echo.</p>
+                </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+                    <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting
+                    happening here in terms of content, but just filling up the space to make it look, at least at first
+                    glance, a bit more representative of how this would look in a real-world application.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- call to adventure -->
+    <div class="mcoa-container">
+        <div class="call-container">
+            <h1 style=" color: #29dce5; font-size: 2.5rem;">FORGE YOUR PATH IN THE MIST</h1>
+            <button>Begin the Quest</button>
+        </div>
+    </div>
+
+
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+
+</html>

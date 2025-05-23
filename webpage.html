@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            background-color: #cffdee;
+            margin: 0%;
+            padding: 0%;
+            font-family: "Raleway", sans-serif;
+
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            font-size: 28px;
+        }
+
+
+        .highlight {
+            background-color: black;
+            padding: 3px 6px;
+            color: white;
+
+        }
+
+
+
+        #three {
+            background-color: aliceblue;
+            width: 350px;
+            height: 250px;
+            font-size: 8px;
+            background-size: contain;
+            text-align: justify;
+            box-shadow: 2px 2px 4px #313131;
+            padding: 2px;
+
+        }
+
+        .headding {
+            display: flex;
+            padding: 40px;
+            gap: 15px;
+
+        }
+
+        .name:hover {
+            transform: translate(10px, 10px);
+
+        }
+
+        .name {
+            background-color: aliceblue;
+            width: 250px;
+            height: 240px;
+            font-size: 8px;
+            background-size: contain;
+            text-align: justify;
+            padding: 2px;
+            box-shadow: 2px 2px 4px #313131;
+            top: 0%;
+            transition: all 0.2s ease-out;
+
+
+        }
+
+        .name:hover {
+            opacity: 0.8px;
+        }
+
+        .blog {
+            display: flex;
+            padding: 40px;
+            gap: 15px;
+
+        }
+
+        .mblog {
+            background-color: aliceblue;
+            width: 350px;
+            height: 250px;
+            font-size: 8px;
+            background-size: contain;
+            text-align: justify;
+            box-shadow: 2px 2px 4px #313131;
+            padding: 2px;
+        }
+
+
+
+        .button {
+            padding: 10px 20px;
+            border: 1px solid #ccc;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #f1f1f1;
+        }
+
+        .post {
+            background-color: aliceblue;
+            width: 200px;
+            height: 170px;
+            font-size: 8px;
+            background-size: contain;
+            text-align: justify;
+            padding: 2px;
+            box-shadow: 2px 2px 4px #313131;
+            list-style-type: none;
+        }
+
+        #post1 {
+            list-style-type: none;
+        }
+
+        #post1 li {
+            display: block;
+            opacity: 0.2px;
+            padding: 6px 8px;
+        }
+
+        #postl ul li:hover {
+            background-color: rgb(101, 168, 146);
+            opacity: 0.2px;
+        }
+
+        .tag {
+            background-color: aliceblue;
+            width: 200px;
+            height: 100px;
+            font-size: 8px;
+            background-size: contain;
+            text-align: justify;
+            padding: 2px;
+            box-shadow: 2px 2px 4px #313131;
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>MY BLOG</h1>
+        <p> Welcome to the blog of <span class="highlight"> UNKNOWN</span> </p>
+
+    </header>
+
+    <div class="headding">
+        <p id="three">
+            <img src="woodsimg.jpg" alt="woods" width="350px">
+
+            <b>TITLE HEADING</b>
+            <br>
+            Title description, April 7, 2014
+            Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod
+            placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue
+            ullam corper. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae,
+            ultricies congue gravida diam non fringilla.
+            <br>
+            <button>Read More</button>
+        </p>
+        <div class="name">
+            <img src="avatar_g.jpg" alt="avatar" width="250">
+            <p style="padding: 2px;">
+
+                <b>My Name</b>
+                <br>
+                Just me, myself and I, exploring the universe of uknownment. I have a heart of love and a interest of
+                lorem ipsum and mauris neque quam blog. I want to share my world with you.
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="blog">
+        <div class="mblog">
+            <img src="woodsimg.jpg" alt="woods" width="350px">
+            <p style="padding: 2px;">
+            <h4>BLOG ENTRY</h4>
+            Title description,April 2, 2014
+            Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod
+            placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non
+            congue ullam corper. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus
+            vitae, ultricies congue gravida diam non fringilla.
+
+            <button>Read More</button>
+
+            </p>
+
+
+        </div>
+        <div class="post">
+            <p
+                style="background-color: rgb(149, 221, 197); height: 35px; font-size: 14px; text-align:left; padding-bottom:4px;">
+                Popular post
+            </p>
+            <ul id="post1">
+                <li>
+                    <img src="workshop.jpg" alt="shop" width="30px" height="30px">
+                    post1
+                </li>
+                <li>
+                    <img src="gondol.jpg" alt="gondol" width="30px" height="30px">
+                    post2
+                </li>
+                <li>
+                    <img src="skies.jpg" alt="sky" width="30px" height="30px">
+                    post3
+                </li>
+                <li>
+                    <img src="rock.jpg" alt="rock" width="30px" height="30px">
+                    post4
+                </li>
+            </ul>
+
+        </div>
+
+
+    </div>
+    <div class="tag">
+
+        <p id="tags" style="background-color: #ccc; margin: 4px; text-align: justify;">
+            <span>London</span><span>IKEA</span><span>Norway</span><span>Baby</span><span>Family</span><span>News</span>
+
+        </p>
+        <p id="tags" style="background-color: #ccc; margin: 4px; text-align: justify;">
+            <span>Clothing</span><span>Shopping</span><span>Sports</span><span></span><span></span><span></span>
+        </p>
+
+    </div>
+
+
+
+
+
+</body>
+
+</html>
