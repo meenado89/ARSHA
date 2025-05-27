@@ -8,144 +8,141 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>Admin Template</title>
+    <title>Nice Admin Template</title>
 
     <style>
         /* 26/01:10 */
 
         /* 27, 2:00 */
-        body {
+               body {
             background-color: aliceblue;
         }
 
         .navbar {
             background-color: white;
-            width: 100%;
-            max-height: 4rem;
-            z-index: 1;
             position: fixed;
-            opacity: 0.9;
-            padding-bottom: 0%;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            padding: 0.5rem 1rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
         .navbar-text {
             color: #012970;
-            font-size: 26px;
+            font-size: 24px;
             font-weight: 800;
-            top: 0%;
-            padding: 0%;
+            margin-left: 0.5rem;
+        }
+
+        .navbar-logo img {
+            vertical-align: middle;
+        }
+
+        #adminimg img {
+            border-radius: 50%;
+            object-fit: cover;
         }
     </style>
 </head>
 
 <body>
     <!-- navbar -->
+   <!-- Navbar -->
     <nav class="navbar">
-        <div class="container-fluid w-100 h-15">
-            <div class="container m-0 w-100 h-15">
-                <div class="row">
-                    <!-- logo -->
-                    <div class="col-3">
-                        <span class="navbar-logo">
-                            <div class="navheading-container p-0 m-0 g-0 d-flex ">
-                                <img src="adminlogo.png" alt="adminlogo" height="35px">
-                                <p class="navbar-text">
-                                    Nice Admin
-                                </p>
-
-                            </div>
-                        </span>
+        <div class="container-fluid">
+            <div class="row align-items-center w-100">
+                <!-- Logo -->
+                <div class="col-3 d-flex align-items-center">
+                    <div class="navbar-logo d-flex align-items-center">
+                        <img src="adminlogo.png" alt="adminlogo" height="35" />
+                        <span class="navbar-text">Nice Admin</span>
                     </div>
-                    <!-- menu -->
-                    <div class="col-1 p-0 m-0">
+                </div>
 
-                        <a class="btn " data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
-                            aria-controls="offcanvasExample">
-                            <i class='bx bx-menu bx-lg pb-5 mb-5 '></i>
+                <!-- Menu Button -->
+                <div class="col-auto">
+                    <a class="btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                        aria-controls="offcanvasExample">
+                        <i class="bx bx-menu bx-md text-dark"></i>
+                    </a>
+
+                    <!-- Offcanvas Menu -->
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+                        aria-labelledby="offcanvasExampleLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <p>This can include links, navigation, or widgets.</p>
+                            <div class="dropdown mt-3">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                    data-bs-toggle="dropdown">
+                                    Dropdown
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Search -->
+                <div class="col-3 ">
+                    <form class="position-relative width-40">
+                        <input class="form-control pe-5" type="search" placeholder="Search" />
+                        <i class="bx bx-search position-absolute top-50 end-0 translate-middle-y pe-3 text-muted"></i>
+                    </form>
+
+
+                </div>
+
+                <!-- Notification & Messages -->
+                <div class="col-2 d-flex justify-content-end align-items-center gap-3">
+                    <!-- Bell Dropdown -->
+                    <div class="dropdown">
+                        <a class="text-decoration-none text-dark dropdown-toggle" href="#" id="notifDropdown"
+                            data-bs-toggle="dropdown">
+                            <i class="bx bx-bell bx-md"></i>
                         </a>
-
-
-                        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
-                            aria-labelledby="offcanvasExampleLabel">
-                            <div class="offcanvas-header">
-                                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
-                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="offcanvas-body">
-                                <div>
-                                    Some text as placeholder. In real life you can have the elements you have chosen.
-                                    Like, text, images, lists, etc.
-                                </div>
-                                <div class="dropdown mt-3">
-
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- search -->
-                    <div class="col-3">
-
-                        <form class="d-flex">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            <i class='bx bx-search bx-sm text-muted '></i>
-                        </form>
-                    </div>
-                    <!-- notification drop -->
-                    <div class="col-2">
-                        <i class='bx bx-bell bx-md text-muted'>
-                            <div>
-                                <a class="btn  " href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-
-                                </a>
-
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </div>
-                        </i>
-                        <i class='bx bx-message-square-detail text-muted bx-md'>
-                            <div class="dropdown">
-                                <a class="btn  dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-
-                                </a>
-
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </div>
-                        </i>
+                        <ul class="dropdown-menu" aria-labelledby="notifDropdown">
+                            <li><a class="dropdown-item" href="#">Notification 1</a></li>
+                            <li><a class="dropdown-item" href="#">Notification 2</a></li>
+                        </ul>
                     </div>
 
-                    <div class="col-3 p-0 m-0 d-flex px-1 py-1" id="adminimg">
-                        <img src="adminprofile-img.jpg" alt="adminimg" width="48px" height="48px">
-
-                        <!-- img dropdown -->
-
-                        <div class="dropdown p-1">
-                            <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                K. Anderson
-                            </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </div>
+                    <!-- Message Dropdown -->
+                    <div class="dropdown">
+                        <a class="text-decoration-none text-dark dropdown-toggle" href="#" id="msgDropdown"
+                            data-bs-toggle="dropdown">
+                            <i class="bx bx-message-square-detail bx-md"></i>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="msgDropdown">
+                            <li><a class="dropdown-item" href="#">Message 1</a></li>
+                            <li><a class="dropdown-item" href="#">Message 2</a></li>
+                        </ul>
                     </div>
+                </div>
 
+                <!-- Profile -->
+                <div class="col-md-3 d-flex justify-content-end align-items-center gap-2" id="adminimg">
+                    <img src="adminprofile-img.jpg" alt="adminimg" width="48" height="48" />
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle" type="button" id="profileDropdown"
+                            data-bs-toggle="dropdown">
+                            K. Anderson
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="profileDropdown">
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Settings</a></li>
+                            <li><a class="dropdown-item" href="#">Logout</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -167,6 +164,7 @@
                 </li>
             </ul>
         </div>
+        <!-- main container -->
         <div class="maincard-container ">
             <div class="container-fluid">
                 <div class="row ">
@@ -324,54 +322,59 @@
                                         <i class='bx bx-dots-horizontal-rounded bx-md text-muted'></i>
                                         <table class="table">
                                             <thead>
-                                              <tr>
-                                                <th scope="col">Preview</th>
-                                                <th scope="col">Product</th>
-                                                <th scope="col">Price</th>
-                                                <th scope="col">Sold</th>
-                                                <th scope="col">Revenue</th>
-                                              </tr>
+                                                <tr>
+                                                    <th scope="col">Preview</th>
+                                                    <th scope="col">Product</th>
+                                                    <th scope="col">Price</th>
+                                                    <th scope="col">Sold</th>
+                                                    <th scope="col">Revenue</th>
+                                                </tr>
                                             </thead>
                                             <tbody>
-                                              <tr>
-                                                <th scope="row"><img src="product-1.jpg" alt=""  width="80rem" height="75rem"></th>
-                                                <td>Ut inventore ipsa voluptas nulla</td>
-                                                <td>$64</td>
-                                                <td>124</td>
-                                                <td>$5,828</td>
-                                              </tr>
-                                              <tr>
-                                                <th scope="row"><img src="product-2.jpg" alt=""  width="80rem" height="75rem"></th>
-                                                <td>Ut inventore ipsa voluptas nulla</td>
-                                                <td>$64</td>
-                                                <td>124</td>
-                                                <td>$5,828</td>
-                                              </tr>
-                                              <tr>
-                                                <th scope="row"><img src="product-3.jpg" alt=""  width="80rem" height="75rem"></th>
-                                                <td>Ut inventore ipsa voluptas nulla</td>
-                                                <td>$64</td>
-                                                <td>124</td>
-                                                <td>$5,828</td>
-                                              </tr>
+                                                <tr>
+                                                    <th scope="row"><img src="product-1.jpg" alt="" width="80rem"
+                                                            height="75rem"></th>
+                                                    <td>Ut inventore ipsa voluptas nulla</td>
+                                                    <td>$64</td>
+                                                    <td>124</td>
+                                                    <td>$5,828</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row"><img src="product-2.jpg" alt="" width="80rem"
+                                                            height="75rem"></th>
+                                                    <td>Ut inventore ipsa voluptas nulla</td>
+                                                    <td>$64</td>
+                                                    <td>124</td>
+                                                    <td>$5,828</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row"><img src="product-3.jpg" alt="" width="80rem"
+                                                            height="75rem"></th>
+                                                    <td>Ut inventore ipsa voluptas nulla</td>
+                                                    <td>$64</td>
+                                                    <td>124</td>
+                                                    <td>$5,828</td>
+                                                </tr>
 
-                                              <tr>
-                                                <th scope="row"><img src="product-4.jpg" alt=""  width="80rem" height="75rem"></th>
-                                                <td>Ut inventore ipsa voluptas nulla</td>
-                                                <td>$64</td>
-                                                <td>124</td>
-                                                <td>$5,828</td>
-                                              </tr>
+                                                <tr>
+                                                    <th scope="row"><img src="product-4.jpg" alt="" width="80rem"
+                                                            height="75rem"></th>
+                                                    <td>Ut inventore ipsa voluptas nulla</td>
+                                                    <td>$64</td>
+                                                    <td>124</td>
+                                                    <td>$5,828</td>
+                                                </tr>
 
-                                              <tr>
-                                                <th scope="row"><img src="product-5.jpg" alt=""  width="80rem" height="75rem"></th>
-                                                <td>Ut inventore ipsa voluptas nulla</td>
-                                                <td>$64</td>
-                                                <td>124</td>
-                                                <td>$5,828</td>
-                                              </tr>
+                                                <tr>
+                                                    <th scope="row"><img src="product-5.jpg" alt="" width="80rem"
+                                                            height="75rem"></th>
+                                                    <td>Ut inventore ipsa voluptas nulla</td>
+                                                    <td>$64</td>
+                                                    <td>124</td>
+                                                    <td>$5,828</td>
+                                                </tr>
                                             </tbody>
-                                          </table>
+                                        </table>
 
                                     </div>
                                 </div>
@@ -526,18 +529,14 @@
             </div>
 
             <hr>
-            <fotter class="">
-
-                <p>© Copyright NiceAdmin. All Rights Reserved
-                </p>
-
-                <p> Designed by BootstrapMade</p>
-                <i class='bx bxs-up-arrow-square bx-lg ps-5'></i>
+            <div class="fotter text-center " style="padding: 0%; margin: 0%;">
+                <div class="fotter-text mb-0 ">
+                    <p> © Copyright <b style="color: #012970; ">NiceAdmin</b>. All Rights Reserved</p>
+                    <p>Designed by <span style="color: #7295d1;">BootstrapMade</span></p>
+                </div>
 
 
-
-
-            </fotter>
+            </div>
 
 
         </div>
