@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Admin Template</title>
+
+    <style>
+        /* 26/01:10 */
+
+        /* 27, 2:00 */
+        body {
+            background-color: aliceblue;
+        }
+
+        .navbar {
+            background-color: white;
+            width: 100%;
+            max-height: 4rem;
+            z-index: 1;
+            position: fixed;
+            opacity: 0.9;
+            padding-bottom: 0%;
+        }
+
+        .navbar-text {
+            color: #012970;
+            font-size: 26px;
+            font-weight: 800;
+            top: 0%;
+            padding: 0%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar">
+        <div class="container-fluid w-100 h-15">
+            <div class="container m-0 w-100 h-15">
+                <div class="row">
+                    <!-- logo -->
+                    <div class="col-3">
+                        <span class="navbar-logo">
+                            <div class="navheading-container p-0 m-0 g-0 d-flex ">
+                                <img src="adminlogo.png" alt="adminlogo" height="35px">
+                                <p class="navbar-text">
+                                    Nice Admin
+                                </p>
+
+                            </div>
+                        </span>
+                    </div>
+                    <!-- menu -->
+                    <div class="col-1 p-0 m-0">
+
+                        <a class="btn " data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                            aria-controls="offcanvasExample">
+                            <i class='bx bx-menu bx-lg pb-5 mb-5 '></i>
+                        </a>
+
+
+                        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+                            aria-labelledby="offcanvasExampleLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <div>
+                                    Some text as placeholder. In real life you can have the elements you have chosen.
+                                    Like, text, images, lists, etc.
+                                </div>
+                                <div class="dropdown mt-3">
+
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- search -->
+                    <div class="col-3">
+
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <i class='bx bx-search bx-sm text-muted '></i>
+                        </form>
+                    </div>
+                    <!-- notification drop -->
+                    <div class="col-2">
+                        <i class='bx bx-bell bx-md text-muted'>
+                            <div>
+                                <a class="btn  " href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+
+                                </a>
+
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                        </i>
+                        <i class='bx bx-message-square-detail text-muted bx-md'>
+                            <div class="dropdown">
+                                <a class="btn  dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+
+                                </a>
+
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                        </i>
+                    </div>
+
+                    <div class="col-3 p-0 m-0 d-flex px-1 py-1" id="adminimg">
+                        <img src="adminprofile-img.jpg" alt="adminimg" width="48px" height="48px">
+
+                        <!-- img dropdown -->
+
+                        <div class="dropdown p-1">
+                            <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                K. Anderson
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- dashboard -->
+    <div class="mainpage p-2">
+        <div class="heading " style="padding-top: 6rem;">
+            <h2><b>
+                    Dashboard
+                </b></h2>
+            <ul class="nav p-0 m-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <p class="py-2">/</p>
+                <li class="nav-item p-0 m0">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Dashboard</a>
+                </li>
+            </ul>
+        </div>
+        <div class="maincard-container ">
+            <div class="container-fluid">
+                <div class="row ">
+
+                    <!-- left side -->
+                    <div class="col-8">
+                        <!-- sales/reve -->
+                        <div class="row">
+                            <div class="col-sm-6 mb-5">
+                                <div class="card" style="width: 27rem; height: 10rem;">
+                                    <div class="card-body">
+                                        <ul class="nav p-0 m-0">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" aria-current="page" href="#">Sales</a>
+                                            </li>
+                                            <p class="py-2">/</p>
+                                            <li class="nav-item p-0 m0">
+                                                <a class="nav-link disabled" href="#" tabindex="-1"
+                                                    aria-disabled="true">Today</a>
+                                            </li>
+                                        </ul>
+
+                                        <div class="text d-flex">
+                                            <i class='bx bx-dots-horizontal-rounded bx-md text-muted'></i>
+                                            <i class='bx bx-cart bx-lg'></i>
+                                            <h2>145</h2>
+
+                                        </div>
+                                        <span>12% Increase</span>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 mb-4">
+                                <div class="card" style="width: 27rem; height: 10rem;">
+                                    <div class="card-body">
+                                        <ul class="nav p-0 m-0">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" aria-current="page" href="#">
+                                                    <h5>Revenue</h5>
+                                                </a>
+                                            </li>
+                                            <p class="py-2">/</p>
+                                            <li class="nav-item p-0 m0">
+                                                <a class="nav-link disabled" href="#" tabindex="-1"
+                                                    aria-disabled="true">This Month</a>
+                                            </li>
+                                        </ul>
+
+                                        <div class="text d-flex">
+                                            <i class='bx bx-dots-horizontal-rounded bx-md text-muted'></i>
+                                            <i class='bx bx-dollar bx-lg'></i>
+                                            <h2>$3264</h2>
+
+                                        </div>
+                                        <p>8% Increase</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- customers -->
+                            <div class="col-12 mb-4">
+                                <div class="card w-100" style=" height: 10rem;">
+                                    <div class="card-body">
+                                        <ul class="nav p-0 m-0">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" aria-current="page" href="#">
+                                                    <h5>Customers</h5>
+                                                </a>
+                                            </li>
+                                            <p class="py-2">/</p>
+                                            <li class="nav-item p-0 m0">
+                                                <a class="nav-link disabled" href="#" tabindex="-1"
+                                                    aria-disabled="true">This Year</a>
+                                            </li>
+                                        </ul>
+
+                                        <div class="text d-flex">
+                                            <i class='bx bx-dots-horizontal-rounded bx-md text-muted'></i>
+                                            <i class='bx bx-group bx-flip-horizontal bx-lg'></i>
+                                            <h2>1244</h2>
+                                        </div>
+                                        <p>12% Decrease</p>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- reports -->
+
+                            <div class="col-12 mb-4">
+                                <div class="card w-100" style=" height: auto;">
+                                    <div class="card-body">
+                                        <ul class="nav p-0 m-0">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" aria-current="page" href="#">
+                                                    <h5>Reports</h5>
+                                                </a>
+                                            </li>
+                                            <p class="py-2">/</p>
+                                            <li class="nav-item p-0 m0">
+                                                <a class="nav-link disabled" href="#" tabindex="-1"
+                                                    aria-disabled="true">Today</a>
+                                            </li>
+                                        </ul>
+                                        <i class='bx bx-dots-horizontal-rounded bx-md text-muted'></i>
+                                        <img src="OIP.jpg" alt="" width="100%">
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- Recent sales -->
+                            <div class="col-12 mb-4">
+                                <div class="card w-100">
+                                    <div class="card-body" style=" height: 20rem;">
+                                        <ul class="nav p-0 m-0">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" aria-current="page" href="#">
+                                                    <h5>Recent Sales</h5>
+                                                </a>
+                                            </li>
+                                            <p class="py-2">/</p>
+                                            <li class="nav-item p-0 m0">
+                                                <a class="nav-link disabled" href="#" tabindex="-1"
+                                                    aria-disabled="true">Today</a>
+                                            </li>
+                                        </ul>
+                                        <i class='bx bx-dots-horizontal-rounded bx-md text-muted'></i>
+                                        <p class="card-text"> 12With supporting text below as a natural lead-in to
+                                            additional content.</p>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- top selling -->
+                            <div class="col-12 mb-4">
+                                <div class="card w-100" style=" height: auto;">
+                                    <div class="card-body">
+                                        <ul class="nav p-0 m-0">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" aria-current="page" href="#">
+                                                    <h5>Top Selling</h5>
+                                                </a>
+                                            </li>
+                                            <p class="py-2">/</p>
+                                            <li class="nav-item p-0 m0">
+                                                <a class="nav-link disabled" href="#" tabindex="-1"
+                                                    aria-disabled="true">Today</a>
+                                            </li>
+                                        </ul>
+                                        <i class='bx bx-dots-horizontal-rounded bx-md text-muted'></i>
+                                        <table class="table">
+                                            <thead>
+                                              <tr>
+                                                <th scope="col">Preview</th>
+                                                <th scope="col">Product</th>
+                                                <th scope="col">Price</th>
+                                                <th scope="col">Sold</th>
+                                                <th scope="col">Revenue</th>
+                                              </tr>
+                                            </thead>
+                                            <tbody>
+                                              <tr>
+                                                <th scope="row"><img src="product-1.jpg" alt=""  width="80rem" height="75rem"></th>
+                                                <td>Ut inventore ipsa voluptas nulla</td>
+                                                <td>$64</td>
+                                                <td>124</td>
+                                                <td>$5,828</td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row"><img src="product-2.jpg" alt=""  width="80rem" height="75rem"></th>
+                                                <td>Ut inventore ipsa voluptas nulla</td>
+                                                <td>$64</td>
+                                                <td>124</td>
+                                                <td>$5,828</td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row"><img src="product-3.jpg" alt=""  width="80rem" height="75rem"></th>
+                                                <td>Ut inventore ipsa voluptas nulla</td>
+                                                <td>$64</td>
+                                                <td>124</td>
+                                                <td>$5,828</td>
+                                              </tr>
+
+                                              <tr>
+                                                <th scope="row"><img src="product-4.jpg" alt=""  width="80rem" height="75rem"></th>
+                                                <td>Ut inventore ipsa voluptas nulla</td>
+                                                <td>$64</td>
+                                                <td>124</td>
+                                                <td>$5,828</td>
+                                              </tr>
+
+                                              <tr>
+                                                <th scope="row"><img src="product-5.jpg" alt=""  width="80rem" height="75rem"></th>
+                                                <td>Ut inventore ipsa voluptas nulla</td>
+                                                <td>$64</td>
+                                                <td>124</td>
+                                                <td>$5,828</td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <!-- rightside -->
+
+                    <!-- recent -->
+                    <div class="col-4">
+                        <div class="card mb-4" style=" height: 27rem;">
+                            <div class="card-body">
+                                <ul class="nav p-0 m-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="#">
+                                            <h5>Recent Activity</h5>
+                                        </a>
+                                    </li>
+                                    <p class="py-2">/</p>
+                                    <li class="nav-item p-0 m0">
+                                        <a class="nav-link disabled" href="#" tabindex="-1"
+                                            aria-disabled="true">Today</a>
+                                    </li>
+                                </ul>
+                                <i class='bx bx-dots-horizontal-rounded bx-md text-muted'></i>
+                                <p class="card-text">With supporting text below as a natural lead-in to
+                                    additional content.</p>
+
+                            </div>
+                        </div>
+
+                        <!-- budget -->
+
+                        <div class="card mb-4" style=" height: auto;">
+                            <div class="card-body">
+                                <ul class="nav p-0 m-0">
+                                    <i class='bx bx-dots-horizontal-rounded bx-md text-muted '></i>
+                                    <li class="nav-item">
+
+                                        <a class="nav-link active" aria-current="page" href="#">
+                                            <h5>Budget Report</h5>
+                                        </a>
+                                    </li>
+                                    <p class="py-2">/</p>
+                                    <li class="nav-item p-0 m0">
+                                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">This
+                                            Month</a>
+                                    </li>
+                                </ul>
+
+
+                                <img src="budgetreportNA.png" alt="">
+
+                            </div>
+
+
+                        </div>
+
+                        <!-- web -->
+
+                        <div class="card mb-4" style=" height: auto;">
+                            <div class="card-body">
+                                <ul class="nav p-0 m-0">
+                                    <i class='bx bx-dots-horizontal-rounded bx-md text-muted'></i>
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="#">
+                                            <h5>Website Traffic</h5>
+                                        </a>
+                                    </li>
+                                    <p class="py-2">/</p>
+                                    <li class="nav-item p-0 m0">
+                                        <a class="nav-link disabled" href="#" tabindex="-1"
+                                            aria-disabled="true">Today</a>
+                                    </li>
+                                </ul>
+
+                                <img src="webtrafic.png" alt="">
+
+                            </div>
+                        </div>
+
+                        <!-- news -->
+
+                        <div class="card mb-4" style=" height: auto;">
+                            <div class="card-body">
+                                <ul class="nav p-0 m-0">
+                                    <i class='bx bx-dots-horizontal-rounded bx-md text-muted'></i>
+                                    <li class="nav-item">
+
+                                        <a class="nav-link active" aria-current="page" href="#">
+                                            <h5>News & Update</h5>
+                                        </a>
+                                    </li>
+                                    <p class="py-2">/</p>
+                                    <li class="nav-item p-0 m0">
+                                        <a class="nav-link disabled" href="#" tabindex="-1"
+                                            aria-disabled="true">Today</a>
+                                    </li>
+                                </ul>
+
+                                <!-- post -->
+                                <div class="post-item d-flex p-1 gap-3 mb-3">
+                                    <img src="news-1.jpg" alt="news1" width="80rem" height="75rem">
+                                    <div class="post-text">
+                                        <p><a href="#">Nihil blanditiis at in nihil autem</a></p>
+                                        <p>Sit recusandae non aspernatur laboriosam. Quia enim eligendi sed ut harum...
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="post-item d-flex p-1 gap-3 mb-3">
+                                    <img src="news-2.jpg" alt="news1" width="80rem" height="75rem">
+                                    <div class="post-text">
+                                        <p><a href="#">Laborum corporis quo dara net para</a></p>
+                                        <p>Qui enim quia optio. Eligendi aut asperiores enim repellendusvel rerum
+                                            cuder...</p>
+                                    </div>
+                                </div>
+
+                                <div class="post-item d-flex p-1 gap-3 mb-3">
+                                    <img src="news-4.jpg" alt="news1" width="80rem" height="75rem">
+                                    <div class="post-text">
+                                        <p><a href="#">Quidem autem et impedit
+                                                Illo</a></p>
+                                        <p>Illo nemo neque maiores vitae officiis cum eum turos elan dries werona
+                                            nande...</p>
+                                    </div>
+                                </div>
+                                <div class="post-item d-flex p-1 gap-3 mb-3">
+                                    <img src="news-5.jpg" alt="news1" width="80rem" height="75rem">
+                                    <div class="post-text">
+                                        <p><a href="#">Et dolores corrupti quae illo quod dolor</a></p>
+                                        <p>Odit ut eveniet modi reiciendis. Atque cupiditate libero beatae dignissimos
+                                            eius...</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+            </div>
+
+            <hr>
+            <fotter class="">
+
+                <p>© Copyright NiceAdmin. All Rights Reserved
+                </p>
+
+                <p> Designed by BootstrapMade</p>
+                <i class='bx bxs-up-arrow-square bx-lg ps-5'></i>
+
+
+
+
+            </fotter>
+
+
+        </div>
+
+    </div>
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
