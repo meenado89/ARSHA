@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -8,13 +8,12 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>Nice Admin Template</title>
+    <title>Document</title>
 
     <style>
-        
-        /* 28/00:20 */ 
         /* 26/01:10 */
-           /* 27, 2:00 */
+
+        /* 27, 2:00 */
         body {
             background-color: aliceblue;
         }
@@ -44,36 +43,10 @@
             border-radius: 50%;
             object-fit: cover;
         }
-
-        /* recent activity */
-
-        .activity-item {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            /* spacing between items */
-            margin-bottom: 10px;
-        }
-
-        .activite-label {
-            min-width: 60px;
-            font-weight: 500;
-            color: #666;
-        }
-
-        .activity-item i {
-            font-size: 10px;
-        }
-
-        .activity-content {
-            flex: 1;
-            color: #333;
-        }
     </style>
 </head>
 
 <body>
-
     <!-- Navbar -->
     <nav class="navbar">
         <div class="container-fluid">
@@ -94,10 +67,10 @@
                     </a>
 
                     <!-- Offcanvas Menu -->
-                    <div class="offcanvas offcanvas-start p-5 " tabindex="-1" id="offcanvasExample"
+                    <div class="offcanvas offcanvas-start " tabindex="-1" id="offcanvasExample"
                         aria-labelledby="offcanvasExampleLabel" style="background-color: rgb(245, 241, 241);">
                         <section class="mainoffcanvas position-relative ">
-                            <div><i class='bx bx-grid-alt'></i> Dropdown</div>
+                            <div class=""><i class='bx bx-grid-alt'></i> Dropdown</div>
 
                             <!-- componentes -->
                             <div class="dropdown mt-1">
@@ -481,6 +454,8 @@
                     <input class="form-control pe-5" type="search" placeholder="Search" />
                     <i class="bx bx-search position-absolute top-50 end-0 translate-middle-y pe-3 text-muted"></i>
                 </form>
+
+
             </div>
 
             <!-- Notification & Messages -->
@@ -545,7 +520,7 @@
             </ul>
         </div>
         <!-- main container -->
-        <div class="maincard-container ">
+        < class="maincard-container ">
             <div class="container-fluid">
                 <div class="row ">
 
@@ -559,14 +534,12 @@
                                     <div class="card-body">
                                         <ul class="nav p-0 m-0">
                                             <li class="nav-item">
-                                                <a class="nav-link active" aria-current="page" href="#">
-                                                    <h5>Sales</h5>
-                                                </a>
+                                                <a class="nav-link active" aria-current="page" href="#">Sales</a>
                                             </li>
                                             <p class="py-2">/</p>
                                             <li class="nav-item p-0 m0">
                                                 <a class="nav-link disabled" href="#" tabindex="-1"
-                                                    aria-disabled="true">This Month</a>
+                                                    aria-disabled="true">Today</a>
                                             </li>
                                         </ul>
                                         <div class="text d-flex">
@@ -583,14 +556,11 @@
                                                 </select>
 
                                             </div>
-                                            <i class='bx bx-cart bx-lg text-primary py-3 p-2 ps-3'
-                                                style="background-color: rgba(205, 222, 239, 0.378); width: 80px; height: 75px; border-radius: 50%;"></i>
-                                            <div class="text-center ps-5">
-                                                <h2>145</h2>
-                                                <span>12% Increase</span>
-                                            </div>
-
+                                            <i class='bx bx-cart bx-lg'></i>
+                                            <h2>145</h2>
                                         </div>
+                                        <span>12% Increase</span>
+
                                     </div>
                                 </div>
                             </div>
@@ -615,15 +585,11 @@
                                                 <i class='bx bx-dots-horizontal-rounded bx-md text-muted'></i>
                                             </div>
 
-                                            <i class='bx bx-dollar bx-lg text-green py-3 p-2 ps-3'
-                                                style="background-color: rgba(46, 202, 106, 0.255); width: 80px; height: 75px; border-radius: 50%;"></i>
-                                            <div class="text-center ps-5">
-                                                <h2>$3264</h2>
-                                                <spa>8% Increase</spa>
-                                            </div>
+                                            <i class='bx bx-dollar bx-lg'></i>
+                                            <h2>$3264</h2>
 
                                         </div>
-
+                                        <p>8% Increase</p>
 
                                     </div>
                                 </div>
@@ -650,15 +616,10 @@
                                                 <i class='bx bx-dots-horizontal-rounded bx-md text-muted'></i>
                                             </div>
 
-                                            <i class='bx bx-group bx-flip-horizontal bx-lg py-3 p-2 ps-3'
-                                                style="background-color: #ff771d3d; width: 80px; height: 75px; border-radius: 50%;"></i>
-                                            <div class="text-center ps-5">
-                                                <h2>1244</h2>
-                                                <span>12% Decrease</span>
-                                            </div>
-
+                                            <i class='bx bx-group bx-flip-horizontal bx-lg'></i>
+                                            <h2>1244</h2>
                                         </div>
-
+                                        <p>12% Decrease</p>
 
                                     </div>
                                 </div>
@@ -719,315 +680,17 @@
                                 </div>
 
                             </div>
-
-                            <!-- top selling -->
-                            <div class="col-12 mb-4">
-                                <div class="card w-100" style=" height: auto;">
-                                    <div class="card-body">
-                                        <ul class="nav p-0 m-0">
-                                            <li class="nav-item">
-                                                <a class="nav-link active" aria-current="page" href="#">
-                                                    <h5>Top Selling</h5>
-                                                </a>
-                                            </li>
-                                            <p class="py-2">/</p>
-                                            <li class="nav-item p-0 m0">
-                                                <a class="nav-link disabled" href="#" tabindex="-1"
-                                                    aria-disabled="true">Today</a>
-                                            </li>
-                                        </ul>
-                                        <div class="position-absolute top-0 end-0 p-2">
-                                            <i class='bx bx-dots-horizontal-rounded bx-md text-muted'></i>
-                                        </div>
-
-                                        <table class="table">
-                                            <thead>
-                                                <tr>
-                                                    <th scope="col">Preview</th>
-                                                    <th scope="col">Product</th>
-                                                    <th scope="col">Price</th>
-                                                    <th scope="col">Sold</th>
-                                                    <th scope="col">Revenue</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <th scope="row"><img src="product-1.jpg" alt="" width="80rem"
-                                                            height="75rem"></th>
-                                                    <td>Ut inventore ipsa voluptas nulla</td>
-                                                    <td>$64</td>
-                                                    <td>124</td>
-                                                    <td>$5,828</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row"><img src="product-2.jpg" alt="" width="80rem"
-                                                            height="75rem"></th>
-                                                    <td>Ut inventore ipsa voluptas nulla</td>
-                                                    <td>$64</td>
-                                                    <td>124</td>
-                                                    <td>$5,828</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row"><img src="product-3.jpg" alt="" width="80rem"
-                                                            height="75rem"></th>
-                                                    <td>Ut inventore ipsa voluptas nulla</td>
-                                                    <td>$64</td>
-                                                    <td>124</td>
-                                                    <td>$5,828</td>
-                                                </tr>
-
-                                                <tr>
-                                                    <th scope="row"><img src="product-4.jpg" alt="" width="80rem"
-                                                            height="75rem"></th>
-                                                    <td>Ut inventore ipsa voluptas nulla</td>
-                                                    <td>$64</td>
-                                                    <td>124</td>
-                                                    <td>$5,828</td>
-                                                </tr>
-
-                                                <tr>
-                                                    <th scope="row"><img src="product-5.jpg" alt="" width="80rem"
-                                                            height="75rem"></th>
-                                                    <td>Ut inventore ipsa voluptas nulla</td>
-                                                    <td>$64</td>
-                                                    <td>124</td>
-                                                    <td>$5,828</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-
-                                    </div>
-                                </div>
-
-                            </div>
                         </div>
-
-
                     </div>
-
-                    <!-- rightside -->
-
-                    <!-- recent -->
-                    <div class="col-4">
-                        <div class="card mb-4" style=" height: auto;">
-                            <div class="card-body ">
-                                <ul class="nav p-0 m-0">
-                                    <li class="nav-item">
-                                        <a class="nav-link active" aria-current="page" href="#">
-                                            <h5>Recent Activity</h5>
-                                        </a>
-                                    </li>
-                                    <p class="py-2">/</p>
-                                    <li class="nav-item p-0 m0">
-                                        <a class="nav-link disabled" href="#" tabindex="-1"
-                                            aria-disabled="true">Today</a>
-                                    </li>
-                                </ul>
-                                <div class="position-absolute top-0 end-0 p-2">
-                                    <i class='bx bx-dots-horizontal-rounded bx-md text-muted'></i>
-                                </div>
-
-                                <div class="container p-3 ">
-                                    <p class="card-text">
-                                    <div class="activity">
-
-                                        <div class="activity-item d-flex">
-                                            <div class="activite-label">32 min</div>
-                                            <i class='bx bxs-circle' style='color:#04c800'></i>
-                                            <div class="activity-content">
-                                                Quia quae rerum <a href="#" class="fw-bold text-dark">explicabo
-                                                    officiis</a>
-                                                beatae
-                                            </div>
-                                        </div><!-- End activity item-->
-
-                                        <div class="activity-item d-flex">
-                                            <div class="activite-label">56 min</div>
-                                            <i class='bx bxs-circle' style='color:#c30101'></i>
-                                            <div class="activity-content">
-                                                Voluptatem blanditiis blanditiis eveniet
-                                            </div>
-                                        </div><!-- End activity item-->
-
-                                        <div class="activity-item d-flex">
-                                            <div class="activite-label">2 hrs</div>
-                                            <i class='bx bxs-circle' style='color:blue'></i>
-                                            <div class="activity-content">
-                                                Voluptates corrupti molestias voluptatem
-                                            </div>
-                                        </div><!-- End activity item-->
-
-                                        <div class="activity-item d-flex">
-                                            <div class="activite-label">1 day</div>
-                                            <i class='bx bxs-circle' style='color:#4ac3fb'></i>
-                                            <div class="activity-content">
-                                                Tempore autem saepe <a href="#" class="fw-bold text-dark">occaecati
-                                                    voluptatem</a> tempore
-                                            </div>
-                                        </div><!-- End activity item-->
-
-                                        <div class="activity-item d-flex">
-                                            <div class="activite-label">2 days</div>
-                                            <i class='bx bxs-circle' style='color:#fffb05'></i>
-                                            <div class="activity-content">
-                                                Est sit eum reiciendis exercitationem
-                                            </div>
-                                        </div><!-- End activity item-->
-
-                                        <div class="activity-item d-flex">
-                                            <div class="activite-label">4 weeks</div>
-                                            <i class='bx bxs-circle' style='color:grey'></i>
-                                            <div class="activity-content">
-                                                Dicta dolorem harum nulla eius. Ut quidem quidem sit quas
-                                            </div>
-                                        </div><!-- End activity item-->
-
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <!-- budget -->
-
-                        <div class="card mb-4" style=" height: auto;">
-                            <div class="card-body">
-                                <ul class="nav p-0 m-0">
-                                    <div class="position-absolute top-0 end-0 p-2">
-                                        <i class='bx bx-dots-horizontal-rounded bx-md text-muted'></i>
-                                    </div>
-
-                                    <li class="nav-item">
-                                        <a class="nav-link active" aria-current="page" href="#">
-                                            <h5>Budget Report</h5>
-                                        </a>
-                                    </li>
-                                    <p class="py-2">/</p>
-                                    <li class="nav-item p-0 m0">
-                                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">This
-                                            Month</a>
-                                    </li>
-                                </ul>
-                                <img src="budgetreportNA.png" alt="">
-                            </div>
-                        </div>
-
-                        <!-- web -->
-
-                        <div class="card mb-4" style=" height: auto;">
-                            <div class="card-body">
-                                <ul class="nav p-0 m-0">
-                                    <div class="position-absolute top-0 end-0 p-2">
-                                        <i class='bx bx-dots-horizontal-rounded bx-md text-muted'></i>
-                                    </div>
-
-                                    <li class="nav-item">
-                                        <a class="nav-link active" aria-current="page" href="#">
-                                            <h5>Website Traffic</h5>
-                                        </a>
-                                    </li>
-                                    <p class="py-2">/</p>
-                                    <li class="nav-item p-0 m0">
-                                        <a class="nav-link disabled" href="#" tabindex="-1"
-                                            aria-disabled="true">Today</a>
-                                    </li>
-                                </ul>
-
-                                <img src="webtrafic.png" alt="">
-
-                            </div>
-                        </div>
-
-                        <!-- news -->
-
-                        <div class="card mb-4" style=" height: auto;">
-                            <div class="card-body">
-                                <ul class="nav p-0 m-0">
-                                    <div class="position-absolute top-0 end-0 p-2">
-                                        <i class='bx bx-dots-horizontal-rounded bx-md text-muted'></i>
-                                    </div>
-
-                                    <li class="nav-item">
-
-                                        <a class="nav-link active" aria-current="page" href="#">
-                                            <h5>News & Update</h5>
-                                        </a>
-                                    </li>
-                                    <p class="py-2">/</p>
-                                    <li class="nav-item p-0 m0">
-                                        <a class="nav-link disabled" href="#" tabindex="-1"
-                                            aria-disabled="true">Today</a>
-                                    </li>
-                                </ul>
-
-                                <!-- post -->
-                                <div class="post-item d-flex p-1 gap-3 mb-3">
-                                    <img src="news-1.jpg" alt="news1" width="80rem" height="75rem">
-                                    <div class="post-text">
-                                        <p><a href="#">Nihil blanditiis at in nihil autem</a></p>
-                                        <p>Sit recusandae non aspernatur laboriosam. Quia enim eligendi sed ut harum...
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div class="post-item d-flex p-1 gap-3 mb-3">
-                                    <img src="news-2.jpg" alt="news1" width="80rem" height="75rem">
-                                    <div class="post-text">
-                                        <p><a href="#">Laborum corporis quo dara net para</a></p>
-                                        <p>Qui enim quia optio. Eligendi aut asperiores enim repellendusvel rerum
-                                            cuder...</p>
-                                    </div>
-                                </div>
-
-                                <div class="post-item d-flex p-1 gap-3 mb-3">
-                                    <img src="news-4.jpg" alt="news1" width="80rem" height="75rem">
-                                    <div class="post-text">
-                                        <p><a href="#">Quidem autem et impedit
-                                                Illo</a></p>
-                                        <p>Illo nemo neque maiores vitae officiis cum eum turos elan dries werona
-                                            nande...</p>
-                                    </div>
-                                </div>
-                                <div class="post-item d-flex p-1 gap-3 mb-3">
-                                    <img src="news-5.jpg" alt="news1" width="80rem" height="75rem">
-                                    <div class="post-text">
-                                        <p><a href="#">Et dolores corrupti quae illo quod dolor</a></p>
-                                        <p>Odit ut eveniet modi reiciendis. Atque cupiditate libero beatae dignissimos
-                                            eius...</p>
-                                    </div>
-                                </div>
-
-                            </div>
-
-
-                        </div>
-
-                    </div>
-
-
-
                 </div>
             </div>
 
-            <hr>
-            <div class="fotter text-center " style="padding: 0%; margin: 0%;">
-                <div class="fotter-text mb-0 ">
-                    <p> © Copyright <b style="color: #012970; ">NiceAdmin</b>. All Rights Reserved</p>
-                    <p>Designed by <span style="color: #7295d1;">BootstrapMade</span></p>
-                </div>
 
+            <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+                crossorigin="anonymous"></script>
 
-            </div>
-
-
-        </div>
-
-    </div>
-
-    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
 </body>
 
 </html>

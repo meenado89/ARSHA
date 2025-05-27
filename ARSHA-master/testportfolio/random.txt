@@ -1,0 +1,14 @@
+<i class='bx bx-grid-alt'></i>  dashboard
+<i class='bx bxs-food-menu'></i> componentes
+<i class='bx bx-food-menu' style='color:#ffffff' ></i> forms
+<i class='bx bx-detail bx-flip-vertical' style='color:#ffffff' ></i> Table
+<i class='bx bx-bar-chart-square' style='color:#ffffff' ></i> Charts
+<i class='bx bx-diamond' style='color:#ffffff' ></i> Icons
+<i class='bx bx-user' style='color:#ffffff' ></i> profile 
+faq
+<i class='bx bx-envelope' style='color:#ffffff' ></i> contact
+
+<i class='bx bxs-spreadsheet'></i> Register
+<i class='bx bxs-log-in' style='color:#ffffff' ></i> Log in
+<i class='bx bxs-error-circle'></i> error 404
+<i class='bx bx-file-blank' style='color:#ffffff' ></i> blank
