@@ -11,10 +11,10 @@
     <title>Nice Admin Template</title>
 
     <style>
-        
-        /* 28/00:20 */ 
+        /* 29/02:10 */
+        /* 28/00:20 */
         /* 26/01:10 */
-           /* 27, 2:00 */
+        /* 27, 2:00 */
         body {
             background-color: aliceblue;
         }
@@ -23,7 +23,6 @@
             background-color: white;
             position: fixed;
             width: 100%;
-            top: 0;
             z-index: 1000;
             padding: 0.5rem 1rem;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -69,6 +68,83 @@
             flex: 1;
             color: #333;
         }
+
+        .line-icon {
+            padding: 0 12px;
+            color: #aaa5a5;
+
+        }
+
+        .circle-icon {
+            position: absolute;
+            left: 1.1rem;
+            bottom: 3.2rem;
+        }
+
+        .activity-item {
+            align-items: flex-start;
+            margin-bottom: 1rem;
+        }
+
+        .activity-time {
+            min-width: 70px;
+            font-weight: 500;
+        }
+
+        .divider {
+            position: relative;
+            margin-right: 1rem;
+        }
+
+        .card-body h5 {
+            margin: 0;
+        }
+
+        .activity-content a {
+            text-decoration: none;
+        }
+
+        /* line using border */
+        .timeline-line {
+            width: 5px;
+            height: 54px;
+            background-color: #dff4f888;
+            margin: 0 20px;
+
+        }
+
+        /* drop hover test */
+
+        .dropdown-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .custom-dropdown {
+            display: none;
+            position: absolute;
+            right: 0;
+            background-color: white;
+            min-width: 120px;
+            box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
+            z-index: 1;
+            border-radius: 6px;
+        }
+
+        .custom-dropdown a {
+            display: block;
+            padding: 8px 12px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .custom-dropdown a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown-container:hover .custom-dropdown {
+            display: block;
+        }
     </style>
 </head>
 
@@ -87,448 +163,125 @@
                 </div>
 
                 <!-- Menu Button -->
-                <div class="col-auto">
+                <div class="col-auto  ">
                     <a class="btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
                         aria-controls="offcanvasExample">
                         <i class="bx bx-menu bx-md text-dark"></i>
                     </a>
 
                     <!-- Offcanvas Menu -->
-                    <div class="offcanvas offcanvas-start p-5 " tabindex="-1" id="offcanvasExample"
-                        aria-labelledby="offcanvasExampleLabel" style="background-color: rgb(245, 241, 241);">
-                        <section class="mainoffcanvas position-relative ">
-                            <div><i class='bx bx-grid-alt'></i> Dropdown</div>
+                    <div class="main-offcanvas ">
 
-                            <!-- componentes -->
-                            <div class="dropdown mt-1">
-                                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
-                                    data-bs-toggle="dropdown">
-                                    <i class='bx bxs-food-menu' style='color:#000000'></i>
-                                    Components
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="border: 0 ;">
-                                    <li><a class="dropdown-item" href="#">A</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </div>
+                        <div class="offcanvas offcanvas-start " id="offcanvasExample"
+                            aria-labelledby="offcanvasExampleLabel">
+                            <div class="offcanvas-header ">
+                                <div class="d-flex align-items-center justify-content-between px-3 py-2">
+                                        <div class="d-flex align-items-center gap-2">
+                                            <i class='bx bx-grid-alt ' style='color:#0907f7'></i>
+                                            
+                                                Dropdown 
+                                        </div>
 
-                            <!-- Forms -->
-                            <div class="dropdown mt-1">
-                                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
-                                    data-bs-toggle="dropdown">
-                                    <i class='bx bx-food-menu' style='color:#000000'></i>
-                                    Forms
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="border: 0 ;">
-                                    <li><a class="dropdown-item" href="#">A</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
+                                    </div>
+
                             </div>
-                            <!-- TABLES -->
-                            <div class="dropdown mt-1">
-                                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
-                                    data-bs-toggle="dropdown">
-                                    <i class='bx bx-detail bx-flip-vertical' style='color:#000000'></i>
-                                    Tables
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="border: 0 ;">
-                                    <li><a class="dropdown-item" href="#">A</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
+                            <div class="offcanvas-body">
+
+                                <div class="dropdown mt-3">
+                                    <div class="d-flex align-items-center justify-content-between px-3 py-2">
+                                        <div class="d-flex align-items-center gap-2">
+                                            <i class='bx bxs-food-menu'style='color:#0907f7'></i>
+                                            <a class="btn p-0" data-bs-toggle="collapse" href="#collapseExample"
+                                                role="button" aria-expanded="false" aria-controls="collapseExample">
+                                                Components <i class='bx bx-chevron-down position-relative'
+                                                    style='color:#707070 ; left: 5rem;'></i>
+                                            </a>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="collapse" id="collapseExample">
+                                        <div class="card card-body w-50 border-0">
+                                            <ul>
+                                                <li>gcjhgj</li>
+                                                <li>m m mn m</li>
+                                                <li>dvcxvc</li>
+                                                <li>cvcxvdsdsdfc</li>
+                                                <li>vsdsf</li>
+                                                <li>fsdfsdc</li>
+                                                <li>dvdsfdf</li>
+                                                <li>bhmj,m</li>
+                                                <li>vvnmhnb</li>
+                                                <li>vb bbb</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                
                             </div>
 
-                            <!-- Charts -->
-                            <div class="dropdown mt-1">
-                                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
-                                    data-bs-toggle="dropdown">
-                                    <i class='bx bx-bar-chart-square' style='color:#000000'></i>
-                                    Charts
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="border: 0 ;">
-                                    <li><a class="dropdown-item" href="#">A</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </div>
-                            <!-- Icons -->
-                            <div class="dropdown mt-1">
-                                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
-                                    data-bs-toggle="dropdown">
-                                    <i class='bx bx-diamond' style='color:#000000'></i>
-                                    Charts
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="border: 0 ;">
-                                    <li><a class="dropdown-item" href="#">A</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </div>
-                            <p class="text-muted">Pages</p>
-                            <!-- profiles -->
-                            <div class="dropdown mt-1">
-                                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
-                                    data-bs-toggle="dropdown">
-                                    <i class='bx bx-user' style='color:#000000'></i>
-                                    Profiles
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="border: 0 ;">
-                                    <li><a class="dropdown-item" href="#">A</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </div>
-
-                            <!-- FAQ -->
-                            <div class="dropdown mt-1">
-                                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
-                                    data-bs-toggle="dropdown">
-                                    <i class="bi bi-question-circle" style='color:#000000'></i>
-                                    F.A.Q
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="border: 0 ;">
-                                    <li><a class="dropdown-item" href="#">A</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </div>
-
-                            <!-- contacts -->
-                            <div class="dropdown mt-1">
-                                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
-                                    data-bs-toggle="dropdown">
-                                    <i class='bx bx-envelope' style='color:#000000'></i>
-                                    Contacts
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="border: 0 ;">
-                                    <li><a class="dropdown-item" href="#">A</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </div>
-
-                            <!-- Register -->
-                            <div class="dropdown mt-1">
-                                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
-                                    data-bs-toggle="dropdown">
-                                    <i class='bx bxs-spreadsheet style=' color:#000000''></i>
-                                    Register
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="border: 0 ;">
-                                    <li><a class="dropdown-item" href="#">A</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </div>
-
-                            <!-- login -->
-                            <div class="dropdown mt-1">
-                                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
-                                    data-bs-toggle="dropdown">
-                                    <i class='bx bxs-log-in' style='color:#000000'></i>
-                                    Login
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="border: 0 ;">
-                                    <li><a class="dropdown-item" href="#">A</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </div>
-                            <!-- error -->
-                            <div class="dropdown mt-1">
-                                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
-                                    data-bs-toggle="dropdown">
-                                    <i class='bx bxs-error-circle'></i>
-                                    Error
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="border: 0 ;">
-                                    <li><a class="dropdown-item" href="#">A</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </div>
-                            <!-- blank -->
-                            <div class="dropdown mt-1">
-                                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
-                                    data-bs-toggle="dropdown">
-                                    <i class='bx bx-file-blank' style='color:#000000'></i>
-                                    Blank
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="border: 0 ;">
-                                    <li><a class="dropdown-item" href="#">A</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </div>
-                        </section>
+                            <!-- forms -->
+                             
+                        </div>
+                    </div>
+                </div>
+                <!-- Search -->
+                <div class="col-3 d-flex ">
+                    <form class="position-relative width-40">
+                        <input class="form-control pe-5" type="search" placeholder="Search" />
+                        <i class="bx bx-search position-absolute top-50 end-0 translate-middle-y pe-3 text-muted"></i>
+                    </form>
+                </div>
 
 
+                <!-- Notification & Messages -->
+                <div class="col-2 d-flex justify-content-end align-items-center gap-3">
+                    <!-- Bell Dropdown -->
+                    <div class="dropdown">
+                        <a class="text-decoration-none text-dark dropdown-toggle" href="#" id="notifDropdown"
+                            data-bs-toggle="dropdown">
+                            <i class="bx bx-bell bx-md"></i>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="notifDropdown">
+                            <li><a class="dropdown-item" href="#">Notification 1</a></li>
+                            <li><a class="dropdown-item" href="#">Notification 2</a></li>
+                        </ul>
                     </div>
 
-
-                </div>
-            </div>
-
-            <!-- Search -->
-            <div class="col-3 ">
-                <form class="position-relative width-40">
-                    <input class="form-control pe-5" type="search" placeholder="Search" />
-                    <i class="bx bx-search position-absolute top-50 end-0 translate-middle-y pe-3 text-muted"></i>
-                </form>
-            </div>
-
-            <!-- Notification & Messages -->
-            <div class="col-2 d-flex justify-content-end align-items-center gap-3">
-                <!-- Bell Dropdown -->
-                <div class="dropdown">
-                    <a class="text-decoration-none text-dark dropdown-toggle" href="#" id="notifDropdown"
-                        data-bs-toggle="dropdown">
-                        <i class="bx bx-bell bx-md"></i>
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="notifDropdown">
-                        <li><a class="dropdown-item" href="#">Notification 1</a></li>
-                        <li><a class="dropdown-item" href="#">Notification 2</a></li>
-                    </ul>
+                    <!-- Message Dropdown -->
+                    <div class="dropdown">
+                        <a class="text-decoration-none text-dark dropdown-toggle" href="#" id="msgDropdown"
+                            data-bs-toggle="dropdown">
+                            <i class="bx bx-message-square-detail bx-md"></i>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="msgDropdown">
+                            <li><a class="dropdown-item" href="#">Message 1</a></li>
+                            <li><a class="dropdown-item" href="#">Message 2</a></li>
+                        </ul>
+                    </div>
                 </div>
 
-                <!-- Message Dropdown -->
-                <div class="dropdown">
-                    <a class="text-decoration-none text-dark dropdown-toggle" href="#" id="msgDropdown"
-                        data-bs-toggle="dropdown">
-                        <i class="bx bx-message-square-detail bx-md"></i>
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="msgDropdown">
-                        <li><a class="dropdown-item" href="#">Message 1</a></li>
-                        <li><a class="dropdown-item" href="#">Message 2</a></li>
-                    </ul>
+                <!-- Profile -->
+                <div class="col-md-3 d-flex justify-content-end align-items-center gap-2" id="adminimg">
+                    <img src="adminprofile-img.jpg" alt="adminimg" width="48" height="48" />
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle" type="button" id="profileDropdown"
+                            data-bs-toggle="dropdown">
+                            K. Anderson
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="profileDropdown">
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Settings</a></li>
+                            <li><a class="dropdown-item" href="#">Logout</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-
-            <!-- Profile -->
-            <div class="col-md-3 d-flex justify-content-end align-items-center gap-2" id="adminimg">
-                <img src="adminprofile-img.jpg" alt="adminimg" width="48" height="48" />
-                <div class="dropdown">
-                    <button class="btn dropdown-toggle" type="button" id="profileDropdown" data-bs-toggle="dropdown">
-                        K. Anderson
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="profileDropdown">
-                        <li><a class="dropdown-item" href="#">Profile</a></li>
-                        <li><a class="dropdown-item" href="#">Settings</a></li>
-                        <li><a class="dropdown-item" href="#">Logout</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
         </div>
     </nav>
 
-    <!-- dashboard looks -->
+    <!-- dashboard-->
     <div class="mainpage p-2">
         <div class="heading " style="padding-top: 6rem;">
             <h2><b>
@@ -572,15 +325,18 @@
                                         <div class="text d-flex">
                                             <div class="position-absolute top-0 end-0 p-2">
 
-                                                <!-- drop -->
-                                                <label for="filter"> <i
-                                                        class='bx bx-dots-horizontal-rounded bx-md text-muted'></i></label>
-                                                <select id="filter" name="filter">
-                                                    <option value="disabled">Filter</option>
-                                                    <option value="today">Today</option>
-                                                    <option value="month">This Month</option>
-                                                    <option value="year">This Year</option>
-                                                </select>
+                                                <!-- drop on hover-->
+                                                <div class="position-absolute top-0 end-0 p-2 dropdown-container">
+                                                    <i class='bx bx-dots-horizontal-rounded bx-md text-muted'></i>
+                                                    <div class="custom-dropdown text-left p-1">
+                                                        <a href="#"
+                                                            style="background-color: rgba(74, 195, 251, 0.081);">Filter</a>
+                                                        <a href="#">Today</a>
+                                                        <a href="#">This Month</a>
+                                                        <a href="#">This Year</a>
+                                                    </div>
+                                                </div>
+
 
                                             </div>
                                             <i class='bx bx-cart bx-lg text-primary py-3 p-2 ps-3'
@@ -612,6 +368,17 @@
 
                                         <div class="text d-flex">
                                             <div class="position-absolute top-0 end-0 p-2">
+                                                <!-- drop on hover -->
+                                                <div class="position-absolute top-0 end-0 p-2 dropdown-container">
+                                                    <i class='bx bx-dots-horizontal-rounded bx-md text-muted'></i>
+                                                    <div class="custom-dropdown text-left p-1">
+                                                        <a href="#"
+                                                            style="background-color: rgba(74, 195, 251, 0.081);">Filter</a>
+                                                        <a href="#">Today</a>
+                                                        <a href="#">This Month</a>
+                                                        <a href="#">This Year</a>
+                                                    </div>
+                                                </div>
                                                 <i class='bx bx-dots-horizontal-rounded bx-md text-muted'></i>
                                             </div>
 
@@ -647,6 +414,18 @@
 
                                         <div class="text d-flex">
                                             <div class="position-absolute top-0 end-0 p-2">
+                                                <!-- drop on hover-->
+                                                <div class="position-absolute top-0 end-0 p-2 dropdown-container">
+                                                    <i class='bx bx-dots-horizontal-rounded bx-md text-muted'></i>
+                                                    <div class="custom-dropdown text-left p-1">
+                                                        <a href="#"
+                                                            style="background-color: rgba(74, 195, 251, 0.081);">Filter</a>
+                                                        <a href="#">Today</a>
+                                                        <a href="#">This Month</a>
+                                                        <a href="#">This Year</a>
+                                                    </div>
+                                                </div>
+
                                                 <i class='bx bx-dots-horizontal-rounded bx-md text-muted'></i>
                                             </div>
 
@@ -682,10 +461,27 @@
                                             </li>
                                         </ul>
                                         <div class="position-absolute top-0 end-0 p-2">
+                                            <!-- drop on hover-->
+                                            <div class="position-absolute top-0 end-0 p-2 dropdown-container">
+                                                <i class='bx bx-dots-horizontal-rounded bx-md text-muted'></i>
+                                                <div class="custom-dropdown text-left p-1">
+                                                    <a href="#"
+                                                        style="background-color: rgba(74, 195, 251, 0.081);">Filter</a>
+                                                    <a href="#">Today</a>
+                                                    <a href="#">This Month</a>
+                                                    <a href="#">This Year</a>
+                                                </div>
+                                            </div>
+
                                             <i class='bx bx-dots-horizontal-rounded bx-md text-muted'></i>
                                         </div>
 
-                                        <img src="OIP.jpg" alt="" width="100%">
+                                        <img src="OIP.jpg" alt="" width="100%" height="350px">
+                                        <div class="circle-text text-center">
+                                            <i class='bx bxs-circle' style='color:#041dff'></i>Sales
+                                            <i class='bx bxs-circle' style='color:#2ff70a'></i>Revenue
+                                            <i class='bx bxs-circle' style='color:#ffea00'></i>Coustomers
+                                        </div>
 
                                     </div>
                                 </div>
@@ -695,7 +491,7 @@
                             <!-- Recent sales -->
                             <div class="col-12 mb-4">
                                 <div class="card w-100">
-                                    <div class="card-body" style=" height: 20rem;">
+                                    <div class="card-body" style=" height: 25rem; mb-2">
                                         <ul class="nav p-0 m-0">
                                             <li class="nav-item">
                                                 <a class="nav-link active" aria-current="page" href="#">
@@ -708,12 +504,172 @@
                                                     aria-disabled="true">Today</a>
                                             </li>
                                         </ul>
+                                        <section class="serch-container w-100 mb-2">
+                                            <div class="container p-0">
+                                                <div class="container-fluid w-100 p-0">
+                                                    <div class="row">
+                                                        <div class="col-7">
+                                                            <!-- number drop -->
+                                                            <div class="dropdown  ">
+                                                                <button class="btn  dropdown-toggle border border-2 "
+                                                                    type="button" id="dropdownMenuButton1"
+                                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                                    10
+                                                                </button>
+                                                                entries per page
+                                                                <ul class="dropdown-menu overflow-auto "
+                                                                    aria-labelledby="dropdownMenuButton1"
+                                                                    style="height: 148px; width: 6rem !important; ">
+
+                                                                    <li><a class="dropdown-item" href="#">1</a></li>
+                                                                    <li><a class="dropdown-item" href="#">2</a></li>
+                                                                    <li><a class="dropdown-item" href="#">3</a></li>
+                                                                    <li><a class="dropdown-item" href="#">4</a></li>
+                                                                    <li><a class="dropdown-item" href="#">5</a></li>
+                                                                    <li><a class="dropdown-item" href="#">6</a></li>
+                                                                    <li><a class="dropdown-item" href="#">7</a></li>
+                                                                    <li><a class="dropdown-item" href="#">8</a></li>
+                                                                    <li><a class="dropdown-item" href="#">9</a></li>
+                                                                    <li><a class="dropdown-item" href="#">10</a></li>
+                                                                </ul>
+                                                            </div>
+
+
+                                                        </div>
+                                                        <div class="col-4 position-relative  " style="left: 150px;">
+                                                            <form class="w-75   ">
+                                                                <input class="form-control pe-5" type="search"
+                                                                    placeholder="Search..." />
+
+                                                            </form>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
                                         <div class="position-absolute top-0 end-0 p-2">
+                                            <!-- drop on hover-->
+                                            <div class="position-absolute top-0 end-0 p-2 dropdown-container">
+                                                <i class='bx bx-dots-horizontal-rounded bx-md text-muted'></i>
+                                                <div class="custom-dropdown text-left p-1">
+                                                    <a href="#"
+                                                        style="background-color: rgba(74, 195, 251, 0.081);">Filter</a>
+                                                    <a href="#">Today</a>
+                                                    <a href="#">This Month</a>
+                                                    <a href="#">This Year</a>
+                                                </div>
+                                            </div>
+
                                             <i class='bx bx-dots-horizontal-rounded bx-md text-muted'></i>
                                         </div>
 
-                                        <p class="card-text"> 12With supporting text below as a natural lead-in to
-                                            additional content.</p>
+                                        <!-- table -->
+                                        <div class="table-container p-1 overflow-scroll h-75 w-0">
+                                            <table cellpadding="10" cellspacing="0" class=" w-100 h-50">
+                                                <thead>
+                                                    <tr>
+                                                        <th>#</th>
+                                                        <th>Customer</th>
+                                                        <th>Product</th>
+                                                        <th>Price</th>
+                                                        <th>Status</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>#2457</td>
+                                                        <td>Brandon Jacob</td>
+                                                        <td>At praesentium minu</td>
+                                                        <td>$64</td>
+                                                        <td><span
+                                                                class="badge rounded-pill bg-success text-white">Approved</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>#2049</td>
+                                                        <td>Ashleigh Langosh</td>
+                                                        <td>At recusandae consectetur</td>
+                                                        <td>$147</td>
+                                                        <td><span
+                                                                class="badge rounded-pill bg-danger text-white">Rejected</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>#2147</td>
+                                                        <td>Bridie Kessler</td>
+                                                        <td>Blanditiis dolor omnis similique</td>
+                                                        <td>$47</td>
+                                                        <td><span
+                                                                class="badge rounded-pill bg-warning text-white">Pending</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>#2644</td>
+                                                        <td>Raheem Lehner</td>
+                                                        <td>Sunt similique distinctio</td>
+                                                        <td>$165</td>
+                                                        <td><span
+                                                                class="badge rounded-pill bg-success text-white">Approved</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>#2644</td>
+                                                        <td>Angus Grady</td>
+                                                        <td>Ut voluptatem id earum et</td>
+                                                        <td>$67</td>
+                                                        <td><span
+                                                                class="badge rounded-pill bg-warning text-white">Pending</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>#2457</td>
+                                                        <td>Brandon Jacob</td>
+                                                        <td>At praesentium minu</td>
+                                                        <td>$64</td>
+                                                        <td><span
+                                                                class="badge rounded-pill bg-success text-white">Approved</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>#2049</td>
+                                                        <td>Ashleigh Langosh</td>
+                                                        <td>At recusandae consectetur</td>
+                                                        <td>$147</td>
+                                                        <td><span
+                                                                class="badge rounded-pill bg-success text-white">Approved</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>#2147</td>
+                                                        <td>Bridie Kessler</td>
+                                                        <td>Blanditiis dolor omnis similique</td>
+                                                        <td>$47</td>
+                                                        <td><span
+                                                                class="badge rounded-pill bg-warning text-white">Pending</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>#2644</td>
+                                                        <td>Raheem Lehner</td>
+                                                        <td>Sunt similique distinctio</td>
+                                                        <td>$165</td>
+                                                        <td><span
+                                                                class="badge rounded-pill bg-success text-white">Approved</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>#2644</td>
+                                                        <td>Angus Grady</td>
+                                                        <td>Ut voluptatem id earum et</td>
+                                                        <td>$67</td>
+                                                        <td><span
+                                                                class="badge rounded-pill bg-danger text-dark ">Rejected</span>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
 
                                     </div>
                                 </div>
@@ -737,6 +693,18 @@
                                             </li>
                                         </ul>
                                         <div class="position-absolute top-0 end-0 p-2">
+                                            <!-- drop on hover-->
+                                            <div class="position-absolute top-0 end-0 p-2 dropdown-container">
+                                                <i class='bx bx-dots-horizontal-rounded bx-md text-muted'></i>
+                                                <div class="custom-dropdown text-left p-1">
+                                                    <a href="#"
+                                                        style="background-color: rgba(74, 195, 251, 0.081);">Filter</a>
+                                                    <a href="#">Today</a>
+                                                    <a href="#">This Month</a>
+                                                    <a href="#">This Year</a>
+                                                </div>
+                                            </div>
+
                                             <i class='bx bx-dots-horizontal-rounded bx-md text-muted'></i>
                                         </div>
 
@@ -807,86 +775,107 @@
 
                     <!-- rightside -->
 
-                    <!-- recent -->
-                    <div class="col-4">
-                        <div class="card mb-4" style=" height: auto;">
-                            <div class="card-body ">
+                    <!-- Recent Activity -->
+                    <div class="col-4 ">
+                        <div class="card mb-4 ">
+                            <div class="card-body p-5 ">
                                 <ul class="nav p-0 m-0">
                                     <li class="nav-item">
-                                        <a class="nav-link active" aria-current="page" href="#">
+                                        <a class="nav-link active" href="#">
                                             <h5>Recent Activity</h5>
                                         </a>
                                     </li>
                                     <p class="py-2">/</p>
-                                    <li class="nav-item p-0 m0">
-                                        <a class="nav-link disabled" href="#" tabindex="-1"
-                                            aria-disabled="true">Today</a>
+                                    <li class="nav-item">
+                                        <a class="nav-link disabled" href="#" aria-disabled="true">Today</a>
                                     </li>
                                 </ul>
                                 <div class="position-absolute top-0 end-0 p-2">
-                                    <i class='bx bx-dots-horizontal-rounded bx-md text-muted'></i>
+                                    <!-- drop on hover-->
+                                    <div class="position-absolute top-0 end-0 p-2 dropdown-container">
+                                        <i class='bx bx-dots-horizontal-rounded bx-md text-muted'></i>
+                                        <div class="custom-dropdown text-left p-1">
+                                            <a href="#" style="background-color: rgba(74, 195, 251, 0.081);">Filter</a>
+                                            <a href="#">Today</a>
+                                            <a href="#">This Month</a>
+                                            <a href="#">This Year</a>
+                                        </div>
+                                    </div>
+
+                                    <i class="bx bx-dots-horizontal-rounded bx-md text-muted"></i>
                                 </div>
 
-                                <div class="container p-3 ">
-                                    <p class="card-text">
-                                    <div class="activity">
-
-                                        <div class="activity-item d-flex">
-                                            <div class="activite-label">32 min</div>                                            
-                                           <div class="divider p-0 m-0">
-                                            <i class='bx bxs-circle' style='color:#04c800'></i>
-                                            <i class='bx bx-minus bx-rotate-90 bx-lg' style='color:#aaa5a5' ></i>
-                                           </div>
-                                            <div class="activity-content">
-                                                Quia quae rerum <a href="#" class="fw-bold text-dark">explicabo
-                                                    officiis</a>
-                                                beatae
-                                            </div>
+                                <div class="pt-3">
+                                    <!-- Activity Items -->
+                                    <div class="activity-item d-flex">
+                                        <div class="activity-time text-muted fw-normal">32 min</div>
+                                        <div class="divider">
+                                            <div class="timeline-line"></div>
+                                            <i class="bx bxs-circle circle-icon" style="color: #04c800;"></i>
                                         </div>
-                                        <div class="activity-item d-flex">
-                                            <div class="activite-label">56 min</div>
-                                            <i class='bx bxs-circle' style='color:#c30101'></i>
-                                            <div class="activity-content">
-                                                Voluptatem blanditiis blanditiis eveniet
-                                            </div>
+                                        <div class="activity-content">
+                                            Quia quae rerum <a href="#" class="fw-bold text-dark">explicabo officiis</a>
+                                            beatae
                                         </div>
+                                    </div>
 
-                                        <div class="activity-item d-flex">
-                                            <div class="activite-label">2 hrs</div>
-                                            <i class='bx bxs-circle' style='color:blue'></i>
-                                            <div class="activity-content">
-                                                Voluptates corrupti molestias voluptatem
-                                            </div>
+                                    <div class="activity-item d-flex">
+                                        <div class="activity-time text-muted fw-normal">56 min</div>
+                                        <div class="divider">
+                                            <div class="timeline-line"></div>
+                                            <i class="bx bxs-circle circle-icon" style="color: #c30101;"></i>
                                         </div>
-
-                                        <div class="activity-item d-flex">
-                                            <div class="activite-label">1 day</div>
-                                            <i class='bx bxs-circle' style='color:#4ac3fb'></i>
-                                            <div class="activity-content">
-                                                Tempore autem saepe <a href="#" class="fw-bold text-dark">occaecati
-                                                    voluptatem</a> tempore
-                                            </div>
+                                        <div class="activity-content">
+                                            Voluptatem blanditiis blanditiis eveniet
                                         </div>
+                                    </div>
 
-                                        <div class="activity-item d-flex">
-                                            <div class="activite-label">2 days</div>
-                                            <i class='bx bxs-circle' style='color:#fffb05'></i>
-                                            <div class="activity-content">
-                                                Est sit eum reiciendis exercitationem
-                                            </div>
+                                    <div class="activity-item d-flex">
+                                        <div class="activity-time text-muted fw-normal">2 hrs</div>
+                                        <div class="divider">
+                                            <div class="timeline-line"></div>
+                                            <i class="bx bxs-circle circle-icon" style="color: blue;"></i>
                                         </div>
-
-                                        <div class="activity-item d-flex">
-                                            <div class="activite-label">4 weeks</div>
-                                            <i class='bx bxs-circle' style='color:grey'></i>
-                                            <div class="activity-content">
-                                                Dicta dolorem harum nulla eius. Ut quidem quidem sit quas
-                                            </div>
+                                        <div class="activity-content">
+                                            Voluptates corrupti molestias voluptatem
                                         </div>
+                                    </div>
 
+                                    <div class="activity-item d-flex">
+                                        <div class="activity-time text-muted fw-normal">1 day</div>
+                                        <div class="divider">
+                                            <div class="timeline-line"></div>
+                                            <i class="bx bxs-circle circle-icon" style="color: #4ac3fb;"></i>
+                                        </div>
+                                        <div class="activity-content">
+                                            Tempore autem saepe <a href="#" class="fw-bold text-dark">occaecati
+                                                voluptatem</a>
+                                            tempore
+                                        </div>
+                                    </div>
+
+                                    <div class="activity-item d-flex">
+                                        <div class="activity-time text-muted fw-normal">2 days</div>
+                                        <div class="divider">
+                                            <div class="timeline-line"></div>
+                                            <i class="bx bxs-circle circle-icon" style="color: #fffb05;"></i>
+                                        </div>
+                                        <div class="activity-content">
+                                            Est sit eum reiciendis exercitationem
+                                        </div>
+                                    </div>
+
+                                    <div class="activity-item d-flex">
+                                        <div class="activity-time text-muted fw-normal">4 weeks</div>
+                                        <div class="divider">
+                                            <div class="timeline-line"></div>
+                                            <i class="bx bxs-circle circle-icon" style="color: grey;"></i>
+                                        </div>
+                                        <div class="activity-content">
+                                            Dicta dolorem harum nulla eius. Ut quidem quidem sit quas
+                                        </div>
                                     </div>
                                 </div>
-
                             </div>
                         </div>
 
@@ -896,6 +885,18 @@
                             <div class="card-body">
                                 <ul class="nav p-0 m-0">
                                     <div class="position-absolute top-0 end-0 p-2">
+                                        <!-- drop on hover-->
+                                        <div class="position-absolute top-0 end-0 p-2 dropdown-container">
+                                            <i class='bx bx-dots-horizontal-rounded bx-md text-muted'></i>
+                                            <div class="custom-dropdown text-left p-1">
+                                                <a href="#"
+                                                    style="background-color: rgba(74, 195, 251, 0.081);">Filter</a>
+                                                <a href="#">Today</a>
+                                                <a href="#">This Month</a>
+                                                <a href="#">This Year</a>
+                                            </div>
+                                        </div>
+
                                         <i class='bx bx-dots-horizontal-rounded bx-md text-muted'></i>
                                     </div>
 
@@ -920,6 +921,18 @@
                             <div class="card-body">
                                 <ul class="nav p-0 m-0">
                                     <div class="position-absolute top-0 end-0 p-2">
+                                        <!-- drop on hover-->
+                                        <div class="position-absolute top-0 end-0 p-2 dropdown-container">
+                                            <i class='bx bx-dots-horizontal-rounded bx-md text-muted'></i>
+                                            <div class="custom-dropdown text-left p-1">
+                                                <a href="#"
+                                                    style="background-color: rgba(74, 195, 251, 0.081);">Filter</a>
+                                                <a href="#">Today</a>
+                                                <a href="#">This Month</a>
+                                                <a href="#">This Year</a>
+                                            </div>
+                                        </div>
+
                                         <i class='bx bx-dots-horizontal-rounded bx-md text-muted'></i>
                                     </div>
 
@@ -946,6 +959,18 @@
                             <div class="card-body">
                                 <ul class="nav p-0 m-0">
                                     <div class="position-absolute top-0 end-0 p-2">
+                                        <!-- drop on hover-->
+                                        <div class="position-absolute top-0 end-0 p-2 dropdown-container">
+                                            <i class='bx bx-dots-horizontal-rounded bx-md text-muted'></i>
+                                            <div class="custom-dropdown text-left p-1">
+                                                <a href="#"
+                                                    style="background-color: rgba(74, 195, 251, 0.081);">Filter</a>
+                                                <a href="#">Today</a>
+                                                <a href="#">This Month</a>
+                                                <a href="#">This Year</a>
+                                            </div>
+                                        </div>
+
                                         <i class='bx bx-dots-horizontal-rounded bx-md text-muted'></i>
                                     </div>
 

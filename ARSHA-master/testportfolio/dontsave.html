@@ -1,172 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <title>Simple Donut Chart</title>
+  <style>
 
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>Document</title>
+    /* web traffic */
+    .donut-chart {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      background: conic-gradient(
+        #00eaff 0% 20%,  
+        #2f00ff 0% 40%,     
+        #1cc88a 0% 65%,     
+        #f6c23e 65% 85%,     
+        #e74a3b 85% 100%     
+      );
+      position: relative;
+      margin: 20px auto;
+    }
 
-    <style>
-        /* 26/01:10 */
+    .donut-chart::before {
+      content: "";
+      position: absolute;
+      top: 25%;
+      left: 25%;
+      width: 50%;
+      height: 50%;
+      background: white;
+      border-radius: 50%;
+    }
 
-        /* 27, 2:00 */
-        body {
-            background-color: aliceblue;
-        }
+    .legend {
+      text-align: center;
+      font-family: sans-serif;
+    }
 
-        #line {
-            padding-left: 12px;
-            padding-right: 12px;
-        }
+    .legend div {
+      margin: 5px;
+    }
 
-        #circle-green,
-        #red, #blue, #lightblue, #yellow, #grey{
-            position: absolute;
-            left: 1.72rem;
-            bottom: 62px;
-        }
-    </style>
+    .box {
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      margin-right: 5px;
+    }
+
+    .search { background: #4e73df; }
+    .direct { background: #1cc88a; }
+    .email { background: #f6c23e; }
+    .union { background: #e74a3b; }
+  </style>
 </head>
-
 <body>
 
+  <div class="donut-chart"></div>
 
-    <div class="col-4">
-        <div class="card mb-4" style=" height: auto;">
-            <div class="card-body ">
-                <ul class="nav p-0 m-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">
-                            <h5>Recent Activity</h5>
-                        </a>
-                    </li>
-                    <p class="py-2">/</p>
-                    <li class="nav-item p-0 m0">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Today</a>
-                    </li>
-                </ul>
-                <div class="position-absolute top-0 end-0 p-2">
-                    <i class='bx bx-dots-horizontal-rounded bx-md text-muted'></i>
-                </div>
-
-                <div class="container p-3 ">
-                    <p class="card-text">
-                    <div class="activity">
-                        <div class="activity-item d-flex p-1">
-                            <div class="activite-label gap-3">32 min</div>
-                            <div class="divider position-relative">
-                                <i class='bx bx-minus bx-rotate-90 bx-lg' style='color:#aaa5a5' id="line"></i>
-                                <i class='bx bxs-circle' style='color:#04c800' id="circle-green"></i>
-
-                            </div>
-                            <div class="activity-content">
-                                Quia quae rerum <a href="#" class="fw-bold text-dark">explicabo
-                                    officiis</a>
-                                beatae
-                            </div>
-                        </div>
-
-                        <div class="activity-item d-flex">
-                            <div class="activite-label gap-3">56 min</div>
-                            <div class="divider position-relative">
-                                <i class='bx bx-minus bx-rotate-90 bx-lg' style='color:#aaa5a5' id="line"></i>
-                                <i class='bx bxs-circle' style='color:#c30101' id="red"></i>
-                            </div>
-                            <div class="activity-content">
-                                Voluptatem blanditiis blanditiis eveniet
-                            </div>
-                        </div>
-
-                        <div class="activity-item d-flex">
-                            <div class="activite-label ps-2 gap3">2 hrs</div>
-                            <div class="divider position-relative">
-                                <i class='bx bx-minus bx-rotate-90 bx-lg' style='color:#aaa5a5' id="line"></i>
-                                <i class='bx bxs-circle' style='color:blue' id="blue"></i>
-                            </div>
-                            <div class="activity-content">
-                                Voluptates corrupti molestias voluptatem
-                            </div>
-                        </div>
-
-                        <div class="activity-item d-flex">
-                            <div class="activite-label ps-1 gap-3">1 day</div>
-                            <div class="divider position-relative">
-                                <i class='bx bx-minus bx-rotate-90 bx-lg' style='color:#aaa5a5' id="line"></i>
-                                <i class='bx bxs-circle' style='color:#4ac3fb' id="lightblue"></i>
-                            </div>
-                            <div class="activity-content">
-                                Tempore autem saepe <a href="#" class="fw-bold text-dark">occaecati
-                                    voluptatem</a> tempore
-                            </div>
-                        </div>
-
-                        <div class="activity-item d-flex">
-                            <div class="activite-label ps-0 gap-3">2 days</div>
-                            <div class="divider position-relative">
-                                <i class='bx bx-minus bx-rotate-90 bx-lg p-0' style='color:#aaa5a5' id="line"></i>
-                                <i class='bx bxs-circle' style='color:#fffb05' id="yellow"></i>
-                            </div>
-                            <div class="activity-content">
-                                Est sit eum reiciendis exercitationem
-                            </div>
-                        </div>
-
-                        <div class="activity-item d-flex">
-                            <div class="activite-label ps-1 gap-3">4 weeks</div>
-                            <div class="divider position-relative">
-                                <i class='bx bx-minus bx-rotate-90 bx-lg p-0 ' style='color:#aaa5a5' id="line"></i>
-                                <i class='bx bxs-circle' style='color:grey' id="grey"></i>
-                            </div>
-                            <div class="activity-content">
-                                Dicta dolorem harum nulla eius. Ut quidem quidem sit quas
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <!-- budget -->
-
-        <div class="card mb-4" style=" height: auto;">
-            <div class="card-body">
-                <ul class="nav p-0 m-0">
-                    <div class="position-absolute top-0 end-0 p-2">
-                        <i class='bx bx-dots-horizontal-rounded bx-md text-muted'></i>
-                    </div>
-
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">
-                            <h5>Budget Report</h5>
-                        </a>
-                    </li>
-                    <p class="py-2">/</p>
-                    <li class="nav-item p-0 m0">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">This
-                            Month</a>
-                    </li>
-                </ul>
-                <img src="budgetreportNA.png" alt="">
-            </div>
-        </div>
-
-
-
-
-
-
-
-        <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-            crossorigin="anonymous"></script>
+  <div class="legend">
+    <div><span class="box search"></span> Search Engine</div>
+    <div><span class="box direct"></span> Direct</div>
+    <div><span class="box email"></span> Email</div>
+    <div><span class="box union"></span> Union Ads</div>
+  </div>
 
 </body>
-
 </html>

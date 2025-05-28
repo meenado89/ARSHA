@@ -12,3 +12,12 @@ faq
 <i class='bx bxs-log-in' style='color:#ffffff' ></i> Log in
 <i class='bx bxs-error-circle'></i> error 404
 <i class='bx bx-file-blank' style='color:#ffffff' ></i> blank
+  
+
+  Table
+  #	Customer	Product	Price	Status
+#2457	Brandon Jacob	At praesentium minu	$64	Approved
+#2049	Ashleigh Langosh	At recusandae consectetur	$147	Approved
+#2147	Bridie Kessler	Blanditiis dolor omnis similique	$47	Pending
+#2644	Raheem Lehner	Sunt similique distinctio	$165	Approved
+#2644	Angus Grady	Ut voluptatem id earum et	$67	Rejected
