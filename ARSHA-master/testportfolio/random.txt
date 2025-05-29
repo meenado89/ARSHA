@@ -21,3 +21,19 @@ faq
 #2147	Bridie Kessler	Blanditiis dolor omnis similique	$47	Pending
 #2644	Raheem Lehner	Sunt similique distinctio	$165	Approved
 #2644	Angus Grady	Ut voluptatem id earum et	$67	Rejected
+
+
+<div class="heading " style="padding-top: 6rem;">
+            <h2><b>
+                    Dashboard
+                </b></h2>
+            <ul class="nav p-0 m-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <span class="py-2">/</span>
+                <li class="nav-item p-0 m0">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Dashboard</a>
+                </li>
+            </ul>
+        </div>
