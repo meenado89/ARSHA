@@ -1,4 +1,5 @@
 cart <i class='bx bx-cart-alt'></i>
+gift <i class='bx bx-gift' style='color:#e5ff00'  ></i>
 User  <i class='bx bx-user' ></i>
 serch <i class='bx bx-search' ></i>
 truck <i class='bx bxs-truck' ></i>
