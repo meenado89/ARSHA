@@ -12,7 +12,7 @@ map <i class='bx bx-map'></i>
 cart <i class='bx bx-cart-add' ></i>
 eye/show <i class='bx bxs-show'></i>
 facebook <i class='bx bxl-facebook-circle' ></i>
-insta <i class='bx bxl-instagram-alt' ></i>  <i class='bx bxl-instagram' ></i>
+insta   <i class='bx bxl-instagram' ></i>
  ticktok <i class='bx bxl-tiktok'></i>
  youtube <i class='bx bxl-youtube' ></i>
  pintrest <i class='bx bxl-pinterest' ></i>
