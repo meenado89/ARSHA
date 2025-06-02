@@ -16,7 +16,7 @@
             background-color: #f5f6f8;
             overflow: hidden;
             padding: 0;
-            height: 3rem;
+            height: 2.5rem;
             background-color: #8c0d4f;
             flex-direction: column;
 
@@ -27,14 +27,15 @@
             align-items: center;
             justify-items: center;
             display: flex;
-            /* animation: slide 20s steps(4) ; */
-            animation: stepScroll 3s steps(4) infinite;
+            /*animation: slide 20s steps(4) ;
+            */animation: stepScroll 23s  0.3s   infinite;
             gap: 5rem;
             font-size: 24px;
             color: white;
             margin-bottom: 1rem;
             overflow: hidden;
-        }
+           
+}
 
         .brandcarousel-track .vertical {
             margin: 0;
@@ -53,7 +54,11 @@
         .brandcarousel-track img {
             height: 38px;
             transition: all 0.1s ease-in-out;
-        }
+            -webkit-transition: all 0.1s ease-in-out;
+            -moz-transition: all 0.1s ease-in-out;
+            -ms-transition: all 0.1s ease-in-out;
+            -o-transition: all 0.1s ease-in-out;
+}
 
         .brandcarousel-track img:hover {
             transform: scale(1.05);
