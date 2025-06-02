@@ -21,8 +21,8 @@ insta   <i class='bx bxl-instagram' ></i>
  paypal <i class='bx bxl-paypal' ></i>
  apple <i class='bx bxl-apple'></i>
  store <i class='bx bx-store' ></i>
- <i class='bx bx-money' ></i>
-
+ money<i class='bx bx-money' ></i>
+ check/tick  <i class="bx bx-check" style="color:#570808;" /> 
 
 
 

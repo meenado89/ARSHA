@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="firstjava.css">
+    <title>Document</title>
+</head>
+ <!-- 2/06/02:25  -->
+<body>
+     <p></p>
+    <div class="main-container">
+        <section class="button">
+            <button id="demo">Click </button>
+        </section>
+    
+    <p>My first JavaScript Page</p>
+    <p></p>
+    </div>
+    <div class="first">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae harum nihil atque totam
+        molestiae dicta numquam excepturi officia, amet sed.</div>
+    <script>
+        document.getElementsByTagName("p")[0].innerHTML = "Main Page"
+        document.getElementsByTagName("p")[0].style.fontSize="42px"
+        document.getElementsByTagName("p")[0].style.textAlign="center"
+        document.getElementsByClassName("main-container")[0].style.textAlign="center"
+        document.getElementsByClassName("first")[0].style.fontSize="24px"
+      
+        document.getElementById("demo").style.backgroundColor = "lightblue"
+        document.getElementsByClassName("first")[0].style.backgroundImage = 'url("cityview.jpg")'
+        document.getElementsByClassName("first")[0].style.height = "350px"
+        document.getElementsByClassName("first")[0].style.marginBottom="3rem"
+        document.getElementsByTagName("p")[1].style.color = "salmon"
+        document.getElementsByTagName("p")[1].style.backgroundColor="lightblue"
+        document.getElementsByTagName("p")[1].style.paddingTop="10rem"
+        document.getElementsByTagName("p")[1].style.height="12pc"
+        document.getElementsByTagName("p")[1].style.fontSize="26px"
+        document.getElementsByTagName("p")[1].style.textAlign="center"
+        document.getElementsByTagName("p")[1].innerHTML = "Hello World"
+    </script>
+    <script src="firstjava.js"></script>
+</body>
+
+</html>

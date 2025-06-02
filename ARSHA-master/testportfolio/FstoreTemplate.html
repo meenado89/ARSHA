@@ -16,9 +16,7 @@
     <style>
         /* 30may/01:20 */
         /* 2june/00:20 */
-
-
-           </style>
+    </style>
 </head>
 
 <body>
@@ -35,7 +33,7 @@
                                     (234) 567-890</span></p>
 
                             <div class="mailheader d-flex">
-                                <i class='bx bx-envelope bx-sm pt-2 p-2'></i>
+                                <i class='bx bx-envelope bx-sm pt-2 p-2' style="color: #8c0d4f;"></i>
                                 <p class="navbar-brand mb-0 h1 fw-normal" style="color: #8c0d4f;">
                                     support@example.com</span></p>
                             </div>
@@ -46,33 +44,49 @@
                     <!-- end -->
                     <div class="col-6 ">
                         <div class="trackheader d-flex">
-                            <i class='bx bxs-truck bx-sm pt-1 p-2'></i>
+                            <i class='bx bxs-truck bx-sm pt-1 p-2' style="color: #8c0d4f;"></i>
                             <p class="navbar-brand mb-0 h1 fw-normal" style="color: #8c0d4f;"> Track Order</p>
-                            <div class="languageheader d-flex">
-                                <i class='bx bx-comment-dots bx-sm pt-2 p-2'></i>
-                                <p class="navbar-brand mb-0 h1 fw-normal" style="color: #8c0d4f;">English</p>
-                                <!-- creat drop -->
 
+                            <!-- lang. drop -->
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle mb-0 h1 fw-normal pt-1 " type="button" id="dropdownMenuButton1"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class='bx bx-comment-dots bx-sm '></i>English
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><i class="bx bx-check" style="color:#570808;"></i> <a class="dropdown-item" href="#"> English</a> </li>
+                                    <!-- icon not working properly -->
+                                    <li><a class="dropdown-item" href="#">Hindi</a></li>
+                                    <li><a class="dropdown-item" href="#">Frasncais</a></li>
+                                </ul>
                             </div>
 
-                            <div class="trackheader d-flex">
-                                <div class="languageheader d-flex">
-                                    <i class='bx bx-dollar bx-sm pt-2 p-2'></i>
-                                    <p class="navbar-brand mb-0 h1 fw-normal" style="color: #8c0d4f;">USD</p>
-                                    <!-- creat drop -->
+                            <!-- usd drop -->
 
-                                </div>
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle  mb-0 h1 fw-normal pt-1 " type="button" id="dropdownMenuButton1"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class='bx bx-dollar bx-sm '></i>USD
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">USD</a> </li>
+                                    <!-- icon not working properly -->
+                                    <li><a class="dropdown-item" href="#">EUR</a></li>
+                                    <li><a class="dropdown-item" href="#">GBP</a></li>
+                                </ul>
                             </div>
                         </div>
-
-
-
-
                     </div>
-
-
                 </div>
+
+
+
+
             </div>
+
+
+        </div>
+        </div>
         </div>
 
     </nav>
@@ -132,7 +146,7 @@
         </div>
     </nav>
 
-    <!-- Brand carousel -->
+    <!-- Brand carousel not looking rite just yet-->
     <div class="brandcarousel-container">
         <div class="brand-wrapper">
             <div class="brandcarousel-track ">
