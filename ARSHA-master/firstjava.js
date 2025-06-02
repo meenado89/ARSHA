@@ -1,0 +1,16 @@
+document.write("My first JavaScript Page")
+console.log("first page")
+document.getElementsByClassName("first")[0].style.color = "white"
+document.getElementById("demo").style.width = "150px"
+document.getElementById("demo").style.height = "50px"
+document.getElementById("demo").style.fontSize = "2pc"
+document.getElementById("demo").style.padding = "0rem"
+document.getElementsByClassName("button")[0].style.paddingBottom = "3rem"
+document.getElementsByClassName("button")[0].style.paddingTop = "3rem"
+document.getElementsByClassName("button")[0].style.left = "12rem"
+document.getElementsByClassName("first")[0].style.textAlign = "center"
+document.getElementsByClassName("first")[0].style.paddingTop = "14rem"
+document.getElementsByClassName("button")[0].style.animation = "zoomMoveIn 2.80s ease-out forwards"
+document.getElementsByClassName("first")[0].style.backgroundRepeat = "no-repeat"
+document.getElementsByClassName("first")[0].style.backgroundImage = "cover"
+document.getElementsByClassName("first")[0].style.backgroundSize="100%"
