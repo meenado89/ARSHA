@@ -38,3 +38,7 @@
 
 }
 
+#demo:hover{
+    opacity: 0.6;
+    background-color: aqua;
+}

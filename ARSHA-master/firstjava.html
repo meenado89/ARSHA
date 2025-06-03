@@ -63,15 +63,19 @@
     </div>
     <div class="first">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae harum nihil atque totam
         molestiae dicta numquam excepturi officia, amet sed.</div>
+      
+    <!-- <button id="btn" onclick="abc()">Click Me</button> -->
+    <button id="btn">Click Me</button>
     <script>
         document.getElementsByTagName("p")[0].innerHTML = "Main Page"
         document.getElementsByTagName("p")[0].style.fontSize="42px"
         document.getElementsByTagName("p")[0].style.textAlign="center"
         document.getElementsByClassName("main-container")[0].style.textAlign="center"
         document.getElementsByClassName("first")[0].style.fontSize="24px"
-      
+        document.getElementById("demo").style.border="1pxffffffffffffffffffffffffffff solid #6cadc2"
+        document.getElementById("demo").style.borderRadius="22px"
         document.getElementById("demo").style.backgroundColor = "lightblue"
-        document.getElementsByClassName("first")[0].style.backgroundImage = 'url("cityview.jpg")'
+        document.getElementsByClassName("first")[0].style.backgroundImage = 'url("bg-8.webp")'
         document.getElementsByClassName("first")[0].style.height = "450px"
         document.getElementsByClassName("first")[0].style.marginBottom="3rem"
         document.getElementsByTagName("p")[1].style.color = "salmon"
@@ -81,6 +85,15 @@
         document.getElementsByTagName("p")[1].style.fontSize="26px"
         document.getElementsByTagName("p")[1].style.textAlign="center"
         document.getElementsByTagName("p")[1].innerHTML = "Hello World"
+        document.getElementById("btn").onclick=abc
+        document.getElementById("btn").onblur=def
+        function abc(){
+          this.style.backgroundColor="red"
+        }
+        function def(){
+          this.style.backgroundColor="blue"
+        }
+        
     </script>
     <script src="firstjava.js"></script>
 
