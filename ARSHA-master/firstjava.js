@@ -14,3 +14,5 @@ document.getElementsByClassName("button")[0].style.animation = "zoomMoveIn 2.80s
 document.getElementsByClassName("first")[0].style.backgroundRepeat = "no-repeat"
 document.getElementsByClassName("first")[0].style.backgroundImage = "cover"
 document.getElementsByClassName("first")[0].style.backgroundSize="100%"
+document.getElementsByTagName("p")[1].style.fontWeight="700"
+document.getElementsByTagName("p")[1].style.animation="loop 5s infinite linear" 
