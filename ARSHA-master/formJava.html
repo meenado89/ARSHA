@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="formjava.css">
+    <title>Java form</title>
+</head>
+<!-- 3/jun/3:20 -->
+<body>
+
+    <form class="row g-3 p-5 align-items-center" onsubmit="handleSubmit()">
+        <div class="col-auto">
+            <label for="staticEmail2" class="visually-hidden">Email</label>
+            <input type="text" class="form-control-plaintext" id="staticEmail2" name="Email" value="email@example.com">
+        </div>
+        <div class="col-auto">
+            <label for="inputPassword2" class="visually-hidden">Password</label>
+            <input type="password" class="form-control" id="inputPassword2" name="Password">
+        </div>
+        <div class="col-auto">
+            <button type="submit" class="btn btn-primary mb-3">Confirm identity</button>
+        </div>
+    </form>
+
+    <!-- form2 -->
+    <div class="form" onsubmit="handleSubmit()">
+        <div class="container-fluid w-50">
+            <div class="container">
+                <form class="row g-3">
+                    <div class="col-md-6">
+                        <label for="inputEmail4" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="inputEmail4">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputPassword4" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="inputPassword4">
+                    </div>
+                    <div class="col-12">
+                        <label for="inputAddress" class="form-label">Address</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                    </div>
+                    <div class="col-12">
+                        <label for="inputAddress2" class="form-label">Address 2</label>
+                        <input type="text" class="form-control" id="inputAddress2"
+                            placeholder="Apartment, studio, or floor">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputCity" class="form-label">City</label>
+                        <input type="text" class="form-control" id="inputCity">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="inputState" class="form-label">State</label>
+                        <select id="inputState" name="branch" class="form-select" onchange="handleChange()">
+                            <option selected>Choose...</option>
+                            <option>CSE</option>
+                            <option>IT</option>
+                            <option>ME</option>
+                        </select>
+                    </div>
+                    <div class="col-md-2">
+                        <label for="inputZip" class="form-label">Zip</label>
+                        <input type="text" class="form-control" id="inputZip">
+                    </div>
+                    <div class="col-12">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                            <label class="form-check-label" for="gridCheck">
+                                Check me out
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary">Sign in</button>
+                    </div>
+                </form>
+                <p id="demo"></p>
+
+
+
+            </div>
+        </div>
+    </div>
+    <!-- img-change -->
+
+    <div class="img-change">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row gy-4 ">
+                    <div class="col-6" id="first">
+                        <div class="card" style="width: 18rem;height: 28rem;">
+                            <img src="portfolio-1.webp" class="card-img-top" id="first-img" alt="p1" type="image"
+                                ">
+
+                        </div>
+
+
+
+                    </div>
+                    <div class="col-6">
+                        <div class="card" style="width: 18rem;">
+                            <img src="portfolio-3.webp" class="card-img-top" alt="...">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+
+    <script>
+        document.getElementById("first-img").onclick = handleclick
+        document.getElementById("first-img").onblur= handleclick1
+        function handleclick() {
+            const img = document.getElementById("first-img")
+            img.src="portfolio-3.webp"
+
+        }
+        function handleclick1() {
+            const img = document.getElementById("first-img")
+            img.src="portfolio-1.webp"
+
+        }
+
+
+
+
+        // document.getElementById("first-img").onmouseover= abc
+        // document.getElementById("first-img").onmouseout = def
+        // function abc() {
+        //     this.style.backgroundImage = 'url("portfolio-3.webp")'
+        // }
+        // function def() {
+        //     this.style.backgroundImage = 'url("portfolio-1.webp")'
+        // }
+    </script>
+
+
+
+
+
+    <script src="formJava.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
