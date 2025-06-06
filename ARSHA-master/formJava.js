@@ -8,7 +8,7 @@ function handleSubmit() {
 
 function handleChange() {
   let branch = document.getElementById("inputState").value
-  document.getElementById("demo").innerHTML = "you are from" + branch
+  document.getElementById("demo2").innerHTML = "you are from" + branch
 }
 // function onclick(){
 //   var img=document.getElementById("first")
@@ -17,4 +17,11 @@ function handleChange() {
 //  }
 
 
-
+//    function handle(){
+//     let password = document.getElementById("inputPassword4").value
+//     if (password.length === 0) {
+//         document.getElementsById("pass-alert").innerHTML = "field can not be empty"
+//     } else {
+//         document.write(password)
+//     }
+//    }

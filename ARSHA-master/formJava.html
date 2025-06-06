@@ -13,6 +13,7 @@
     <title>Java form</title>
 </head>
 <!-- 3/jun/3:20 -->
+
 <body>
 
     <form class="row g-3 p-5 align-items-center" onsubmit="handleSubmit()">
@@ -30,17 +31,19 @@
     </form>
 
     <!-- form2 -->
-    <div class="form" onsubmit="handleSubmit()">
+    <div class="form">
         <div class="container-fluid w-50">
             <div class="container">
-                <form class="row g-3">
+                <form class="row g-3" onsubmit="handle()">
                     <div class="col-md-6">
                         <label for="inputEmail4" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="inputEmail4">
+                        <input type="email" name="email" class="form-control" id="inputEmail4">
+                        <p id="demo"></p>
                     </div>
                     <div class="col-md-6">
                         <label for="inputPassword4" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="inputPassword4">
+                        <input type="password" name="password" class="form-control" id="inputPassword4">
+                        <p id="pass-alert"></p>
                     </div>
                     <div class="col-12">
                         <label for="inputAddress" class="form-label">Address</label>
@@ -63,6 +66,7 @@
                             <option>IT</option>
                             <option>ME</option>
                         </select>
+                        <p id="demo2"></p>
                     </div>
                     <div class="col-md-2">
                         <label for="inputZip" class="form-label">Zip</label>
@@ -80,7 +84,7 @@
                         <button type="submit" class="btn btn-primary">Sign in</button>
                     </div>
                 </form>
-                <p id="demo"></p>
+
 
 
 
@@ -92,47 +96,66 @@
     <div class="img-change">
         <div class="container-fluid">
             <div class="container">
-                <div class="row gy-4 ">
+                <div class="row  ">
                     <div class="col-6" id="first">
-                        <div class="card" style="width: 18rem;height: 28rem;">
-                            <img src="portfolio-1.webp" class="card-img-top" id="first-img" alt="p1" type="image"
-                                ">
+                        <div class="card" style="width: 18rem;">
+                            <img src="portfolio-1.webp" class="card-img-top" id="first-img" alt="p1" type="image" ">
 
                         </div>
 
 
 
                     </div>
-                    <div class="col-6">
-                        <div class="card" style="width: 18rem;">
-                            <img src="portfolio-3.webp" class="card-img-top" alt="...">
+                    <div class=" col-6" id="second">
+                            <div class="card" style="width: 18rem;">
+                                <img src="portfolio-3.webp" class="card-img-top" alt="p2" id="second-img" type="image">
 
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+
         </div>
-
-
     </div>
 
+    <!-- numbers -->
+    <!-- <div class="number-main">
+        <div class="containerfluid">
+            <div class="container">
+                <div class="col-md-6">
+                    <label for="inputnumber" class="number"></label>
+                    <input type="numbers" class="text-numbers" id="inputnumber">
+                </div>
+            </div>
+        </div>
+    </div> -->
 
 
 
+
+
+
+
+
+
+    <!-- script -->
 
     <script>
-        document.getElementById("first-img").onclick = handleclick
-        document.getElementById("first-img").onblur= handleclick1
+        document.getElementById("first-img").onmouseover = handleclick
+        document.getElementById("first-img").onmouseleave = handleclick1
         function handleclick() {
             const img = document.getElementById("first-img")
-            img.src="portfolio-3.webp"
+            img.src = "portfolio-3.webp"
 
         }
         function handleclick1() {
             const img = document.getElementById("first-img")
-            img.src="portfolio-1.webp"
+            img.src = "portfolio-1.webp"
 
         }
+
 
 
 
@@ -149,6 +172,7 @@
 
 
 
+    <script src="op.js"></script>
 
 
     <script src="formJava.js"></script>
