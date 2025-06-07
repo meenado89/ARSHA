@@ -156,7 +156,17 @@
 
         }
 
+        //    email
 
+        function handle() {
+    let email = document.getElementById("inputEmail4").value
+    if (email.length === 0) {
+        document.getElementById("demo").innerHTML = "Email can not be empty"
+    } else {
+        document.write(email)
+    }
+
+   }
 
 
 

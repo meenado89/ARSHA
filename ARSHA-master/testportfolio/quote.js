@@ -22,12 +22,12 @@ const quotes = [
   }
 ];
 
-// Get DOM elements
+
 const quoteText = document.getElementById("quote");
 const authorText = document.getElementById("author");
 const generateBtn = document.getElementById("generate-btn");
 
-// Function to generate a random quote
+// Function generate random quote
 function generateQuote() {
   const randomIndex = Math.floor(Math.random() * quotes.length);
   const selectedQuote = quotes[randomIndex];

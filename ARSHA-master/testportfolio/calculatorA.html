@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>onchange Calculator</title>
+
+    <style>
+        body {
+            background-color: rgba(174, 172, 2, 0.143);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .card {
+            background-color: #454343;
+            border-radius: 24px;
+            box-shadow: 5px 5px 20px hwb(0 0% 100% / 0.176);
+            overflow: hidden;
+
+        }
+
+        .card-body {
+            left: 2rem;
+            position: relative;
+        }
+
+        .btn-container {
+            left: 4.5rem;
+            flex-direction: row;
+        }
+
+        #btn {
+            width: 2rem;
+            height: 2rem;
+            text-align: center;
+            border-radius: 50%;
+            box-shadow: 3px 3px 6px #ffffff2d;
+            margin-bottom: 3rem;
+            font-size: 20px;
+
+        }
+
+        #btn:hover {
+            background-color: #454343;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Calculator">
+        <div class="card" style="width: 24rem; height: auto;">
+            <div class="card-body">
+                <h2 class="card-title text-white pb-5 px-5 ">Calculator</h2>
+                <label type="number" id="number1" onchange="calculate()" class="mb-5 "
+                    style="height: 3rem; width: 14rem;">
+                    <div class="dropdown  ">
+                        <select class="btn  dropdown-toggle border border-2 text-white mb-5" type="button"
+                            data-bs-toggle="dropdown" aria-expanded="false" id="number1"
+                            style="height: 3rem; width: 12rem;">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+
+                        </select>
+                        <!-- second -->
+                        <label type="number" id="number2"  class="mb-5 "
+                            style="height: 3rem; width: 12rem;">
+                            <div class="dropdown  ">
+                                <select class="btn  dropdown-toggle border border-2 text-white mb-5"  onchange="calculate()" type="button"
+                                     data-bs-toggle="dropdown" aria-expanded="false"
+                                    id="number2" style="height: 3rem; width: 12rem;">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+
+                                </select>
+
+                            </div>
+
+                            <!-- result -->
+                            <div class="result-container" style="width: 17rem;height: auto; ">
+                                <h2 class="result text-white mb-5"><b>Result:</b></h2>
+                            </div>
+                            <!-- button -->
+                            <div class="btn-container w-100">
+                                <button onclick="calculate('+')" id="btn">+</button>
+                                <button onclick="calculate('-')" id="btn">-</button>
+                                <button onclick="calculate('*')" id="btn">*</button>
+                                <button onclick="calculate('/')" id="btn">/</button>
+                                <button onclick="calculate('%')" id="btn">%</button>
+
+                            </div>
+
+                    </div>
+            </div>
+
+        </div>
+
+        <script>
+
+              function calculate(operator) {
+
+            let a = parseFloat(document.getElementById('number1').value);
+            let b = parseFloat(document.getElementById('number2').value);
+            let result;
+
+              }
+            
+
+
+
+
+            <!-- result -->
+            document.getElementsByClassName('result')[0].innerText = "Result: " + result;
+
+
+        </script>
+
+        <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>

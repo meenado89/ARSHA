@@ -2,15 +2,7 @@ let myNameIMeenakshi = "2"
 // let b=prompt("Enter b:")
 // document.writeln(b)
 // document.write((a < b) | (a == b))
-function handle() {
-    let email = document.getElementById("inputEmail4").value
-    if (email.length === 0) {
-        document.getElementById("demo").innerHTML = "Email can not be empty"
-    } else {
-        document.write(email)
-    }
 
-   }
 
 let a=4
 let b="14"

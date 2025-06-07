@@ -119,7 +119,7 @@
             let result;
 
             if (isNaN(n1) || isNaN(n2)) {
-                result = "Please enter both numbers!";
+                result = "Enter both numbers!";
             } else {
                 if (operator === '+') result = n1 + n2;
                 else if (operator === "-") result = n1 - n2;
@@ -134,11 +134,9 @@
 
         }
         function clearCalculator() {
-                // Clear the input fields
                 document.getElementById('number1').value = '';
                 document.getElementById('number2').value = '';
-
-                // Reset the result text
+         
                 document.getElementsByClassName('result')[0].innerText = 'Result';
             }
 
