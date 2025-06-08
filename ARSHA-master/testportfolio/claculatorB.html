@@ -10,7 +10,7 @@
 
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <style>
-         /* 7/6/01:15 */
+        /* 7/6/01:15 */
 
         body {
             background-color: rgba(174, 172, 2, 0.143);
@@ -43,7 +43,8 @@
             margin-bottom: 3rem;
             font-size: 20px;
         }
-        #btn:hover{
+
+        #btn:hover {
             background-color: #454343;
             color: white;
         }
@@ -53,59 +54,29 @@
 <body>
     <div class="main-page ">
         <div class="container ">
-
-            <!-- <div class="card ">
+            <!-- second -->
+            <div class="card" style="width: 24rem;">
                 <div class="card-body">
-                    <div class="card-text ">
-                        <h3 class="text-white">First Calculator</h3>
+                    <h2 class="card-title text-white pb-5 px-5 ">Calculator</h2>
+                    <input type="number" id="number1" placeholder="Input number" class="mb-5 "
+                        style="height: 3rem; width: 14rem;">
+                    <input type="number" id="number2" placeholder="Input number" class="mb-5"
+                        style="height: 3rem; width: 14rem;">
 
-                        <input type="number" id="number1" placeholder="Input number" class="mb-5 "
-                            style="height: 3rem; width: 14rem;">
-                        <input type="number" id="number2" placeholder="Input number" class="mb-5"
-                            style="height: 3rem; width: 14rem;">
+                    <!-- result -->
+                    <div class="result-container" style="width: 17rem;height: auto; ">
+                        <h2 class="result text-white mb-5"><b>Result:</b></h2>
+                    </div>
+                    <!-- button -->
+                    <button onclick="calculate('+')" id="btn">+</button>
+                    <button onclick="calculate('-')" id="btn">-</button>
+                    <button onclick="calculate('*')" id="btn">*</button>
+                    <button onclick="calculate('/')" id="btn">/</button>
+                    <button onclick="calculate('%')" id="btn">%</button>
+                    <button onclick="clearCalculator()" id="btn">C</button>
 
-                    </div> -->
-
-            <!-- result -->
-            <!-- <h2 class="result text-white mb-5"><b>Result</b></h2> -->
-
-            <!-- btn
-                    <div class="button">
-                        <button onclick="calculate('+')" id="btn">+</button>
-                        <button onclick="calculate('-')" id="btn">-</button>
-                        <button onclick="calculate('*')" id="btn">*</button>
-                        <button onclick="calculate('/')" id="btn">/</button>
-                        <button onclick="calculate('%')" id="btn">%</button>
-
-                    </div> -->
-
-        </div>
-    </div>
-
-    </div>
-    </div>
-
-    <!-- second -->
-    <div class="card" style="width: 24rem;">
-        <div class="card-body">
-            <h2 class="card-title text-white pb-5 px-5 ">Calculator</h2>
-            <input type="number" id="number1" placeholder="Input number" class="mb-5 "
-                style="height: 3rem; width: 14rem;">
-            <input type="number" id="number2" placeholder="Input number" class="mb-5"
-                style="height: 3rem; width: 14rem;">
-
-            <!-- result -->
-            <div class="result-container" style="width: 17rem;height: auto; ">
-                <h2 class="result text-white mb-5"><b>Result:</b></h2>
+                </div>
             </div>
-            <!-- button -->
-            <button onclick="calculate('+')" id="btn">+</button>
-            <button onclick="calculate('-')" id="btn">-</button>
-            <button onclick="calculate('*')" id="btn">*</button>
-            <button onclick="calculate('/')" id="btn">/</button>
-            <button onclick="calculate('%')" id="btn">%</button>
-            <button onclick="clearCalculator()" id="btn">C</button>
-
         </div>
     </div>
 
@@ -130,15 +101,15 @@
 
             document.getElementsByClassName('result')[0].innerText = "Result: " + result;
 
-            
+
 
         }
         function clearCalculator() {
-                document.getElementById('number1').value = '';
-                document.getElementById('number2').value = '';
-         
-                document.getElementsByClassName('result')[0].innerText = 'Result';
-            }
+            document.getElementById('number1').value = '';
+            document.getElementById('number2').value = '';
+
+            document.getElementsByClassName('result')[0].innerText = 'Result';
+        }
 
 
 
