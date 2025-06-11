@@ -1,1 +1,3 @@
-if (r == 1 || c==1) continue;
+else if (j === l - 1 - i) {
+            process.stdout.write("*");
+        }
