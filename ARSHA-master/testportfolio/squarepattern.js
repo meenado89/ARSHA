@@ -1,4 +1,4 @@
-10/06/ 02:35
+// 10/06/ 02:35
 
 
 
@@ -116,3 +116,18 @@ for (let c = 0; c < a; c++) {
     console.log();
 }
  
+let op="*"
+switch(op){
+   case "+":
+    console.log(2+5)
+    break
+    case "-":
+        console.log(2-1)
+        break
+    case "/":
+        console.log(4/2)
+        break
+    default:
+        console.log("Invalid color")
+        break
+}
