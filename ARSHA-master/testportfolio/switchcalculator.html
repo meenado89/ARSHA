@@ -63,7 +63,7 @@
                         style="height: 3rem; width: 14rem;">
 
                     <!-- result -->
-                    <div class="result-container" style="width: 17rem;height: auto; ">
+                    <div class="result-container" id="resultBox" style="width: 17rem;height: auto; ">
                         <h2 class="result text-white mb-5"><b>Result:</b></h2>
                     </div>
                     <!-- button -->
@@ -110,8 +110,18 @@
             }
 
             document.getElementsByClassName('result')[0].innerText = "Result: " + result;
-             
+
             clearTimer = setTimeout(clearCalculator, 9000);
+
+
+            const resultBox = document.getElementsByClassName('result')[0];
+            resultBox.innerText = result;
+
+            if (result.toString().length > 10) {
+                resultBox.style.fontSize = '0.9rem';
+            } else {
+                resultBox.style.fontSize = '1.2rem'; // default size
+            }
 
 
         }
@@ -123,7 +133,7 @@
         }
 
 
-        
+
 
     </script>
 

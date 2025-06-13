@@ -31,7 +31,7 @@
 //     }
 //     console.log()
 // }   
-// completely missd r2 ans 3
+// completely missed r2 ans 3
 
 // for (let c = 0; c < 4; c++) {
 //     for (let r = 0; r < 4; r++) {
@@ -128,6 +128,6 @@ switch(op){
         console.log(4/2)
         break
     default:
-        console.log("Invalid color")
+        console.log("Invalid number")
         break
 }
