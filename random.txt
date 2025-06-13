@@ -1,0 +1,68 @@
+cart <i class='bx bx-cart-alt'></i>
+gift <i class='bx bx-gift' style='color:#e5ff00'  ></i>
+User  <i class='bx bx-user' ></i>
+serch <i class='bx bx-search' ></i>
+truck <i class='bx bxs-truck' ></i>
+dollar <i class='bx bx-dollar'></i>
+heart <i class='bx bx-heart' ></i>
+menu <i class='bx bx-menu' ></i>
+arrow <i class='bx bx-right-arrow-alt'></i>
+clock <i class='bx bx-time-five'></i>
+map <i class='bx bx-map'></i> 
+cart <i class='bx bx-cart-add' ></i>
+eye/show <i class='bx bxs-show'></i>
+facebook <i class='bx bxl-facebook-circle' ></i>
+insta   <i class='bx bxl-instagram' ></i>
+ ticktok <i class='bx bxl-tiktok'></i>
+ youtube <i class='bx bxl-youtube' ></i>
+ pintrest <i class='bx bxl-pinterest' ></i>
+ meta <i class='bx bxl-meta'></i>
+ credit card <i class='bx bx-credit-card'></i>
+ paypal <i class='bx bxl-paypal' ></i>
+ apple <i class='bx bxl-apple'></i>
+ store <i class='bx bx-store' ></i>
+ money<i class='bx bx-money' ></i>
+ check/tick  <i class="bx bx-check" style="color:#570808;"></i> 
+
+
+
+
+<i class='bx bx-grid-alt'></i>  dashboard
+<i class='bx bxs-food-menu'></i> componentes
+<i class='bx bx-food-menu' style='color:#ffffff' ></i> forms
+<i class='bx bx-detail bx-flip-vertical' style='color:#ffffff' ></i> Table
+<i class='bx bx-bar-chart-square' style='color:#ffffff' ></i> Charts
+<i class='bx bx-diamond' style='color:#ffffff' ></i> Icons
+<i class='bx bx-user' style='color:#ffffff' ></i> profile 
+faq F.A.Q. <i class='bx bx-question-mark'></i> add border
+<i class='bx bx-envelope' style='color:#ffffff' ></i> contact
+
+<i class='bx bxs-spreadsheet'></i> Register
+<i class='bx bxs-log-in' style='color:#ffffff' ></i> Log in
+<i class='bx bxs-error-circle'></i> error 404
+<i class='bx bx-file-blank' style='color:#ffffff' ></i> blank
+  
+
+  Table
+  #	Customer	Product	Price	Status
+#2457	Brandon Jacob	At praesentium minu	$64	Approved
+#2049	Ashleigh Langosh	At recusandae consectetur	$147	Approved
+#2147	Bridie Kessler	Blanditiis dolor omnis similique	$47	Pending
+#2644	Raheem Lehner	Sunt similique distinctio	$165	Approved
+#2644	Angus Grady	Ut voluptatem id earum et	$67	Rejected
+
+
+<div class="heading " style="padding-top: 6rem;">
+            <h2><b>
+                    Dashboard
+                </b></h2>
+            <ul class="nav p-0 m-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <span class="py-2">/</span>
+                <li class="nav-item p-0 m0">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Dashboard</a>
+                </li>
+            </ul>
+        </div>

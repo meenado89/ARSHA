@@ -1,0 +1,91 @@
+ body {
+     margin-top: 0%;
+     margin-bottom: 0%;
+ }
+
+ .main-category {
+     background-color: #f8f4f6;
+     height: auto;
+     padding-bottom: 3rem;
+     margin-bottom: 3rem;
+     margin-top: 4rem;
+ }
+
+ #dropdownMenuButton1 {
+     color: #8c0d4f;
+     font-size: 20px;
+ }
+
+ /* brand-carousel */
+
+ .brandcarousel-container {
+     background-color: #f5f6f8;
+     overflow: hidden;
+     padding: 0;
+     height: 3rem;
+     background-color: #8c0d4f;
+     flex-direction: column;
+
+ }
+
+ .brandcarousel-track {
+     justify-content: center;
+     align-items: center;
+     justify-items: center;
+     display: flex;
+     /*animation: slide 20s steps(4) ;
+     */animation: stepScroll 15s infinite linear;
+     gap: 5rem;
+     font-size: 24px;
+     color: white;
+     margin-bottom: 1rem;
+     overflow: hidden;
+}
+
+ .brandcarousel-track .vertical {
+     margin: 0;
+     padding: 0;
+ }
+
+ .brandcarousel-track p {
+     margin: 0;
+     padding: 0.3rem 0;
+     height: 3rem;
+     line-height: 3rem;
+     font-size: 18px;
+ }
+
+
+ .brandcarousel-track img {
+     height: 38px;
+     transition: all 0.1s ease-in-out;
+ }
+
+ .brandcarousel-track img:hover {
+     transform: scale(1.05);
+     cursor: pointer;
+ }
+
+ .brandcarousel-container:hover .brandcarousel-track {
+     animation-play-state: paused;
+ }
+
+ @keyframes stepScroll {
+     from {
+         transform: translateY(0);
+     }
+
+     to {
+         transform: translateY(-100%);
+         -webkit-transform: translateY(-100%);
+         -moz-transform: translateY(-100%);
+         -ms-transform: translateY(-100%);
+         -o-transform: translateY(-100%);
+     }
+ }
+
+ .brand-wrapper {
+     overflow: hidden;
+     cursor: pointer;
+     /* pause on hover */
+ }
