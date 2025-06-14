@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Test</title>
+</head>
+
+<body>
+
+    <!-- msg change -->
+    <div class="c-msg">
+        <p id="msg-change"> button isn't clicked</p>
+        <button onclick="showMessage()">click to change</button>
+    </div>
+    <br><br>
+    <!-- toggle inner text and color -->
+    <div class="toggle">
+
+        <button id="btn" style="height: 5rem; width: 2.5rem;" onmouseover="ToggleButton()">
+            ON
+        </button>
+
+    </div>
+
+    <br><br>
+
+    <!-- color change -->
+    <div class="color-change">
+        <button class="color" id="maincolor" ondblclick="toggleColor()">Double click</button>
+
+
+    </div>
+
+
+
+    <br>
+    <div class="fontChange">
+        <p class="text-change">Change Font Size of the Text when button is clicked</p>
+        <button id="fontChange" onclick="changeFont()">Font change</button>
+
+    </div>
+
+    <br><br>
+
+    <!-- dark theme -->
+
+    <div class="mode-change">
+        <button class="Themecolor" id="mode" ondblclick="mode()">Dark Mode</button>
+
+
+    </div>
+
+    <script>
+
+        function showMessage() {
+            document.getElementById("msg-change").innerHTML = " button was clicked!";
+        }
+
+
+        // function changeColor() {
+        //     document.body.style.backgroundColor = 'lightblue';
+        // }
+
+        // toggle color on double click
+        function toggleColor() {
+            const button = document.getElementById("maincolor");
+            if (button.style.backgroundColor === 'lightblue') {
+                button.style.backgroundColor = 'lightgreen';
+            } else {
+                button.style.backgroundColor = 'lightblue';
+            }
+        }
+
+        document.getElementById("main-color").onclick = changeColor;
+        document.getElementById("main-color").onblur = changeColor1;
+
+        function changeColor() {
+            document.body.style.backgroundColor = 'lightblue';
+        }
+
+        function changeColor1() {
+            document.body.style.backgroundColor = 'lightgreen';
+        }
+
+
+
+
+        // mouseover 
+        // function ToggleButton() {
+        //     const button = document.getElementById("btn");
+        //     if (button.innerHTML === "ON") {
+        //         button.innerHTML = "OFF";
+        //         button.style.backgroundColor = "blue";
+        //     } else {
+        //         button.innerHTML = "ON";
+        //         button.style.backgroundColor = "gray";
+        //     }
+        // }
+
+
+        function ToggleButton() {
+            const button = document.getElementById("btn");
+            if (button.innerHTML === "ON") {
+                button.innerHTML = "OFF";
+                button.style.backgroundColor = "blue";
+            } else {
+                button.innerHTML = "ON";
+                button.style.backgroundColor = "gray";
+            }
+        }
+
+        const button = document.getElementById("btn");
+
+        button.addEventListener("mouseover", function () {
+            button.style.backgroundColor = "lightblue";
+        });
+
+        button.addEventListener("mouseleave", function () {
+            if (button.innerHTML === "ON") {
+                button.style.backgroundColor = "gray";
+            } else {
+                button.style.backgroundColor = "blue";
+            }
+        });
+
+
+
+        function changeFont() {
+            document.querySelector(".text-change").style.fontSize = "2rem";
+        }
+
+
+        // dark mode
+        function mode() {
+            const body = document.body;
+            body.classList.toggle("dark-mode");
+            if (body.classList.contains("dark-mode")) {
+                body.style.backgroundColor = "black";
+                body.style.color = "white";
+            } else {
+                body.style.backgroundColor = "white";
+                body.style.color = "black";
+            }
+        }
+
+
+    </script>
+
+</body>
+
+</html>
