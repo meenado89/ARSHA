@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My First JS Page</title>
+</head>
+<body>
+  <!-- greeting -->
+    <h2 id="greetText">Hello!</h2>
+<button onclick="changeText()">Change Greeting</button>
+  
+  <!-- changes -->
+   <h2 id="styleText">Watch me change colors!</h2>
+<button onclick="changeStyle()">Change Style</button>
+<br><br>
+<hr>
+  <!-- change img -->
+   <img id="magicImg" src="IMG1.png" alt="Placeholder Image">
+<br>
+<button onclick="changeImage()">Change Image</button>
+ 
+<!-- user input -->
+ <input type="text" id="username" placeholder="Enter your name">
+<button onclick="sayName()">Greet Me</button>
+<h3 id="greetingText"></h3>
+
+  
+  
+  
+  
+  
+  
+  <!-- greeting Script -->
+  <script>
+  function changeText() {
+    document.getElementById("greetText").innerText = "Namaste, Meenakshi!";
+  }
+</script>
+
+<!-- changes Script -->
+ <script>
+  function changeStyle() {
+    document.getElementById("styleText").style.color = "purple";
+    document.getElementById("styleText").style.fontSize = "30px";
+    document.getElementById("styleText").style.backgroundColor = "lightyellow";
+  }
+</script>
+
+<!-- change img Script -->
+ <script>
+  function changeImage() {
+    document.getElementById("magicImg").src = "https://placekitten.com/200/200";
+  }
+</script>
+
+<!-- user input Script -->
+ <script>
+  function sayName() {
+    let name = document.getElementById("username").value;
+    document.getElementById("greetingText").innerText = "Hello, " + name + "!";
+  }
+</script>
+
+
+
+
+</body>
+</html>

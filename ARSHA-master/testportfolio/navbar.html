@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Template</title>
+
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+  <style>
+    body {
+      background-color: aliceblue;
+    }
+
+    .navbar {
+      background-color: white;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      padding: 0.5rem 1rem;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar-text {
+      color: #012970;
+      font-size: 24px;
+      font-weight: 800;
+      margin-left: 0.5rem;
+    }
+
+    .navbar-logo img {
+      vertical-align: middle;
+    }
+
+    #adminimg img {
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .form-control:focus {
+      box-shadow: none;
+      border-color: #012970;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container-fluid">
+      <div class="row align-items-center w-100">
+        <!-- Logo -->
+        <div class="col-3 d-flex align-items-center">
+          <div class="navbar-logo d-flex align-items-center">
+            <img src="adminlogo.png" alt="adminlogo" height="35" />
+            <span class="navbar-text">Nice Admin</span>
+          </div>
+        </div>
+
+        <!-- Menu Button -->
+        <div class="col-auto">
+          <a class="btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+            <i class="bx bx-menu bx-md text-dark"></i>
+          </a>
+
+          <!-- Offcanvas Menu -->
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <p>This can include links, navigation, or widgets.</p>
+              <div class="dropdown mt-3">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+                  Dropdown
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Search -->
+        <div class="col-3">
+          <form class="d-flex align-items-center">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+            <i class="bx bx-search bx-sm text-muted"></i>
+          </form>
+        </div>
+
+        <!-- Notification & Messages -->
+        <div class="col-2 d-flex justify-content-end align-items-center gap-3">
+          <!-- Bell Dropdown -->
+          <div class="dropdown">
+            <a class="text-decoration-none text-dark dropdown-toggle" href="#" id="notifDropdown" data-bs-toggle="dropdown">
+              <i class="bx bx-bell bx-md"></i>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="notifDropdown">
+              <li><a class="dropdown-item" href="#">Notification 1</a></li>
+              <li><a class="dropdown-item" href="#">Notification 2</a></li>
+            </ul>
+          </div>
+
+          <!-- Message Dropdown -->
+          <div class="dropdown">
+            <a class="text-decoration-none text-dark dropdown-toggle" href="#" id="msgDropdown" data-bs-toggle="dropdown">
+              <i class="bx bx-message-square-detail bx-md"></i>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="msgDropdown">
+              <li><a class="dropdown-item" href="#">Message 1</a></li>
+              <li><a class="dropdown-item" href="#">Message 2</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Profile -->
+        <div class="col-md-3 d-flex justify-content-end align-items-center gap-2" id="adminimg">
+          <img src="adminprofile-img.jpg" alt="adminimg" width="48" height="48" />
+          <div class="dropdown">
+            <button class="btn dropdown-toggle" type="button" id="profileDropdown" data-bs-toggle="dropdown">
+              K. Anderson
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="profileDropdown">
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><a class="dropdown-item" href="#">Settings</a></li>
+              <li><a class="dropdown-item" href="#">Logout</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JS Events Demo</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 2rem;
+      background-color: #f0f8ff;
+    }
+    .box {
+      margin-bottom: 1rem;
+    }
+    button, input, select {
+      font-size: 1rem;
+      padding: 0.5rem 1rem;
+      margin-top: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Event Examples in JS</h2>
+
+  <!-- CLICK -->
+  <div class="box">
+    <button id="clickBtn">Click Me</button>
+  </div>
+
+  <!-- MOUSEOVER + MOUSEOUT -->
+  <div class="box">
+    <button id="hoverBtn">Hover Over Me</button>
+  </div>
+
+  <!-- FOCUS + BLUR -->
+  <div class="box">
+    <input type="text" id="focusInput" placeholder="Click inside me">
+  </div>
+
+  <!-- CHANGE -->
+  <div class="box">
+    <select id="selectBox">
+      <option value="">-- Choose an option --</option>
+      <option value="Cat">Cat</option>
+      <option value="Dog">Dog</option>
+      <option value="Dragon">Dragon</option>
+    </select>
+  </div>
+
+  <script>
+    // CLICK
+    document.getElementById("clickBtn").onclick = function() {
+      this.style.backgroundColor = "salmon";
+      this.innerHTML = "Clicked!";
+    };
+
+    // MOUSEOVER
+    document.getElementById("hoverBtn").onmouseover = function() {
+      this.style.backgroundColor = "lightgreen";
+      this.innerText = "You're hovering!";
+    };
+
+    // MOUSEOUT
+    document.getElementById("hoverBtn").onmouseout = function() {
+      this.style.backgroundColor = "";
+      this.innerText = "Hover Over Me";
+    };
+
+    // FOCUS
+    document.getElementById("focusInput").onfocus = function() {
+      this.style.backgroundColor = "lightyellow";
+    };
+
+    // BLUR
+    document.getElementById("focusInput").onblur = function() {
+      this.style.backgroundColor = "white";
+    };
+
+    // CHANGE
+    document.getElementById("selectBox").onchange = function() {
+      alert("You selected: " + this.value);
+    };
+
+    // LOAD
+    window.onload = function() {
+      console.log("Page loaded successfully!");
+    };
+  </script>
+
+</body>
+</html>
