@@ -32,7 +32,7 @@
             position: relative;
         }
 
-        #btn {
+        .btn {
             width: 2.5rem;
             height: 2.5rem;
             text-align: center;
@@ -41,10 +41,11 @@
             margin-right: 4px;
             margin-bottom: 3rem;
             font-size: 20px;
+            border: 1px solid rgb(22, 22, 22);
         }
 
-        #btn:hover {
-            background-color: #454343;
+        .btn:hover {
+            background-color: rgb(61, 61, 61);
             color: white;
         }
     </style>
@@ -63,16 +64,17 @@
                         style="height: 3rem; width: 14rem;">
 
                     <!-- result -->
-                    <div class="result-container" id="resultBox" style="width: 17rem;height: auto; ">
+                    <div class="result-container mb-3 p-2" id="resultBox" style="width: 17rem; height:3.5rem; ">
                         <h2 class="result text-white mb-5"><b>Result:</b></h2>
                     </div>
+                    <br><br>
                     <!-- button -->
-                    <button onclick="calculate('+')" id="btn">+</button>
-                    <button onclick="calculate('-')" id="btn">-</button>
-                    <button onclick="calculate('*')" id="btn">*</button>
-                    <button onclick="calculate('/')" id="btn">/</button>
-                    <button onclick="calculate('%')" id="btn">%</button>
-                    <button onclick="clearCalculator()" id="btn">C</button>
+                    <button onclick="calculate('+')" class="btn">+</button>
+                    <button onclick="calculate('-')" class="btn">-</button>
+                    <button onclick="calculate('*')" class="btn">*</button>
+                    <button onclick="calculate('/')" class="btn">/</button>
+                    <button onclick="calculate('%')" class="btn">%</button>
+                    <button onclick="clearCalculator()" class="btn">C</button>
 
                 </div>
             </div>
@@ -111,16 +113,18 @@
 
             document.getElementsByClassName('result')[0].innerText = "Result: " + result;
 
-            clearTimer = setTimeout(clearCalculator, 9000);
+            // clearTimer = setTimeout(clearCalculator, 9000);
 
 
             const resultBox = document.getElementsByClassName('result')[0];
-            resultBox.innerText = result;
+            resultBox.innerText = Result;
 
+
+            // result fontsize change
             if (result.toString().length > 10) {
-                resultBox.style.fontSize = '0.9rem';
+                resultBox.style.fontSize = '22px';
             } else {
-                resultBox.style.fontSize = '1.2rem'; // default size
+                resultBox.style.fontSize = '36px'; 
             }
 
 
@@ -131,8 +135,6 @@
             document.getElementsByClassName('result')[0].innerText = 'Result';
 
         }
-
-
 
 
     </script>
