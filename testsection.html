@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Smooth Brand Carousel</title>
+
+    <style>
+        /* 24/25 */
+        .brandcarousel-container {
+            background-color: #f5f6f8;
+            overflow: hidden;
+            padding: 1.5rem 0;
+        }
+
+        .brandcarousel-track {
+
+            display: flex;
+
+            animation: slide 20s steps(10) infinite;
+            gap: 5rem;
+
+        }
+
+        .brandcarousel-track img {
+            height: 38px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .brandcarousel-track img:hover {
+            transform: scale(1.05);
+            cursor: pointer;
+        }
+
+        .brandcarousel-container:hover .brandcarousel-track {
+            animation-play-state: paused;
+        }
+
+        @keyframes slide {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        .brand-wrapper {
+            overflow: hidden;
+            margin-left: 12rem;
+            margin-right: 15rem;
+        }
+
+        .mainimgcontainer {
+
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+            justify-content: center;
+        }
+
+        .image-wrapper {
+            position: relative;
+            height: auto;
+            display: block;
+        }
+
+        .image-wrapper img {
+            width: 100%;
+            height: auto;
+            display: block;
+
+        }
+
+        .imagetext {
+            position: absolute;
+            width: 100%;
+
+            top: 7.5rem;
+            color: rgb(0, 0, 0);
+            display: none;
+
+        }
+
+        .imagetext h4 {
+            color: #314870;
+        }
+
+        .image-wrapper:hover .imagetext {
+            display: block;
+            background-color: rgba(177, 79, 79, 0.685);
+            font-size: 16px;
+          font-weight: 100;
+        }
+
+        .nav {
+            padding-top: 60px;
+            left: 50px;
+            right: 20px;
+
+        }
+
+        .text-container {
+            flex-direction: row;
+            top: 12rem;
+        }
+
+
+        .mainlink-container{
+            position: relative;
+            height: auto;
+            display: block;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="brandcarousel-container">
+        <div class="brand-wrapper">
+            <div class="brandcarousel-track ">
+                <!-- First set of logos -->
+                <img src="carousel-1.webp" alt="brand1">
+                <img src="carousel-2.webp" alt="brand2">
+                <img src="carousel-3.webp" alt="brand3">
+                <img src="carousel-4.webp" alt="brand4">
+                <img src="carousel-5.webp" alt="brand5">
+                <img src="carousel-6.webp" alt="brand6">
+                <img src="carousel-7.webp" alt="brand7">
+                <img src="carousel-8.webp" alt="brand8">
+
+                <!-- Repeat logos to create infinite loop illusion -->
+                <img src="carousel-1.webp" alt="brand1">
+                <img src="carousel-2.webp" alt="brand2">
+                <img src="carousel-3.webp" alt="brand3">
+                <img src="carousel-4.webp" alt="brand4">
+                <img src="carousel-5.webp" alt="brand5">
+                <img src="carousel-6.webp" alt="brand6">
+                <img src="carousel-7.webp" alt="brand7">
+                <img src="carousel-8.webp" alt="brand8">
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="image-container1">
+        <div class="image-wrapper">
+            <img src="portfolio-portrait-1.webp" alt="image1" style="width: 280px; height: 400px; margin-bottom: 18px;">
+            <div class="imagetext p-2" style="top: 17.8rem; width: 280px; ">
+               
+                    <div class="container">
+                        <div class="row" style="width: 18rem;left: 0%;">
+                            <div class="col-7 ">
+                                <h4>App</h4>
+                                <p>description of image1</p>
+                            </div>
+                            <div class="col-3  py-4">
+                                <i class='bx bx-link bx-sm'></i>
+                                <i class='bx bx-zoom-in bx-sm'></i>
+                            </div>
+                        </div>
+                    </div>
+                
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="image-container1">
+        <div class="image-wrapper">
+            <img src="portfolio-portrait-1.webp" alt="image1" style="width: 280px; height: 400px; margin-bottom: 18px;">
+
+            <div class="mainlink-container">
+                <div class="container-fluid">
+                    <div class="container">
+                        <div class="row" style="width: 25rem;left: 0%;">
+                            <div class="col-7 g-0 m-0">
+                                <h4>App</h4>
+                                <p>description of image1</p>
+                            </div>
+                            <div class="col-3 g-0 m-0">
+                                <i class='bx bx-link bx-sm'></i>
+                                <i class='bx bx-zoom-in bx-sm'></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

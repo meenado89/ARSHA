@@ -1,0 +1,11 @@
+div {
+    text-align: center;
+    background-image: radial-gradient(#f0e4a2, #aeaef7, #b9e9b9);
+    float: right;
+}
+
+#one {
+    text-align: center;
+    background-image: linear-gradient(#f7b3ee, #b3ecea, #c6f5c6);
+    float: right;
+}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        /* clear button */
+        body {
+            background-color: rgba(174, 172, 2, 0.143);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .card {
+            background-color: #454343;
+            border-radius: 24px;
+            box-shadow: 5px 5px 20px hwb(0 0% 100% / 0.176);
+            overflow: hidden;
+
+        }
+
+        .card-body {
+            left: 3rem;
+            position: relative;
+        }
+
+        .btn {
+            width: 2.5rem;
+            height: 2.5rem;
+            text-align: center;
+            border-radius: 50%;
+            box-shadow: 3px 3px 6px #ffffff2d;
+            margin-right: 4px;
+            margin-bottom: 3rem;
+            font-size: 20px;
+            border: 1px solid rgb(22, 22, 22);
+        }
+
+        .btn:hover {
+            background-color: rgb(61, 61, 61);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-page ">
+        <div class="container ">
+            <!-- second -->
+            <div class="card" style="width: 24rem;">
+                <div class="card-body">
+                    <h2 class="card-title text-white pb-5 px-5 ">Calculator</h2>
+                    <input type="number" id="number1" placeholder="Input number" class="mb-5 "
+                        style="height: 3rem; width: 14rem;">
+                    <input type="number" id="number2" placeholder="Input number" class="mb-5"
+                        style="height: 3rem; width: 14rem;">
+
+                    <!-- result -->
+                    <div class="result-container mb-3 p-2" id="resultBox" style="width: 17rem; height:3.5rem; ">
+                        <h2 class="result text-white mb-5"><b>Result:</b></h2>
+                    </div>
+                    <br><br>
+                    <!-- button -->
+                    <button onclick="calculate('+')" class="btn">+</button>
+                    <button onclick="calculate('-')" class="btn">-</button>
+                    <button onclick="calculate('*')" class="btn">*</button>
+                    <button onclick="calculate('/')" class="btn">/</button>
+                    <button onclick="calculate('%')" class="btn">%</button>
+                    <button onclick="clearCalculator()" class="btn">C</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Script -->
+    <script>
+        function calculate(operator) {
+
+            const n1 = parseFloat(document.getElementById('number1').value);
+            const n2 = parseFloat(document.getElementById('number2').value);
+            let result;
+
+
+            if (isNaN(n1) || isNaN(n2)) {
+                result = "Enter both numbers!";
+            } else {
+                switch (operator) {
+                    case "+": result = n1 + n2;
+                        break;
+                    case "-": result = n1 - n2;
+                        break;
+
+                    case "*": result = n1 * n2;
+                        break;
+                    case "/": result = n1 / n2;
+                        break;
+                    case "%": result = n1 % n2;
+                        break;
+                    default: result = "Invalid input"
+                        break;
+                }
+            }
+
+            document.getElementsByClassName('result')[0].innerText = "Result: " + result;
+
+            // clearTimer = setTimeout(clearCalculator, 9000);
+
+
+            const resultBox = document.getElementsByClassName('result')[0];
+            resultBox.innerText = Result;
+
+
+            // result fontsize change
+            if (result.toString().length > 10) {
+                resultBox.style.fontSize = '22px';
+            } else {
+                resultBox.style.fontSize = '36px'; 
+            }
+
+
+        }
+        function clearCalculator() {
+            document.getElementById('number1').value = '';
+            document.getElementById('number2').value = '';
+            document.getElementsByClassName('result')[0].innerText = 'Result';
+
+        }
+
+
+    </script>
+
+
+
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

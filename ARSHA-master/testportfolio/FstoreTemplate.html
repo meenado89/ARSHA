@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="Fstorestyle.css">
+
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>FashioStore Template</title>
+
+    <style>
+        /* 30may/01:20 */
+        /* 2june/00:20 */
+    </style>
+</head>
+
+<body>
+    <!-- topnavHeading -->
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <!-- start -->
+                    <div class="col-6 ">
+                        <div class="contactheader d-flex">
+                            <i class='bx bxs-phone bx-sm pt-2 p-2'></i>
+                            <p class="navbar-brand mb-0 h1 fw-normal">Customer Support: <span style="color: #8c0d4f;">+1
+                                    (234) 567-890</span></p>
+
+                            <div class="mailheader d-flex">
+                                <i class='bx bx-envelope bx-sm pt-2 p-2' style="color: #8c0d4f;"></i>
+                                <p class="navbar-brand mb-0 h1 fw-normal" style="color: #8c0d4f;">
+                                    support@example.com</span></p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <!-- end -->
+                    <div class="col-6 ">
+                        <div class="trackheader d-flex">
+                            <i class='bx bxs-truck bx-sm pt-1 p-2' style="color: #8c0d4f;"></i>
+                            <p class="navbar-brand mb-0 h1 fw-normal" style="color: #8c0d4f;"> Track Order</p>
+
+                            <!-- lang. drop -->
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle mb-0 h1 fw-normal pt-1 " type="button" id="dropdownMenuButton1"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class='bx bx-comment-dots bx-sm '></i>English
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><i class="bx bx-check" style="color:#570808;"></i> <a class="dropdown-item" href="#"> English</a> </li>
+                                    <!-- icon not working properly -->
+                                    <li><a class="dropdown-item" href="#">Hindi</a></li>
+                                    <li><a class="dropdown-item" href="#">Frasncais</a></li>
+                                </ul>
+                            </div>
+
+                            <!-- usd drop -->
+
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle  mb-0 h1 fw-normal pt-1 " type="button" id="dropdownMenuButton1"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class='bx bx-dollar bx-sm '></i>USD
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">USD</a> </li>
+                                    <!-- icon not working properly -->
+                                    <li><a class="dropdown-item" href="#">EUR</a></li>
+                                    <li><a class="dropdown-item" href="#">GBP</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+
+        </div>
+        </div>
+        </div>
+
+    </nav>
+
+    <!-- STORE NAVBAR -->
+    <nav class="navbar navbar-light bg-white pb-0">
+        <div class="container-fluid w-100">
+            <div class="container w-100">
+                <div class="row ">
+                    <div class="col-6">
+                        <a class="navbar-brand fw-bolder gap-0 m-0 p-0">
+                            <h1>Fashion <span style="color: #8c0d4f;">Store</span> </h1>
+                        </a>
+
+                    </div>
+                    <div class="col-6">
+                        <div class="search-container d-flex">
+
+                            <form class="px-4">
+                                <i class='bx bx-search bx-md'></i>
+                                <!-- when clicked box opens below vertical scroll -->
+                                <!-- <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search"> -->
+                                <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+                            </form>
+
+                            <!-- account -->
+                            <a class="navbar-brand fw-bolder px-4 gap-1 m-0 p-0 d-flex">
+                                <i class='bx bx-user bx-md'></i>
+                                <p>Account</p>
+                            </a>
+
+                            <a class="navbar-brand fw-bolder px-4  m-0 p-0 d-flex">
+                                <i class='bx bx-heart bx-md'></i>
+                                <p>wishlist</p>
+
+                                <!-- round number on top right -->
+                            </a>
+
+                            <a class="navbar-brand fw-bolder px-4 m-0 p-0 d-flex">
+                                <i class='bx bx-cart-alt bx-md'></i>
+                                <p>cart</p>
+
+                                <!-- round number on top right -->
+                            </a>
+
+                            <a class="navbar-brand fw-bolder px-4 m-0 p-0 d-flex">
+                                <i class='bx bx-menu bx-md'></i>
+
+
+                                <!-- drop menu on hover -->
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <hr class="w-100">
+            </div>
+        </div>
+    </nav>
+
+    <!-- Brand carousel not looking rite just yet-->
+    <div class="brandcarousel-container">
+        <div class="brand-wrapper">
+            <div class="brandcarousel-track ">
+                <!-- First set of logos -->
+                <div class="vertical ">
+                    <p><i class='bx bx-gift' style='color:#e5ff00'></i>Flash Sale Upto 70% off on selected items</p>
+                    <p><i class='bx bxs-truck bx-sm' style='color:#e5ff00'></i>free shipping on oders over $50</p>
+                    <p> <i class='bx bx-money-withdraw bx-sm' style=' color:#e5ff00'></i>30 Day Money Back Guarantee</p>
+                    <p><i class='bx bx-credit-card bx-sm' style='color:#e5ff00'></i>20% off on your first order use
+                        code- 20 OFF</p>
+                    <!--  logo Repeat-->
+
+                    <p><i class='bx bx-gift' style='color:#e5ff00'></i>Flash Sale Upto 70% off on selected items</p>
+                    <p><i class='bx bxs-truck bx-sm' style='color:#e5ff00'></i>free shipping on oders over $50</p>
+                    <p> <i class='bx bx-money-withdraw bx-sm' style=' color:#e5ff00'></i>30 Day Money Back Guarantee</p>
+                    <p><i class='bx bx-credit-card bx-sm' style='color:#e5ff00'></i>20% off on your first order use
+                        code- 20 OFF</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- herosection -->
+    <section class="mainhero-container">
+        <div class="container-fluid">
+            <div class="container">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="shoe.webp" class="d-block w-25" alt="shoe">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="bag.webp" class="d-block w-25" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="backpack.webp" class="d-block w-25" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- promo cards -->
+
+    <section class="promo-container">
+        <div class="container-fluid mt-5">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Special title treatment</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional
+                                    content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Special title treatment</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional
+                                    content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Special title treatment</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to
+                                    additional content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Special title treatment</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to
+                                    additional content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        </div>
+
+
+    </section>
+
+    <!-- category-card -->
+    <div class="main-category">
+        <div class="container-fluid">
+            <div class="container">
+                <ul class="nav justify-content-center pt-5">
+                    <li class="nav-item">
+                        <a class="nav-link active text-dark fw-bolder " data-bs-toggle="tab" aria-current="page"
+                            href="#section2">Shop Men</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark fw-bolder " data-bs-toggle="tab" href="#section1">Shop Women</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark fw-bolder" data-bs-toggle="tab" href="#section3">Shop
+                            Accessories</a>
+                    </li>
+                </ul>
+
+                <div class="tab-content mt-4">
+
+                    <!-- Section 1 Cards -->
+                    <div class="tab-pane fade show active" id="section1">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-body">Card 1</div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-body">Card 2</div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-body">Card 3</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Section 2 Cards -->
+                    <div class="tab-pane fade" id="section2">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-body">Card A</div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-body">Card B</div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-body">Card C</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Section 3 Cards -->
+                    <div class="tab-pane fade" id="section3">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-body">Card X</div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-body">Card Y</div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-body">Card Z</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Best Sellers -->
+    <div class="seller-main pt-3 pb-3 p-5">
+        <div class="heading pb-3">
+            <h1><b>Best Sellers</b></h1>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-6">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Special title treatment</h5>
+                                    <p class="card-text">With supporting text below as a natural lead-in to additional
+                                        content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Special title treatment</h5>
+                                    <p class="card-text">With supporting text below as a natural lead-in to additional
+                                        content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Special title treatment</h5>
+                                    <p class="card-text">With supporting text below as a natural lead-in to additional
+                                        content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Special title treatment</h5>
+                                    <p class="card-text">With supporting text below as a natural lead-in to additional
+                                        content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="col-6">
+
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Special title treatment</h5>
+                                    <p class="card-text">With supporting text below as a natural lead-in to
+                                        additional content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Special title treatment</h5>
+                                    <p class="card-text">With supporting text below as a natural lead-in to
+                                        additional content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Special title treatment</h5>
+                                    <p class="card-text">With supporting text below as a natural lead-in to
+                                        additional content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Special title treatment</h5>
+                                    <p class="card-text">With supporting text below as a natural lead-in to
+                                        additional content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- product list -->
+    <div class="Plist-container pb-5" style="margin-bottom: 3rem;">
+        <ul class="nav nav-pills justify-content-center p-5 pb-3">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">All</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Clothing</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Accessories</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link d" href="#" tabindex="-1" aria-disabled="true">Electronics</a>
+            </li>
+        </ul>
+
+        <div class="container-fluid ">
+            <div class="row">
+                <div class="col-6">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Special title treatment</h5>
+                                    <p class="card-text">With supporting text below as a natural lead-in to additional
+                                        content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Special title treatment</h5>
+                                    <p class="card-text">With supporting text below as a natural lead-in to additional
+                                        content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Special title treatment</h5>
+                                    <p class="card-text">With supporting text below as a natural lead-in to additional
+                                        content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Special title treatment</h5>
+                                    <p class="card-text">With supporting text below as a natural lead-in to additional
+                                        content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="col-6">
+
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Special title treatment</h5>
+                                    <p class="card-text">With supporting text below as a natural lead-in to
+                                        additional content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Special title treatment</h5>
+                                    <p class="card-text">With supporting text below as a natural lead-in to
+                                        additional content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Special title treatment</h5>
+                                    <p class="card-text">With supporting text below as a natural lead-in to
+                                        additional content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Special title treatment</h5>
+                                    <p class="card-text">With supporting text below as a natural lead-in to
+                                        additional content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- product button -->
+            <section class="productbtn-container pt-5 w-25 position-relative">
+                <button type="button" class="btn btn-lg pb-1 pt-1 m-0 g-0 border-0 text-white p-3 pt-2 pb-2"
+                    style=" position: absolute; left: 44rem;  top: 3rem; background-color: #8c0d4f; border-radius: 30px; width: 14rem; height: 3rem; ">
+                    View All product<i class='bx bx-right-arrow-alt text-white'></i> </button>
+            </section>
+        </div>
+    </div>
+
+    <!-- top fotter -->
+
+    <footer id="footer" class="footer pt-5 " style="background-color: aliceblue;">
+        <div class="footer-main">
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer-widget footer-about">
+                            <a href="FstoreTemplate.html" class="logo">
+                                <span class="sitename text-dark fw-bolder">FashionStore</span>
+                            </a>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in nibh vehicula,
+                                facilisis magna ut, consectetur lorem. Proin eget tortor risus.</p>
+
+                            <div class="social-links mt-4">
+                                <h5>Connect With Us</h5>
+                                <div class="social-icons">
+                                    <a href="#" aria-label="Facebook"><i class='bx bxl-facebook-circle bx-sm'></i></a>
+                                    <a href="#" aria-label="Instagram"> <i class='bx bxl-instagram bx-sm'></i></a>
+                                    <a href="#" aria-label="Twitter"><i class='bi bi-twitter-x bx-sm'></i></a>
+                                    <a href="#" aria-label="TikTok"><i class='bx bxl-tiktok bx-sm'></i></a>
+                                    <a href="#" aria-label="Pinterest"><i class='bx bxl-pinterest bx-sm'></i></a>
+                                    <a href="#" aria-label="YouTube"><i class='bx bxl-youtube bx-sm'></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-6 col-sm-6">
+                        <div class="footer-widget">
+                            <h4>Shop</h4>
+                            <ul class="footer-links">
+                                <li><a href="category.html">New Arrivals</a></li>
+                                <li><a href="category.html">Bestsellers</a></li>
+                                <li><a href="category.html">Women's Clothing</a></li>
+                                <li><a href="category.html">Men's Clothing</a></li>
+                                <li><a href="category.html">Accessories</a></li>
+                                <li><a href="category.html">Sale</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-6 col-sm-6">
+                        <div class="footer-widget">
+                            <h4>Support</h4>
+                            <ul class="footer-links">
+                                <li><a href="support.html">Help Center</a></li>
+                                <li><a href="account.html">Order Status</a></li>
+                                <li><a href="shiping-info.html">Shipping Info</a></li>
+                                <li><a href="return-policy.html">Returns &amp; Exchanges</a></li>
+                                <li><a href="#">Size Guide</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer-widget">
+                            <h4>Contact Information</h4>
+                            <div class="footer-contact">
+                                <div class="contact-item">
+                                    <i class="bi bi-geo-alt"></i>
+                                    <span>123 Fashion Street, New York, NY 10001</span>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="bi bi-telephone"></i>
+                                    <span>+1 (555) 123-4567</span>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="bi bi-envelope"></i>
+                                    <span>hello@example.com</span>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="bi bi-clock"></i>
+                                    <span>Monday-Friday: 9am-6pm<br>Saturday: 10am-4pm<br>Sunday: Closed</span>
+                                </div>
+                            </div>
+
+                            <div class="app-buttons mt-4">
+                                <a href="#" class="app-btn">
+                                    <i class="bi bi-apple"></i>
+                                    <span>App Store</span>
+                                </a>
+                                <a href="#" class="app-btn">
+                                    <i class="bi bi-google-play"></i>
+                                    <span>Google Play</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <!--bottom footer  -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row gy-3 align-items-center">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="copyright">
+                            <p>© <span>Copyright</span> <strong class="sitename">MyWebsite</strong>. All Rights
+                                Reserved.</p>
+                        </div>
+                        <div class="credits mt-1">
+                            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-12">
+                        <div
+                            class="d-flex flex-wrap justify-content-lg-end justify-content-center align-items-center gap-4">
+                            <div class="payment-methods">
+                                <div class="payment-icons">
+                                    <i class="bi bi-credit-card" aria-label="Credit Card"></i>
+                                    <i class="bi bi-paypal" aria-label="PayPal"></i>
+                                    <i class="bi bi-apple" aria-label="Apple Pay"></i>
+                                    <i class="bi bi-google" aria-label="Google Pay"></i>
+                                    <i class="bi bi-shop" aria-label="Shop Pay"></i>
+                                    <i class="bi bi-cash" aria-label="Cash on Delivery"></i>
+                                </div>
+                            </div>
+
+                            <div class="legal-links">
+                                <i class='bx bx-credit-card bx-md text-muted'></i>
+                                <i class='bx bxl-paypal bx-md text-muted'></i>
+                                <i class='bx bxl-apple bx-md text-muted'></i>
+                                <i class='bx bx-store bx-md text-muted'></i>
+
+                                <a href="tos.html">Terms</a>
+                                <a href="privacy.html">Privacy</a>
+                                <a href="tos.html">Cookies</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

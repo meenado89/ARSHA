@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="firstjava.css">
+    <title>Java Document</title>
+</head>
+ <!-- 2/06/02:25  -->
+<body>
+      <!-- navBar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+     <p></p>
+    <div class="main-container">
+        <section class="button">
+            <button id="demo">Click </button>
+        </section>
+    
+    <p>My first JavaScript Page</p>
+    <p></p>
+    </div>
+    <div class="first">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae harum nihil atque totam
+        molestiae dicta numquam excepturi officia, amet sed.</div>
+      
+    <!-- <button id="btn" onclick="abc()">Click Me</button> -->
+    <button id="btn">Click Me</button>
+    <script>
+        document.getElementsByTagName("p")[0].innerHTML = "Main Page"
+        document.getElementsByTagName("p")[0].style.fontSize="42px"
+        document.getElementsByTagName("p")[0].style.textAlign="center"
+        document.getElementsByClassName("main-container")[0].style.textAlign="center"
+        document.getElementsByClassName("first")[0].style.fontSize="24px"
+        document.getElementById("demo").style.border="1pxffffffffffffffffffffffffffff solid #6cadc2"
+        document.getElementById("demo").style.borderRadius="22px"
+        document.getElementById("demo").style.backgroundColor = "lightblue"
+        document.getElementsByClassName("first")[0].style.backgroundImage = 'url("bg-8.webp")'
+        document.getElementsByClassName("first")[0].style.height = "450px"
+        document.getElementsByClassName("first")[0].style.marginBottom="3rem"
+        document.getElementsByTagName("p")[1].style.color = "salmon"
+        document.getElementsByTagName("p")[1].style.backgroundColor="lightblue"
+        document.getElementsByTagName("p")[1].style.paddingTop="10rem"
+        document.getElementsByTagName("p")[1].style.height="12pc"
+        document.getElementsByTagName("p")[1].style.fontSize="26px"
+        document.getElementsByTagName("p")[1].style.textAlign="center"
+        document.getElementsByTagName("p")[1].innerHTML = "Hello World"
+        document.getElementById("btn").onclick=abc
+        document.getElementById("btn").onblur=def
+        function abc(){
+          this.style.backgroundColor="red"
+        }
+        function def(){
+          this.style.backgroundColor="blue"
+        }
+        
+    </script>
+    <script src="firstjava.js"></script>
+
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
