@@ -96,6 +96,63 @@
  #userAccount:hover,
  #wishlist:hover,
  #cart:hover {
-    cursor: pointer;
+     cursor: pointer;
      color: #8c0d4f;
+ }
+
+ /* promocards */
+
+ .promo-container {
+     padding-top: 3rem;
+     padding-bottom: 3rem;
+
+ }
+
+ .promocard-container {
+     height: auto;
+     position: relative;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 2rem;
+ }
+
+ .promo-card {
+     width: 22rem;
+     border-radius: 16px;
+     font-family: system-ui, sans-serif;
+     font-size: 1.5rem;
+     height: 33rem;
+
+ }
+
+
+ .side-img {
+     position: relative;
+     left: 10rem;
+     z-index: 1;
+     align-items: end;
+     display: flex;
+     justify-content: end;
+     left: 3rem;
+     bottom: 4.2rem;
+     overflow: hidden;
+ }
+
+
+ .promocontent h4 {
+     font-size: 2rem;
+     font-weight: 100;
+     margin-bottom: 1rem;
+     line-height: 1.2;
+     font-family: var("ubuntu", sans-serif);
+
+
+ }
+
+ /* category cards */
+ .main-category{
+    background-color: #f8f4f6;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
  }
