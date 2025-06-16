@@ -34,13 +34,14 @@
      justify-items: center;
      display: flex;
      /*animation: slide 20s steps(4) ;
-     */animation: stepScroll 15s infinite linear;
+     */
+     animation: stepScroll 15s infinite linear;
      gap: 5rem;
      font-size: 24px;
      color: white;
      margin-bottom: 1rem;
      overflow: hidden;
-}
+ }
 
  .brandcarousel-track .vertical {
      margin: 0;
@@ -88,4 +89,13 @@
      overflow: hidden;
      cursor: pointer;
      /* pause on hover */
+ }
+
+
+ /* account, wishlist cart hover nav-bar */
+ #userAccount:hover,
+ #wishlist:hover,
+ #cart:hover {
+    cursor: pointer;
+     color: #8c0d4f;
  }

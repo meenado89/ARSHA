@@ -24,9 +24,9 @@
     <nav class="navbar navbar-light bg-light">
         <div class="container-fluid">
             <div class="container">
-                <div class="row">
+                <div class="row ">
                     <!-- start -->
-                    <div class="col-6 ">
+                    <div class="col-6">
                         <div class="contactheader d-flex">
                             <i class='bx bxs-phone bx-sm pt-2 p-2'></i>
                             <p class="navbar-brand mb-0 h1 fw-normal">Customer Support: <span style="color: #8c0d4f;">+1
@@ -42,35 +42,35 @@
 
                     </div>
                     <!-- end -->
-                    <div class="col-6 ">
+                    <div class="col-6  ">
                         <div class="trackheader d-flex">
                             <i class='bx bxs-truck bx-sm pt-1 p-2' style="color: #8c0d4f;"></i>
                             <p class="navbar-brand mb-0 h1 fw-normal" style="color: #8c0d4f;"> Track Order</p>
 
                             <!-- lang. drop -->
                             <div class="dropdown">
-                                <button class="btn dropdown-toggle mb-0 h1 fw-normal pt-1 " type="button" id="dropdownMenuButton1"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    <i class='bx bx-comment-dots bx-sm '></i>English
+                                <button class="btn dropdown-toggle mb-0 h1 fw-normal pt-1 " type="button"
+                                    id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    </i>English
                                 </button>
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                    <li><i class="bx bx-check" style="color:#570808;"></i> <a class="dropdown-item" href="#"> English</a> </li>
-                                    <!-- icon not working properly -->
+                                    <li><a class="dropdown-item" href="#"> <i class="bx bx-check" style="color:#570808;"></i> English</a> </li>
                                     <li><a class="dropdown-item" href="#">Hindi</a></li>
                                     <li><a class="dropdown-item" href="#">Frasncais</a></li>
+                                    <li><a class="dropdown-item" href="#">Deutsch</a></li>
                                 </ul>
                             </div>
 
                             <!-- usd drop -->
 
                             <div class="dropdown">
-                                <button class="btn dropdown-toggle  mb-0 h1 fw-normal pt-1 " type="button" id="dropdownMenuButton1"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    <i class='bx bx-dollar bx-sm '></i>USD
+                                <button class="btn dropdown-toggle  mb-0 h1 fw-normal pt-1 " type="button"
+                                    id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    </i>USD
                                 </button>
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                    <li><a class="dropdown-item" href="#">USD</a> </li>
-                                    <!-- icon not working properly -->
+                                    <li><a class="dropdown-item" href="#"><i class="bx bx-check" style="color:#570808;"></i> USD</a> </li>
+                                  
                                     <li><a class="dropdown-item" href="#">EUR</a></li>
                                     <li><a class="dropdown-item" href="#">GBP</a></li>
                                 </ul>
@@ -96,55 +96,83 @@
         <div class="container-fluid w-100">
             <div class="container w-100">
                 <div class="row ">
-                    <div class="col-6">
+                    <div class="col-lg-4">
                         <a class="navbar-brand fw-bolder gap-0 m-0 p-0">
                             <h1>Fashion <span style="color: #8c0d4f;">Store</span> </h1>
                         </a>
 
                     </div>
-                    <div class="col-6">
-                        <div class="search-container d-flex">
+                    <div class="col-lg-4">
+                        <div class="search-container d-flex position-relative justify-content-center align-items-center">
 
-                            <form class="px-4">
-                                <i class='bx bx-search bx-md'></i>
+                            <form class="px-4 d-flex w-100" role="search">
+                                
                                 <!-- when clicked box opens below vertical scroll -->
-                                <!-- <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search"> -->
-                                <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+                                <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-danger" type="submit"style="color: #8c0d4f;"><i class='bx bx-search bx-md'></i></button>
                             </form>
 
-                            <!-- account -->
-                            <a class="navbar-brand fw-bolder px-4 gap-1 m-0 p-0 d-flex">
+                           
+                            
+                        </div>
+
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="d-flex justify-content-end align-items-center gap-3" >
+                             <!-- account -->
+                             <a class="navbar-brand fw-semibold px-4 gap-1 m-0 p-0 d-flex" id="userAccount">
                                 <i class='bx bx-user bx-md'></i>
                                 <p>Account</p>
                             </a>
 
-                            <a class="navbar-brand fw-bolder px-4  m-0 p-0 d-flex">
+                            <a class="navbar-brand fw-semibold px-4  m-0 p-0 d-flex" id="wishlist">
                                 <i class='bx bx-heart bx-md'></i>
                                 <p>wishlist</p>
 
                                 <!-- round number on top right -->
                             </a>
 
-                            <a class="navbar-brand fw-bolder px-4 m-0 p-0 d-flex">
+                            <a class="navbar-brand fw-semibold px-4 m-0 p-0 d-flex" id="cart">
                                 <i class='bx bx-cart-alt bx-md'></i>
                                 <p>cart</p>
 
                                 <!-- round number on top right -->
                             </a>
-
-                            <a class="navbar-brand fw-bolder px-4 m-0 p-0 d-flex">
-                                <i class='bx bx-menu bx-md'></i>
-
-
-                                <!-- drop menu on hover -->
-                            </a>
-                        </div>
-                    </div>
                 </div>
-                <hr class="w-100">
+
+              
             </div>
         </div>
     </nav>
+    <hr class="w-100">
+
+    <!-- home about nav bar -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#">category</a>
+                <a class="nav-link" href="#">product Details</a>
+                <a class="nav-link" href="#">Cart</a>
+                <a class="nav-link" href="#">Checkout</a>
+                <a class="nav-link" href="#">Dropdown</a>  
+                <a class="nav-link" href="#">Megamenu1</a>
+                <a class="nav-link" href="#">Megamenu2</a>
+              <a class="nav-link" href="#">Contact</a>
+
+            </div>
+          </div>
+        </div>
+      </nav>
+
+
 
     <!-- Brand carousel not looking rite just yet-->
     <div class="brandcarousel-container">
