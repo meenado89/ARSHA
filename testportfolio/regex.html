@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Regex Form </title>
+</head>
+
+<body>
+    <form onsubmit="event.preventDefault(); handlecheck();">
+        <input type="text" name="password" id="password">
+        <button type="submit">Check</button>
+    </form>
+
+
+    <form onsubmit="event.preventDefault(); handleClick();">
+        <input type="text" name="Email" id="email" placeholder="Enter your email">
+        <button type="submit">submit</button>
+    </form>
+
+    <form onsubmit="event.preventDefault(); handleSubmit();">
+        <input type="text" name="user-Name" id="UserName" placeholder="Enter your name">
+        <button type="submit">submit</button>
+    </form>
+
+
+
+
+
+
+
+    <script>
+
+        function handlecheck() {
+            let pass = document.getElementById("password").value
+            let regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,12}$/
+            if (regex.test(pass)) {
+                alert("valid passwrd")
+
+            } else {
+                alert("invalid password")
+            }
+
+        }
+
+        function handleClick() {
+            let email = document.getElementById("email").value
+            let regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
+            if (regex.test(email)) {
+                alert("valid email")
+            } else {
+                alert("invalid email")
+            }
+
+        }
+        function handleSubmit() {
+            let userName = document.getElementById("UserName").value
+            let regex = /^[a-zA-Z0-9]{5,10}$/
+            if (regex.test(userName)) {
+                alert("valid username")
+            } else {
+                alert("invalid username")
+            }
+
+        }
+
+
+        
+
+    </script>
+
+
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

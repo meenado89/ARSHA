@@ -1,0 +1,33 @@
+EMAIL
+ ^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$
+
+
+ PASSWORD
+ ^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$
+
+PHONE NUMBER Regex
+^(\+?\d{1,3}[-.\s]?)?(\(?\d{3}\)?[-.\s]?)?[\d]{3}[-.\s]?\d{4}$
+
+USERNAME Regex
+^[a-zA-Z0-9_]{3,20}$
+
+
+General Validation Regex (for multiple fields)
+Example Code in JavaScript:
+ General Validation Regex (for multiple fields)
+If you're looking for a way to validate multiple fields (e.g., email, phone, username) 
+in one regex, you can group them and apply individual checks based on the field you are 
+validating. However, it's best to handle them separately as they have different formats and
+ validation rules.
+
+
+const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+const phoneRegex = /^(\+?\d{1,3}[-.\s]?)?(\(?\d{3}\)?[-.\s]?)?[\d]{3}[-.\s]?\d{4}$/;
+const usernameRegex = /^[a-zA-Z0-9_]{3,20}$/;
+
+// Test examples
+console.log(emailRegex.test("test@example.com")); // true
+console.log(passwordRegex.test("Password123!")); // true
+console.log(phoneRegex.test("+1 (123) 456-7890")); // true
+console.log(usernameRegex.test("user_name123")); // true
