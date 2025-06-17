@@ -16,145 +16,125 @@
     <style>
         /* 30may/01:20 */
         /* 2june/00:20 */
+        /* 17jun/3:50 */
     </style>
 </head>
 
 <body>
     <!-- topnavHeading -->
-    <nav class="navbar navbar-light bg-light">
-        <div class="container-fluid">
-            <div class="container">
-                <div class="row ">
-                    <!-- start -->
-                    <div class="col-6">
-                        <div class="contactheader d-flex">
-                            <i class='bx bxs-phone bx-sm pt-2 p-2'></i>
-                            <p class="navbar-brand mb-0 h1 fw-normal">Customer Support: <span style="color: #8c0d4f;">+1
-                                    (234) 567-890</span></p>
+<nav class="navbar navbar-light bg-light" style="font-size: 14px;">
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row align-items-center">
 
-                            <div class="mailheader d-flex">
-                                <i class='bx bx-envelope bx-sm pt-2 p-2' style="color: #8c0d4f;"></i>
-                                <p class="navbar-brand mb-0 h1 fw-normal" style="color: #8c0d4f;">
-                                    support@example.com</span></p>
-                            </div>
+                <!-- Left Column -->
+                <div class="col-md-6 mb-2">
+                    <div class="contactheader d-flex flex-wrap gap-3">
+                        <div class="d-flex align-items-center">
+                            <i class='bx bxs-phone bx-sm p-2'></i>
+                            <p class="mb-0 fw-normal">Customer Support: <span style="color: #8c0d4f;">+1 (234) 567-890</span></p>
                         </div>
 
-
-                    </div>
-                    <!-- end -->
-                    <div class="col-6  ">
-                        <div class="trackheader d-flex">
-                            <i class='bx bxs-truck bx-sm pt-1 p-2' style="color: #8c0d4f;"></i>
-                            <p class="navbar-brand mb-0 h1 fw-normal" style="color: #8c0d4f;"> Track Order</p>
-
-                            <!-- lang. drop -->
-                            <div class="dropdown">
-                                <button class="btn dropdown-toggle mb-0 h1 fw-normal pt-1 " type="button"
-                                    id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                    </i>English
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                    <li><a class="dropdown-item" href="#"> <i class="bx bx-check"
-                                                style="color:#570808;"></i> English</a> </li>
-                                    <li><a class="dropdown-item" href="#">Hindi</a></li>
-                                    <li><a class="dropdown-item" href="#">Frasncais</a></li>
-                                    <li><a class="dropdown-item" href="#">Deutsch</a></li>
-                                </ul>
-                            </div>
-
-                            <!-- usd drop -->
-
-                            <div class="dropdown">
-                                <button class="btn dropdown-toggle  mb-0 h1 fw-normal pt-1 " type="button"
-                                    id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                    </i>USD
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                    <li><a class="dropdown-item" href="#"><i class="bx bx-check"
-                                                style="color:#570808;"></i> USD</a> </li>
-
-                                    <li><a class="dropdown-item" href="#">EUR</a></li>
-                                    <li><a class="dropdown-item" href="#">GBP</a></li>
-                                </ul>
-                            </div>
+                        <div class="d-flex align-items-center">
+                            <i class='bx bx-envelope bx-sm p-2' style="color: #8c0d4f;"></i>
+                            <p class="mb-0 fw-normal" style="color: #8c0d4f;">support@example.com</p>
                         </div>
                     </div>
                 </div>
 
+                <!-- Right Column -->
+                <div class="col-md-6 mb-2">
+                    <div class="trackheader d-flex justify-content-end align-items-center flex-wrap gap-3">
 
+                        <div class="d-flex align-items-center">
+                            <i class='bx bxs-truck bx-sm p-2' style="color: #8c0d4f;"></i>
+                            <p class="mb-0 fw-normal" style="color: #8c0d4f;">Track Order</p>
+                        </div>
 
+                        <!-- Language Dropdown -->
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle fw-normal" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                English
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#"><i class="bx bx-check" style="color:#570808;"></i> English</a></li>
+                                <li><a class="dropdown-item" href="#">Hindi</a></li>
+                                <li><a class="dropdown-item" href="#">Français</a></li>
+                                <li><a class="dropdown-item" href="#">Deutsch</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Currency Dropdown -->
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle fw-normal" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                USD
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#"><i class="bx bx-check" style="color:#570808;"></i> USD</a></li>
+                                <li><a class="dropdown-item" href="#">EUR</a></li>
+                                <li><a class="dropdown-item" href="#">GBP</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
 
             </div>
-
-
         </div>
-        </div>
-        </div>
+    </div>
+</nav>
 
-    </nav>
 
     <!-- STORE NAVBAR -->
     <nav class="navbar navbar-light bg-white pb-0">
-        <div class="container-fluid w-100">
-            <div class="container w-100">
-                <div class="row ">
-                    <div class="col-lg-4">
-                        <a class="navbar-brand fw-bolder gap-0 m-0 p-0">
-                            <h1>Fashion <span style="color: #8c0d4f;">Store</span> </h1>
-                        </a>
+  <div class="container-fluid">
+    <div class="row w-100 align-items-center">
+      <!-- Brand -->
+      <div class="col-lg-4 d-flex align-items-center">
+        <a class="navbar-brand fw-bolder m-0 p-0">
+          <h1 class="m-0">Fashion <span style="color: #8c0d4f;">Store</span></h1>
+        </a>
+      </div>
 
-                    </div>
-                    <div class="col-lg-4">
-                        <div
-                            class="search-container d-flex position-relative justify-content-center align-items-center">
+      <!-- Search Bar -->
+      <div class="col-lg-4">
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-danger" type="submit" style="color: #8c0d4f;">
+            <i class='bx bx-search bx-md'></i>
+          </button>
+        </form>
+      </div>
 
-                            <form class="px-4 d-flex w-100" role="search">
+      <!-- Icons (Account, Wishlist, Cart) -->
+      <div class="col-lg-4">
+        <div class="d-flex justify-content-end align-items-center gap-4">
+          <a class="d-flex align-items-center text-decoration-none text-dark" id="userAccount">
+            <i class='bx bx-user bx-md'></i>
+            <span class="ms-1">Account</span>
+          </a>
 
-                                <!-- when clicked box opens below vertical scroll -->
-                                <input class="form-control me-2 " type="search" placeholder="Search"
-                                    aria-label="Search">
-                                <button class="btn btn-outline-danger" type="submit" style="color: #8c0d4f;"><i
-                                        class='bx bx-search bx-md'></i></button>
-                            </form>
+          <a class="d-flex align-items-center text-decoration-none text-dark" id="wishlist">
+            <i class='bx bx-heart bx-md'></i>
+            <span class="ms-1">Wishlist</span>
+          </a>
 
+          <a class="d-flex align-items-center text-decoration-none text-dark" id="cart">
+            <i class='bx bx-cart-alt bx-md'></i>
+            <span class="ms-1">Cart</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
 
-
-                        </div>
-
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="d-flex justify-content-end align-items-center gap-3">
-                            <!-- account -->
-                            <a class="navbar-brand fw-semibold px-4 gap-1 m-0 p-0 d-flex" id="userAccount">
-                                <i class='bx bx-user bx-md'></i>
-                                <p>Account</p>
-                            </a>
-
-                            <a class="navbar-brand fw-semibold px-4  m-0 p-0 d-flex" id="wishlist">
-                                <i class='bx bx-heart bx-md'></i>
-                                <p>wishlist</p>
-
-                                <!-- round number on top right -->
-                            </a>
-
-                            <a class="navbar-brand fw-semibold px-4 m-0 p-0 d-flex" id="cart">
-                                <i class='bx bx-cart-alt bx-md'></i>
-                                <p>cart</p>
-
-                                <!-- round number on top right -->
-                            </a>
-                        </div>
-
-
-                    </div>
-                </div>
-    </nav>
     <hr class="w-100">
 
     <!-- home about nav bar -->
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
+     <!-- align and text edit -->
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="container-fluid w-100">
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -177,8 +157,6 @@
             </div>
         </div>
     </nav>
-
-
 
     <!-- Brand carousel not looking rite just yet-->
     <div class="brandcarousel-container">
@@ -493,7 +471,7 @@
                         <div class="col-sm-6">
                             <div class="sellercard">
                                 <div class="sellercard-body">
-                                    
+
                                     <img src="product-f-3.webp" alt="wc1" width="100%" height="100%">
                                     <h5 class="sellercard-title">Accessories</h5>
                                     <a href="#" class="seller-btn">Adipiscing Magna</a>
@@ -525,7 +503,7 @@
                                     <div class="price-rating d-flex">
                                         <p>$129.00</=>
                                             <i class='bx bxs-star bx-sm' style='color:#ffdc2f'></i>
-                                        <span>4.8(42)</span>
+                                            <span>4.8(42)</span>
                                     </div>
                                 </div>
                             </div>
@@ -550,7 +528,7 @@
                             <div class="sellercard">
                                 <div class="sellercard-body">
                                     <!-- badge -->
-                                     <div class="product-badge">
+                                    <div class="product-badge">
                                         <p class="text-white"
                                             style="background-color: #ffa007; width: 86px; height: 42px; border-radius: 9px; align-items: center;justify-content: center; font-size: 24px; display: flex;">
                                             -25%</p>
@@ -561,7 +539,7 @@
                                     <div class="price-rating d-flex">
                                         <p>$129.00</=>
                                             <i class='bx bxs-star bx-sm' style='color:#ffdc2f'></i>
-                                        <span>4.8(42)</span>
+                                            <span>4.8(42)</span>
                                     </div>
                                 </div>
                             </div>
@@ -603,7 +581,7 @@
                             <div class="sellercard">
                                 <div class="sellercard-body">
                                     <!-- badge -->
-                                     <div class="product-badge">
+                                    <div class="product-badge">
                                         <p class="text-white"
                                             style="background-color: #ffa007; width: 86px; height: 42px; border-radius: 9px; align-items: center;justify-content: center; font-size: 24px; display: flex;">
                                             -15%</p>
@@ -631,7 +609,7 @@
                             <div class="sellercard">
                                 <div class="sellercard-body">
                                     <!-- badge -->
-                                     <div class="product-badge">
+                                    <div class="product-badge">
                                         <p class="text-white"
                                             style="background-color: #8c0d4f; width: 86px; height: 42px; border-radius: 9px; align-items: center;justify-content: center; font-size: 24px; display: flex;">
                                             New</p>
@@ -678,120 +656,121 @@
             </li>
         </ul>
 
-        <div class="container-fluid ">
-            <div class="row">
-                <div class="col-6">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <div class="product-card">
-                                <div class="product">
-                                     <img src="purse.webp" alt="purse" width="100%" height="100%">
-                                    <h5 class="product-title">Special title treatment</h5>
-                                    <p class="product-text">With supporting text below as a natural lead-in to additional
-                                        content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="product-card">
-                                <div class="product-body">
-                                      <img src="chair.webp" alt="chair" width="100%" height="100%">
-                                    <h5 class="product-title">Special title treatment</h5>
-                                    <p class="product-text">With supporting text below as a natural lead-in to additional
-                                        content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <div class="product-card">
-                                <div class="product-body">
-                                      <img src="sunglases.webp" alt="sunglases" width="100%" height="100%">
-                                    <h5 class="product-title">Special title treatment</h5>
-                                    <p class="product-text">With supporting text below as a natural lead-in to additional
-                                        content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="product-card">
-                                <div class="product-body">
-                                      <img src="sweatshirt -4.webp" alt="shirt" width="100%" height="100%">
-                                    <h5 class="product-title">Special title treatment</h5>
-                                    <p class="product-text">With supporting text below as a natural lead-in to additional
-                                        content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        <!-- product Cards -->
+        <div class="container py-5">
+            <div class="row justify-content-center g-4 w-100">
 
+                <!-- Card 1 -->
+                <div class="col-xl-3 col-md-4 col-sm-6">
+                    <div class="product-card h-100">
+                        <img src="purse.webp" class="card-img-top" alt="purse">
+                        <div class="product-body text-center">
+                            <h5 class="product-title">Lorem ipsum dolor sit amet</h5>
+                            <p class="product-text">$89.99 <del>$129.99</del></p>
+                            <div class="product-rating">
+                                <i class='bx bxs-star' style='color:#FFB800'></i>
+                                <i class='bx bxs-star' style='color:#FFB800'></i>
+                                <i class='bx bxs-star' style='color:#FFB800'></i>
+                                <i class='bx bxs-star' style='color:#FFB800'></i>
+                                <i class="bi bi-star-half"></i>
+                                <span>(24)</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-
-                <div class="col-6">
-
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <div class="product-card">
-                                <div class="product-body">
-                                      <img src="product-5-variant.webp" alt="heals" width="100%" height="100%">
-                                    <h5 class="product-title">Special title treatment</h5>
-                                    <p class="product-text">With supporting text below as a natural lead-in to
-                                        additional content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="product-card">
-                                <div class="product-body">
-                                      <img src="denimjecket-7.webp" alt="denim" width="100%" height="100%">
-                                    <h5 class="product-title">Special title treatment</h5>
-                                    <p class="product-text">With supporting text below as a natural lead-in to
-                                        additional content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
-                            </div>
+                <!-- Card 2 -->
+                <div class="col-xl-3 col-md-4 col-sm-6">
+                    <div class="product-card h-100">
+                        <img src="chair.webp" class="card-img-top" alt="chair">
+                        <div class="product-body text-center">
+                            <h5 class="product-title">Special title treatment</h5>
+                            <p class="product-text">With supporting text below as a natural lead-in.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <div class="product-card">
-                                <div class="product-body">
-                                      <img src="backpack.webp" alt="backpack" width="100%" height="100%">
-                                    <h5 class="product-title">Special title treatment</h5>
-                                    <p class="card-text">With supporting text below as a natural lead-in to
-                                        additional content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
-                            </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-xl-3 col-md-4 col-sm-6">
+                    <div class="product-card h-100">
+                        <img src="sunglases.webp" class="card-img-top" alt="sunglasses">
+                        <div class="product-body text-center">
+                            <h5 class="product-title">Special title treatment</h5>
+                            <p class="product-text">With supporting text below as a natural lead-in.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
                         </div>
-                        <div class="col-sm-6">
-                            <div class="product-card">
-                                <div class="product-body">
-                                      <img src="shoe.webp" alt="shoe" width="100%" height="100%">
-                                    <h5 class="product-title">Special title treatment</h5>
-                                    <p class="product-text">With supporting text below as a natural lead-in to
-                                        additional content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
-                            </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col-xl-3 col-md-4 col-sm-6">
+                    <div class="product-card h-100">
+                        <img src="sweatshirt -4.webp" class="card-img-top" alt="shirt">
+                        <div class="product-body text-center">
+                            <h5 class="product-title">Special title treatment</h5>
+                            <p class="product-text">With supporting text below as a natural lead-in.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="col-xl-3 col-md-4 col-sm-6">
+                    <div class="product-card h-100">
+                        <img src="product-5-variant.webp" class="card-img-top" alt="heels">
+                        <div class="product-body text-center">
+                            <h5 class="product-title">Special title treatment</h5>
+                            <p class="product-text">With supporting text below as a natural lead-in.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="col-xl-3 col-md-4 col-sm-6">
+                    <div class="product-card h-100">
+                        <img src="denimjecket-7.webp" class="card-img-top" alt="denim">
+                        <div class="product-body text-center">
+                            <h5 class="product-title">Special title treatment</h5>
+                            <p class="product-text">With supporting text below as a natural lead-in.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 7 -->
+                <div class="col-xl-3 col-md-4 col-sm-6">
+                    <div class="product-card h-100">
+                        <img src="backpack.webp" class="card-img-top" alt="backpack">
+                        <div class="product-body text-center">
+                            <h5 class="product-title">Special title treatment</h5>
+                            <p class="product-text">With supporting text below as a natural lead-in.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 8 -->
+                <div class="col-xl-3 col-md-4 col-sm-6">
+                    <div class="product-card h-100">
+                        <img src="shoe.webp" class="card-img-top" alt="shoe">
+                        <div class="product-body text-center">
+                            <h5 class="product-title">Special title treatment</h5>
+                            <p class="product-text">With supporting text below as a natural lead-in.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- product button -->
-            <section class="productbtn-container pt-5 w-25 position-relative">
-                <button type="button" class="btn btn-lg pb-1 pt-1 m-0 g-0 border-0 text-white p-3 pt-2 pb-2"
-                    style=" position: absolute; left: 44rem;  top: 3rem; background-color: #8c0d4f; border-radius: 30px; width: 14rem; height: 3rem; ">
-                    View All product<i class='bx bx-right-arrow-alt text-white'></i> </button>
-            </section>
+            <!-- View All Button -->
+            <div class="text-center mt-5">
+                <button type="button" class="btn text-white"
+                    style="background-color: #8c0d4f; border-radius: 30px; width: 14rem; height: 3rem;">
+                    View All Products <i class='bx bx-right-arrow-alt text-white'></i>
+                </button>
+            </div>
         </div>
     </div>
 

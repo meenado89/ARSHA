@@ -3,6 +3,10 @@
      margin-bottom: 0%;
  }
 
+ #navbarNavAltMarkup{
+    font-size: 14px;
+    gap: 2rem;
+ }
  .main-category {
      background-color: #f8f4f6;
      height: auto;
