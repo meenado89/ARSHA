@@ -23,7 +23,7 @@ insta   <i class='bx bxl-instagram' ></i>
  store <i class='bx bx-store' ></i>
  money<i class='bx bx-money' ></i>
  check/tick  <i class="bx bx-check" style="color:#570808;"></i> 
-
+star <i class='bx bxs-star' style='color:#fcff00'  ></i>
 
 
 
@@ -43,26 +43,5 @@ faq F.A.Q. <i class='bx bx-question-mark'></i> add border
 <i class='bx bx-file-blank' style='color:#ffffff' ></i> blank
   
 
-  Table
-  #	Customer	Product	Price	Status
-#2457	Brandon Jacob	At praesentium minu	$64	Approved
-#2049	Ashleigh Langosh	At recusandae consectetur	$147	Approved
-#2147	Bridie Kessler	Blanditiis dolor omnis similique	$47	Pending
-#2644	Raheem Lehner	Sunt similique distinctio	$165	Approved
-#2644	Angus Grady	Ut voluptatem id earum et	$67	Rejected
+ 
 
-
-<div class="heading " style="padding-top: 6rem;">
-            <h2><b>
-                    Dashboard
-                </b></h2>
-            <ul class="nav p-0 m-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <span class="py-2">/</span>
-                <li class="nav-item p-0 m0">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Dashboard</a>
-                </li>
-            </ul>
-        </div>
