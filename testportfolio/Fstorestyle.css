@@ -34,14 +34,14 @@
      justify-items: center;
      display: flex;
      /*animation: slide 20s steps(4) ;
-     */
-     animation: stepScroll 15s infinite linear;
+     */animation: stepScroll 15s infinite linear;
      gap: 5rem;
      font-size: 24px;
      color: white;
      margin-bottom: 1rem;
      overflow: hidden;
- }
+     -webkit-animation:;
+}
 
  .brandcarousel-track .vertical {
      margin: 0;
@@ -60,12 +60,20 @@
  .brandcarousel-track img {
      height: 38px;
      transition: all 0.1s ease-in-out;
- }
+     -webkit-transition: all 0.1s ease-in-out;
+     -moz-transition: all 0.1s ease-in-out;
+     -ms-transition: all 0.1s ease-in-out;
+     -o-transition: all 0.1s ease-in-out;
+}
 
  .brandcarousel-track img:hover {
      transform: scale(1.05);
      cursor: pointer;
- }
+     -webkit-transform: scale(1.05);
+     -moz-transform: scale(1.05);
+     -ms-transform: scale(1.05);
+     -o-transform: scale(1.05);
+}
 
  .brandcarousel-container:hover .brandcarousel-track {
      animation-play-state: paused;
@@ -74,7 +82,11 @@
  @keyframes stepScroll {
      from {
          transform: translateY(0);
-     }
+         -webkit-transform: translateY(0);
+         -moz-transform: translateY(0);
+         -ms-transform: translateY(0);
+         -o-transform: translateY(0);
+}
 
      to {
          transform: translateY(-100%);
@@ -123,8 +135,11 @@
      font-family: system-ui, sans-serif;
      font-size: 1.5rem;
      height: 33rem;
-
- }
+     -webkit-border-radius: 16px;
+     -moz-border-radius: 16px;
+     -ms-border-radius: 16px;
+     -o-border-radius: 16px;
+}
 
 
  .side-img {
