@@ -1,6 +1,7 @@
 cart <i class='bx bx-cart-alt'></i>
 gift <i class='bx bx-gift' style='color:#e5ff00'  ></i>
 User  <i class='bx bx-user' ></i>
+user circle <i class='bx bx-user-circle'></i>
 search <i class='bx bx-search' ></i>
 truck <i class='bx bxs-truck' ></i>
 dollar <i class='bx bx-dollar'></i>
@@ -24,6 +25,7 @@ insta   <i class='bx bxl-instagram' ></i>
  money<i class='bx bx-money' ></i>
  check/tick  <i class="bx bx-check" style="color:#570808;"></i> 
 star <i class='bx bxs-star' style='color:#fcff00'  ></i>
+cog/setting <i class='bx bx-cog' ></i>
 
 
 

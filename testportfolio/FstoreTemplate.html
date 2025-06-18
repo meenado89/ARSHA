@@ -17,122 +17,243 @@
         /* 30may/01:20 */
         /* 2june/00:20 */
         /* 17jun/3:50 */
+        /* 18jun/ */
     </style>
 </head>
 
 <body>
     <!-- topnavHeading -->
-<nav class="navbar navbar-light bg-light" style="font-size: 14px;">
-    <div class="container-fluid">
-        <div class="container">
-            <div class="row align-items-center">
+    <nav class="navbar navbar-light bg-light" style="font-size: 14px;">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row align-items-center">
 
-                <!-- Left Column -->
-                <div class="col-md-6 mb-2">
-                    <div class="contactheader d-flex flex-wrap gap-3">
-                        <div class="d-flex align-items-center">
-                            <i class='bx bxs-phone bx-sm p-2'></i>
-                            <p class="mb-0 fw-normal">Customer Support: <span style="color: #8c0d4f;">+1 (234) 567-890</span></p>
-                        </div>
+                    <!-- Left Column -->
+                    <div class="col-md-6 mb-2">
+                        <div class="contactheader d-flex flex-wrap gap-3">
+                            <div class="d-flex align-items-center">
+                                <i class='bx bxs-phone bx-sm p-2'></i>
+                                <p class="mb-0 fw-normal">Customer Support: <span style="color: #8c0d4f;">+1 (234)
+                                        567-890</span></p>
+                            </div>
 
-                        <div class="d-flex align-items-center">
-                            <i class='bx bx-envelope bx-sm p-2' style="color: #8c0d4f;"></i>
-                            <p class="mb-0 fw-normal" style="color: #8c0d4f;">support@example.com</p>
+                            <div class="d-flex align-items-center">
+                                <i class='bx bx-envelope bx-sm p-2' style="color: #8c0d4f;"></i>
+                                <p class="mb-0 fw-normal" style="color: #8c0d4f;">support@example.com</p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- Right Column -->
-                <div class="col-md-6 mb-2">
-                    <div class="trackheader d-flex justify-content-end align-items-center flex-wrap gap-3">
+                    <!-- Right Column -->
+                    <div class="col-md-6 mb-2">
+                        <div class="trackheader d-flex justify-content-end align-items-center flex-wrap gap-3">
 
-                        <div class="d-flex align-items-center">
-                            <i class='bx bxs-truck bx-sm p-2' style="color: #8c0d4f;"></i>
-                            <p class="mb-0 fw-normal" style="color: #8c0d4f;">Track Order</p>
+                            <div class="d-flex align-items-center">
+                                <i class='bx bxs-truck bx-sm p-2' style="color: #8c0d4f;"></i>
+                                <p class="mb-0 fw-normal" style="color: #8c0d4f;">Track Order</p>
+                            </div>
+
+                            <!-- Language Dropdown -->
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle fw-normal" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    English
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#"><i class="bx bx-check"
+                                                style="color:#570808;"></i> English</a></li>
+                                    <li><a class="dropdown-item" href="#">Hindi</a></li>
+                                    <li><a class="dropdown-item" href="#">Français</a></li>
+                                    <li><a class="dropdown-item" href="#">Deutsch</a></li>
+                                </ul>
+                            </div>
+
+                            <!-- Currency Dropdown -->
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle fw-normal" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    USD
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#"><i class="bx bx-check"
+                                                style="color:#570808;"></i> USD</a></li>
+                                    <li><a class="dropdown-item" href="#">EUR</a></li>
+                                    <li><a class="dropdown-item" href="#">GBP</a></li>
+                                </ul>
+                            </div>
+
                         </div>
-
-                        <!-- Language Dropdown -->
-                        <div class="dropdown">
-                            <button class="btn dropdown-toggle fw-normal" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                English
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#"><i class="bx bx-check" style="color:#570808;"></i> English</a></li>
-                                <li><a class="dropdown-item" href="#">Hindi</a></li>
-                                <li><a class="dropdown-item" href="#">Français</a></li>
-                                <li><a class="dropdown-item" href="#">Deutsch</a></li>
-                            </ul>
-                        </div>
-
-                        <!-- Currency Dropdown -->
-                        <div class="dropdown">
-                            <button class="btn dropdown-toggle fw-normal" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                USD
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#"><i class="bx bx-check" style="color:#570808;"></i> USD</a></li>
-                                <li><a class="dropdown-item" href="#">EUR</a></li>
-                                <li><a class="dropdown-item" href="#">GBP</a></li>
-                            </ul>
-                        </div>
-
                     </div>
-                </div>
 
+                </div>
             </div>
         </div>
-    </div>
-</nav>
+    </nav>
 
 
     <!-- STORE NAVBAR -->
-    <nav class="navbar navbar-light bg-white pb-0">
-  <div class="container-fluid">
-    <div class="row w-100 align-items-center">
-      <!-- Brand -->
-      <div class="col-lg-4 d-flex align-items-center">
-        <a class="navbar-brand fw-bolder m-0 p-0">
-          <h1 class="m-0">Fashion <span style="color: #8c0d4f;">Store</span></h1>
-        </a>
-      </div>
+    <nav class="navbar navbar-light bg-white pb-0" style="padding-left: 2rem; padding-right: 2rem;">
+        <div class="container-fluid">
+            <div class="row w-100 align-items-center">
+                <!-- Brand -->
+                <div class="col-lg-4 d-flex align-items-center">
+                    <a class="navbar-brand fw-bolder m-0 p-0">
+                        <h1 class="m-0">Fashion <span style="color: #8c0d4f;">Store</span></h1>
+                    </a>
+                </div>
 
-      <!-- Search Bar -->
-      <div class="col-lg-4">
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-danger" type="submit" style="color: #8c0d4f;">
-            <i class='bx bx-search bx-md'></i>
-          </button>
-        </form>
-      </div>
+                <!-- Search Bar -->
+                <div class="col-lg-4">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-danger" type="submit" style="color: #8c0d4f;">
+                            <i class='bx bx-search bx-md'></i>
+                        </button>
+                    </form>
+                </div>
 
-      <!-- Icons (Account, Wishlist, Cart) -->
-      <div class="col-lg-4">
-        <div class="d-flex justify-content-end align-items-center gap-4">
-          <a class="d-flex align-items-center text-decoration-none text-dark" id="userAccount">
-            <i class='bx bx-user bx-md'></i>
-            <span class="ms-1">Account</span>
-          </a>
+                <!-- Icons (Account, Wishlist, Cart) -->
+                <div class="col-lg-4">
+                    <div class="d-flex justify-content-end align-items-center gap-4">
+                        <a class="d-flex align-items-center text-decoration-none text-dark" id="userAccount">
+                            <!-- dropdown -->
+                            <div class="dropdown" id="account">
+                                <a class="btn  " href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <i class='bx bx-user bx-md'></i>
+                                    <span class="ms-1">Account</span>
+                                </a>
 
-          <a class="d-flex align-items-center text-decoration-none text-dark" id="wishlist">
-            <i class='bx bx-heart bx-md'></i>
-            <span class="ms-1">Wishlist</span>
-          </a>
+                                <ul class="dropdown-menu p-2" aria-labelledby="dropdownMenuLink">
+                                    <li>
+                                        <h5 class="dropdown-item" href="#">Welcome to FashionStore</h5>
+                                    </li>
+                                    <li>
+                                        <p class="text-muted ">Access account & manage orders</p>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#"><i class='bx bx-user-circle bx-sm '></i>My
+                                            Profile</a></li>
+                                    <li><a class="dropdown-item" href="#"><i
+                                                class='bx bx-shopping-bag bx-flip-horizontal bx-sm'></i>My Orders</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#"><i class='bx bx-heart bx-sm'></i>My
+                                            Wishlist</a></li>
+                                    <li><a class="dropdown-item" href="#"><i
+                                                class='bx bxs-left-arrow-alt bx-sm'></i>Returns & Refunds</a></li>
+                                    <li><a class="dropdown-item" href="#"><i class='bx bx-cog bx-sm'></i>Settings</a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <div class="footer">
+                                        <div class="dropdown-footer position-relative" style="left: 2rem;">
+                                            <a href="" class="btn  w-75 mb-2 text-center text-white"
+                                                style="background-color: #8c0d4f; border-radius: 22px;">Sign In</a>
+                                            <a href="" class="btn  w-75"
+                                                style="border: 1px solid #8c0d4f; border-radius: 22px">Register</a>
+                                        </div>
+                                    </div>
+                                </ul>
+                            </div>
 
-          <a class="d-flex align-items-center text-decoration-none text-dark" id="cart">
-            <i class='bx bx-cart-alt bx-md'></i>
-            <span class="ms-1">Cart</span>
-          </a>
+
+
+
+                        </a>
+
+
+                        <!-- whishlist -->
+                        <a class="d-flex align-items-center text-decoration-none text-dark" id="wishlist">
+                            <i class='bx bx-heart bx-md'></i>
+                            <span class="ms-1">Wishlist</span>
+                        </a>
+
+
+                        <!-- cart -->
+                        <!-- <a class="d-flex align-items-center text-decoration-none text-dark" id="cart">
+                            <i class='bx bx-cart-alt bx-md'></i>
+                            <span class="ms-1">Cart</span>
+                        </a> -->
+
+                        <div class="dropdown " id="cart">
+                            <a class="btn  " href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+                                data-popper-placement="bottom-end" aria-expanded="false">
+                                <i class='bx bx-cart-alt bx-md'></i>
+                                <span class="ms-1">Cart</span>
+                            </a>
+
+                           <ul class="dropdown-menu dropdown-menu-end " aria-labelledby="dropdownMenuLink" style="width: 24rem;">
+
+                                <li>
+                                    <h5 class="dropdown-item" href="#">Shoping Cart</h5>
+                                </li>
+                                <li>
+                                    <p class="text-muted ">Access account & manage orders</p>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <div class="cart-item d-flex ">
+                                    <div class="cart-item-image m-0">
+                                        <img src="purse.webp" alt="Product" style="width: 20%;">
+                                    </div>
+                                    <div class="cart-item-content">
+                                        <h6 class="cart-item-title">Wireless Headphones</h6>
+                                        <div class="cart-item-meta">1 × $89.99</div>
+                                    </div>
+                                    <button class="cart-item-remove">
+                                        <i class="bi bi-x"></i>
+                                    </button>
+                                </div>
+                                <li><a class="dropdown-item" href="#"><i
+                                            class='bx bx-shopping-bag bx-flip-horizontal bx-sm'></i>My Orders</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#"><i class='bx bx-heart bx-sm'></i>My
+                                        Wishlist</a></li>
+                                <li><a class="dropdown-item" href="#"><i class='bx bxs-left-arrow-alt bx-sm'></i>Returns
+                                        & Refunds</a></li>
+                                <li><a class="dropdown-item" href="#"><i class='bx bx-cog bx-sm'></i>Settings</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <div class="footer ">
+                                    <div class="total d-flex position-relative" style="gap: 14rem; left: 2rem; right: 2rem; padding-top: 1rem;">
+                                         <h4>Total</h4>
+                                         <p>$279.99</p>
+                                    </div>
+                                    <div class="dropdown-footer  d-flex" style="left: 2rem;gap: 2rem; padding: 2rem;">
+
+                                         <a href="" class="btn  w-50"
+                                            style="border: 1px solid #8c0d4f; border-radius: 22px">View Cart</a>
+                                       
+                                        <a href="" class="btn  w-50 mb-2 text-center text-white"
+                                            style="background-color: #8c0d4f; border-radius: 22px;">Check Out</a>
+                                       
+                                    </div>
+                                </div>
+                            </ul>
+                        </div>
+
+
+
+
+                        
+
+
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
-</nav>
+    </nav>
 
     <hr class="w-100">
 
     <!-- home about nav bar -->
-     <!-- align and text edit -->
+    <!-- align and text edit -->
     <nav class="navbar navbar-expand-lg navbar-light ">
         <div class="container-fluid w-100">
 
@@ -141,7 +262,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
+                <div class="navbar-nav ">
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                     <a class="nav-link" href="#">About</a>
                     <a class="nav-link" href="#">category</a>

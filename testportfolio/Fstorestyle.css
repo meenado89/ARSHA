@@ -3,10 +3,15 @@
      margin-bottom: 0%;
  }
 
- #navbarNavAltMarkup{
-    font-size: 14px;
-    gap: 2rem;
+ #navbarNavAltMarkup {
+     font-size: 14px;
+     gap: 2rem;
+     align-items: center;
+     justify-content: center;
+     justify-self: center;
+
  }
+
  .main-category {
      background-color: #f8f4f6;
      height: auto;
@@ -38,14 +43,15 @@
      justify-items: center;
      display: flex;
      /*animation: slide 20s steps(4) ;
-     */animation: stepScroll 15s infinite linear;
+     */
+     animation: stepScroll 15s infinite linear;
      gap: 5rem;
      font-size: 24px;
      color: white;
      margin-bottom: 1rem;
      overflow: hidden;
-     -webkit-animation:;
-}
+     -webkit-animation: ;
+ }
 
  .brandcarousel-track .vertical {
      margin: 0;
@@ -68,7 +74,7 @@
      -moz-transition: all 0.1s ease-in-out;
      -ms-transition: all 0.1s ease-in-out;
      -o-transition: all 0.1s ease-in-out;
-}
+ }
 
  .brandcarousel-track img:hover {
      transform: scale(1.05);
@@ -77,7 +83,7 @@
      -moz-transform: scale(1.05);
      -ms-transform: scale(1.05);
      -o-transform: scale(1.05);
-}
+ }
 
  .brandcarousel-container:hover .brandcarousel-track {
      animation-play-state: paused;
@@ -90,7 +96,7 @@
          -moz-transform: translateY(0);
          -ms-transform: translateY(0);
          -o-transform: translateY(0);
-}
+     }
 
      to {
          transform: translateY(-100%);
@@ -143,7 +149,7 @@
      -moz-border-radius: 16px;
      -ms-border-radius: 16px;
      -o-border-radius: 16px;
-}
+ }
 
 
  .side-img {
@@ -184,6 +190,7 @@
      text-decoration: none;
 
  }
+
  /* apply hover */
  .product-action i {
      position: relative;
@@ -202,29 +209,29 @@
      left: 7rem;
      justify-content: center;
      text-decoration-style: none;
-    
-}
 
-.price-rating p{
-    font-size: 26px;
-    color: #8c0d4f;
-    font-weight: 700;
-   
-}
+ }
+
+ .price-rating p {
+     font-size: 26px;
+     color: #8c0d4f;
+     font-weight: 700;
+
+ }
 
 
-/* product list cards */
+ /* product list cards */
 
-.product-card{
-    border: 1px solid whitesmoke;
-    box-shadow: 1px 2px 6px rgba(213, 212, 212, 0.538);
-    border-radius: 18px;
-    -webkit-border-radius: 18px;
-    -moz-border-radius: 18px;
-    -ms-border-radius: 18px;
-    -o-border-radius: 18px;
-}
+ .product-card {
+     border: 1px solid whitesmoke;
+     box-shadow: 1px 2px 6px rgba(213, 212, 212, 0.538);
+     border-radius: 18px;
+     -webkit-border-radius: 18px;
+     -moz-border-radius: 18px;
+     -ms-border-radius: 18px;
+     -o-border-radius: 18px;
+ }
 
-.product-body{
-    padding: 1rem;
-}
+ .product-body {
+     padding: 1rem;
+ }
