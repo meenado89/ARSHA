@@ -11,7 +11,7 @@
 
 
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>FashioStore Template</title>
+    <title>FashioStore Clone</title>
 
     <style>
         /* 30may/01:20 */
@@ -185,7 +185,8 @@
                                 <span class="ms-1">Cart</span>
                             </a>
 
-                           <ul class="dropdown-menu dropdown-menu-end " aria-labelledby="dropdownMenuLink" style="width: 24rem;">
+                            <ul class="dropdown-menu dropdown-menu-end " aria-labelledby="dropdownMenuLink"
+                                style="width: 24rem;">
 
                                 <li>
                                     <h5 class="dropdown-item" href="#">Shoping Cart</h5>
@@ -221,18 +222,19 @@
                                     <hr class="dropdown-divider">
                                 </li>
                                 <div class="footer ">
-                                    <div class="total d-flex position-relative" style="gap: 14rem; left: 2rem; right: 2rem; padding-top: 1rem;">
-                                         <h4>Total</h4>
-                                         <p>$279.99</p>
+                                    <div class="total d-flex position-relative"
+                                        style="gap: 14rem; left: 2rem; right: 2rem; padding-top: 1rem;">
+                                        <h4>Total</h4>
+                                        <p>$279.99</p>
                                     </div>
                                     <div class="dropdown-footer  d-flex" style="left: 2rem;gap: 2rem; padding: 2rem;">
 
-                                         <a href="" class="btn  w-50"
+                                        <a href="" class="btn  w-50"
                                             style="border: 1px solid #8c0d4f; border-radius: 22px">View Cart</a>
-                                       
+
                                         <a href="" class="btn  w-50 mb-2 text-center text-white"
                                             style="background-color: #8c0d4f; border-radius: 22px;">Check Out</a>
-                                       
+
                                     </div>
                                 </div>
                             </ul>
@@ -241,7 +243,7 @@
 
 
 
-                        
+
 
 
                     </div>
@@ -253,25 +255,72 @@
     <hr class="w-100">
 
     <!-- home about nav bar -->
-    <!-- align and text edit -->
-    <nav class="navbar navbar-expand-lg navbar-light ">
+    <!-- align(done) and text edit -->
+    <nav class="navbar navbar-expand-lg  ">
         <div class="container-fluid w-100">
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav ">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    <a class="nav-link" href="#">About</a>
-                    <a class="nav-link" href="#">category</a>
+            <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+                <div class="navbar-nav  " id="home-navbar">
+                    <a class="nav-link active " aria-current="page" href="#">Home</a>
+                    <a class="nav-link  " href="#">About</a>
+                    <a class="nav-link " href="#">category</a>
                     <a class="nav-link" href="#">product Details</a>
                     <a class="nav-link" href="#">Cart</a>
                     <a class="nav-link" href="#">Checkout</a>
-                    <a class="nav-link" href="#">Dropdown</a>
+
+                    <!-- dropdown -->
+                    <!-- <a class="nav-link" href="#">Dropdown</a> -->
+
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            Menu 1
+                        </button>
+                        <div class="dropdown-content">
+                            <div class="nested-dropdown">
+                                <a href="#">Submenu 1</a>
+                                <div class="nested-dropdown-content">
+                                    <a href="#">Submenu 1.1</a>
+                                    <a href="#">Submenu 1.2</a>
+                                    <a href="#">Submenu 1.3</a>
+                                </div>
+                            </div>
+                            <div class="nested-dropdown">
+                                <a href="#">Submenu 2</a>
+                                <div class="nested-dropdown-content">
+                                    <a href="#">Submenu 2.1</a>
+                                    <a href="#">Submenu 2.2</a>
+                                    <a href="#">Submenu 2.3</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <!-- megaMenu1 -->
                     <a class="nav-link" href="#">Megamenu1</a>
+
+
+                    <!-- <a id="dLabel" type="button" data-bs-toggle="dropdown"  aria-expanded="false" href=" #" class="nav-link">Megamenu1</a>
+                    <ul class="dropdown-menu" aria-labelledby="dLabel">
+                     <li>bjhbjh</li>
+                     <li>kjbkjbkj</li>
+                     <li>kjbkbj</li>
+                     <li>hvjhcuyh</li>
+                     <li>kgjhuy</li>
+                     <li>kjbkjb</li>
+                    </ul> -->
+
+
+                    <!-- megaMenu2 -->
                     <a class="nav-link" href="#">Megamenu2</a>
+
+
                     <a class="nav-link" href="#">Contact</a>
 
                 </div>
@@ -352,7 +401,7 @@
                                         arcu
                                         in enim justo rhoncus ut.</p>
                                     <a href="#" class="btn ">Shop Now</a>
-                                    <div class="side-img"><img src="purse.webp" width="180px" height="190px"></div>
+                                    <div class="side-img"><img src="purse.webp" width="190px" height="190px"></div>
                                 </div>
 
 
@@ -1034,6 +1083,23 @@
             </div>
         </div>
     </footer>
+
+
+
+
+
+
+
+    <script>
+
+
+
+
+    </script>
+
+
+
+
 
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
