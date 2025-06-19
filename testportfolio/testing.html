@@ -3,336 +3,106 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="Fstorestyle.css">
-
-
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>Test FashionStore Template</title>
-
+    <title>Simple Dropdown</title>
     <style>
-        /* 30may/01:20 */
-        /* 2june/00:20 */
+        /* Container */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
 
+        /* Button */
+        .dropbtn {
+            color: black;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
 
+        }
 
+        /* Dropdown Content (Hidden by Default) */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
 
-        
+        /* Links inside dropdown */
+        .dropdown-content a {
+            color: black;
+            padding: 10px 15px;
+            text-decoration: none;
+            display: block;
+        }
+
+        /* Hover Effects */
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            color: #8c0d4f;
+        }
+
+        /* Submenu container */
+        .submenu {
+            position: relative;
+        }
+
+        /* Submenu dropdown */
+        .submenu-content {
+            display: none;
+            position: absolute;
+            left: 100%;
+            /* Appear to the right */
+            top: 0;
+            min-width: 160px;
+            background-color: white;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        /* Show submenu on hover */
+        .submenu:hover .submenu-content {
+            display: block;
+        }
     </style>
 </head>
 
 <body>
 
+    <div class="dropdown">
+        <button class="dropbtn">Dropdown</button>
+        <div class="dropdown-content">
+            <a href="#">dropdown 1</a>
+            <a href="#">dropdown 2</a>
 
-    
-
-  
-
-    <nav class="navbar navbar-light bg-light" style="font-size: 14px;">
-        <div class="container-fluid">
-            <div class="container">
-                <div class="row align-items-center">
-
-                    <!-- Left Column -->
-                    <div class="col-md-6 mb-2">
-                        <div class="contactheader d-flex flex-wrap gap-3">
-                            <div class="d-flex align-items-center">
-                                <i class='bx bxs-phone bx-sm p-2'></i>
-                                <p class="mb-0 fw-normal">Customer Support: <span style="color: #8c0d4f;">+1 (234)
-                                        567-890</span></p>
-                            </div>
-
-                            <div class="d-flex align-items-center">
-                                <i class='bx bx-envelope bx-sm p-2' style="color: #8c0d4f;"></i>
-                                <p class="mb-0 fw-normal" style="color: #8c0d4f;">support@example.com</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Right Column -->
-                    <div class="col-md-6 mb-2">
-                        <div class="trackheader d-flex justify-content-end align-items-center flex-wrap gap-3">
-
-                            <div class="d-flex align-items-center">
-                                <i class='bx bxs-truck bx-sm p-2' style="color: #8c0d4f;"></i>
-                                <p class="mb-0 fw-normal" style="color: #8c0d4f;">Track Order</p>
-                            </div>
-
-                            <!-- Language Dropdown -->
-                            <div class="dropdown">
-                                <button class="btn dropdown-toggle fw-normal" type="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    English
-                                </button>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#"><i class="bx bx-check"
-                                                style="color:#570808;"></i> English</a></li>
-                                    <li><a class="dropdown-item" href="#">Hindi</a></li>
-                                    <li><a class="dropdown-item" href="#">Français</a></li>
-                                    <li><a class="dropdown-item" href="#">Deutsch</a></li>
-                                </ul>
-                            </div>
-
-                            <!-- Currency Dropdown -->
-                            <div class="dropdown">
-                                <button class="btn dropdown-toggle fw-normal" type="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    USD
-                                </button>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#"><i class="bx bx-check"
-                                                style="color:#570808;"></i> USD</a></li>
-                                    <li><a class="dropdown-item" href="#">EUR</a></li>
-                                    <li><a class="dropdown-item" href="#">GBP</a></li>
-                                </ul>
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </nav>
-    <hr>
-
-    <nav class="navbar navbar-light bg-white pb-0">
-        <div class="container-fluid">
-            <div class="row w-100 align-items-center">
-                <!-- Brand -->
-                <div class="col-lg-4 d-flex align-items-center">
-                    <a class="navbar-brand fw-bolder m-0 p-0">
-                        <h1 class="m-0">Fashion <span style="color: #8c0d4f;">Store</span></h1>
-                    </a>
-                </div>
-
-                <!-- Search Bar -->
-                <div class="col-lg-4">
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-danger" type="submit" style="color: #8c0d4f;">
-                            <i class='bx bx-search bx-md'></i>
-                        </button>
-                    </form>
-                </div>
-
-
-
-                
-
-                <!-- Icons (Account, Wishlist, Cart) -->
-                <div class="col-lg-4">
-                    <div class="d-flex justify-content-end align-items-center gap-4">
-                        <a class="d-flex align-items-center text-decoration-none text-dark" id="userAccount">
-                            <!-- dropdown -->
-                            <div class="dropdown">
-                                <a class="btn  " href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    <i class='bx bx-user bx-md'></i>
-                                    <span class="ms-1">Account</span>
-                                </a>
-
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                    <li>
-                                        <h5 class="dropdown-item" href="#">Welcome to FashionStore</h5>
-                                    </li>
-                                    <li>
-                                        <p class="text-muted">Access account & manage orders</p>
-                                    </li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">My Profile</a></li>
-                                    <li><a class="dropdown-item" href="#">My Orders</a></li>
-                                    <li><a class="dropdown-item" href="#">My Wishlist</a></li>
-                                    <li><a class="dropdown-item" href="#">Returns & Refunds</a></li>
-                                    <li><a class="dropdown-item" href="#">Settings</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <div class="footer">
-                                        <div class="dropdown-footer">
-                                            <a href="login.html" class="btn btn-primary w-75 mb-2">Sign In</a>
-                                            <a href="register.html" class="btn btn-outline-primary w-75">Register</a>
-                                        </div>
-                                    </div>
-                                </ul>
-                            </div>
-
-
-
-
-                        </a>
-
-
-
-
-
-                        <a class="d-flex align-items-center text-decoration-none text-dark" id="wishlist">
-                            <i class='bx bx-heart bx-md'></i>
-                            <span class="ms-1">Wishlist</span>
-                        </a>
-
-                        <!-- cart -->
-                        <div class="cart-dropdown">
-                            <a class="d-flex align-items-center text-decoration-none text-dark" id="userAccount">
-                                <button class="btn  " href="#" role="button" id="dropdownMenuLink"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    <i class='bx bx-cart bx-md'></i>
-                                    <span class="ms-1">Cart</span>
-                                </button>
-                            </a>
-                            <!-- dropdown -->
-                            <div class="dropdown-header">
-                                Welcome
-                            </div>
-
-
-                        </div>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
-    </nav>
-
-
-    
-
-
-
-
-
-
-    <!-- re check -->
-
-    <!-- product Cards -->
-    <div class="container py-5">
-        <div class="row justify-content-center g-4 w-100">
-
-            <!-- Card 1 -->
-            <div class="col-xl-3 col-md-4 col-sm-6">
-                <div class="product-card h-100">
-                    <img src="purse.webp" class="card-img-top" alt="purse">
-                    <div class="product-body text-center">
-                        <h5 class="product-title">Lorem ipsum dolor sit amet</h5>
-                        <p class="product-text">$89.99 <del>$129.99</del></p>
-                        <div class="product-rating">
-                            <i class='bx bxs-star' style='color:#FFB800'></i>
-                            <i class='bx bxs-star' style='color:#FFB800'></i>
-                            <i class='bx bxs-star' style='color:#FFB800'></i>
-                            <i class='bx bxs-star' style='color:#FFB800'></i>
-                            <i class="bi bi-star-half"></i>
-                            <span>(24)</span>
-                        </div>
-                    </div>
+            <!-- submenu -->
+            <div class="submenu">
+                <a href="#">submenu</a>
+                <div class="submenu-content">
+                    <a href="#">Team</a>
+                    <a href="#">Mission</a>
+                    <a href="#">Vision</a>
                 </div>
             </div>
 
-            <!-- Card 2 -->
-            <div class="col-xl-3 col-md-4 col-sm-6">
-                <div class="product-card h-100">
-                    <img src="chair.webp" class="card-img-top" alt="chair">
-                    <div class="product-body text-center">
-                        <h5 class="product-title">Special title treatment</h5>
-                        <p class="product-text">With supporting text below as a natural lead-in.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
 
-            <!-- Card 3 -->
-            <div class="col-xl-3 col-md-4 col-sm-6">
-                <div class="product-card h-100">
-                    <img src="sunglases.webp" class="card-img-top" alt="sunglasses">
-                    <div class="product-body text-center">
-                        <h5 class="product-title">Special title treatment</h5>
-                        <p class="product-text">With supporting text below as a natural lead-in.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
+            <a href="#">dropdown 3</a>
+            <a href="#">dropdown 4</a>
+            <a href="#">dropdown 5</a>
 
-            <!-- Card 4 -->
-            <div class="col-xl-3 col-md-4 col-sm-6">
-                <div class="product-card h-100">
-                    <img src="sweatshirt -4.webp" class="card-img-top" alt="shirt">
-                    <div class="product-body text-center">
-                        <h5 class="product-title">Special title treatment</h5>
-                        <p class="product-text">With supporting text below as a natural lead-in.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 5 -->
-            <div class="col-xl-3 col-md-4 col-sm-6">
-                <div class="product-card h-100">
-                    <img src="product-5-variant.webp" class="card-img-top" alt="heels">
-                    <div class="product-body text-center">
-                        <h5 class="product-title">Special title treatment</h5>
-                        <p class="product-text">With supporting text below as a natural lead-in.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 6 -->
-            <div class="col-xl-3 col-md-4 col-sm-6">
-                <div class="product-card h-100">
-                    <img src="denimjecket-7.webp" class="card-img-top" alt="denim">
-                    <div class="product-body text-center">
-                        <h5 class="product-title">Special title treatment</h5>
-                        <p class="product-text">With supporting text below as a natural lead-in.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 7 -->
-            <div class="col-xl-3 col-md-4 col-sm-6">
-                <div class="product-card h-100">
-                    <img src="backpack.webp" class="card-img-top" alt="backpack">
-                    <div class="product-body text-center">
-                        <h5 class="product-title">Special title treatment</h5>
-                        <p class="product-text">With supporting text below as a natural lead-in.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 8 -->
-            <div class="col-xl-3 col-md-4 col-sm-6">
-                <div class="product-card h-100">
-                    <img src="shoe.webp" class="card-img-top" alt="shoe">
-                    <div class="product-body text-center">
-                        <h5 class="product-title">Special title treatment</h5>
-                        <p class="product-text">With supporting text below as a natural lead-in.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- View All Button -->
-        <div class="text-center mt-5">
-            <button type="button" class="btn text-white"
-                style="background-color: #8c0d4f; border-radius: 30px; width: 14rem; height: 3rem;">
-                View All Products <i class='bx bx-right-arrow-alt text-white'></i>
-            </button>
         </div>
     </div>
-    </div>
 
-
-    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
 </body>
 
 </html>
