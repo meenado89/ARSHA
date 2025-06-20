@@ -19,6 +19,7 @@
         /* 17jun/3:50 */
         /* 18jun/ */
         /* 19/06..submenu */
+        /* 20/06..badges and pills */
     </style>
 </head>
 
@@ -27,28 +28,32 @@
     <nav class="navbar navbar-light bg-light" style="font-size: 14px;">
         <div class="container-fluid">
             <div class="container">
-                <div class="row align-items-center">
+                <div class="row align-items-center gy-3">
 
                     <!-- Left Column -->
-                    <div class="col-md-6 mb-2">
-                        <div class="contactheader d-flex flex-wrap gap-3">
+                    <div class="col-lg-6 col-12">
+                        <div
+                            class="contactheader d-flex flex-column flex-md-row flex-wrap gap-3 justify-content-center justify-content-lg-start align-items-center">
                             <div class="d-flex align-items-center">
                                 <i class='bx bxs-phone bx-sm p-2'></i>
-                                <p class="mb-0 fw-normal">Customer Support: <span style="color: #8c0d4f;">+1 (234)
-                                        567-890</span></p>
+                                <p class="mb-0 fw-normal text-center text-md-start">
+                                    Customer Support: <span style="color: #8c0d4f;">+1 (234) 567-890</span>
+                                </p>
                             </div>
 
                             <div class="d-flex align-items-center">
                                 <i class='bx bx-envelope bx-sm p-2' style="color: #8c0d4f;"></i>
-                                <p class="mb-0 fw-normal" style="color: #8c0d4f;">support@example.com</p>
+                                <p class="mb-0 fw-normal text-center text-md-start" style="color: #8c0d4f;">
+                                    support@example.com
+                                </p>
                             </div>
                         </div>
                     </div>
 
                     <!-- Right Column -->
-                    <div class="col-md-6 mb-2">
-                        <div class="trackheader d-flex justify-content-end align-items-center flex-wrap gap-3">
-
+                    <div class="col-lg-6 col-12">
+                        <div
+                            class="trackheader d-flex flex-column flex-md-row justify-content-center justify-content-lg-end align-items-center gap-3">
                             <div class="d-flex align-items-center">
                                 <i class='bx bxs-truck bx-sm p-2' style="color: #8c0d4f;"></i>
                                 <p class="mb-0 fw-normal" style="color: #8c0d4f;">Track Order</p>
@@ -82,7 +87,6 @@
                                     <li><a class="dropdown-item" href="#">GBP</a></li>
                                 </ul>
                             </div>
-
                         </div>
                     </div>
 
@@ -298,19 +302,6 @@
 
                     <!-- megaMenu1 -->
                     <a class="nav-link" href="#">Megamenu1</a>
-
-
-                    <!-- <a id="dLabel" type="button" data-bs-toggle="dropdown"  aria-expanded="false" href=" #" class="nav-link">Megamenu1</a>
-                    <ul class="dropdown-menu" aria-labelledby="dLabel">
-                     <li>bjhbjh</li>
-                     <li>kjbkjbkj</li>
-                     <li>kjbkbj</li>
-                     <li>hvjhcuyh</li>
-                     <li>kgjhuy</li>
-                     <li>kjbkjb</li>
-                    </ul> -->
-
-
                     <!-- megaMenu2 -->
                     <a class="nav-link" href="#">Megamenu2</a>
 
@@ -349,123 +340,125 @@
     <!-- herosection -->
     <section class="mainhero-container">
         <div class="container-fluid">
-            <div class="container">
-                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <!-- shoe -->
-                            <img src="shoe.webp" class="d-block w-25" alt="shoe">
 
-                        </div>
-                        <div class="carousel-item">
-                            <img src="bag.webp" class="d-block w-25" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="backpack.webp" class="d-block w-25" alt="...">
-                        </div>
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <!-- shoe -->
+                        <img src="shoe.webp" class="d-block w-25" alt="shoe">
+
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+                    <div class="carousel-item">
+                        <img src="bag.webp" class="d-block w-25" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="backpack.webp" class="d-block w-25" alt="...">
+                    </div>
                 </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
+
         </div>
     </section>
 
     <!-- promo cards -->
 
     <section class="promo-container">
-        <div class="container-fluid mt-5">
-            <div class="promocard-container">
-
-                <div class="row">
-                    <div class="col-sm-3">
-                        <div class="promocard-container">
-                            <div class="promo-card" style="background-color: #f5f2ee;">
-                                <div class="promocontent p-5">
-                                    <h5 class="card-title text-muted">Etiam vel augue</h5>
-                                    <h4 class="card-title fw-bolder">Nullam quis ante</h4>
-                                    <p class="card-text text-muted py-3">Donec pede justo, fringilla vel, aliquet nec,
-                                        vulputate eget,
-                                        arcu
-                                        in enim justo rhoncus ut.</p>
-                                    <a href="#" class="btn ">Shop Now</a>
-                                    <div class="side-img"><img src="purse.webp" width="190px" height="190px"></div>
-                                </div>
-
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="promocard-container">
-                            <div class="promo-card" style="background-color: #f0f5f0;">
-                                <div class="promocontent p-5">
-                                    <h5 class="card-title text-muted">Maecenas tempus</h5>
-                                    <h4 class="card-title fw-bold">Sed fringilla mauris</h4>
-                                    <p class="card-text text-muted py-3">Donec pede justo, fringilla vel, aliquet nec,
-                                        vulputate eget,
-                                        arcu
-                                        in enim justo rhoncus ut.</p>
-                                    <a href="#" class="btn ">Shop Now</a>
-                                    <div class="side-img"><img src="chair.webp" width="180px" height="190px"></div>
-                                </div>
-
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-3">
-                        <div class="promocard-container">
-                            <div class="promo-card" style="background-color: #f0f5f0;">
-                                <div class="promocontent p-5">
-                                    <h5 class="card-title text-muted">Aenean commodo</h5>
-                                    <h4 class="card-title fw-bold">Aenean commodo</h4>
-                                    <p class="card-text text-muted py-3">Donec pede justo, fringilla vel, aliquet nec,
-                                        vulputate eget,
-                                        arcu
-                                        in enim justo rhoncus ut.</p>
-                                    <a href="#" class="btn ">Shop Now</a>
-                                    <div class="side-img"><img src="product-f-1.webp" width="180px" height="190px">
+        <div class="promocardMain container-fluid">
+            <!-- <div class="promocardMain-container "> -->
+            <div class="row g-4">
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="promocard-container">
+                        <div class="promo-card" style="background-color: #f5f2ee;">
+                            <div class="promocontent p-5">
+                                <h5 class="card-title text-muted">Etiam vel augue</h5>
+                                <h4 class="card-title fw-bolder">Nullam quis ante</h4>
+                                <p class="card-text text-muted py-3">Donec pede justo, fringilla vel, aliquet nec,
+                                    vulputate eget,
+                                    arcu
+                                    in enim justo rhoncus ut.</p>
+                                <a href="#" class="btn ">Shop Now</a>
+                                <div class="side-img"><img src="purse.webp" width="120px" height="120px"
+                                        class="img-fluid">
                                     </div>
-                                </div>
-
-
                             </div>
+
+
                         </div>
                     </div>
-                    <div class="col-sm-3 h-75">
-                        <div class="promocard-container">
-                            <div class="promo-card" style="background-color: #faf4ea;">
-                                <div class="promocontent p-5">
-                                    <h5 class="card-title text-muted">Pellentesque auctor</h5>
-                                    <h4 class="card-title fw-bold ">Vestibulum dapibus nunc</h4>
-                                    <p class="card-text text-muted py-3">Donec pede justo, fringilla vel, aliquet nec,
-                                        vulputate eget,
-                                        arcu
-                                        in enim justo rhoncus ut.</p>
-                                    <a href="#" class="btn ">Shop Now</a>
-                                    <div class="side-img"><img src="product-m-1.webp" width="180px" height="190px">
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="promocard-container">
+                        <div class="promo-card" style="background-color: #faf4ea;">
+                            <div class="promocontent p-5">
+                                <h5 class="card-title text-muted">Maecenas tempus</h5>
+                                <h4 class="card-title fw-bold">Sed fringilla mauris</h4>
+                                <p class="card-text text-muted py-3">Donec pede justo, fringilla vel, aliquet nec,
+                                    vulputate eget,
+                                    arcu
+                                    in enim justo rhoncus ut.</p>
+                                <a href="#" class="btn ">Shop Now</a>
+                                <div class="side-img"><img src="chair.webp" width="120px" height="120px"
+                                        class="img-fluid"></div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="promocard-container">
+                        <div class="promo-card" style="background-color: #f0f5f0;">
+                            <div class="promocontent p-5">
+                                <h5 class="card-title text-muted">Aenean commodo</h5>
+                                <h4 class="card-title fw-bold">Aenean commodo</h4>
+                                <p class="card-text text-muted py-3">Donec pede justo, fringilla vel, aliquet nec,
+                                    vulputate eget,
+                                    arcu
+                                    in enim justo rhoncus ut.</p>
+                                <a href="#" class="btn ">Shop Now</a>
+                                <div class="side-img"><img src="product-f-1.webp" width="120px" height="120px"
+                                        class="img-fluid">
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 h-75">
+                    <div class="promocard-container">
+                        <div class="promo-card" style="background-color: #faf4ea;">
+                            <div class="promocontent p-5">
+                                <h5 class="card-title text-muted">Pellentesque auctor</h5>
+                                <h4 class="card-title fw-bold ">Vestibulum dapibus nunc</h4>
+                                <p class="card-text text-muted py-3">Donec pede justo, fringilla vel, aliquet nec,
+                                    vulputate eget,
+                                    arcu
+                                    in enim justo rhoncus ut.</p>
+                                <a href="#" class="btn ">Shop Now</a>
+                                <div class="side-img">
+                                    <img src="product-m-1.webp" width="120px" height="120px" class="img-fluid">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
         </div>
-
 
     </section>
 

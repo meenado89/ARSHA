@@ -5,7 +5,7 @@
 
  #navbarNavAltMarkup {
 
-     font-size: 14px;
+     font-size: 9rem;
      gap: 2rem;
      align-items: center;
      justify-content: center;
@@ -21,11 +21,13 @@
 
  .nav-link {
      color: black;
+
  }
 
  .nav-link:hover {
      color: #8c0d4f;
      text-decoration: underline;
+
 
  }
 
@@ -215,43 +217,46 @@
 
  /* promocards */
 
+ /* .promocardMain {
+    position: relative;
+     left: 3rem;
+     right: 3rem;
+ } */
+
  .promo-container {
      padding-top: 3rem;
      padding-bottom: 3rem;
 
  }
 
- .promocard-container {
+ /* .promocard-container {
      height: auto;
      position: relative;
      display: flex;
      justify-content: center;
      align-items: center;
-     gap: 2rem;
- }
+     gap: 1rem;
+ } */
 
  .promo-card {
-     width: 22rem;
+     width: 18rem;
+     height: 26rem;
      border-radius: 16px;
      font-family: system-ui, sans-serif;
-     font-size: 1.5rem;
-     height: 33rem;
-     -webkit-border-radius: 16px;
-     -moz-border-radius: 16px;
-     -ms-border-radius: 16px;
-     -o-border-radius: 16px;
+     font-size: 1rem;
+     
  }
 
 
  .side-img {
-     position: relative;
-     left: 10rem;
+     /* position: relative; */
+     /* left: 10rem; */
      z-index: 1;
      align-items: end;
-     display: flex;
+     /* display: flex; */
      justify-content: end;
      left: 3rem;
-     bottom: 4.2rem;
+     bottom: 3.75rem;
      overflow: hidden;
  }
 
@@ -378,7 +383,7 @@
  }
 
  #productC {
-    position: relative;
+     position: relative;
      z-index: 3;
      align-items: center;
      justify-items: center;
