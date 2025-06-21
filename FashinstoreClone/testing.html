@@ -17,6 +17,17 @@
     <title>TESTING</title>
 
     <style>
+        body {
+            background-color: #f8f4f6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            /* Prevents default blue color */
+        }
+
+
         .p-list-container {
             background-color: aliceblue;
             padding: 5rem;
@@ -35,7 +46,7 @@
         }
 
         .promo-main:hover {
-          transform: translate(-8px,-8px);
+            transform: translate(-8px, -8px);
         }
 
         .promoM-card h4 {
@@ -64,6 +75,174 @@
         .side-img {
             position: relative;
             z-index: 1;
+
+        }
+
+
+
+
+        .category-cards {
+
+            padding-bottom: 3rem;
+        }
+
+        .category-card {
+            position: relative;
+
+            overflow: hidden;
+
+        }
+
+        .category-link {
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            /* Perfect center */
+
+            z-index: 2;
+            background-color: white;
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            font-weight: 600;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            padding: 10px 20px;
+            border-radius: 30px;
+            white-space: nowrap;
+        }
+
+        .category-link {
+
+            color: rgb(0, 0, 0);
+            transition: opacity 0.3s ease;
+        }
+
+        .category-card:hover .category-link {
+            opacity: 1;
+            color: #000;
+            background-color: #8c0d4f;
+
+        }
+
+        .category-card {
+            border-radius: .65rem;
+
+        }
+
+        #category-cards-men-tab,
+        #category-cards-women-tab,
+        #category-cards-accesoires-tab {
+            font-weight: 700;
+            font-size: .95rem;
+            border: 0;
+            background-color: transparent;
+
+        }
+
+        #category-cards-men-tab:hover,
+        #category-cards-women-tab:hover,
+        #category-cards-accesoires-tab:hover {
+            color: #8c0d4f !important;
+            background-color: transparent !important;
+            border-color: transparent !important;
+            box-shadow: none !important;
+        }
+
+
+
+
+        .category-card img {
+            transition: all 0.3s ease-in-out;
+        }
+
+        .category-card img:hover {
+
+            transform: scale(1.05);
+        }
+
+
+
+        /* Best Seller */
+
+        .sellercard {
+            background-color: white;
+            width: 16rem;
+            height: 30rem;
+            border-radius: .95rem;
+        }
+
+        .seller-btn {
+            font-size: 1rem;
+            color: #570808;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-decoration: none;
+
+        }
+
+        /* apply hover */
+
+        
+
+        .product-action i {
+            position: relative;
+            background-color: #efedee;
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+            align-items: center;
+            justify-self: center;
+            color: #8c0d4f;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 2rem;
+            top: 4rem;
+            left: 0;
+            justify-content: center;
+            visibility: hidden;
+            opacity: 0;
+            transition: 0.3s ease-in-out;
+
+        }
+
+        .product-action i:hover {
+            background-color: #8c0d4f;
+            color: white;
+            border-radius: 50%;
+            padding: 5px;
+        }
+        .sellercard-body{
+            overflow: hidden;
+        }
+        .sellercard-body img{
+            position: relative;
+           height: 20rem;
+           width: 20rem;
+           right: 2rem;
+         
+        }
+        .sellercard:hover .product-action i {
+            visibility: visible;
+            opacity: 1;
+        }
+
+
+        /* small badges */
+
+        .product-badge {
+            position: relative;
+            z-index: 1;
+            top: 0%;
+            bottom: 29rem;
+
+
+        }
+
+        .price-rating p {
+            font-size: 26px;
+            color: #8c0d4f;
+            font-weight: 700;
 
         }
     </style>
@@ -144,83 +323,625 @@
 
     <!-- promo cards -->
 
+    <section id="category-cards" class="category-cards section ">
 
-    <div class="p-list-container overflow-hidden ">
-        <div class="row gx-2 gy-4">
-            <div class="col-lg-3 col-md-6 col-12 d-flex justify-content-center promo-main ">
-                <!-- card 1 -->
-                <div class="p-4 promoM-card" style="  background-color: #f5f2ee;">
-                    <h6 class="card-title text-muted pt-2">Etiam vel augue</h6>
-                    <h4 class="card-title fw-bolder">Nullam quis ante
-                    </h4>
-                    <p class="card-text text-muted py-3">Donec pede justo, fringilla vel, aliquet nec,
-                        vulputate eget,
-                        arcu
-                        in enim justo rhoncus ut.</p>
-                    <a href="#" class="btn ">Shop Now</a>
-                    <div class="side-img">
-                        <img src="purse.webp" style="width: 120px; height: 120px; left: 6.4rem; bottom: 3.25rem;"
-                            class="img-fluid position-relative">
+        <div class="container aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="category-tabs pb-5">
+
+                <ul class="nav justify-content-center" id="category-cards-tabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active text-muted" id="category-cards-men-tab" data-bs-toggle="tab"
+                            data-bs-target="#category-cards-men-content" type="button" role="tab"
+                            aria-controls="category-cards-men-content" aria-selected="true">SHOP MEN</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link text-muted" id="category-cards-women-tab" data-bs-toggle="tab"
+                            data-bs-target="#category-cards-women-content" type="button" role="tab"
+                            aria-controls="category-cards-women-content" aria-selected="false" tabindex="-1">SHOP
+                            WOMEN</button>
+                    </li>
+                    <li class="nav-item " role="presentation">
+                        <button class="nav-link text-muted" id="category-cards-accesoires-tab" data-bs-toggle="tab"
+                            data-bs-target="#category-cards-accesoires-content" type="button" role="tab"
+                            aria-controls="category-cards-accesoires-content" aria-selected="false" tabindex="-1">SHOP
+                            ACCESSOIRCES</button>
+                    </li>
+                </ul>
+                <hr class="w-100">
+            </div>
+
+
+            <div class="tab-content" id="category-cards-tabContent">
+                <!-- Men's Categories -->
+                <div class="tab-pane fade active show" id="category-cards-men-content" role="tabpanel"
+                    aria-labelledby="category-cards-men-tab">
+                    <div class="row g-4">
+                        <!-- Leather Category -->
+                        <div class="col-12 col-md-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                            <div class="category-card">
+                                <img src="product-m-11.webp" alt="Men's Leather" class="img-fluid" loading="lazy">
+                                <a href="#" class="category-link">
+                                    LEATHER <i class='bx bx-arrow-back bx-rotate-180'></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Denim Category -->
+                        <div class="col-12 col-md-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+                            <div class="category-card">
+                                <img src="product-m-12.webp" alt="Men's Denim" class="img-fluid" loading="lazy">
+                                <a href="#" class="category-link">
+                                    DENIM <i class='bx bx-arrow-back bx-rotate-180'></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Swimwear Category -->
+                        <div class="col-12 col-md-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
+                            <div class="category-card">
+                                <img src="product-m-19.webp" alt="Men's Swimwear" class="img-fluid" loading="lazy">
+                                <a href="#" class="category-link">
+                                    SWIMWEAR <i class='bx bx-arrow-back bx-rotate-180'></i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-
                 </div>
 
-            </div>
-            <!-- card 2 -->
-            <div class="col-lg-3 col-md-6 col-12 d-flex justify-content-center promo-main">
-                <div class="p-3 promoM-card" style="  background-color: #faf4ea;">
-                    <h6 class="card-title text-muted pt-2">Maecenas tempus</h6>
-                    <h4 class="card-title fw-bold">Sed fringilla mauris</h4>
-                    <p class="card-text text-muted py-3">Donec pede justo, fringilla vel, aliquet nec,
-                        vulputate eget,
-                        arcu
-                        in enim justo rhoncus ut.</p>
-                    <a href="#" class="btn ">Shop Now</a>
-                    <div class="side-img">
-                        <img src="chair.webp" style="width: 120px; height: 120px; left: 7.4rem; bottom: 3.25rem;"
-                            class="img-fluid position-relative">
+                <!-- Women's Categories -->
+                <div class="tab-pane fade" id="category-cards-women-content" role="tabpanel"
+                    aria-labelledby="category-cards-women-tab">
+                    <div class="row g-4">
+                        <!-- Dresses Category -->
+                        <div class="col-12 col-md-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                            <div class="category-card">
+                                <img src="product-f-11.webp" alt="Women's Dresses" class="img-fluid" loading="lazy">
+                                <a href="#" class="category-link">
+                                    DRESSES<i class='bx bx-arrow-back bx-rotate-180'></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Tops Category -->
+                        <div class="col-12 col-md-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+                            <div class="category-card">
+                                <img src="product-f-18.webp" alt="Women's Tops" class="img-fluid" loading="lazy">
+                                <a href="#" class="category-link">
+                                    TOPS <i class='bx bx-arrow-back bx-rotate-180'></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Accessories Category -->
+                        <div class="col-12 col-md-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
+                            <div class="category-card">
+                                <img src="product-f-13.webp" alt="Women's Accessories" class="img-fluid" loading="lazy">
+                                <a href="#" class="category-link">
+                                    ACCESSORIES <i class='bx bx-arrow-back bx-rotate-180'></i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
+                <!-- Kid's Categories -->
+                <div class="tab-pane fade" id="category-cards-accesoires-content" role="tabpanel"
+                    aria-labelledby="category-cards-accesoires-tab">
+                    <div class="row g-4">
+                        <!-- Boys Category -->
+                        <div class="col-12 col-md-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                            <div class="category-card" style="background-color: white;">
+                                <img src="purse.webp" alt="Boys Clothing" class="img-fluid" loading="lazy">
+                                <a href="#" class="category-link">
+                                    BOYS <i class='bx bx-arrow-back bx-rotate-180'></i>
+                                </a>
+                            </div>
+                        </div>
 
-            </div>
-            <!-- card 3 -->
-            <div class="col-lg-3 col-md-6 col-12 d-flex justify-content-center promo-main">
-                <div class="p-3 promoM-card" style="  background-color: #f0f5f0;">
-                    <h6 class="card-title text-muted pt-2">Aenean commodo</h6>
-                    <h4 class="card-title fw-bold">Aenean commodo</h4>
-                    <p class="card-text text-muted py-3" style="font-family: quicksand;">Donec pede justo, fringilla
-                        vel, aliquet nec,
-                        vulputate eget,
-                        arcu
-                        in enim justo rhoncus ut.</p>
-                    <a href="#" class="btn ">Shop Now</a>
-                    <div class="side-img"><img src="product-f-1.webp"
-                            style="width: 120px; height: 120px; left: 7.4rem; bottom: 4.2rem;"
-                            class="img-fluid position-relative">
-                    </div>
-                </div>
-            </div>
-            <!-- card 4 -->
-            <div class="col-lg-3 col-md-6 col-12 d-flex justify-content-center promo-main">
-                <div class="p-3 promoM-card" style="  background-color: #faf4ea;">
-                    <h6 class="card-title text-muted pt-2">Pellentesque auctor</h6>
-                    <h4 class="card-title fw-bold ">Vestibulum dapibus nunc</h4>
-                    <p class="card-text text-muted py-3">Donec pede justo, fringilla vel, aliquet nec,
-                        vulputate eget,
-                        arcu
-                        in enim justo rhoncus ut.</p>
-                    <a href="#" class="btn ">Shop Now</a>
-                    <div class="side-img">
-                        <img src="product-m-1.webp" style="width: 120px; height: 120px; left: 6rem; bottom:2.8rem;"
-                            class="img-fluid position-relative">
+                        <!-- Girls Category -->
+                        <div class="col-12 col-md-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+                            <div class="category-card" style="background-color: white;">
+                                <img src="chair.webp" alt="Girls Clothing" class="img-fluid" loading="lazy">
+                                <a href="#" class="category-link">
+                                    GIRLS <i class='bx bx-arrow-back bx-rotate-180'></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Toys Category -->
+                        <div class="col-12 col-md-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
+                            <div class="category-card" style="background-color: white;">
+                                <img src="sunglases.webp" alt="Kids Toys" class="img-fluid" loading="lazy">
+                                <a href="#" class="category-link">
+                                    TOYS <i class='bx bx-arrow-back bx-rotate-180'></i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
         </div>
 
+    </section>
+
+
+    <!-- Best Sellers -->
+
+    <!-- <div class="seller-main pt-3 pb-3 p-5" id="Bestsellers">
+        <div>
+            <h3 class="justify-self-center"><b>Best Sellers</b></h3>
+            <br><br>
+            <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        </div>
+        <div class="container-fluid pt-5">
+            <div class="row g-4 ">
+
+                <div class=" col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="sellercard">
+                        <div class="sellercard-body">
+                            <img src="product-f-1.webp" alt="wc1" width="100%" height="100%">
+                            <h5 class="sellercard-title">Women's Fashion</h5>
+                            <a href="#" class="seller-btn">Tempor Incididunt</a>
+                            <div class="price-rating d-flex">
+                                <p>$129.00</p>
+                                <i class='bx bxs-star bx-sm' style='color:#ffdc2f'></i>
+                                <span>4.8(42)</span>
+                            </div>
+
+                        </div>
+                    </div> -->
+    <!-- quick view on hover -->
+    <!-- <div class="product-action position-absolute">
+
+                        <a href="#" class="quick-view" style="text-decoration: none;">
+                            <i class='bx bx-show bx-md'></i></a>
+
+                        <a href="#" class="quick-view" style="text-decoration: none;">
+                            <i class='bx bx-cart-alt bx-md'></i></a>
+                    </div> -->
+
+
+    <!-- </div>
+                <div class=" col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="sellercard">
+                        <div class="sellercard-body">
+
+                            <img src="product-m-1.webp" alt="wc1" width="100%" height="100%">
+                            <h5 class="sellercard-title">Men's Fashion</h5>
+                            <a href="#" class="seller-btn">Consectetur</a>
+                            <div class="price-rating d-flex">
+                                <p>$72.00</p>
+                                <i class='bx bxs-star bx-sm' style='color:#ffdc2f'></i>
+                                <span>4.6(28)</span>
+                            </div> -->
+
+    <!-- small badge -->
+    <!-- <div class="product-badge">
+                                <p class="text-white"
+                                    style="background-color: #8c0d4f; width: 86px; height: 42px; border-radius: 9px; align-items: center;justify-content: center; font-size: 24px; display: flex;">
+                                    New</p>
+                            </div>
+                        </div>
+                    </div> -->
+    <!-- quick view on hover -->
+    <!-- <div class="product-action position-absolute">
+
+                        <a href="#" class="quick-view" style="text-decoration: none;">
+                            <i class='bx bx-show bx-md'></i></a>
+
+                        <a href="#" class="quick-view" style="text-decoration: none;">
+                            <i class='bx bx-cart-alt bx-md'></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class=" col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="sellercard">
+                        <div class="sellercard-body">
+
+                            <img src="product-f-3.webp" alt="wc1" width="100%" height="100%">
+                            <h5 class="sellercard-title">Accessories</h5>
+                            <a href="#" class="seller-btn">Adipiscing Magna</a>
+
+                            <div class="price-rating d-flex">
+                                <p>$79.00 </p>
+                                <del class="text-muted fw-normal">$100</del></p>
+                                <i class='bx bxs-star bx-sm' style='color:#ffdc2f'></i>
+                                <span>4.9(56)</span>
+                            </div> -->
+    <!-- badge -->
+    <!-- <div class="product-badge">
+                                <p class="text-white"
+                                    style="background-color: #ffa007; width: 86px; height: 42px; border-radius: 9px; align-items: center;justify-content: center; font-size: 24px; display: flex;">
+                                    15%</p>
+                            </div>
+                        </div>
+                    </div> -->
+    <!-- quick view on hover -->
+    <!-- <div class="product-action position-absolute">
+
+                        <a href="#" class="quick-view" style="text-decoration: none;">
+                            <i class='bx bx-show bx-md'></i></a>
+
+                        <a href="#" class="quick-view" style="text-decoration: none;">
+                            <i class='bx bx-cart-alt bx-md'></i></a>
+                    </div>
+                </div>
+                <div class=" col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="sellercard">
+                        <div class="sellercard-body">
+                            <img src="product-m-3.webp" alt="wc1" width="100%" height="100%">
+                            <h5 class="sellercard-title">Women's Fashion</h5>
+                            <a href="#" class="seller-btn">Tempor Incididunt</a>
+                            <p class="sellercard-text"></p>
+                            <div class="price-rating d-flex">
+                                <p>$129.00</p>
+                                <i class='bx bxs-star bx-sm' style='color:#ffdc2f'></i>
+                                <span>4.8(42)</span>
+                            </div>
+                        </div>
+                    </div> -->
+    <!-- quick view on hover -->
+    <!-- <div class="product-action position-absolute">
+
+                        <a href="#" class="quick-view" style="text-decoration: none;">
+                            <i class='bx bx-show bx-md'></i></a>
+
+                        <a href="#" class="quick-view" style="text-decoration: none;">
+                            <i class='bx bx-cart-alt bx-md'></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div> -->
+
+
+
+    <!-- 
+        <div class="row g-4">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="sellercard">
+                    <div class="sellercard-body">
+
+                        <img src="product-f-5.webp" alt="wc1" width="100%" height="100%">
+                        <h5 class="sellercard-title">Women's Fashion</h5>
+                        <a href="#" class="seller-btn">Tempor Incididunt</a>
+                        <div class="price-rating d-flex">
+                            <p>$129.00</=>
+                                <i class='bx bxs-star bx-sm' style='color:#ffdc2f'></i>
+                                <span>4.8(42)</span>
+                        </div>
+                    </div> -->
+
+    <!-- badge -->
+    <!-- <div class="product-badge">
+                        <p class="text-white"
+                            style="background-color: #ffa007; width: 86px; height: 42px; border-radius: 9px; align-items: center;justify-content: center; font-size: 24px; display: flex;">
+                            -25%</p>
+                    </div>
+                </div> -->
+    <!-- quick view on hover -->
+    <!-- <div class="product-action position-absolute">
+
+                    <a href="#" class="quick-view" style="text-decoration: none;">
+                        <i class='bx bx-show bx-md'></i></a>
+
+                    <a href="#" class="quick-view" style="text-decoration: none;">
+                        <i class='bx bx-cart-alt bx-md'></i></a>
+                </div>
+            </div>
+            <div class=" col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="sellercard">
+                    <div class="sellercard-body">
+                        <img src="product-m-5.webp" alt="wc1" width="100%" height="100%">
+                        <h5 class="sellercard-title">Men's Fashion</h5>
+                        <a href="#" class="seller-btn">Eiusmod Tempo</a>
+                        <div class="price-rating d-flex">
+                            <p>$110.00</p>
+                            <del>$200</del>
+                            <i class='bx bxs-star bx-sm' style='color:#ffdc2f'></i>
+                            <span>4.6(52)</span>
+                        </div>
+                    </div>
+                </div> -->
+    <!-- quick view on hover -->
+    <!-- <div class="product-action position-absolute">
+
+                    <a href="#" class="quick-view" style="text-decoration: none;">
+                        <i class='bx bx-show bx-md'></i></a>
+
+                    <a href="#" class="quick-view" style="text-decoration: none;">
+                        <i class='bx bx-cart-alt bx-md'></i></a>
+                </div>
+            </div>
+        </div> -->
+    <!-- <div class="row g-4">
+            <div class=" col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="sellercard">
+                    <div class="sellercard-body">
+
+                        <img src="product-f-7.webp" alt="wc1" width="100%" height="100%">
+                        <h5 class="sellercard-title">Women's Fashion</h5>
+                        <a href="#" class="seller-btn">Incididunt Labore</a>
+                        <div class="price-rating d-flex">
+                            <p>$55.00</p>
+                            <i class='bx bxs-star bx-sm' style='color:#ffdc2f'></i>
+                            <span>4.8(31)</span>
+                        </div>
+                    </div>
+                </div> -->
+    <!-- quick view on hover -->
+    <!-- <div class="product-action position-absolute">
+
+                    <a href="#" class="quick-view" style="text-decoration: none;">
+                        <i class='bx bx-show bx-md'></i></a>
+
+                    <a href="#" class="quick-view" style="text-decoration: none;">
+                        <i class='bx bx-cart-alt bx-md'></i></a>
+                </div>
+            </div>
+            <div class=" col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="sellercard">
+                    <div class="sellercard-body">
+
+                        <img src="product-m-7.webp" alt="wc1" width="100%" height="100%">
+                        <h5 class="sellercard-title text-muted ">Men's Fashion</h5>
+                        <a href="#" class="seller-btn ">Aliqua Magna</a>
+                        <div class="price-rating d-flex position-relative ">
+                            <p>$79.00</p>
+                            <i class='bx bxs-star bx-sm' style='color:#ffdc2f'></i>
+                            <span>4.5(47)</span>
+                        </div> -->
+    <!-- badge -->
+    <!-- <div class="product-badge">
+                            <p class="text-white"
+                                style="background-color: #8c0d4f; width: 86px; height: 42px; border-radius: 9px; align-items: center;justify-content: center; font-size: 24px; display: flex;">
+                                New</p>
+                        </div>
+                    </div> -->
+    <!-- quick view on hover -->
+    <!-- <div class="product-action position-absolute">
+
+                        <a href="#" class="quick-view" style="text-decoration: none;">
+                            <i class='bx bx-show bx-md'></i></a>
+
+                        <a href="#" class="quick-view" style="text-decoration: none;">
+                            <i class='bx bx-cart-alt bx-md'></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+
+    <div class="seller-main pt-3 pb-3 p-5" id="Bestsellers">
+        <div>
+            <h3 class="justify-self-center"><b>Best Sellers</b></h3>
+            <br><br>
+            <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        </div>
+
+        <div class="container-fluid pt-5">
+            <div class="row g-4">
+
+                <!-- Card 1 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 ">
+                    <div class="sellercard position-relative">
+                        <div class="sellercard-body">
+                            <img src="product-f-1.webp" alt="wc1" width="100%" height="100%">
+                            <h5 class="sellercard-title ">Women's Fashion</h5>
+                            <a href="#" class="seller-btn">Tempor Incididunt</a>
+                            <div class="price-rating d-flex align-items-center">
+                                <p class="mb-0">$129.00</p>
+                                <i class='bx bxs-star bx-sm ms-2' style='color:#ffdc2f'></i>
+                                <span class="ms-1">4.8(42)</span>
+                            </div>
+                            <!-- quick-view/cart -->
+                            <div class="product-action position-absolute top-0 end-0 p-2 ">
+                                <a href="#" class="quick-view me-2"><i class='bx bx-show bx-sm'></i></a>
+                                <a href="#" class="quick-view"><i class='bx bx-cart-alt bx-sm'></i></a>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="sellercard position-relative">
+                        <div class="sellercard-body ">
+                            <img src="product-m-1.webp" alt="wc1" width="100%" height="100%">
+                            <h5 class="sellercard-title">Men's Fashion</h5>
+                            <a href="#" class="seller-btn">Consectetur</a>
+                            <div class="price-rating d-flex align-items-center">
+                                <p class="mb-0">$72.00</p>
+                                <i class='bx bxs-star bx-sm ms-2' style='color:#ffdc2f'></i>
+                                <span class="ms-1">4.6(28)</span>
+                            </div>
+                            <!-- small badge -->
+                            <div class="product-badge position-absolute top-0 start-0 m-2">
+                                <p class="text-white d-flex align-items-center justify-content-center"
+                                    style="background-color: #8c0d4f; width: 60px; height: 30px; border-radius: 9px; font-size: 20px;">
+                                    New</p>
+                            </div>
+                            <!-- quick-view/cart -->
+                            <div class="product-action position-absolute top-0 end-0 p-2">
+                                <a href="#" class="quick-view me-2"><i class='bx bx-show bx-sm'></i></a>
+                                <a href="#" class="quick-view"><i class='bx bx-cart-alt bx-sm'></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="sellercard position-relative">
+                        <div class="sellercard-body">
+                            <img src="product-f-3.webp" alt="wc1" width="100%" height="100%">
+                            <h5 class="sellercard-title">Accessories</h5>
+                            <a href="#" class="seller-btn">Adipiscing Magna</a>
+                            <div class="price-rating d-flex align-items-center">
+                                <p class="mb-0">$79.00</p>
+                                <del class="text-muted fw-normal ms-2">$100</del>
+                                <i class='bx bxs-star bx-sm ms-2' style='color:#ffdc2f'></i>
+                                <span class="ms-1">4.9(56)</span>
+                            </div>
+                            <!-- small badge -->
+                            <div class="product-badge position-absolute top-0 start-0 m-2">
+                                <p class="text-white d-flex align-items-center justify-content-center"
+                                    style="background-color: #ffa007;width: 60px; height: 30px; border-radius: 9px; font-size: 20px;">
+                                    15%</p>
+                            </div>
+                            <!-- quick-view/cart -->
+                            <div class="product-action position-absolute top-0 end-0 p-2">
+                                <a href="#" class="quick-view me-2"><i class='bx bx-show bx-sm'></i></a>
+                                <a href="#" class="quick-view"><i class='bx bx-cart-alt bx-sm'></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="sellercard position-relative">
+                        <div class="sellercard-body">
+                            <img src="product-m-3.webp" alt="wc1" width="100%" height="100%">
+                            <h5 class="sellercard-title">Women's Fashion</h5>
+                            <a href="#" class="seller-btn">Tempor Incididunt</a>
+                            <div class="price-rating d-flex align-items-center">
+                                <p class="mb-0">$129.00</p>
+                                <i class='bx bxs-star bx-sm ms-2' style='color:#ffdc2f'></i>
+                                <span class="ms-1">4.8(42)</span>
+                            </div>
+                            <!-- quick-view/cart -->
+                            <div class="product-action position-absolute top-0 end-0 p-2">
+                                <a href="#" class="quick-view me-2"><i class='bx bx-show bx-sm'></i></a>
+                                <a href="#" class="quick-view"><i class='bx bx-cart-alt bx-sm'></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="sellercard position-relative">
+                        <div class="sellercard-body">
+                            <img src="product-f-5.webp" alt="wc1" width="100%" height="100%">
+                            <h5 class="sellercard-title">Women's Fashion</h5>
+                            <a href="#" class="seller-btn">Tempor Incididunt</a>
+                            <div class="price-rating d-flex align-items-center">
+                                <p class="mb-0">$129.00</p>
+                                <i class='bx bxs-star bx-sm ms-2' style='color:#ffdc2f'></i>
+                                <span class="ms-1">4.8(42)</span>
+                            </div>
+                            <!-- small badge -->
+                            <div class="product-badge position-absolute top-0 start-0 m-2">
+                                <p class="text-white d-flex align-items-center justify-content-center"
+                                    style="background-color: #ffa007; width: 60px; height: 30px; border-radius: 9px; font-size: 20px;">
+                                    -25%</p>
+                            </div>
+                            <!-- quick-view/cart -->
+                            <div class="product-action position-absolute top-0 end-0 p-2">
+                                <a href="#" class="quick-view me-2"><i class='bx bx-show bx-sm'></i></a>
+                                <a href="#" class="quick-view"><i class='bx bx-cart-alt bx-sm'></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="sellercard position-relative">
+                        <div class="sellercard-body">
+                            <img src="product-m-5.webp" alt="wc1" width="100%" height="100%">
+                            <h5 class="sellercard-title">Men's Fashion</h5>
+                            <a href="#" class="seller-btn">Eiusmod Tempo</a>
+                            <div class="price-rating d-flex align-items-center">
+                                <p class="mb-0">$110.00</p>
+                                <del class="text-muted fw-normal ms-2">$200</del>
+                                <i class='bx bxs-star bx-sm ms-2' style='color:#ffdc2f'></i>
+                                <span class="ms-1">4.6(52)</span>
+                            </div>
+                            <!-- quick-view/cart -->
+                            <div class="product-action position-absolute top-0 end-0 p-2">
+                                <a href="#" class="quick-view me-2"><i class='bx bx-show bx-sm'></i></a>
+                                <a href="#" class="quick-view"><i class='bx bx-cart-alt bx-sm'></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Card 7 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="sellercard position-relative">
+                        <div class="sellercard-body">
+                            <img src="product-f-7.webp" alt="wc1" width="100%" height="100%">
+                            <h5 class="sellercard-title">Women's Fashion</h5>
+                            <a href="#" class="seller-btn">Incididunt Labore</a>
+                            <div class="price-rating d-flex align-items-center">
+                                <p class="mb-0">$55.00</p>
+                                <i class='bx bxs-star bx-sm ms-2' style='color:#ffdc2f'></i>
+                                <span class="ms-1">4.8(31)</span>
+                            </div>
+                            <!-- quick-view/cart -->
+                            <div class="product-action position-absolute top-0 end-0 p-2">
+                                <a href="#" class="quick-view me-2"><i class='bx bx-show bx-sm'></i></a>
+                                <a href="#" class="quick-view"><i class='bx bx-cart-alt bx-sm'></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Card 8 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="sellercard position-relative">
+                        <div class="sellercard-body">
+                            <img src="product-m-7.webp" alt="wc1" width="100%" height="100%">
+                            <h5 class="sellercard-title text-muted">Men's Fashion</h5>
+                            <a href="#" class="seller-btn">Aliqua Magna</a>
+                            <div class="price-rating d-flex align-items-center">
+                                <p class="mb-0">$79.00</p>
+                                <i class='bx bxs-star bx-sm ms-2' style='color:#ffdc2f'></i>
+                                <span class="ms-1">4.5(47)</span>
+                            </div>
+                            <!-- small badge -->
+                            <div class="product-badge position-absolute top-0 start-0 m-2">
+                                <p class="text-white d-flex align-items-center justify-content-center"
+                                    style="background-color: #8c0d4f; width: 60px; height: 30px; border-radius: 9px; font-size: 20px;">
+                                    New</p>
+                            </div>
+                            <!-- quick-view/cart -->
+                            <div class="product-action position-absolute top-0 end-0 p-2">
+                                <a href="#" class="quick-view me-2"><i class='bx bx-show bx-sm'></i></a>
+                                <a href="#" class="quick-view"><i class='bx bx-cart-alt bx-sm'></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </div>
+
+
+
+    <script>
+
+
+
+
+    </script>
 
 
 

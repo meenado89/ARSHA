@@ -1,7 +1,14 @@
  body {
+     background-color: #f8f4f6;
      margin-top: 0%;
      margin-bottom: 0%;
  }
+/* to remove blue underline from buttons */
+ a {
+  text-decoration: none;
+  color: inherit; /* Prevents default blue color */
+}
+
 
  #navbarNavAltMarkup {
 
@@ -105,13 +112,7 @@
  }
 
 
- .main-category {
-     background-color: #f8f4f6;
-     height: auto;
-     padding-bottom: 3rem;
-     margin-bottom: 3rem;
-     margin-top: 4rem;
- }
+
 
  #dropdownMenuButton1 {
      color: #8c0d4f;
@@ -267,61 +268,170 @@
  }
 
  /* category cards */
- .main-category {
-    padding-top: 1rem;
+
+ .category-cards {
+
      padding-bottom: 3rem;
  }
 
- /* Best Seller  */
- .seller-btn {
-     font-size: 1.5rem;
-     color: #570808;
-     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ .category-card {
+     position: relative;
+    overflow: hidden;
+    
+ }
+
+ .category-link {
+     position: absolute;
+     top: 80%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     /* Perfect center */
+
+     z-index: 2;
+     background-color: white;
      text-decoration: none;
+     color: rgb(0, 0, 0);
+     font-weight: 600;
+     font-size: 0.9rem;
+     letter-spacing: 1px;
+     padding: 10px 20px;
+     border-radius: 30px;
+     white-space: nowrap;
+ }
+
+ .category-link {
+
+     color: rgb(0, 0, 0);
+     transition: opacity 0.3s ease;
+ }
+
+ .category-card:hover .category-link {
+     opacity: 1;
+     color: #000;
+     background-color: #8c0d4f;
 
  }
 
- /* apply hover */
- .product-action i {
-     position: relative;
-     background-color: #efedee;
-     width: 3.6rem;
-     height: 3.6rem;
-     border-radius: 50%;
-     align-items: center;
-     justify-self: center;
-     color: #8c0d4f;
-     z-index: 1;
-     display: flex;
-     flex-direction: column;
-     margin-bottom: 2rem;
-     bottom: 24rem;
-     left: 7rem;
-     justify-content: center;
-     text-decoration-style: none;
+ .category-card {
+     border-radius: .65rem;
 
  }
 
-
- /* small badges */
-
- .product-badge {
-     position: relative;
-     z-index: 1;
-     top: 0%;
-     bottom: 29rem;
-
-
- }
-
- .price-rating p {
-     font-size: 26px;
-     color: #8c0d4f;
+ #category-cards-men-tab,
+ #category-cards-women-tab,
+ #category-cards-accesoires-tab {
      font-weight: 700;
+     font-size: .95rem;
+     border: 0;
+     background-color: transparent;
 
  }
 
+ #category-cards-men-tab:hover,
+ #category-cards-women-tab:hover,
+ #category-cards-accesoires-tab:hover {
+     color: #8c0d4f !important;
+     background-color: transparent !important;
+     border-color: transparent !important;
+     box-shadow: none !important;
+ }
 
+
+
+
+ .category-card img {
+     transition: all 0.3s ease-in-out;
+ }
+
+ .category-card img:hover {
+     transform: scale(1.08);
+     -webkit-transform: scale(1.08);
+     -moz-transform: scale(1.08);
+     -ms-transform: scale(1.08);
+     -o-transform: scale(1.08);
+}
+
+ /* Best Seller  */
+  .sellercard {
+            background-color: white;
+            width: 16rem;
+            height: 30rem;
+            border-radius: .95rem;
+        }
+
+        .seller-btn {
+            font-size: 1rem;
+            color: #570808;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-decoration: none;
+
+        }
+
+        /* apply hover */
+
+        
+
+        .product-action i {
+            position: relative;
+            background-color: #efedee;
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+            align-items: center;
+            justify-self: center;
+            color: #8c0d4f;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 2rem;
+            top: 4rem;
+            left: 0;
+            justify-content: center;
+            visibility: hidden;
+            opacity: 0;
+            transition: 0.3s ease-in-out;
+
+        }
+
+        .product-action i:hover {
+            background-color: #8c0d4f;
+            color: white;
+            border-radius: 50%;
+            padding: 5px;
+        }
+        .sellercard-body{
+            overflow: hidden;
+        }
+        .sellercard-body img{
+            position: relative;
+           height: 20rem;
+           width: 20rem;
+           right: 2rem;
+         
+        }
+        .sellercard:hover .product-action i {
+            visibility: visible;
+            opacity: 1;
+        }
+
+
+        /* small badges */
+
+        .product-badge {
+            position: relative;
+            z-index: 1;
+            top: 0%;
+            bottom: 29rem;
+
+
+        }
+
+        .price-rating p {
+            font-size: 26px;
+            color: #8c0d4f;
+            font-weight: 700;
+
+        }
  /* product list cards */
 
  .plist-card {
