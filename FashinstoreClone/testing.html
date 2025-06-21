@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 
     <!-- <link rel="stylesheet" href="Fstorestyle.css"> -->
 
@@ -14,91 +17,54 @@
     <title>TESTING</title>
 
     <style>
-        /* promocards */
-
-        /* .promocard-container{
-            width: 16rem;
-            margin-left: 0%;
-           
-        } */
-        /* .promocardMain{
-            margin-left: 5rem;
-            margin-right: 4rem;
-        } */
-
-        /* .promo-container {
-            position: relative;
-            padding-top: 3rem;
-            padding-bottom: 3rem;
-
-
-        } */
-
-        /* .promo-card {
-            max-width: 16rem;
-            max-height: 26rem;
-            z-index: 9999;
-            border-radius: .5rem;
-            margin-right: 0%;
-        } */
-
-        /* .side-img {
-            position: relative;
-            z-index: 1;
-            bottom: 5rem;
-            left: 5.4rem;
+        .p-list-container {
+            background-color: aliceblue;
+            padding: 5rem;
         }
 
-        .promo-card {
-            border-radius: 10px;
-            height: 100%;
-            position: relative;
-            overflow: hidden;
-           
-        } */
-
-        .promo-card {
-            z-index: 9990;
+        .promoM-card {
+            border-radius: .75rem;
             width: 16rem;
-            height: 26rem;
-            border-radius: 0.5rem;
-            overflow: hidden;
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            padding: 2rem;
+            height: 25rem;
+
+        }
+
+        /* hover promo-main */
+        .promo-main {
+            transition: all 0.2s ease-in-out;
+        }
+
+        .promo-main:hover {
+          transform: translate(-8px,-8px);
+        }
+
+        .promoM-card h4 {
+            font-family: 'Quicksand', sans-serif;
+            font-size: 2rem;
+        }
+
+        .promoM-card p {
+            font-size: .95rem;
+            opacity: 0.9;
+            margin-bottom: 1.4rem;
+            width: 10rem;
+        }
+
+        .promoM-card a {
+            font-size: 1.2rem;
+            font-weight: 700;
+            text-decoration: underline;
+        }
+
+        .promoM-card a:hover {
+            color: #8c0d4f;
+            cursor: pointer;
         }
 
         .side-img {
-            z-index: 1;
             position: relative;
-            bottom: 0;
-            left: 8rem;
-            top: 1rem;
-        }
+            z-index: 1;
 
-        .promocontent h4 {
-            font-size: 2rem;
-            font-weight: 100;
-            margin-bottom: 1rem;
-            line-height: 1.2;
-            font-family: var("ubuntu", sans-serif);
-        }
-
-        .promo-card {
-            width: 18rem;
-            height: 26rem;
-            border-radius: 16px;
-            font-family: system-ui, sans-serif;
-           
-        }
-        .promo-card p{
-             font-size: .95rem;
-            margin-bottom: 1.5rem;
-            text-align: left;
-            font-family: var("ubuntu", sans-serif);
-           
         }
     </style>
 </head>
@@ -178,135 +144,83 @@
 
     <!-- promo cards -->
 
-    <section class="promo-container py-5">
-        <div class="container-fluid">
-            <div class="row justify-content-center g-4">
 
-                <!-- Card 1 -->
-                <div class="col-auto">
-                    <div class="promo-card p-4" style="background-color: #f5f2ee;">
-                        <h5 class="card-title text-muted p-1 mt-1 ">Etiam vel augue</h5>
-                        <h4 class="card-title fw-bolder">Nullam quis ante</h4>
-                        <p class="card-text text-muted py-3">Donec pede justo, fringilla vel, aliquet nec,
-                            vulputate eget,
-                            arcu
-                            in enim justo rhoncus ut.</p>
-                        <a href="#" class="btn ">Shop Now</a>
-                        <div class="side-img"><img src="purse.webp" width="120px" height="120px" class="img-fluid">
-                        </div>
+    <div class="p-list-container overflow-hidden ">
+        <div class="row gx-2 gy-4">
+            <div class="col-lg-3 col-md-6 col-12 d-flex justify-content-center promo-main ">
+                <!-- card 1 -->
+                <div class="p-4 promoM-card" style="  background-color: #f5f2ee;">
+                    <h6 class="card-title text-muted pt-2">Etiam vel augue</h6>
+                    <h4 class="card-title fw-bolder">Nullam quis ante
+                    </h4>
+                    <p class="card-text text-muted py-3">Donec pede justo, fringilla vel, aliquet nec,
+                        vulputate eget,
+                        arcu
+                        in enim justo rhoncus ut.</p>
+                    <a href="#" class="btn ">Shop Now</a>
+                    <div class="side-img">
+                        <img src="purse.webp" style="width: 120px; height: 120px; left: 6.4rem; bottom: 3.25rem;"
+                            class="img-fluid position-relative">
                     </div>
-                </div>
 
-                <!-- Card 2 -->
-                <div class="col-auto">
-                    <div class="promo-card p-4" style="background-color: #f0f5f0;">
-                        <h5 class="card-title text-muted p-1 mt-1">Maecenas tempus</h5>
-                        <h4 class="card-title fw-bold">Sed fringilla mauris</h4>
-                        <p class="card-text text-muted py-3">Donec pede justo, fringilla vel, aliquet nec,
-                            vulputate eget,
-                            arcu
-                            in enim justo rhoncus ut.</p>
-                        <a href="#" class="btn ">Shop Now</a>
-                        <div class="side-img"><img src="chair.webp" width="120px" height="120px" class="img-fluid">
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="col-auto">
-                    <div class="promo-card p-4" style="background-color: #faf4ea;">
-                        <h5 class="card-title text-muted p-1 mt-1">Aenean commodo</h5>
-                        <h4 class="card-title fw-bold">Aenean commodo</h4>
-                        <p class="card-text text-muted py-3">Donec pede justo, fringilla vel, aliquet nec,
-                            vulputate eget,
-                            arcu
-                            in enim justo rhoncus ut.</p>
-                        <a href="#" class="btn ">Shop Now</a>
-                        <div class="side-img"><img src="product-f-1.webp" width="120px" height="120px"
-                                class="img-fluid"></div>
-                    </div>
-                </div>
-
-                <!-- Card 4 -->
-                <div class="col-auto">
-                    <div class="promo-card p-4" style="background-color: #eef5fa;">
-                        <h5 class="card-title text-muted p-1 mt-1">Pellentesque auctor</h5>
-                        <h4 class="card-title fw-bold ">Vestibulum dapibus nunc</h4>
-                        <p class="card-text text-muted py-3">Donec pede justo, fringilla vel, aliquet nec,
-                            vulputate eget,
-                            arcu
-                            in enim justo rhoncus ut.</p>
-                        <a href="#" class="btn align-items-start">Shop Now</a>
-                        <div class="side-img"><img src="product-m-1.webp" width="130px" height="200px"
-                                class="img-fluid"></div>
-                    </div>
                 </div>
 
             </div>
+            <!-- card 2 -->
+            <div class="col-lg-3 col-md-6 col-12 d-flex justify-content-center promo-main">
+                <div class="p-3 promoM-card" style="  background-color: #faf4ea;">
+                    <h6 class="card-title text-muted pt-2">Maecenas tempus</h6>
+                    <h4 class="card-title fw-bold">Sed fringilla mauris</h4>
+                    <p class="card-text text-muted py-3">Donec pede justo, fringilla vel, aliquet nec,
+                        vulputate eget,
+                        arcu
+                        in enim justo rhoncus ut.</p>
+                    <a href="#" class="btn ">Shop Now</a>
+                    <div class="side-img">
+                        <img src="chair.webp" style="width: 120px; height: 120px; left: 7.4rem; bottom: 3.25rem;"
+                            class="img-fluid position-relative">
+                    </div>
+                </div>
+
+
+            </div>
+            <!-- card 3 -->
+            <div class="col-lg-3 col-md-6 col-12 d-flex justify-content-center promo-main">
+                <div class="p-3 promoM-card" style="  background-color: #f0f5f0;">
+                    <h6 class="card-title text-muted pt-2">Aenean commodo</h6>
+                    <h4 class="card-title fw-bold">Aenean commodo</h4>
+                    <p class="card-text text-muted py-3" style="font-family: quicksand;">Donec pede justo, fringilla
+                        vel, aliquet nec,
+                        vulputate eget,
+                        arcu
+                        in enim justo rhoncus ut.</p>
+                    <a href="#" class="btn ">Shop Now</a>
+                    <div class="side-img"><img src="product-f-1.webp"
+                            style="width: 120px; height: 120px; left: 7.4rem; bottom: 4.2rem;"
+                            class="img-fluid position-relative">
+                    </div>
+                </div>
+            </div>
+            <!-- card 4 -->
+            <div class="col-lg-3 col-md-6 col-12 d-flex justify-content-center promo-main">
+                <div class="p-3 promoM-card" style="  background-color: #faf4ea;">
+                    <h6 class="card-title text-muted pt-2">Pellentesque auctor</h6>
+                    <h4 class="card-title fw-bold ">Vestibulum dapibus nunc</h4>
+                    <p class="card-text text-muted py-3">Donec pede justo, fringilla vel, aliquet nec,
+                        vulputate eget,
+                        arcu
+                        in enim justo rhoncus ut.</p>
+                    <a href="#" class="btn ">Shop Now</a>
+                    <div class="side-img">
+                        <img src="product-m-1.webp" style="width: 120px; height: 120px; left: 6rem; bottom:2.8rem;"
+                            class="img-fluid position-relative">
+                    </div>
+                </div>
+            </div>
+
         </div>
-    </section>
 
-
-
-
-    <!-- <section class="promo-container py-5">
-        <div class="container-fluid">
-            <div class="row g-1 align-content-center"> -->
-
-    <!-- Card 1 -->
-    <!-- <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="promo-card p-4" style="background-color: #f5f2ee;">
-                        <h5 class="card-title text-muted">Etiam vel augue</h5>
-                        <h4 class="card-title fw-bolder">Nullam quis ante</h4>
-                        <p class="card-text text-muted py-3">Donec pede justo, fringilla vel, aliquet nec, vulputate
-                            eget, arcu in enim justo rhoncus ut.</p>
-                        <a href="#" class="btn btn-sm btn-outline-dark">Shop Now</a>
-                        <div class="side-img"><img src="purse.webp" class="img-fluid" width="100" height="100"></div>
-                    </div>
-                </div> -->
-
-    <!-- Card 2 -->
-    <!-- <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="promo-card p-4" style="background-color: #f0f5f0;">
-                        <h5 class="card-title text-muted">Maecenas tempus</h5>
-                        <h4 class="card-title fw-bold">Sed fringilla mauris</h4>
-                        <p class="card-text text-muted py-3">Donec pede justo, fringilla vel, aliquet nec, vulputate
-                            eget, arcu in enim justo rhoncus ut.</p>
-                        <a href="#" class="btn btn-sm btn-outline-dark">Shop Now</a>
-                        <div class="side-img"><img src="chair.webp" class="img-fluid" width="100" height="100"></div>
-                    </div>
-                </div> -->
-
-    <!-- Card 3 -->
-    <!-- <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="promo-card p-4" style="background-color: #faf4ea;">
-                        <h5 class="card-title text-muted">Aenean commodo</h5>
-                        <h4 class="card-title fw-bold">Aenean commodo</h4>
-                        <p class="card-text text-muted py-3">Donec pede justo, fringilla vel, aliquet nec, vulputate
-                            eget, arcu in enim justo rhoncus ut.</p>
-                        <a href="#" class="btn btn-sm btn-outline-dark">Shop Now</a>
-                        <div class="side-img"><img src="product-f-1.webp" class="img-fluid" width="100" height="100">
-                        </div>
-                    </div>
-                </div> -->
-
-    <!-- Card 4 -->
-    <!-- <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="promo-card p-4" style="background-color: #faf4ea;">
-                        <h5 class="card-title text-muted">Pellentesque auctor</h5>
-                        <h4 class="card-title fw-bold">Vestibulum dapibus</h4>
-                        <p class="card-text text-muted py-3">Donec pede justo, fringilla vel, aliquet nec, vulputate
-                            eget, arcu in enim justo rhoncus ut.</p>
-                        <a href="#" class="btn btn-sm btn-outline-dark">Shop Now</a>
-                        <div class="side-img"><img src="product-m-1.webp" class="img-fluid" width="100" height="100">
-                        </div>
-                    </div>
-                </div> -->
-
-    <!-- </div>
-        </div>
-    </section> -->
-
+    </div>
 
 
 

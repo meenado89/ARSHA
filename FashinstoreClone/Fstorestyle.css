@@ -216,65 +216,59 @@
  }
 
  /* promocards */
-
- /* .promocardMain {
-    position: relative;
-     left: 3rem;
-     right: 3rem;
- } */
-
- .promo-container {
-     padding-top: 3rem;
-     padding-bottom: 3rem;
-
- }
-
- /* .promocard-container {
-     height: auto;
+ .p-list-container {
      position: relative;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     gap: 1rem;
- } */
-
- .promo-card {
-     width: 18rem;
-     height: 26rem;
-     border-radius: 16px;
-     font-family: system-ui, sans-serif;
-     font-size: 1rem;
-     
+     padding: 5rem;
  }
 
+ .promoM-card {
+     border-radius: .75rem;
+     width: 16rem;
+     height: 25rem;
+
+ }
+
+ /* hover promo-main */
+ .promo-main {
+     transition: all 0.2s ease-in-out;
+ }
+
+ .promo-main:hover {
+     transform: translate(-8px, -8px);
+ }
+
+ .promoM-card h4 {
+     font-family: 'Quicksand', sans-serif;
+     font-size: 2rem;
+ }
+
+ .promoM-card p {
+     font-size: .95rem;
+     opacity: 0.9;
+     margin-bottom: 1.4rem;
+     width: 10rem;
+ }
+
+ .promoM-card a {
+     font-size: 1.2rem;
+     font-weight: 700;
+     text-decoration: underline;
+ }
+
+ .promoM-card a:hover {
+     color: #8c0d4f;
+     cursor: pointer;
+ }
 
  .side-img {
-     /* position: relative; */
-     /* left: 10rem; */
+     position: relative;
      z-index: 1;
-     align-items: end;
-     /* display: flex; */
-     justify-content: end;
-     left: 3rem;
-     bottom: 3.75rem;
-     overflow: hidden;
- }
-
-
- .promocontent h4 {
-     font-size: 2rem;
-     font-weight: 100;
-     margin-bottom: 1rem;
-     line-height: 1.2;
-     font-family: var("ubuntu", sans-serif);
-
 
  }
 
  /* category cards */
  .main-category {
-     background-color: #f8f4f6;
-     padding-top: 3rem;
+    padding-top: 1rem;
      padding-bottom: 3rem;
  }
 
