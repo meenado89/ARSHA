@@ -17,9 +17,9 @@
     <title>TESTING</title>
 
     <style>
-        body {
+        /* body {
             background-color: #f8f4f6;
-        }
+        } */
 
         a {
             text-decoration: none;
@@ -162,89 +162,78 @@
         }
 
 
+        /* product-list */
 
-        /* Best Seller */
-
-        .sellercard {
-            background-color: white;
-            width: 16rem;
-            height: 30rem;
-            border-radius: .95rem;
-        }
-
-        .seller-btn {
-            font-size: 1rem;
-            color: #570808;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            text-decoration: none;
-
-        }
-
-        /* apply hover */
-
-        
-
-        .product-action i {
+        /* Wrap everything in the card */
+        .plist-card {
             position: relative;
-            background-color: #efedee;
-            width: 3rem;
-            height: 3rem;
-            border-radius: 50%;
-            align-items: center;
-            justify-self: center;
-            color: #8c0d4f;
-            z-index: 1;
-            display: flex;
-            flex-direction: column;
-            margin-bottom: 2rem;
-            top: 4rem;
-            left: 0;
-            justify-content: center;
-            visibility: hidden;
-            opacity: 0;
+            overflow: hidden;
+            border-radius: 18px;
+            box-shadow: 1px 2px 6px rgba(213, 212, 212, 0.538);
             transition: 0.3s ease-in-out;
-
         }
 
-        .product-action i:hover {
+        /* Image inside card */
+        .plist-card img.card-img-top {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Add to cart button */
+        .add-cart {
+            position: absolute;
+            bottom: 45%;
+            left: 50%;
+            transform: translateX(-50%);
             background-color: #8c0d4f;
             color: white;
+            border-radius: 30px;
+            width: 12rem;
+            height: 3rem;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: all 0.3s ease;
+            z-index: 2;
+        }
+
+        /*  view icons */
+        .productC-action {
+            position: absolute;
+            top: 57%;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 0.8rem;
+            opacity: 0;
+            transition: all 0.3s ease;
+            z-index: 2;
+        }
+
+        .productC-action i {
+            background-color: #fff;
+            width: 2.5rem;
+            height: 2.5rem;
             border-radius: 50%;
-            padding: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
-        .sellercard-body{
-            overflow: hidden;
+
+        .productC-action i:hover{
+            color: #8c0d4f;
         }
-        .sellercard-body img{
-            position: relative;
-           height: 20rem;
-           width: 20rem;
-           right: 2rem;
-         
-        }
-        .sellercard:hover .product-action i {
-            visibility: visible;
+
+        /* Show on hover */
+        .plist-card:hover .add-cart,
+        .plist-card:hover .productC-action {
             opacity: 1;
         }
 
-
-        /* small badges */
-
-        .product-badge {
-            position: relative;
-            z-index: 1;
-            top: 0%;
-            bottom: 29rem;
-
-
-        }
-
-        .price-rating p {
-            font-size: 26px;
-            color: #8c0d4f;
-            font-weight: 700;
-
-        }
+       
     </style>
 </head>
 
@@ -467,488 +456,367 @@
     </section>
 
 
-    <!-- Best Sellers -->
+    <!-- product list -->
+    <div class="Plist-container pb-5" style="margin-bottom: 3rem;">
+        <ul class="nav nav-pills justify-content-center p-5 pb-3">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">All</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Clothing</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Accessories</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link d" href="#" tabindex="-1" aria-disabled="true">Electronics</a>
+            </li>
+        </ul>
 
-    <!-- <div class="seller-main pt-3 pb-3 p-5" id="Bestsellers">
-        <div>
-            <h3 class="justify-self-center"><b>Best Sellers</b></h3>
-            <br><br>
-            <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-        </div>
-        <div class="container-fluid pt-5">
-            <div class="row g-4 ">
-
-                <div class=" col-12 col-sm-6 col-md-4 col-lg-3">
-                    <div class="sellercard">
-                        <div class="sellercard-body">
-                            <img src="product-f-1.webp" alt="wc1" width="100%" height="100%">
-                            <h5 class="sellercard-title">Women's Fashion</h5>
-                            <a href="#" class="seller-btn">Tempor Incididunt</a>
-                            <div class="price-rating d-flex">
-                                <p>$129.00</p>
-                                <i class='bx bxs-star bx-sm' style='color:#ffdc2f'></i>
-                                <span>4.8(42)</span>
-                            </div>
-
-                        </div>
-                    </div> -->
-    <!-- quick view on hover -->
-    <!-- <div class="product-action position-absolute">
-
-                        <a href="#" class="quick-view" style="text-decoration: none;">
-                            <i class='bx bx-show bx-md'></i></a>
-
-                        <a href="#" class="quick-view" style="text-decoration: none;">
-                            <i class='bx bx-cart-alt bx-md'></i></a>
-                    </div> -->
-
-
-    <!-- </div>
-                <div class=" col-12 col-sm-6 col-md-4 col-lg-3">
-                    <div class="sellercard">
-                        <div class="sellercard-body">
-
-                            <img src="product-m-1.webp" alt="wc1" width="100%" height="100%">
-                            <h5 class="sellercard-title">Men's Fashion</h5>
-                            <a href="#" class="seller-btn">Consectetur</a>
-                            <div class="price-rating d-flex">
-                                <p>$72.00</p>
-                                <i class='bx bxs-star bx-sm' style='color:#ffdc2f'></i>
-                                <span>4.6(28)</span>
-                            </div> -->
-
-    <!-- small badge -->
-    <!-- <div class="product-badge">
-                                <p class="text-white"
-                                    style="background-color: #8c0d4f; width: 86px; height: 42px; border-radius: 9px; align-items: center;justify-content: center; font-size: 24px; display: flex;">
-                                    New</p>
-                            </div>
-                        </div>
-                    </div> -->
-    <!-- quick view on hover -->
-    <!-- <div class="product-action position-absolute">
-
-                        <a href="#" class="quick-view" style="text-decoration: none;">
-                            <i class='bx bx-show bx-md'></i></a>
-
-                        <a href="#" class="quick-view" style="text-decoration: none;">
-                            <i class='bx bx-cart-alt bx-md'></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="row g-4">
-                <div class=" col-12 col-sm-6 col-md-4 col-lg-3">
-                    <div class="sellercard">
-                        <div class="sellercard-body">
-
-                            <img src="product-f-3.webp" alt="wc1" width="100%" height="100%">
-                            <h5 class="sellercard-title">Accessories</h5>
-                            <a href="#" class="seller-btn">Adipiscing Magna</a>
-
-                            <div class="price-rating d-flex">
-                                <p>$79.00 </p>
-                                <del class="text-muted fw-normal">$100</del></p>
-                                <i class='bx bxs-star bx-sm' style='color:#ffdc2f'></i>
-                                <span>4.9(56)</span>
-                            </div> -->
-    <!-- badge -->
-    <!-- <div class="product-badge">
-                                <p class="text-white"
-                                    style="background-color: #ffa007; width: 86px; height: 42px; border-radius: 9px; align-items: center;justify-content: center; font-size: 24px; display: flex;">
-                                    15%</p>
-                            </div>
-                        </div>
-                    </div> -->
-    <!-- quick view on hover -->
-    <!-- <div class="product-action position-absolute">
-
-                        <a href="#" class="quick-view" style="text-decoration: none;">
-                            <i class='bx bx-show bx-md'></i></a>
-
-                        <a href="#" class="quick-view" style="text-decoration: none;">
-                            <i class='bx bx-cart-alt bx-md'></i></a>
-                    </div>
-                </div>
-                <div class=" col-12 col-sm-6 col-md-4 col-lg-3">
-                    <div class="sellercard">
-                        <div class="sellercard-body">
-                            <img src="product-m-3.webp" alt="wc1" width="100%" height="100%">
-                            <h5 class="sellercard-title">Women's Fashion</h5>
-                            <a href="#" class="seller-btn">Tempor Incididunt</a>
-                            <p class="sellercard-text"></p>
-                            <div class="price-rating d-flex">
-                                <p>$129.00</p>
-                                <i class='bx bxs-star bx-sm' style='color:#ffdc2f'></i>
-                                <span>4.8(42)</span>
-                            </div>
-                        </div>
-                    </div> -->
-    <!-- quick view on hover -->
-    <!-- <div class="product-action position-absolute">
-
-                        <a href="#" class="quick-view" style="text-decoration: none;">
-                            <i class='bx bx-show bx-md'></i></a>
-
-                        <a href="#" class="quick-view" style="text-decoration: none;">
-                            <i class='bx bx-cart-alt bx-md'></i></a>
-                    </div>
-                </div>
-            </div>
-
-        </div> -->
-
-
-
-    <!-- 
-        <div class="row g-4">
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                <div class="sellercard">
-                    <div class="sellercard-body">
-
-                        <img src="product-f-5.webp" alt="wc1" width="100%" height="100%">
-                        <h5 class="sellercard-title">Women's Fashion</h5>
-                        <a href="#" class="seller-btn">Tempor Incididunt</a>
-                        <div class="price-rating d-flex">
-                            <p>$129.00</=>
-                                <i class='bx bxs-star bx-sm' style='color:#ffdc2f'></i>
-                                <span>4.8(42)</span>
-                        </div>
-                    </div> -->
-
-    <!-- badge -->
-    <!-- <div class="product-badge">
-                        <p class="text-white"
-                            style="background-color: #ffa007; width: 86px; height: 42px; border-radius: 9px; align-items: center;justify-content: center; font-size: 24px; display: flex;">
-                            -25%</p>
-                    </div>
-                </div> -->
-    <!-- quick view on hover -->
-    <!-- <div class="product-action position-absolute">
-
-                    <a href="#" class="quick-view" style="text-decoration: none;">
-                        <i class='bx bx-show bx-md'></i></a>
-
-                    <a href="#" class="quick-view" style="text-decoration: none;">
-                        <i class='bx bx-cart-alt bx-md'></i></a>
-                </div>
-            </div>
-            <div class=" col-12 col-sm-6 col-md-4 col-lg-3">
-                <div class="sellercard">
-                    <div class="sellercard-body">
-                        <img src="product-m-5.webp" alt="wc1" width="100%" height="100%">
-                        <h5 class="sellercard-title">Men's Fashion</h5>
-                        <a href="#" class="seller-btn">Eiusmod Tempo</a>
-                        <div class="price-rating d-flex">
-                            <p>$110.00</p>
-                            <del>$200</del>
-                            <i class='bx bxs-star bx-sm' style='color:#ffdc2f'></i>
-                            <span>4.6(52)</span>
-                        </div>
-                    </div>
-                </div> -->
-    <!-- quick view on hover -->
-    <!-- <div class="product-action position-absolute">
-
-                    <a href="#" class="quick-view" style="text-decoration: none;">
-                        <i class='bx bx-show bx-md'></i></a>
-
-                    <a href="#" class="quick-view" style="text-decoration: none;">
-                        <i class='bx bx-cart-alt bx-md'></i></a>
-                </div>
-            </div>
-        </div> -->
-    <!-- <div class="row g-4">
-            <div class=" col-12 col-sm-6 col-md-4 col-lg-3">
-                <div class="sellercard">
-                    <div class="sellercard-body">
-
-                        <img src="product-f-7.webp" alt="wc1" width="100%" height="100%">
-                        <h5 class="sellercard-title">Women's Fashion</h5>
-                        <a href="#" class="seller-btn">Incididunt Labore</a>
-                        <div class="price-rating d-flex">
-                            <p>$55.00</p>
-                            <i class='bx bxs-star bx-sm' style='color:#ffdc2f'></i>
-                            <span>4.8(31)</span>
-                        </div>
-                    </div>
-                </div> -->
-    <!-- quick view on hover -->
-    <!-- <div class="product-action position-absolute">
-
-                    <a href="#" class="quick-view" style="text-decoration: none;">
-                        <i class='bx bx-show bx-md'></i></a>
-
-                    <a href="#" class="quick-view" style="text-decoration: none;">
-                        <i class='bx bx-cart-alt bx-md'></i></a>
-                </div>
-            </div>
-            <div class=" col-12 col-sm-6 col-md-4 col-lg-3">
-                <div class="sellercard">
-                    <div class="sellercard-body">
-
-                        <img src="product-m-7.webp" alt="wc1" width="100%" height="100%">
-                        <h5 class="sellercard-title text-muted ">Men's Fashion</h5>
-                        <a href="#" class="seller-btn ">Aliqua Magna</a>
-                        <div class="price-rating d-flex position-relative ">
-                            <p>$79.00</p>
-                            <i class='bx bxs-star bx-sm' style='color:#ffdc2f'></i>
-                            <span>4.5(47)</span>
-                        </div> -->
-    <!-- badge -->
-    <!-- <div class="product-badge">
-                            <p class="text-white"
-                                style="background-color: #8c0d4f; width: 86px; height: 42px; border-radius: 9px; align-items: center;justify-content: center; font-size: 24px; display: flex;">
-                                New</p>
-                        </div>
-                    </div> -->
-    <!-- quick view on hover -->
-    <!-- <div class="product-action position-absolute">
-
-                        <a href="#" class="quick-view" style="text-decoration: none;">
-                            <i class='bx bx-show bx-md'></i></a>
-
-                        <a href="#" class="quick-view" style="text-decoration: none;">
-                            <i class='bx bx-cart-alt bx-md'></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-
-
-
-    <div class="seller-main pt-3 pb-3 p-5" id="Bestsellers">
-        <div>
-            <h3 class="justify-self-center"><b>Best Sellers</b></h3>
-            <br><br>
-            <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-        </div>
-
-        <div class="container-fluid pt-5">
-            <div class="row g-4">
+        <!-- product Cards -->
+        <div class="container py-5">
+            <div class="row justify-content-center g-4 w-100">
 
                 <!-- Card 1 -->
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 ">
-                    <div class="sellercard position-relative">
-                        <div class="sellercard-body">
-                            <img src="product-f-1.webp" alt="wc1" width="100%" height="100%">
-                            <h5 class="sellercard-title ">Women's Fashion</h5>
-                            <a href="#" class="seller-btn">Tempor Incididunt</a>
-                            <div class="price-rating d-flex align-items-center">
-                                <p class="mb-0">$129.00</p>
-                                <i class='bx bxs-star bx-sm ms-2' style='color:#ffdc2f'></i>
-                                <span class="ms-1">4.8(42)</span>
-                            </div>
-                            <!-- quick-view/cart -->
-                            <div class="product-action position-absolute top-0 end-0 p-2 ">
-                                <a href="#" class="quick-view me-2"><i class='bx bx-show bx-sm'></i></a>
-                                <a href="#" class="quick-view"><i class='bx bx-cart-alt bx-sm'></i></a>
-                            </div>
+                <div class=" plistCard-container col-xl-3 col-md-4 col-sm-6">
+                    <div class="plist-card ">
+                        <!-- small badge -->
+                        <div class="plist-badge">
+                            <p class="text-white" style="background-color: #8c0d4f; width: 44px; height: 24px; border-radius: 24px; align-items: center;
+                                justify-content: center; font-size: 14px; font-weight: 500; display: flex;">
+                                sale</p>
+                        </div>
+                        <img src="purse.webp" class="card-img-top" alt="purse">
+
+                        <!-- add to cart -->
+                        <div class="text-center mt-5">
+                            <button type="button" class="add-cart  btn text-white">
+                                Add To Cart <i class='bx bx-cart-alt text-white p-1'></i> </button>
+                        </div>
+                        <!-- quick view on hover -->
+                        <div class="productC-action ">
+                            <a href="#" class="quick-view">
+                                <i class='bx bx-heart bx-sm'></i></a>
+
+                            <a href="#" class="quick-view">
+                                <i class='bx bxs-show bx-sm'></i></a>
+
+                            <a href="#" class="quick-view" ">
+                                <i class='bx bx-sort-alt-2 bx-rotate-270 bx-sm'></i>
+                            </a>
+
                         </div>
 
+                        <div class=" product-body text-center">
+                                <h5 class="product-title">Lorem ipsum dolor sit amet</h5>
+                                <p class="product-text">$89.99 <del class="text-muted fw-normal ">$129.99</del> </p>
 
+
+                                <!-- product rating -->
+                                <div class="product-rating">
+                                    <i class='bx bxs-star' style='color:#FFB800'></i>
+                                    <i class='bx bxs-star' style='color:#FFB800'></i>
+                                    <i class='bx bxs-star' style='color:#FFB800'></i>
+                                    <i class='bx bxs-star' style='color:#FFB800'></i>
+                                    <i class='bx bxs-star-half' style='color:#FFB800'></i>
+                                    <span>(24)</span>
+                                </div>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Card 2 -->
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                    <div class="sellercard position-relative">
-                        <div class="sellercard-body ">
-                            <img src="product-m-1.webp" alt="wc1" width="100%" height="100%">
-                            <h5 class="sellercard-title">Men's Fashion</h5>
-                            <a href="#" class="seller-btn">Consectetur</a>
-                            <div class="price-rating d-flex align-items-center">
-                                <p class="mb-0">$72.00</p>
-                                <i class='bx bxs-star bx-sm ms-2' style='color:#ffdc2f'></i>
-                                <span class="ms-1">4.6(28)</span>
-                            </div>
-                            <!-- small badge -->
-                            <div class="product-badge position-absolute top-0 start-0 m-2">
-                                <p class="text-white d-flex align-items-center justify-content-center"
-                                    style="background-color: #8c0d4f; width: 60px; height: 30px; border-radius: 9px; font-size: 20px;">
-                                    New</p>
-                            </div>
-                            <!-- quick-view/cart -->
-                            <div class="product-action position-absolute top-0 end-0 p-2">
-                                <a href="#" class="quick-view me-2"><i class='bx bx-show bx-sm'></i></a>
-                                <a href="#" class="quick-view"><i class='bx bx-cart-alt bx-sm'></i></a>
+                <div class="col-xl-3 col-md-4 col-sm-6">
+                    <div class="plist-card h-100">
+                        <img src="chair.webp" class="card-img-top" alt="chair">
+                        <!-- add to cart -->
+                        <div class="text-center mt-5">
+                            <button type="button" class="add-cart  btn text-white">
+                                Add To Cart <i class='bx bx-cart-alt text-white p-1'></i> </button>
+                        </div>
+                        <!-- quick view on hover -->
+                        <div class="productC-action ">
+                            <a href="#" class="quick-view" style="text-decoration: none;">
+                                <i class='bx bx-heart bx-md'></i></a>
+
+                            <a href="#" class="quick-view" style="text-decoration: none;">
+                                <i class='bx bxs-show bx-md'></i></a>
+
+                            <a href="#" class="quick-view" style="text-decoration: none;">
+                                <i class='bx bx-sort-alt-2 bx-rotate-270 bx-md'></i></a>
+
+                        </div>
+                        <div class="product-body text-center">
+                            <h5 class="product-title">Consectetur adipiscing elit</h5>
+                            <p class="product-text">$249.99</p>
+                            <!-- product rating -->
+                            <div class="product-rating">
+                                <i class='bx bxs-star' style='color:#FFB800'></i>
+                                <i class='bx bxs-star' style='color:#FFB800'></i>
+                                <i class='bx bxs-star' style='color:#FFB800'></i>
+                                <i class='bx bx-star' style='color:#FFB800'></i>
+                                <i class='bx bx-star' style='color:#FFB800'></i>
+                                <span>(18)</span>
                             </div>
                         </div>
-
                     </div>
                 </div>
 
                 <!-- Card 3 -->
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                    <div class="sellercard position-relative">
-                        <div class="sellercard-body">
-                            <img src="product-f-3.webp" alt="wc1" width="100%" height="100%">
-                            <h5 class="sellercard-title">Accessories</h5>
-                            <a href="#" class="seller-btn">Adipiscing Magna</a>
-                            <div class="price-rating d-flex align-items-center">
-                                <p class="mb-0">$79.00</p>
-                                <del class="text-muted fw-normal ms-2">$100</del>
-                                <i class='bx bxs-star bx-sm ms-2' style='color:#ffdc2f'></i>
-                                <span class="ms-1">4.9(56)</span>
-                            </div>
-                            <!-- small badge -->
-                            <div class="product-badge position-absolute top-0 start-0 m-2">
-                                <p class="text-white d-flex align-items-center justify-content-center"
-                                    style="background-color: #ffa007;width: 60px; height: 30px; border-radius: 9px; font-size: 20px;">
-                                    15%</p>
-                            </div>
-                            <!-- quick-view/cart -->
-                            <div class="product-action position-absolute top-0 end-0 p-2">
-                                <a href="#" class="quick-view me-2"><i class='bx bx-show bx-sm'></i></a>
-                                <a href="#" class="quick-view"><i class='bx bx-cart-alt bx-sm'></i></a>
+                <div class="col-xl-3 col-md-4 col-sm-6">
+                    <div class="plist-card h-100">
+                        <!-- small badge -->
+                        <div class="plist-badge">
+                            <p class="text-white" style="background-color: #8c0d4f; width: 44px; height: 24px; border-radius: 24px; align-items: center;
+                                justify-content: center; font-size: 14px; font-weight: 500; display: flex;">
+                                New</p>
+                        </div>
+                        <img src="sunglases.webp" class="card-img-top" alt="sunglasses">
+                        <!-- add to cart -->
+                        <div class="text-center mt-5">
+                            <button type="button" class="add-cart  btn text-white">
+                                Add To Cart <i class='bx bx-cart-alt text-white p-1'></i> </button>
+                        </div>
+                        <!-- quick view on hover -->
+                        <div class="productC-action ">
+                            <a href="#" class="quick-view" style="text-decoration: none;">
+                                <i class='bx bx-heart bx-md'></i></a>
+
+                            <a href="#" class="quick-view" style="text-decoration: none;">
+                                <i class='bx bxs-show bx-md'></i></a>
+
+                            <a href="#" class="quick-view" style="text-decoration: none;">
+                                <i class='bx bx-sort-alt-2 bx-rotate-270 bx-md'></i></a>
+
+                        </div>
+                        <div class="product-body text-center">
+                            <h5 class="product-title">Sed do eiusmod tempor</h5>
+                            <p class="product-text">$59.99</p>
+                            <!-- product rating -->
+                            <div class="product-rating">
+                                <i class='bx bxs-star' style='color:#FFB800'></i>
+                                <i class='bx bxs-star' style='color:#FFB800'></i>
+                                <i class='bx bxs-star' style='color:#FFB800'></i>
+                                <i class='bx bxs-star' style='color:#FFB800'></i>
+                                <i class='bx bx-star' style='color:#FFB800'></i>
+                                <span>(7)</span>
                             </div>
                         </div>
-
                     </div>
                 </div>
 
                 <!-- Card 4 -->
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                    <div class="sellercard position-relative">
-                        <div class="sellercard-body">
-                            <img src="product-m-3.webp" alt="wc1" width="100%" height="100%">
-                            <h5 class="sellercard-title">Women's Fashion</h5>
-                            <a href="#" class="seller-btn">Tempor Incididunt</a>
-                            <div class="price-rating d-flex align-items-center">
-                                <p class="mb-0">$129.00</p>
-                                <i class='bx bxs-star bx-sm ms-2' style='color:#ffdc2f'></i>
-                                <span class="ms-1">4.8(42)</span>
-                            </div>
-                            <!-- quick-view/cart -->
-                            <div class="product-action position-absolute top-0 end-0 p-2">
-                                <a href="#" class="quick-view me-2"><i class='bx bx-show bx-sm'></i></a>
-                                <a href="#" class="quick-view"><i class='bx bx-cart-alt bx-sm'></i></a>
+                <div class="col-xl-3 col-md-4 col-sm-6">
+                    <div class="plist-card h-100">
+                        <img src="sweatshirt -4.webp" class="card-img-top" alt="shirt">
+                        <!-- add to cart -->
+                        <div class="text-center mt-5">
+                            <button type="button" class="add-cart  btn text-white">
+                                Add To Cart <i class='bx bx-cart-alt text-white p-1'></i> </button>
+                        </div>
+                        <!-- quick view on hover -->
+                        <div class="productC-action ">
+                            <a href="#" class="quick-view" style="text-decoration: none;">
+                                <i class='bx bx-heart bx-md'></i></a>
+
+                            <a href="#" class="quick-view" style="text-decoration: none;">
+                                <i class='bx bxs-show bx-md'></i></a>
+
+                            <a href="#" class="quick-view" style="text-decoration: none;">
+                                <i class='bx bx-sort-alt-2 bx-rotate-270 bx-md'></i></a>
+
+                        </div>
+                        <div class="product-body text-center">
+                            <h5 class="product-title">Incididunt ut labore et dolore</h5>
+                            <p class="product-text">$79.99 <del class="text-muted fw-normal ">$99.99</del></p>
+                            <!-- product rating -->
+                            <div class="product-rating">
+                                <i class='bx bxs-star' style='color:#FFB800'></i>
+                                <i class='bx bxs-star' style='color:#FFB800'></i>
+                                <i class='bx bxs-star' style='color:#FFB800'></i>
+                                <i class='bx bxs-star' style='color:#FFB800'></i>
+                                <i class='bx bxs-star' style='color:#FFB800'></i>
+                                <span>(32)</span>
                             </div>
                         </div>
-
                     </div>
                 </div>
 
                 <!-- Card 5 -->
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                    <div class="sellercard position-relative">
-                        <div class="sellercard-body">
-                            <img src="product-f-5.webp" alt="wc1" width="100%" height="100%">
-                            <h5 class="sellercard-title">Women's Fashion</h5>
-                            <a href="#" class="seller-btn">Tempor Incididunt</a>
-                            <div class="price-rating d-flex align-items-center">
-                                <p class="mb-0">$129.00</p>
-                                <i class='bx bxs-star bx-sm ms-2' style='color:#ffdc2f'></i>
-                                <span class="ms-1">4.8(42)</span>
-                            </div>
-                            <!-- small badge -->
-                            <div class="product-badge position-absolute top-0 start-0 m-2">
-                                <p class="text-white d-flex align-items-center justify-content-center"
-                                    style="background-color: #ffa007; width: 60px; height: 30px; border-radius: 9px; font-size: 20px;">
-                                    -25%</p>
-                            </div>
-                            <!-- quick-view/cart -->
-                            <div class="product-action position-absolute top-0 end-0 p-2">
-                                <a href="#" class="quick-view me-2"><i class='bx bx-show bx-sm'></i></a>
-                                <a href="#" class="quick-view"><i class='bx bx-cart-alt bx-sm'></i></a>
+                <div class="col-xl-3 col-md-4 col-sm-6">
+                    <div class="plist-card h-100">
+                        <img src="product-5-variant.webp" class="card-img-top" alt="heels">
+                        <!-- add to cart -->
+                        <div class="text-center mt-5">
+                            <button type="button" class="add-cart  btn text-white">
+                                Add To Cart <i class='bx bx-cart-alt text-white p-1'></i> </button>
+                        </div>
+                        <!-- quick view on hover -->
+                        <div class="productC-action ">
+                            <a href="#" class="quick-view">
+                                <i class='bx bx-heart bx-md'></i></a>
+
+                            <a href="#" class="quick-view">
+                                <i class='bx bxs-show bx-md'></i></a>
+
+                            <a href="#" class="quick-view">
+                                <i class='bx bx-sort-alt-2 bx-rotate-270 bx-md'></i></a>
+
+                        </div>
+                        <div class="product-body text-center">
+                            <h5 class="product-title">Magna aliqua ut enim ad minim</h5>
+                            <p class="product-text">$199.99 <del class="text-muted fw-normal ">$229.99</del></p>
+                            <!-- product rating -->
+                            <div class="product-rating">
+                                <i class='bx bxs-star' style='color:#FFB800'></i>
+                                <i class='bx bxs-star' style='color:#FFB800'></i>
+                                <i class='bx bxs-star' style='color:#FFB800'></i>
+                                <i class='bx bxs-star-half' style='color:#FFB800'></i>
+                                <i class='bx bx-star' style='color:#FFB800'></i>
+                                <span>(15)</span>
                             </div>
                         </div>
-
                     </div>
                 </div>
 
                 <!-- Card 6 -->
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                    <div class="sellercard position-relative">
-                        <div class="sellercard-body">
-                            <img src="product-m-5.webp" alt="wc1" width="100%" height="100%">
-                            <h5 class="sellercard-title">Men's Fashion</h5>
-                            <a href="#" class="seller-btn">Eiusmod Tempo</a>
-                            <div class="price-rating d-flex align-items-center">
-                                <p class="mb-0">$110.00</p>
-                                <del class="text-muted fw-normal ms-2">$200</del>
-                                <i class='bx bxs-star bx-sm ms-2' style='color:#ffdc2f'></i>
-                                <span class="ms-1">4.6(52)</span>
-                            </div>
-                            <!-- quick-view/cart -->
-                            <div class="product-action position-absolute top-0 end-0 p-2">
-                                <a href="#" class="quick-view me-2"><i class='bx bx-show bx-sm'></i></a>
-                                <a href="#" class="quick-view"><i class='bx bx-cart-alt bx-sm'></i></a>
+                <div class="col-xl-3 col-md-4 col-sm-6">
+                    <div class="plist-card h-100">
+                        <!-- small badge -->
+                        <div class="plist-badge">
+                            <p class="text-white" style="background-color: #8c0d4f; width: 44px; height: 24px; border-radius: 24px; align-items: center;
+                                justify-content: center; font-size: 14px; font-weight: 500; display: flex;">
+                                new</p>
+                        </div>
+                        <img src="denimjecket-7.webp" class="card-img-top" alt="denim">
+                        <!-- add to cart -->
+                        <div class="text-center mt-5">
+                            <button type="button" class="add-cart  btn text-white">
+                                Add To Cart <i class='bx bx-cart-alt text-white p-1'></i> </button>
+                        </div>
+                        <!-- quick view on hover -->
+                        <div class="productC-action ">
+                            <a href="#" class="quick-view" style="text-decoration: none;">
+                                <i class='bx bx-heart bx-md'></i></a>
+
+                            <a href="#" class="quick-view" style="text-decoration: none;">
+                                <i class='bx bxs-show bx-md'></i></a>
+
+                            <a href="#" class="quick-view" style="text-decoration: none;">
+                                <i class='bx bx-sort-alt-2 bx-rotate-270 bx-md'></i></a>
+
+                        </div>
+                        <div class="product-body text-center">
+                            <h5 class="product-title">Veniam quis nostrud exercitation</h5>
+                            <p class="product-text">$45.99</p>
+                            <!-- product rating -->
+                            <div class="product-rating">
+                                <i class='bx bxs-star' style='color:#FFB800'></i>
+                                <i class='bx bxs-star' style='color:#FFB800'></i>
+                                <i class='bx bxs-star' style='color:#FFB800'></i>
+                                <i class='bx bx-star' style='color:#FFB800'></i>
+                                <i class='bx bx-star' style='color:#FFB800'></i>
+                                <span>(21)</span>
                             </div>
                         </div>
-
                     </div>
                 </div>
 
                 <!-- Card 7 -->
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                    <div class="sellercard position-relative">
-                        <div class="sellercard-body">
-                            <img src="product-f-7.webp" alt="wc1" width="100%" height="100%">
-                            <h5 class="sellercard-title">Women's Fashion</h5>
-                            <a href="#" class="seller-btn">Incididunt Labore</a>
-                            <div class="price-rating d-flex align-items-center">
-                                <p class="mb-0">$55.00</p>
-                                <i class='bx bxs-star bx-sm ms-2' style='color:#ffdc2f'></i>
-                                <span class="ms-1">4.8(31)</span>
-                            </div>
-                            <!-- quick-view/cart -->
-                            <div class="product-action position-absolute top-0 end-0 p-2">
-                                <a href="#" class="quick-view me-2"><i class='bx bx-show bx-sm'></i></a>
-                                <a href="#" class="quick-view"><i class='bx bx-cart-alt bx-sm'></i></a>
+                <div class="col-xl-3 col-md-4 col-sm-6">
+                    <div class="plist-card h-100">
+                        <img src="backpack.webp" class="card-img-top" alt="backpack">
+                        <!-- add to cart -->
+                        <div class="text-center mt-5">
+                            <button type="button" class="add-cart  btn text-white">
+                                Add To Cart <i class='bx bx-cart-alt text-white p-1'></i> </button>
+                        </div>
+                        <!-- quick view on hover -->
+                        <div class="productC-action">
+                            <a href="#" class="quick-view" style="text-decoration: none;">
+                                <i class='bx bx-heart bx-md'></i></a>
+
+                            <a href="#" class="quick-view" style="text-decoration: none;">
+                                <i class='bx bxs-show bx-md'></i></a>
+
+                            <a href="#" class="quick-view" style="text-decoration: none;">
+                                <i class='bx bx-sort-alt-2 bx-rotate-270 bx-md'></i></a>
+
+                        </div>
+                        <div class="product-body text-center">
+                            <h5 class="product-title">Ullamco laboris nisi ut aliquip</h5>
+                            <p class="product-text ">$69.99 <del class="text-muted fw-normal ">$129.99</del></p>
+                            <!-- product rating -->
+                            <div class="product-rating">
+                                <i class='bx bxs-star' style='color:#FFB800'></i>
+                                <i class='bx bxs-star' style='color:#FFB800'></i>
+                                <i class='bx bxs-star' style='color:#FFB800'></i>
+                                <i class='bx bxs-star' style='color:#FFB800'></i>
+                                <i class="bi bi-star-half"></i>
+                                <span>(11)</span>
                             </div>
                         </div>
-
                     </div>
                 </div>
 
                 <!-- Card 8 -->
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                    <div class="sellercard position-relative">
-                        <div class="sellercard-body">
-                            <img src="product-m-7.webp" alt="wc1" width="100%" height="100%">
-                            <h5 class="sellercard-title text-muted">Men's Fashion</h5>
-                            <a href="#" class="seller-btn">Aliqua Magna</a>
-                            <div class="price-rating d-flex align-items-center">
-                                <p class="mb-0">$79.00</p>
-                                <i class='bx bxs-star bx-sm ms-2' style='color:#ffdc2f'></i>
-                                <span class="ms-1">4.5(47)</span>
-                            </div>
-                            <!-- small badge -->
-                            <div class="product-badge position-absolute top-0 start-0 m-2">
-                                <p class="text-white d-flex align-items-center justify-content-center"
-                                    style="background-color: #8c0d4f; width: 60px; height: 30px; border-radius: 9px; font-size: 20px;">
-                                    New</p>
-                            </div>
-                            <!-- quick-view/cart -->
-                            <div class="product-action position-absolute top-0 end-0 p-2">
-                                <a href="#" class="quick-view me-2"><i class='bx bx-show bx-sm'></i></a>
-                                <a href="#" class="quick-view"><i class='bx bx-cart-alt bx-sm'></i></a>
-                            </div>
+                <div class="col-xl-3 col-md-4 col-sm-6">
+                    <div class="plist-card h-100">
+                        <!-- small badge -->
+                        <div class="plist-badge">
+                            <p class="text-white" style="background-color: #8c0d4f; width: 44px; height: 24px; border-radius: 24px; align-items: center;
+                                justify-content: center; font-size: 14px; font-weight: 500; display: flex;">
+                                sale</p>
+                        </div>
+                        <img src="shoe.webp" class="card-img-top" alt="shoe">
+
+                        <!-- add to cart -->
+                        <div class="text-center mt-5">
+                            <button type="button" class="add-cart  btn text-white">
+                                Add To Cart <i class='bx bx-cart-alt text-white p-1'></i> </button>
                         </div>
 
+                        <!-- quick view on hover -->
+                        <div class="productC-action ">
+                            <a href="#" class="quick-view" style="text-decoration: none;">
+                                <i class='bx bx-heart bx-md'></i></a>
+
+                            <a href="#" class="quick-view" style="text-decoration: none;">
+                                <i class='bx bxs-show bx-md'></i></a>
+
+                            <a href="#" class="quick-view" style="text-decoration: none;">
+                                <i class='bx bx-sort-alt-2 bx-rotate-270 bx-md'></i></a>
+
+                        </div>
+                        <div class="product-body text-center">
+                            <h5 class="product-title">Ex ea commodo consequat</h5>
+                            <p class="product-text">$159.99 </p>
+                            <!-- product rating -->
+                            <div class="product-rating">
+                                <i class='bx bxs-star' style='color:#FFB800'></i>
+                                <i class='bx bxs-star' style='color:#FFB800'></i>
+                                <i class='bx bxs-star' style='color:#FFB800'></i>
+                                <i class='bx bxs-star-half' style='color:#FFB800'></i>
+                                <i class='bx bx-star' style='color:#FFB800'></i>
+                                <span>(29)</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
             </div>
-        </div>
-    </div>
 
 
 
-    <script>
+            <script>
+
+            </script>
 
 
 
-
-    </script>
-
-
-
-    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+            <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+                crossorigin="anonymous"></script>
 </body>
 
 </html>
