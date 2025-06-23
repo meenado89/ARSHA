@@ -504,55 +504,223 @@
 
  /* product list cards */
 
- .plist-card {
-     border: 1px solid whitesmoke;
-     box-shadow: 1px 2px 6px rgba(213, 212, 212, 0.538);
-     border-radius: 18px;
-     -webkit-border-radius: 18px;
-     -moz-border-radius: 18px;
-     -ms-border-radius: 18px;
-     -o-border-radius: 18px;
-     z-index: 999;
- }
+   /* product-list */
+        .pnav-link {
+            position: relative;
+            display: flex;
+            background: #e6e4e5;
+            color: #000000;
+            padding: 1rem;
+            height: 2.2rem;
+            border-radius: 1rem;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            margin-left: 1rem;
+        }
+        .pnav-link:hover{
+           color: #8c0d4f;
+            background-color: #8c0d4f27;
+        }
 
- .product-body {
-     padding: 1rem;
-     height: 8rem;
- }
+        .product-title {
+            font-family: 'Quicksand', sans-serif;
+            font-size: .94rem;
+            font-weight: 600;
 
- .product-text {
+        }
 
-     color: #8c0d4f;
-     font-size: 23px;
-     font-weight: 700;
-     left: 0%;
- }
+      
 
- .product-title {
-     font-family: 'Times New Roman', Times, serif;
-     font-size: 22px;
- }
+        /* Wrap everything in the card */
 
- .product-title:hover {
-     color: #8c0d4f;
- }
+        .plist-card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 18px;
+            box-shadow: 1px 2px 6px rgba(213, 212, 212, 0.538);
+            transition: 0.3s ease-in-out;
+            height: 26.5rem;
+        }
 
- /* sale/newbadge */
- .plist-badge {
-     position: relative;
-     z-index: 2;
-     top: 1rem;
-     left: 1rem;
+        /* text */
+        .product-body {
+            padding: 1rem;
+            position: relative;
+            bottom: 3rem;
 
- }
+        }
 
- .add-cart {
-     position: relative;
-     z-index: 3;
-     bottom: 10rem;
-     background-color: #8c0d4f;
-     border-radius: 30px;
-     width: 14rem;
-     height: 3rem;
-     font-size: 18px;
- }
+        /* Add to cart button */
+        .add-cart {
+            position: absolute;
+            bottom: 55%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #8c0d4f;
+            color: white;
+            border-radius: 30px;
+            width: 12rem;
+            height: 3rem;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: all 0.3s ease;
+            z-index: 2;
+        }
+
+        /*  view icons */
+        .productC-action {
+            position: absolute;
+            top: 47%;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 0.8rem;
+            opacity: 0;
+            transition: all 0.3s ease;
+            z-index: 2;
+
+        }
+
+        .productC-action i {
+            background-color: #fff;
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .productC-action i:hover {
+            color: #8c0d4f;
+
+        }
+
+        /* Show on hover  */
+        .plist-card:hover .add-cart,
+        .plist-card:hover .productC-action {
+            opacity: 1;
+
+        }
+
+        .plistCard-container:hover {
+            transform: translateY(3px);
+        }
+
+
+        /* small badges */
+        .plist-badge {
+            position: absolute;
+            z-index: 4;
+
+        }
+
+
+
+        .plist-img {
+            position: relative;
+            height: 20rem;
+            width: 20rem;
+            overflow: hidden;
+            top: 0%;
+
+        }
+
+        .plist-img img {
+            position: absolute;
+            height: 16rem;
+            width: 16rem;
+            transition: opacity 0.5s ease 0.1s, transform 0.6s ease;
+
+        }
+
+        /* readiand */
+
+        .gradient-overlay {
+            position: absolute;
+            top: 35%;
+            left: 0;
+            width: 100%;
+            height: 50%;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            z-index: 2;
+            pointer-events: none;
+        }
+
+        .plist-card:hover .gradient-overlay {
+            opacity: 1;
+        }
+
+
+        .gradient-overlay:hover {
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, transparent 50%);
+
+        }
+
+
+
+
+
+        /* img scale */
+        .main-img {
+            transform: scale(1);
+
+        }
+
+        .hover-img {
+            opacity: 0;
+            transform: scale(1.05);
+
+        }
+
+        /* hovers */
+
+        /* Image switch , will work together with all card hover  */
+        /* .plist-card:hover .main-img {
+            opacity: 0;
+            transform: scale(0.9);
+        }
+
+        .plist-card:hover .hover-img {
+            opacity: 1;
+            transform: scale(1.05);
+        } */
+
+
+
+        /* Gradient */
+        .plist-card:hover .plist-img {
+            opacity: 1;
+
+        }
+
+        /* Show quick view icons and add to cart */
+        .plist-card:hover .productC-action,
+        .plist-card:hover .add-cart {
+            opacity: 1;
+        }
+           .plist-card:hover .product-title {
+            color: #8c0d4f;
+        }
+        /* Move card */
+        .plist-card {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .plist-card:hover {
+            transform: translateY(3px);
+        }
+
+        .main-img {
+            z-index: 1;
+        }
+
+        .hover-img {
+            z-index: 2;
+        }

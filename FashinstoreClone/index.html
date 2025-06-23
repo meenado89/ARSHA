@@ -880,19 +880,20 @@
         </div>
     </div>
     <!-- product list -->
+    <!-- add cards to rest of the items -->
     <div class="Plist-container pb-5" style="margin-bottom: 3rem;">
-        <ul class="nav nav-pills justify-content-center p-5 pb-3">
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">All</a>
+        <ul class="nav nav-pills justify-content-center p-5 pb-3" id="product-nav">
+            <li class="pnav-item">
+                <a class="pnav-link active" aria-current="page" href="#">All</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Clothing</a>
+            <li class="pnav-item">
+                <a class="pnav-link" href="#">Clothing</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Accessories</a>
+            <li class="pnav-item">
+                <a class="pnav-link" href="#">Accessories</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link d" href="#" tabindex="-1" aria-disabled="true">Electronics</a>
+            <li class="pnav-item">
+                <a class="pnav-link d" href="#" tabindex="-1" aria-disabled="true">Electronics</a>
             </li>
         </ul>
 
@@ -901,489 +902,591 @@
             <div class="row justify-content-center g-4 w-100">
 
                 <!-- Card 1 -->
-                <div class="col-xl-3 col-md-4 col-sm-6">
-                    <div class="plist-card h-100">
+                <div class=" plistCard-container col-xl-3 col-md-4 col-sm-6">
+                    <div class="plist-card ">
                         <!-- small badge -->
                         <div class="plist-badge">
-                            <p class="text-white" style="background-color: #8c0d4f; width: 44px; height: 24px; border-radius: 24px; align-items: center;
-                                justify-content: center; font-size: 14px; font-weight: 500; display: flex;">
+                            <p class="text-white"
+                                style="background-color: #8c0d4f; width: 44px; height: 24px; border-radius: 24px; align-items: center;
+                                justify-content: center; font-size: 14px; font-weight: 500; display: flex; position: relative; left: 2.2rem; top: 1.1rem;">
                                 sale</p>
                         </div>
-                        <img src="purse.webp" class="card-img-top" alt="purse">
+                        <!-- img -->
+                        <div class="plist-img ">
+                            <img src="purse.webp" alt="purse" class="main-img">
+                            <img src="purse-variant.webp" alt="purse-variant" class="hover-img">
+                            <div class="gradient-overlay"></div>
+                        </div>
+
 
                         <!-- add to cart -->
-                        <div class="text-center mt-5">
+
+                        <div class="text-center p-0">
                             <button type="button" class="add-cart  btn text-white">
                                 Add To Cart <i class='bx bx-cart-alt text-white p-1'></i> </button>
                         </div>
                         <!-- quick view on hover -->
                         <div class="productC-action ">
-                            <a href="#" class="quick-view" style="text-decoration: none;">
-                                <i class='bx bx-heart bx-md'></i></a>
+                            <a href="#" class="quick-view">
+                                <i class='bx bx-heart bx-sm'></i></a>
 
-                            <a href="#" class="quick-view" style="text-decoration: none;">
-                                <i class='bx bxs-show bx-md'></i></a>
+                            <a href="#" class="quick-view">
+                                <i class='bx bxs-show bx-sm'></i></a>
 
-                            <a href="#" class="quick-view" style="text-decoration: none;">
-                                <i class='bx bx-sort-alt-2 bx-rotate-270 bx-md'></i></a>
+                            <a href="#" class="quick-view" ">
+                                <i class='bx bx-sort-alt-2 bx-rotate-270 bx-sm'></i>
+                            </a>
 
                         </div>
 
-                        <div class="product-body text-center">
-                            <h5 class="product-title">Lorem ipsum dolor sit amet</h5>
-                            <p class="product-text">$89.99 <del class="text-muted fw-normal ">$129.99</del> </p>
+                        <div class=" product-body text-center">
+                                <h5 class="product-title">Lorem ipsum dolor sit amet</h5>
+                                <p class="product-text">$89.99 <del class="text-muted fw-normal ">$129.99</del> </p>
 
 
-                            <!-- product rating -->
-                            <div class="product-rating">
-                                <i class='bx bxs-star' style='color:#FFB800'></i>
-                                <i class='bx bxs-star' style='color:#FFB800'></i>
-                                <i class='bx bxs-star' style='color:#FFB800'></i>
-                                <i class='bx bxs-star' style='color:#FFB800'></i>
-                                <i class='bx bxs-star-half' style='color:#FFB800'></i>
-                                <span>(24)</span>
-                            </div>
+                                <!-- product rating -->
+                                <div class="product-rating">
+                                    <i class='bx bxs-star' style='color:#FFB800'></i>
+                                    <i class='bx bxs-star' style='color:#FFB800'></i>
+                                    <i class='bx bxs-star' style='color:#FFB800'></i>
+                                    <i class='bx bxs-star' style='color:#FFB800'></i>
+                                    <i class='bx bxs-star-half' style='color:#FFB800'></i>
+                                    <span>(24)</span>
+                                </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Card 2 -->
-                <div class="col-xl-3 col-md-4 col-sm-6">
-                    <div class="plist-card h-100">
-                        <img src="chair.webp" class="card-img-top" alt="chair">
+                <div class=" plistCard-container col-xl-3 col-md-4 col-sm-6">
+                    <div class="plist-card ">
+
+                        <!-- img -->
+                        <div class="plist-img ">
+                            <img src="chair.webp" alt="purse" class="main-img">
+                            <img src="chair-variant.webp" alt="purse-variant" class="hover-img">
+                            <div class="gradient-overlay"></div>
+                        </div>
+
+
                         <!-- add to cart -->
-                        <div class="text-center mt-5">
+
+                        <div class="text-center p-0">
                             <button type="button" class="add-cart  btn text-white">
                                 Add To Cart <i class='bx bx-cart-alt text-white p-1'></i> </button>
                         </div>
                         <!-- quick view on hover -->
                         <div class="productC-action ">
-                            <a href="#" class="quick-view" style="text-decoration: none;">
-                                <i class='bx bx-heart bx-md'></i></a>
+                            <a href="#" class="quick-view">
+                                <i class='bx bx-heart bx-sm'></i></a>
 
-                            <a href="#" class="quick-view" style="text-decoration: none;">
-                                <i class='bx bxs-show bx-md'></i></a>
+                            <a href="#" class="quick-view">
+                                <i class='bx bxs-show bx-sm'></i></a>
 
-                            <a href="#" class="quick-view" style="text-decoration: none;">
-                                <i class='bx bx-sort-alt-2 bx-rotate-270 bx-md'></i></a>
+                            <a href="#" class="quick-view" ">
+                                <i class='bx bx-sort-alt-2 bx-rotate-270 bx-sm'></i>
+                            </a>
 
                         </div>
-                        <div class="product-body text-center">
-                            <h5 class="product-title">Consectetur adipiscing elit</h5>
-                            <p class="product-text">$249.99</p>
-                            <!-- product rating -->
-                            <div class="product-rating">
-                                <i class='bx bxs-star' style='color:#FFB800'></i>
-                                <i class='bx bxs-star' style='color:#FFB800'></i>
-                                <i class='bx bxs-star' style='color:#FFB800'></i>
-                                <i class='bx bx-star' style='color:#FFB800'></i>
-                                <i class='bx bx-star' style='color:#FFB800'></i>
-                                <span>(18)</span>
-                            </div>
+
+                        <div class=" product-body text-center">
+                                <h5 class="product-title">Lorem ipsum dolor sit amet</h5>
+                                <p class="product-text">$129.99 </p>
+
+
+                                <!-- product rating -->
+                                <div class="product-rating">
+                                    <i class='bx bxs-star' style='color:#FFB800'></i>
+                                    <i class='bx bxs-star' style='color:#FFB800'></i>
+                                    <i class='bx bxs-star' style='color:#FFB800'></i>
+                                    <i class='bx bxs-star' style='color:#FFB800'></i>
+                                    <i class='bx bx-star' style='color:#FFB800'></i>
+                                    <span>(18)</span>
+                                </div>
                         </div>
                     </div>
                 </div>
-
                 <!-- Card 3 -->
-                <div class="col-xl-3 col-md-4 col-sm-6">
-                    <div class="plist-card h-100">
+                <div class=" plistCard-container col-xl-3 col-md-4 col-sm-6">
+                    <div class="plist-card ">
                         <!-- small badge -->
                         <div class="plist-badge">
-                            <p class="text-white" style="background-color: #8c0d4f; width: 44px; height: 24px; border-radius: 24px; align-items: center;
-                                justify-content: center; font-size: 14px; font-weight: 500; display: flex;">
+                            <p class="text-white"
+                                style="background-color: #8c0d4f; width: 44px; height: 24px; border-radius: 24px; align-items: center;
+                                justify-content: center; font-size: 14px; font-weight: 500; display: flex; position: relative; left: 2.2rem; top: 1.1rem;">
                                 New</p>
                         </div>
-                        <img src="sunglases.webp" class="card-img-top" alt="sunglasses">
+                        <!-- img -->
+                        <div class="plist-img ">
+                            <img src="sunglases.webp" alt="purse" class="main-img">
+                            <img src="sunglasses -variant.webp" alt="purse-variant" class="hover-img">
+                            <div class="gradient-overlay"></div>
+                        </div>
+
+
                         <!-- add to cart -->
-                        <div class="text-center mt-5">
+
+                        <div class="text-center p-0">
                             <button type="button" class="add-cart  btn text-white">
                                 Add To Cart <i class='bx bx-cart-alt text-white p-1'></i> </button>
                         </div>
                         <!-- quick view on hover -->
                         <div class="productC-action ">
-                            <a href="#" class="quick-view" style="text-decoration: none;">
-                                <i class='bx bx-heart bx-md'></i></a>
+                            <a href="#" class="quick-view">
+                                <i class='bx bx-heart bx-sm'></i></a>
 
-                            <a href="#" class="quick-view" style="text-decoration: none;">
-                                <i class='bx bxs-show bx-md'></i></a>
+                            <a href="#" class="quick-view">
+                                <i class='bx bxs-show bx-sm'></i></a>
 
-                            <a href="#" class="quick-view" style="text-decoration: none;">
-                                <i class='bx bx-sort-alt-2 bx-rotate-270 bx-md'></i></a>
+                            <a href="#" class="quick-view" ">
+                                <i class='bx bx-sort-alt-2 bx-rotate-270 bx-sm'></i>
+                            </a>
 
                         </div>
-                        <div class="product-body text-center">
-                            <h5 class="product-title">Sed do eiusmod tempor</h5>
-                            <p class="product-text">$59.99</p>
-                            <!-- product rating -->
-                            <div class="product-rating">
-                                <i class='bx bxs-star' style='color:#FFB800'></i>
-                                <i class='bx bxs-star' style='color:#FFB800'></i>
-                                <i class='bx bxs-star' style='color:#FFB800'></i>
-                                <i class='bx bxs-star' style='color:#FFB800'></i>
-                                <i class='bx bx-star' style='color:#FFB800'></i>
-                                <span>(7)</span>
-                            </div>
+
+                        <div class=" product-body text-center">
+                                <h5 class="product-title">Lorem ipsum dolor sit amet</h5>
+                                <p class="product-text">$89.99 </p>
+
+
+                                <!-- product rating -->
+                                <div class="product-rating">
+                                    <i class='bx bxs-star' style='color:#FFB800'></i>
+                                    <i class='bx bxs-star' style='color:#FFB800'></i>
+                                    <i class='bx bxs-star' style='color:#FFB800'></i>
+                                    <i class='bx bxs-star' style='color:#FFB800'></i>
+                                    <i class='bx bxs-star-half' style='color:#FFB800'></i>
+                                    <span>(7)</span>
+                                </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Card 4 -->
-                <div class="col-xl-3 col-md-4 col-sm-6">
-                    <div class="plist-card h-100">
-                        <img src="sweatshirt -4.webp" class="card-img-top" alt="shirt">
+                <div class=" plistCard-container col-xl-3 col-md-4 col-sm-6">
+                    <div class="plist-card ">
+
+                        <!-- img -->
+                        <div class="plist-img ">
+                            <img src="sweatshirt -4.webp" alt="purse" class="main-img">
+                            <img src="product-4-variant.webp" alt="purse-variant" class="hover-img">
+                            <div class="gradient-overlay"></div>
+                        </div>
+
+
                         <!-- add to cart -->
-                        <div class="text-center mt-5">
+
+                        <div class="text-center p-0">
                             <button type="button" class="add-cart  btn text-white">
                                 Add To Cart <i class='bx bx-cart-alt text-white p-1'></i> </button>
                         </div>
                         <!-- quick view on hover -->
                         <div class="productC-action ">
-                            <a href="#" class="quick-view" style="text-decoration: none;">
-                                <i class='bx bx-heart bx-md'></i></a>
+                            <a href="#" class="quick-view">
+                                <i class='bx bx-heart bx-sm'></i></a>
 
-                            <a href="#" class="quick-view" style="text-decoration: none;">
-                                <i class='bx bxs-show bx-md'></i></a>
+                            <a href="#" class="quick-view">
+                                <i class='bx bxs-show bx-sm'></i></a>
 
-                            <a href="#" class="quick-view" style="text-decoration: none;">
-                                <i class='bx bx-sort-alt-2 bx-rotate-270 bx-md'></i></a>
+                            <a href="#" class="quick-view" ">
+                                <i class='bx bx-sort-alt-2 bx-rotate-270 bx-sm'></i>
+                            </a>
 
                         </div>
-                        <div class="product-body text-center">
-                            <h5 class="product-title">Incididunt ut labore et dolore</h5>
-                            <p class="product-text">$79.99 <del class="text-muted fw-normal ">$99.99</del></p>
-                            <!-- product rating -->
-                            <div class="product-rating">
-                                <i class='bx bxs-star' style='color:#FFB800'></i>
-                                <i class='bx bxs-star' style='color:#FFB800'></i>
-                                <i class='bx bxs-star' style='color:#FFB800'></i>
-                                <i class='bx bxs-star' style='color:#FFB800'></i>
-                                <i class='bx bxs-star' style='color:#FFB800'></i>
-                                <span>(32)</span>
-                            </div>
+
+                        <div class=" product-body text-center">
+                                <h5 class="product-title">Lorem ipsum dolor sit amet</h5>
+                                <p class="product-text">$79.99 <del class="text-muted fw-normal ">$99.99</del> </p>
+
+
+                                <!-- product rating -->
+                                <div class="product-rating">
+                                    <i class='bx bxs-star' style='color:#FFB800'></i>
+                                    <i class='bx bxs-star' style='color:#FFB800'></i>
+                                    <i class='bx bxs-star' style='color:#FFB800'></i>
+                                    <i class='bx bx-star' style='color:#FFB800'></i>
+                                    <i class='bx bx-star' style='color:#FFB800'></i>
+                                    <span>(24)</span>
+                                </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Card 5 -->
-                <div class="col-xl-3 col-md-4 col-sm-6">
-                    <div class="plist-card h-100">
-                        <img src="product-5-variant.webp" class="card-img-top" alt="heels">
+                <div class=" plistCard-container col-xl-3 col-md-4 col-sm-6">
+                    <div class="plist-card ">
+                        <!-- small badge -->
+                        <div class="plist-badge">
+                            <p class="text-white"
+                                style="background-color: #8c0d4f; width: 44px; height: 24px; border-radius: 24px; align-items: center;
+                                justify-content: center; font-size: 14px; font-weight: 500; display: flex; position: relative; left: 2.2rem; top: 1.1rem;">
+                                sale</p>
+                        </div>
+                        <!-- img -->
+                        <div class="plist-img ">
+                            <img src="product-5.webp" alt="purse" class="main-img">
+                            <img src="product-5-variant.webp" alt="purse-variant" class="hover-img">
+                            <div class="gradient-overlay"></div>
+                        </div>
+
+
                         <!-- add to cart -->
-                        <div class="text-center mt-5">
+
+                        <div class="text-center p-0">
                             <button type="button" class="add-cart  btn text-white">
                                 Add To Cart <i class='bx bx-cart-alt text-white p-1'></i> </button>
                         </div>
                         <!-- quick view on hover -->
                         <div class="productC-action ">
-                            <a href="#" class="quick-view" >
-                                <i class='bx bx-heart bx-md'></i></a>
+                            <a href="#" class="quick-view">
+                                <i class='bx bx-heart bx-sm'></i></a>
 
-                            <a href="#" class="quick-view" >
-                                <i class='bx bxs-show bx-md'></i></a>
+                            <a href="#" class="quick-view">
+                                <i class='bx bxs-show bx-sm'></i></a>
 
-                            <a href="#" class="quick-view" >
-                                <i class='bx bx-sort-alt-2 bx-rotate-270 bx-md'></i></a>
+                            <a href="#" class="quick-view" ">
+                                <i class='bx bx-sort-alt-2 bx-rotate-270 bx-sm'></i>
+                            </a>
 
                         </div>
-                        <div class="product-body text-center">
-                            <h5 class="product-title">Magna aliqua ut enim ad minim</h5>
-                            <p class="product-text">$199.99 <del class="text-muted fw-normal ">$229.99</del></p>
-                            <!-- product rating -->
-                            <div class="product-rating">
-                                <i class='bx bxs-star' style='color:#FFB800'></i>
-                                <i class='bx bxs-star' style='color:#FFB800'></i>
-                                <i class='bx bxs-star' style='color:#FFB800'></i>
-                                <i class='bx bxs-star-half' style='color:#FFB800'></i>
-                                <i class='bx bx-star' style='color:#FFB800'></i>
-                                <span>(15)</span>
-                            </div>
+
+                        <div class=" product-body text-center">
+                                <h5 class="product-title">Lorem ipsum dolor sit amet</h5>
+                                <p class="product-text">$199.99 <del class="text-muted fw-normal ">$299.99</del> </p>
+
+
+                                <!-- product rating -->
+                                <div class="product-rating">
+                                    <i class='bx bxs-star' style='color:#FFB800'></i>
+                                    <i class='bx bxs-star' style='color:#FFB800'></i>
+                                    <i class='bx bxs-star' style='color:#FFB800'></i>
+                                    <i class='bx bxs-star-half' style='color:#FFB800'></i>
+                                    <i class='bx bx-star' style='color:#FFB800'></i>
+                                    <span>(15)</span>
+                                </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Card 6 -->
-                <div class="col-xl-3 col-md-4 col-sm-6">
-                    <div class="plist-card h-100">
+                <div class=" plistCard-container col-xl-3 col-md-4 col-sm-6">
+                    <div class="plist-card ">
                         <!-- small badge -->
                         <div class="plist-badge">
-                            <p class="text-white" style="background-color: #8c0d4f; width: 44px; height: 24px; border-radius: 24px; align-items: center;
-                                justify-content: center; font-size: 14px; font-weight: 500; display: flex;">
-                                new</p>
+                            <p class="text-white"
+                                style="background-color: #8c0d4f; width: 44px; height: 24px; border-radius: 24px; align-items: center;
+                                justify-content: center; font-size: 14px; font-weight: 500; display: flex; position: relative; left: 2.2rem; top: 1.1rem;">
+                                New</p>
                         </div>
-                        <img src="denimjecket-7.webp" class="card-img-top" alt="denim">
+                        <!-- img -->
+                        <div class="plist-img ">
+                            <img src="jecket.webp" alt="purse" class="main-img">
+                            <img src="product-7-variant.webp" alt="purse-variant" class="hover-img">
+                            <div class="gradient-overlay"></div>
+                        </div>
+
+
                         <!-- add to cart -->
-                        <div class="text-center mt-5">
+
+                        <div class="text-center p-0">
                             <button type="button" class="add-cart  btn text-white">
                                 Add To Cart <i class='bx bx-cart-alt text-white p-1'></i> </button>
                         </div>
                         <!-- quick view on hover -->
                         <div class="productC-action ">
-                            <a href="#" class="quick-view" style="text-decoration: none;">
-                                <i class='bx bx-heart bx-md'></i></a>
+                            <a href="#" class="quick-view">
+                                <i class='bx bx-heart bx-sm'></i></a>
 
-                            <a href="#" class="quick-view" style="text-decoration: none;">
-                                <i class='bx bxs-show bx-md'></i></a>
+                            <a href="#" class="quick-view">
+                                <i class='bx bxs-show bx-sm'></i></a>
 
-                            <a href="#" class="quick-view" style="text-decoration: none;">
-                                <i class='bx bx-sort-alt-2 bx-rotate-270 bx-md'></i></a>
+                            <a href="#" class="quick-view" ">
+                                <i class='bx bx-sort-alt-2 bx-rotate-270 bx-sm'></i>
+                            </a>
 
                         </div>
-                        <div class="product-body text-center">
-                            <h5 class="product-title">Veniam quis nostrud exercitation</h5>
-                            <p class="product-text">$45.99</p>
-                            <!-- product rating -->
-                            <div class="product-rating">
-                                <i class='bx bxs-star' style='color:#FFB800'></i>
-                                <i class='bx bxs-star' style='color:#FFB800'></i>
-                                <i class='bx bxs-star' style='color:#FFB800'></i>
-                                <i class='bx bx-star' style='color:#FFB800'></i>
-                                <i class='bx bx-star' style='color:#FFB800'></i>
-                                <span>(21)</span>
-                            </div>
+
+                        <div class=" product-body text-center">
+                                <h5 class="product-title">Lorem ipsum dolor sit amet</h5>
+                                <p class="product-text">$45.99 </p>
+
+
+                                <!-- product rating -->
+                                <div class="product-rating">
+                                    <i class='bx bxs-star' style='color:#FFB800'></i>
+                                    <i class='bx bxs-star' style='color:#FFB800'></i>
+                                    <i class='bx bxs-star' style='color:#FFB800'></i>
+                                    <i class='bx bxs-star' style='color:#FFB800'></i>
+                                    <i class='bx bx-star' style='color:#FFB800'></i>
+                                    <span>(21)</span>
+                                </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Card 7 -->
-                <div class="col-xl-3 col-md-4 col-sm-6">
-                    <div class="plist-card h-100">
-                        <img src="backpack.webp" class="card-img-top" alt="backpack">
+                <div class=" plistCard-container col-xl-3 col-md-4 col-sm-6">
+                    <div class="plist-card ">
+
+                        <!-- img -->
+                        <div class="plist-img ">
+                            <img src="backpack.webp" alt="purse" class="main-img">
+                            <img src="product-6-variant.webp" alt="purse-variant" class="hover-img">
+                            <div class="gradient-overlay"></div>
+                        </div>
+
+
                         <!-- add to cart -->
-                        <div class="text-center mt-5">
+
+                        <div class="text-center p-0">
                             <button type="button" class="add-cart  btn text-white">
                                 Add To Cart <i class='bx bx-cart-alt text-white p-1'></i> </button>
                         </div>
                         <!-- quick view on hover -->
-                        <div class="productC-action">
-                            <a href="#" class="quick-view" style="text-decoration: none;">
-                                <i class='bx bx-heart bx-md'></i></a>
+                        <div class="productC-action ">
+                            <a href="#" class="quick-view">
+                                <i class='bx bx-heart bx-sm'></i></a>
 
-                            <a href="#" class="quick-view" style="text-decoration: none;">
-                                <i class='bx bxs-show bx-md'></i></a>
+                            <a href="#" class="quick-view">
+                                <i class='bx bxs-show bx-sm'></i></a>
 
-                            <a href="#" class="quick-view" style="text-decoration: none;">
-                                <i class='bx bx-sort-alt-2 bx-rotate-270 bx-md'></i></a>
+                            <a href="#" class="quick-view" ">
+                                <i class='bx bx-sort-alt-2 bx-rotate-270 bx-sm'></i>
+                            </a>
 
                         </div>
-                        <div class="product-body text-center">
-                            <h5 class="product-title">Ullamco laboris nisi ut aliquip</h5>
-                            <p class="product-text ">$69.99 <del class="text-muted fw-normal ">$129.99</del></p>
-                            <!-- product rating -->
-                            <div class="product-rating">
-                                <i class='bx bxs-star' style='color:#FFB800'></i>
-                                <i class='bx bxs-star' style='color:#FFB800'></i>
-                                <i class='bx bxs-star' style='color:#FFB800'></i>
-                                <i class='bx bxs-star' style='color:#FFB800'></i>
-                                <i class="bi bi-star-half"></i>
-                                <span>(11)</span>
-                            </div>
+
+                        <div class=" product-body text-center">
+                                <h5 class="product-title">Lorem ipsum dolor sit amet</h5>
+                                <p class="product-text">$69.99 <del class="text-muted fw-normal ">$129.99</del> </p>
+
+
+                                <!-- product rating -->
+                                <div class="product-rating">
+                                    <i class='bx bxs-star' style='color:#FFB800'></i>
+                                    <i class='bx bxs-star' style='color:#FFB800'></i>
+                                    <i class='bx bxs-star' style='color:#FFB800'></i>
+                                    <i class='bx bxs-star-half' style='color:#FFB800'></i>
+                                    <i class='bx bx-star' style='color:#FFB800'></i>
+                                    <span>(11)</span>
+                                </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Card 8 -->
-                <div class="col-xl-3 col-md-4 col-sm-6">
-                    <div class="plist-card h-100">
+                <div class=" plistCard-container col-xl-3 col-md-4 col-sm-6">
+                    <div class="plist-card ">
                         <!-- small badge -->
                         <div class="plist-badge">
-                            <p class="text-white" style="background-color: #8c0d4f; width: 44px; height: 24px; border-radius: 24px; align-items: center;
-                                justify-content: center; font-size: 14px; font-weight: 500; display: flex;">
-                                sale</p>
+                            <p class="text-white"
+                                style="background-color: #8c0d4f; width: 44px; height: 24px; border-radius: 24px; align-items: center;
+                                justify-content: center; font-size: 14px; font-weight: 500; display: flex; position: relative; left: 2.2rem; top: 1.1rem;">
+                                New</p>
                         </div>
-                        <img src="shoe.webp" class="card-img-top" alt="shoe">
+                        <!-- img -->
+                        <div class="plist-img ">
+                            <img src="shoe.webp" alt="purse" class="main-img">
+                            <img src="product-8-variant.webp" alt="purse-variant" class="hover-img">
+                            <div class="gradient-overlay"></div>
+                        </div>
+
 
                         <!-- add to cart -->
-                        <div class="text-center mt-5">
+
+                        <div class="text-center p-0">
                             <button type="button" class="add-cart  btn text-white">
                                 Add To Cart <i class='bx bx-cart-alt text-white p-1'></i> </button>
                         </div>
-
                         <!-- quick view on hover -->
                         <div class="productC-action ">
-                            <a href="#" class="quick-view" style="text-decoration: none;">
-                                <i class='bx bx-heart bx-md'></i></a>
+                            <a href="#" class="quick-view">
+                                <i class='bx bx-heart bx-sm'></i></a>
 
-                            <a href="#" class="quick-view" style="text-decoration: none;">
-                                <i class='bx bxs-show bx-md'></i></a>
+                            <a href="#" class="quick-view">
+                                <i class='bx bxs-show bx-sm'></i></a>
 
-                            <a href="#" class="quick-view" style="text-decoration: none;">
-                                <i class='bx bx-sort-alt-2 bx-rotate-270 bx-md'></i></a>
-
-                        </div>
-                        <div class="product-body text-center">
-                            <h5 class="product-title">Ex ea commodo consequat</h5>
-                            <p class="product-text">$159.99 </p>
-                            <!-- product rating -->
-                            <div class="product-rating">
-                                <i class='bx bxs-star' style='color:#FFB800'></i>
-                                <i class='bx bxs-star' style='color:#FFB800'></i>
-                                <i class='bx bxs-star' style='color:#FFB800'></i>
-                                <i class='bx bxs-star-half' style='color:#FFB800'></i>
-                                <i class='bx bx-star' style='color:#FFB800'></i>
-                                <span>(29)</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- View All Button -->
-            <div class="text-center mt-5">
-                <button type="button" class="btn text-white"
-                    style="background-color: #8c0d4f; border-radius: 30px; width: 14rem; height: 3rem;">
-                    View All Products <i class='bx bx-right-arrow-alt text-white'></i>
-                </button>
-            </div>
-        </div>
-    </div>
-
-    <!-- top fotter -->
-
-    <footer id="footer" class="footer pt-5 " style="background-color: aliceblue;">
-        <div class="footer-main">
-            <div class="container">
-                <div class="row gy-4">
-                    <div class="col-lg-4 col-md-6">
-                        <div class="footer-widget footer-about">
-                            <a href="FstoreTemplate.html" class="logo">
-                                <span class="sitename text-dark fw-bolder">FashionStore</span>
+                            <a href="#" class="quick-view" ">
+                                <i class='bx bx-sort-alt-2 bx-rotate-270 bx-sm'></i>
                             </a>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in nibh vehicula,
-                                facilisis magna ut, consectetur lorem. Proin eget tortor risus.</p>
 
-                            <div class="social-links mt-4">
-                                <h5>Connect With Us</h5>
-                                <div class="social-icons">
-                                    <a href="#" aria-label="Facebook"><i class='bx bxl-facebook-circle bx-sm'></i></a>
-                                    <a href="#" aria-label="Instagram"> <i class='bx bxl-instagram bx-sm'></i></a>
-                                    <a href="#" aria-label="Twitter"><i class='bi bi-twitter-x bx-sm'></i></a>
-                                    <a href="#" aria-label="TikTok"><i class='bx bxl-tiktok bx-sm'></i></a>
-                                    <a href="#" aria-label="Pinterest"><i class='bx bxl-pinterest bx-sm'></i></a>
-                                    <a href="#" aria-label="YouTube"><i class='bx bxl-youtube bx-sm'></i></a>
+                        </div>
+
+                        <div class=" product-body text-center">
+                                <h5 class="product-title">Ex ea commodo consequat</h5>
+                                <p class="product-text">$189.99 </p>
+
+
+                                <!-- product rating -->
+                                <div class="product-rating">
+                                    <i class='bx bxs-star' style='color:#FFB800'></i>
+                                    <i class='bx bxs-star' style='color:#FFB800'></i>
+                                    <i class='bx bxs-star' style='color:#FFB800'></i>
+                                    <i class='bx bxs-star' style='color:#FFB800'></i>
+                                    <i class='bx bxs-star-half' style='color:#FFB800'></i>
+                                    <span>(29)</span>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- View All Button -->
+                <div class="text-center mt-5">
+                    <button type="button" class="btn text-white"
+                        style="background-color: #8c0d4f; border-radius: 30px; width: 14rem; height: 3rem;">
+                        View All Products <i class='bx bx-right-arrow-alt text-white'></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- top fotter -->
+
+        <footer id="footer" class="footer pt-5 " style="background-color: aliceblue;">
+            <div class="footer-main">
+                <div class="container">
+                    <div class="row gy-4">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="footer-widget footer-about">
+                                <a href="FstoreTemplate.html" class="logo">
+                                    <span class="sitename text-dark fw-bolder">FashionStore</span>
+                                </a>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in nibh vehicula,
+                                    facilisis magna ut, consectetur lorem. Proin eget tortor risus.</p>
+
+                                <div class="social-links mt-4">
+                                    <h5>Connect With Us</h5>
+                                    <div class="social-icons">
+                                        <a href="#" aria-label="Facebook"><i
+                                                class='bx bxl-facebook-circle bx-sm'></i></a>
+                                        <a href="#" aria-label="Instagram"> <i class='bx bxl-instagram bx-sm'></i></a>
+                                        <a href="#" aria-label="Twitter"><i class='bi bi-twitter-x bx-sm'></i></a>
+                                        <a href="#" aria-label="TikTok"><i class='bx bxl-tiktok bx-sm'></i></a>
+                                        <a href="#" aria-label="Pinterest"><i class='bx bxl-pinterest bx-sm'></i></a>
+                                        <a href="#" aria-label="YouTube"><i class='bx bxl-youtube bx-sm'></i></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="col-lg-2 col-md-6 col-sm-6">
-                        <div class="footer-widget">
-                            <h4>Shop</h4>
-                            <ul class="footer-links">
-                                <li><a href="category.html">New Arrivals</a></li>
-                                <li><a href="category.html">Bestsellers</a></li>
-                                <li><a href="category.html">Women's Clothing</a></li>
-                                <li><a href="category.html">Men's Clothing</a></li>
-                                <li><a href="category.html">Accessories</a></li>
-                                <li><a href="category.html">Sale</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-2 col-md-6 col-sm-6">
-                        <div class="footer-widget">
-                            <h4>Support</h4>
-                            <ul class="footer-links">
-                                <li><a href="support.html">Help Center</a></li>
-                                <li><a href="account.html">Order Status</a></li>
-                                <li><a href="shiping-info.html">Shipping Info</a></li>
-                                <li><a href="return-policy.html">Returns &amp; Exchanges</a></li>
-                                <li><a href="#">Size Guide</a></li>
-                                <li><a href="contact.html">Contact Us</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6">
-                        <div class="footer-widget">
-                            <h4>Contact Information</h4>
-                            <div class="footer-contact">
-                                <div class="contact-item">
-                                    <i class="bi bi-geo-alt"></i>
-                                    <span>123 Fashion Street, New York, NY 10001</span>
-                                </div>
-                                <div class="contact-item">
-                                    <i class="bi bi-telephone"></i>
-                                    <span>+1 (555) 123-4567</span>
-                                </div>
-                                <div class="contact-item">
-                                    <i class="bi bi-envelope"></i>
-                                    <span>hello@example.com</span>
-                                </div>
-                                <div class="contact-item">
-                                    <i class="bi bi-clock"></i>
-                                    <span>Monday-Friday: 9am-6pm<br>Saturday: 10am-4pm<br>Sunday: Closed</span>
-                                </div>
+                        <div class="col-lg-2 col-md-6 col-sm-6">
+                            <div class="footer-widget">
+                                <h4>Shop</h4>
+                                <ul class="footer-links">
+                                    <li><a href="category.html">New Arrivals</a></li>
+                                    <li><a href="category.html">Bestsellers</a></li>
+                                    <li><a href="category.html">Women's Clothing</a></li>
+                                    <li><a href="category.html">Men's Clothing</a></li>
+                                    <li><a href="category.html">Accessories</a></li>
+                                    <li><a href="category.html">Sale</a></li>
+                                </ul>
                             </div>
+                        </div>
 
-                            <div class="app-buttons mt-4">
-                                <a href="#" class="app-btn">
-                                    <i class="bi bi-apple"></i>
-                                    <span>App Store</span>
-                                </a>
-                                <a href="#" class="app-btn">
-                                    <i class="bi bi-google-play"></i>
-                                    <span>Google Play</span>
-                                </a>
+                        <div class="col-lg-2 col-md-6 col-sm-6">
+                            <div class="footer-widget">
+                                <h4>Support</h4>
+                                <ul class="footer-links">
+                                    <li><a href="support.html">Help Center</a></li>
+                                    <li><a href="account.html">Order Status</a></li>
+                                    <li><a href="shiping-info.html">Shipping Info</a></li>
+                                    <li><a href="return-policy.html">Returns &amp; Exchanges</a></li>
+                                    <li><a href="#">Size Guide</a></li>
+                                    <li><a href="contact.html">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="footer-widget">
+                                <h4>Contact Information</h4>
+                                <div class="footer-contact">
+                                    <div class="contact-item">
+                                        <i class="bi bi-geo-alt"></i>
+                                        <span>123 Fashion Street, New York, NY 10001</span>
+                                    </div>
+                                    <div class="contact-item">
+                                        <i class="bi bi-telephone"></i>
+                                        <span>+1 (555) 123-4567</span>
+                                    </div>
+                                    <div class="contact-item">
+                                        <i class="bi bi-envelope"></i>
+                                        <span>hello@example.com</span>
+                                    </div>
+                                    <div class="contact-item">
+                                        <i class="bi bi-clock"></i>
+                                        <span>Monday-Friday: 9am-6pm<br>Saturday: 10am-4pm<br>Sunday: Closed</span>
+                                    </div>
+                                </div>
+
+                                <div class="app-buttons mt-4">
+                                    <a href="#" class="app-btn">
+                                        <i class="bi bi-apple"></i>
+                                        <span>App Store</span>
+                                    </a>
+                                    <a href="#" class="app-btn">
+                                        <i class="bi bi-google-play"></i>
+                                        <span>Google Play</span>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <hr>
-        <!--bottom footer  -->
-        <div class="footer-bottom">
-            <div class="container">
-                <div class="row gy-3 align-items-center">
-                    <div class="col-lg-6 col-md-12">
-                        <div class="copyright">
-                            <p>© <span>Copyright</span> <strong class="sitename">MyWebsite</strong>. All Rights
-                                Reserved.</p>
+            <hr>
+            <!--bottom footer  -->
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="row gy-3 align-items-center">
+                        <div class="col-lg-6 col-md-12">
+                            <div class="copyright">
+                                <p>© <span>Copyright</span> <strong class="sitename">MyWebsite</strong>. All Rights
+                                    Reserved.</p>
+                            </div>
+                            <div class="credits mt-1">
+                                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                            </div>
                         </div>
-                        <div class="credits mt-1">
-                            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-                        </div>
-                    </div>
 
-                    <div class="col-lg-6 col-md-12">
-                        <div
-                            class="d-flex flex-wrap justify-content-lg-end justify-content-center align-items-center gap-4">
-                            <div class="payment-methods">
-                                <div class="payment-icons">
-                                    <i class="bi bi-credit-card" aria-label="Credit Card"></i>
-                                    <i class="bi bi-paypal" aria-label="PayPal"></i>
-                                    <i class="bi bi-apple" aria-label="Apple Pay"></i>
-                                    <i class="bi bi-google" aria-label="Google Pay"></i>
-                                    <i class="bi bi-shop" aria-label="Shop Pay"></i>
-                                    <i class="bi bi-cash" aria-label="Cash on Delivery"></i>
+                        <div class="col-lg-6 col-md-12">
+                            <div
+                                class="d-flex flex-wrap justify-content-lg-end justify-content-center align-items-center gap-4">
+                                <div class="payment-methods">
+                                    <div class="payment-icons">
+                                        <i class="bi bi-credit-card" aria-label="Credit Card"></i>
+                                        <i class="bi bi-paypal" aria-label="PayPal"></i>
+                                        <i class="bi bi-apple" aria-label="Apple Pay"></i>
+                                        <i class="bi bi-google" aria-label="Google Pay"></i>
+                                        <i class="bi bi-shop" aria-label="Shop Pay"></i>
+                                        <i class="bi bi-cash" aria-label="Cash on Delivery"></i>
+                                    </div>
+                                </div>
+
+                                <div class="legal-links">
+                                    <i class='bx bx-credit-card bx-md text-muted'></i>
+                                    <i class='bx bxl-paypal bx-md text-muted'></i>
+                                    <i class='bx bxl-apple bx-md text-muted'></i>
+                                    <i class='bx bx-store bx-md text-muted'></i>
+
+                                    <a href="tos.html">Terms</a>
+                                    <a href="privacy.html">Privacy</a>
+                                    <a href="tos.html">Cookies</a>
                                 </div>
                             </div>
-
-                            <div class="legal-links">
-                                <i class='bx bx-credit-card bx-md text-muted'></i>
-                                <i class='bx bxl-paypal bx-md text-muted'></i>
-                                <i class='bx bxl-apple bx-md text-muted'></i>
-                                <i class='bx bx-store bx-md text-muted'></i>
-
-                                <a href="tos.html">Terms</a>
-                                <a href="privacy.html">Privacy</a>
-                                <a href="tos.html">Cookies</a>
-                            </div>
                         </div>
                     </div>
+
                 </div>
-
             </div>
-        </div>
-    </footer>
+        </footer>
 
 
 
-    <script src="fstore.js"></script>
-    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+        <script src="fstore.js"></script>
+        <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>
