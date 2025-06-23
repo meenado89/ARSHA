@@ -881,20 +881,22 @@
         </div>
     </div>
     <!-- product list -->
-    <!-- add cards to rest of the items -->
+    <!-- add cards to rest of the items/ used js for this didn't had to add them one by one  -->
+    <!-- done -->
     <div class="Plist-container pb-5" style="margin-bottom: 3rem;">
         <ul class="nav nav-pills justify-content-center p-5 pb-3" id="product-nav">
             <li class="pnav-item">
-                <a class="pnav-link active" aria-current="page" href="#">All</a>
+                <button class="pnav-link active" aria-current="page" href="#"
+                    onclick="filterSelection('all')">All</button>
             </li>
             <li class="pnav-item">
-                <a class="pnav-link" href="#">Clothing</a>
+                <button class="pnav-link" href="#" onclick="filterSelection('clothing')">Clothing</button>
             </li>
             <li class="pnav-item">
-                <a class="pnav-link" href="#">Accessories</a>
+                <button class="pnav-link" href="#" onclick="filterSelection('accessories')">Accessories</button>
             </li>
             <li class="pnav-item">
-                <a class="pnav-link d" href="#" tabindex="-1" aria-disabled="true">Electronics</a>
+                <button class="pnav-link d" href="#" onclick="filterSelection('electronics')">Electronics</button>
             </li>
         </ul>
 
@@ -903,7 +905,7 @@
             <div class="row justify-content-center g-4 w-100">
 
                 <!-- Card 1 -->
-                <div class=" plistCard-container col-xl-3 col-md-4 col-sm-6">
+                <div class=" plistCard-container col-xl-3 col-md-4 col-sm-6  filterDiv clothing accessories">
                     <div class="plist-card ">
                         <!-- small badge -->
                         <div class="plist-badge">
@@ -959,7 +961,7 @@
                 </div>
 
                 <!-- Card 2 -->
-                <div class=" plistCard-container col-xl-3 col-md-4 col-sm-6">
+                <div class=" plistCard-container col-xl-3 col-md-4 col-sm-6 filterDiv electronics accessories">
                     <div class="plist-card ">
 
                         <!-- img -->
@@ -1008,7 +1010,7 @@
                     </div>
                 </div>
                 <!-- Card 3 -->
-                <div class=" plistCard-container col-xl-3 col-md-4 col-sm-6">
+                <div class=" plistCard-container col-xl-3 col-md-4 col-sm-6 ">
                     <div class="plist-card ">
                         <!-- small badge -->
                         <div class="plist-badge">
@@ -1064,7 +1066,7 @@
                 </div>
 
                 <!-- Card 4 -->
-                <div class=" plistCard-container col-xl-3 col-md-4 col-sm-6">
+                <div class=" plistCard-container col-xl-3 col-md-4 col-sm-6 filterDiv clothing">
                     <div class="plist-card ">
 
                         <!-- img -->
@@ -1114,7 +1116,7 @@
                 </div>
 
                 <!-- Card 5 -->
-                <div class=" plistCard-container col-xl-3 col-md-4 col-sm-6">
+                <div class=" plistCard-container col-xl-3 col-md-4 col-sm-6 filterDiv electronics">
                     <div class="plist-card ">
                         <!-- small badge -->
                         <div class="plist-badge">
@@ -1170,7 +1172,7 @@
                 </div>
 
                 <!-- Card 6 -->
-                <div class=" plistCard-container col-xl-3 col-md-4 col-sm-6">
+                <div class=" plistCard-container col-xl-3 col-md-4 col-sm-6 filterDiv clothing">
                     <div class="plist-card ">
                         <!-- small badge -->
                         <div class="plist-badge">
@@ -1226,7 +1228,7 @@
                 </div>
 
                 <!-- Card 7 -->
-                <div class=" plistCard-container col-xl-3 col-md-4 col-sm-6">
+                <div class=" plistCard-container col-xl-3 col-md-4 col-sm-6 filterDiv accessories">
                     <div class="plist-card ">
 
                         <!-- img -->
@@ -1276,7 +1278,7 @@
                 </div>
 
                 <!-- Card 8 -->
-                <div class=" plistCard-container col-xl-3 col-md-4 col-sm-6">
+                <div class=" plistCard-container col-xl-3 col-md-4 col-sm-6 filterDiv electronics">
                     <div class="plist-card ">
                         <!-- small badge -->
                         <div class="plist-badge">
