@@ -771,7 +771,21 @@ body::after {
  .hover-img {
      z-index: 2;
  }
-
+ .allProbtn{
+    border: none;
+    transition: transform 0.3s ease-in-out;
+    -webkit-transition: transform 0.3s ease-in-out;
+    -moz-transition: transform 0.3s ease-in-out;
+    -ms-transition: transform 0.3s ease-in-out;
+    -o-transition: transform 0.3s ease-in-out;
+}
+ .allProbtn:hover i{
+  transform: translateY(5px);
+  -webkit-transform: translateY(5px);
+  -moz-transform: translateY(5px);
+  -ms-transform: translateY(5px);
+  -o-transform: translateY(5px);
+}
 
  /* footer */
 
@@ -850,9 +864,9 @@ body::after {
 
 .payment-methods {
   display: flex;
-  flex-wrap: wrap;      /* optional: allows items to wrap if needed */
-  gap: 1rem;             /* gap between all child items */
-  align-items: center;   /* optional: vertical alignment */
+  flex-wrap: wrap;     
+  gap: 1rem;             
+  align-items: center;  
 }
 
 .payment-methods i,
