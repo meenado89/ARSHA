@@ -5,18 +5,12 @@ body {
     overflow-x: hidden;
 }
 
-body::after {
-    content: '';
-    display: block;
-    height: 0px;
-    clear: both;
-}
-
 
 /* to remove blue underline from buttons */
 a {
     text-decoration: none;
-    color: inherit;
+    /* color: black !important; */
+    color: inherit !important;
     /* Prevents default blue color */
 }
 
@@ -43,7 +37,7 @@ a {
 }
 
 .nav-link:hover {
-    color: #8c0d4f;
+    color: #8c0d4f !important;
     text-decoration: underline;
 
 
@@ -795,16 +789,22 @@ a {
 } */
 
 
+.allProbtn:hover .allproicon{
+    transform:rotate(180deg) translateX(-10px);
+    -webkit-transform:rotate(180deg) translateX(-10px);
+    -moz-transform:rotate(180deg) translateX(-10px);
+    -ms-transform:rotate(180deg) translateX(-10px);
+    -o-transform:rotate(180deg) translateX(-10px);
+}
+
+
 .allproicon {
     display: inline-block;
     transform: rotate(180deg);
     transition: transform 0.3s ease;
 }
 
-.allproicon:hover {
-    transform: rotate(180deg) translateX(-8px);
 
-}
 
 
 
@@ -836,7 +836,7 @@ a {
 .footer {
     padding-top: 4rem;
     padding-bottom: 3rem;
-    padding-left: 3rem;
+    padding-left: 2.89rem;
 }
 
 .social-icons {
@@ -948,4 +948,9 @@ a {
 .scroll-top:hover {
     color: #f8f4f6;
     opacity: 8;
+}
+
+/* CONTACT FORM */
+.conAdd h3{
+color: #8c0d4f;
 }
