@@ -991,7 +991,7 @@ a {
 .header-LogIn a{
     color: #8c0d4f;
 }
-.form-body {
+.form-body, .register-card {
      border-radius: 18px;
      box-shadow: 20px 20px 50px rgba(208, 207, 207, 0.427);
      height: auto;
