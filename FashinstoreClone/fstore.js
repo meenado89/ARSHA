@@ -54,3 +54,111 @@ function filterSelection(category) {
   }
 }
 
+
+     //    email
+
+   // formValidation.js
+
+// Reusable email checker
+function isValidEmail(email) {
+  return /\S+@\S+\.\S+/.test(email);
+}
+
+// LOGIN validation
+function validateLoginForm() {
+  const email = document.getElementById("floatingInput")?.value.trim();
+  const password = document.getElementById("floatingPassword")?.value.trim();
+
+  if (!email) {
+    alert("Email cannot be empty");
+    return false;
+  }
+  if (!isValidEmail(email)) {
+    alert("Please enter a valid email");
+    return false;
+  }
+  if (!password) {
+    alert("Password cannot be empty");
+    return false;
+  }
+  return true;
+}
+
+// REGISTER validation
+function validateRegisterForm() {
+  const inputs = document.querySelectorAll(".register-card input");
+  const firstName = inputs[0].value.trim();
+  const lastName = inputs[1].value.trim();
+  const email = inputs[2].value.trim();
+  const password = inputs[3].value.trim();
+
+  if (!firstName || !lastName || !email || !password) {
+    alert("All fields are required");
+    return false;
+  }
+  if (!isValidEmail(email)) {
+    alert("Please enter a valid email");
+    return false;
+  }
+  if (password.length < 6) {
+    alert("Password must be at least 6 characters");
+    return false;
+  }
+
+  return true;
+}
+
+// CONTACT validation
+function validateContactForm() {
+  const name = document.querySelector('input[name="name"]').value.trim();
+  const email = document.querySelector('input[name="email"]').value.trim();
+  const subject = document.querySelector('input[name="subject"]').value.trim();
+  const message = document.querySelector('textarea[name="message"]').value.trim();
+
+  if (!name || !email || !subject || !message) {
+    alert("All fields are required");
+    return false;
+  }
+  if (!isValidEmail(email)) {
+    alert("Enter a valid email address");
+    return false;
+  }
+
+  return true;
+}
+
+// Attach handlers only if needed
+document.addEventListener("DOMContentLoaded", function () {
+  const loginBtn = document.querySelector(".signInbtn");
+  const registerBtn = document.querySelector(".register-card .signInbtn");
+  const contactForm = document.querySelector(".php-email-form");
+
+  if (loginBtn && !registerBtn) {
+    loginBtn.addEventListener("click", function (e) {
+      e.preventDefault();
+      if (validateLoginForm()) {
+        alert("Login successful (demo only)");
+      }
+    });
+  }
+
+  if (registerBtn) {
+    registerBtn.addEventListener("click", function (e) {
+      e.preventDefault();
+      if (validateRegisterForm()) {
+        alert("Account created (demo only)");
+      }
+    });
+  }
+
+  if (contactForm) {
+    contactForm.addEventListener("submit", function (e) {
+      if (!validateContactForm()) {
+        e.preventDefault();
+      } else {
+        alert("Message sent (demo only)");
+      }
+    });
+  }
+});
+
