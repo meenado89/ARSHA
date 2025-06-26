@@ -42,6 +42,7 @@ a {
 
 
 }
+
 /* store navbar/ user */
 /* #cart:hover{
     color: #8c0d4f;
@@ -789,12 +790,12 @@ a {
 } */
 
 
-.allProbtn:hover .allproicon{
-    transform:rotate(180deg) translateX(-10px);
-    -webkit-transform:rotate(180deg) translateX(-10px);
-    -moz-transform:rotate(180deg) translateX(-10px);
-    -ms-transform:rotate(180deg) translateX(-10px);
-    -o-transform:rotate(180deg) translateX(-10px);
+.allProbtn:hover .allproicon {
+    transform: rotate(180deg) translateX(-10px);
+    -webkit-transform: rotate(180deg) translateX(-10px);
+    -moz-transform: rotate(180deg) translateX(-10px);
+    -ms-transform: rotate(180deg) translateX(-10px);
+    -o-transform: rotate(180deg) translateX(-10px);
 }
 
 
@@ -951,6 +952,27 @@ a {
 }
 
 /* CONTACT FORM */
-.conAdd h3{
-color: #8c0d4f;
+
+.conAdd h3 {
+    color: #8c0d4f;
 }
+
+/* ICONS */
+.contact-icons {
+    background-color: #8c0d4f;
+    color: white;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 8px;
+    padding: .6rem;
+}
+
+.sendBtn {
+    border: none;
+    background-color: #8c0d4f;
+    color: white;
+    width: 12rem;
+    height: 3rem;
+    border-radius: 8px;
+    font-size: large;
+    }
