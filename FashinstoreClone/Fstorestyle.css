@@ -9,7 +9,7 @@ body {
 /* to remove blue underline from buttons */
 a {
     text-decoration: none;
-    /* color: black !important; */
+   
     color: inherit !important;
     /* Prevents default blue color */
 }
@@ -951,7 +951,7 @@ a {
     opacity: 8;
 }
 
-/* CONTACT FORM */
+/* CONTACT FORM HTML */
 
 .conAdd h3 {
     color: #8c0d4f;
@@ -965,6 +965,10 @@ a {
     height: 3rem;
     border-radius: 8px;
     padding: .6rem;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
 }
 
 .sendBtn {
@@ -975,4 +979,91 @@ a {
     height: 3rem;
     border-radius: 8px;
     font-size: large;
-    }
+
+}
+
+
+/* LOGIN.HTML */
+.loginheader{
+    background-color: rgba(249, 241, 242, 0.667);    
+    
+}
+.header-LogIn a{
+    color: #8c0d4f;
+}
+.form-body {
+     border-radius: 18px;
+     box-shadow: 20px 20px 50px rgba(208, 207, 207, 0.427);
+     height: auto;
+     width: 28rem;
+     border-top: .42rem solid #8c0d4f;
+     transition: transform 0.3s ease;
+}
+.form-body:hover{
+   transform: translateY(-6px);
+   -webkit-transform: translateY(-6px);
+   -moz-transform: translateY(-6px);
+   -ms-transform: translateY(-6px);
+   -o-transform: translateY(-6px);
+}
+
+.head {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.head p {
+    font-size: 1.5rem;
+    font-family: quicksand, sans-serif;
+    font-weight: 700;
+    color: #8c0d4f;
+
+}
+
+/* signIn buttons */
+.signInbtn {
+     border: none;
+     background-color: #8c0d4f;
+     color: #ffff;
+     padding: .9rem;
+     font-size: large;
+     font-weight: 600;
+     border-radius: 6px;
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+     -webkit-transition: transform 0.3s ease, box-shadow 0.3s ease;
+     -moz-transition: transform 0.3s ease, box-shadow 0.3s ease;
+     -ms-transition: transform 0.3s ease, box-shadow 0.3s ease;
+     -o-transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.signInbtn:hover{
+    transform: translateY(-4px);
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(140, 13, 79, 0.541);
+}
+
+
+
+.SGoogleBtn {
+     border: 1px solid gray;
+     padding: .9rem;
+     font-size: large;
+     font-weight: 600;
+     border-radius: 6px;
+     gap: .40rem;
+     margin-bottom: 2rem;
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+     -webkit-transition: transform 0.3s ease, box-shadow 0.3s ease;
+     -moz-transition: transform 0.3s ease, box-shadow 0.3s ease;
+     -ms-transition: transform 0.3s ease, box-shadow 0.3s ease;
+     -o-transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.SGoogleBtn:hover{
+    transform: translateY(-4px);
+    cursor: pointer;
+     box-shadow: 0 0 5px rgba(91, 90, 91, 0.325);
+    -webkit-transform: translateY(-4px);
+    -moz-transform: translateY(-4px);
+    -ms-transform: translateY(-4px);
+    -o-transform: translateY(-4px);
+}
