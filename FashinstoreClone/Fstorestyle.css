@@ -9,7 +9,7 @@ body {
 /* to remove blue underline from buttons */
 a {
     text-decoration: none;
-      /*color not working fix it in the last  */
+    /*color not working fix it in the last  */
     color: inherit !important;
     /* Prevents default blue color */
 }
@@ -122,8 +122,6 @@ a {
 }
 
 
-
-
 #dropdownMenuButton1 {
     color: #8c0d4f;
     font-size: 20px;
@@ -225,6 +223,139 @@ a {
     cursor: pointer;
     color: #8c0d4f;
 }
+
+/* HERO CAROUSEL */
+/* SHOE CARD1  */
+.carousel-inner{
+    left: 5rem;
+}
+.hero-card-pill p {
+    background-color: #8c0d4f57;
+    color: #8c0d4f;
+    font-weight: 600;
+    font-size: 1.2rem;
+    width: 9rem;
+    border-radius: 1rem;
+    text-align: center;
+    padding: 0.4rem;
+    
+
+}
+
+.hero-card-title {
+    font-family: quicksand;
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.hero-card-text {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-wrap: pretty;
+
+}
+
+/* button */
+.hero-btn {
+    background-color: #8c0d4f;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: .6rem;
+    padding: .8rem;
+    margin-bottom: 1rem;
+}
+
+/* sticker */
+.percent {
+    z-index: 234;
+    position: relative;
+    background-color: #8c0d4f;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    font-size: 1.8rem;
+    color: white;
+    text-align: center;
+    align-content: center;
+    margin-left: auto;
+}
+
+.percent span {
+    color: #000;
+    font-size: 1.8rem;
+    font-family: quicksand;
+    font-weight: 500;
+}
+
+.b-p {
+    z-index: 456;
+    width: auto;
+    height: 7rem;
+    align-items: center;
+    justify-content: flex-end;   
+   padding: 1rem;
+    background: #ffffff;
+    border-radius: 2rem;
+    box-shadow: 9px 5px 16px 8px rgba(220, 220, 220, 0.268);
+    position: absolute;
+    left: 45%;
+    top: 82%;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    text-align: center;
+    
+}
+
+.b-p span{
+     color: #8c0d4f;
+}
+
+/* IMG */
+.carouselImg {
+    
+    width: 105%;
+    height: 105%;
+    z-index: 1;
+
+}
+.carouselImg img{
+    position: relative;
+    bottom: 12%;
+}
+
+/* countDown */
+
+#sale-count {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    position: relative;
+    right: 10rem;
+}
+
+#sale-count div {
+    background: #ffffff;
+    color:  #8c0d4f;
+    font-size: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    width: 5.5rem;
+    height: 5.5rem;
+}
+
+#sale-count div span {
+    display: block;
+    font-size: 1rem;
+    color: #000000;
+}
+
+
+
 
 /* promocards */
 .p-list-container {
@@ -984,27 +1115,31 @@ a {
 
 
 /* LOGIN.HTML */
-.loginheader{
-    background-color: rgba(249, 241, 242, 0.667);    
-    
+.loginheader {
+    background-color: rgba(249, 241, 242, 0.667);
+
 }
-.header-LogIn a{
+
+.header-LogIn a {
     color: #8c0d4f;
 }
-.form-body, .register-card {
-     border-radius: 18px;
-     box-shadow: 20px 20px 50px rgba(208, 207, 207, 0.427);
-     height: auto;
-     width: 28rem;
-     border-top: .42rem solid #8c0d4f;
-     transition: transform 0.3s ease;
+
+.form-body,
+.register-card {
+    border-radius: 18px;
+    box-shadow: 20px 20px 50px rgba(208, 207, 207, 0.427);
+    height: auto;
+    width: 28rem;
+    border-top: .42rem solid #8c0d4f;
+    transition: transform 0.3s ease;
 }
-.form-body:hover{
-   transform: translateY(-6px);
-   -webkit-transform: translateY(-6px);
-   -moz-transform: translateY(-6px);
-   -ms-transform: translateY(-6px);
-   -o-transform: translateY(-6px);
+
+.form-body:hover {
+    transform: translateY(-6px);
+    -webkit-transform: translateY(-6px);
+    -moz-transform: translateY(-6px);
+    -ms-transform: translateY(-6px);
+    -o-transform: translateY(-6px);
 }
 
 .head {
@@ -1022,21 +1157,21 @@ a {
 
 /* signIn buttons */
 .signInbtn {
-     border: none;
-     background-color: #8c0d4f;
-     color: #ffff;
-     padding: .9rem;
-     font-size: large;
-     font-weight: 600;
-     border-radius: 6px;
-     transition: transform 0.3s ease, box-shadow 0.3s ease;
-     -webkit-transition: transform 0.3s ease, box-shadow 0.3s ease;
-     -moz-transition: transform 0.3s ease, box-shadow 0.3s ease;
-     -ms-transition: transform 0.3s ease, box-shadow 0.3s ease;
-     -o-transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    background-color: #8c0d4f;
+    color: #ffff;
+    padding: .9rem;
+    font-size: large;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    -webkit-transition: transform 0.3s ease, box-shadow 0.3s ease;
+    -moz-transition: transform 0.3s ease, box-shadow 0.3s ease;
+    -ms-transition: transform 0.3s ease, box-shadow 0.3s ease;
+    -o-transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.signInbtn:hover{
+.signInbtn:hover {
     transform: translateY(-4px);
     cursor: pointer;
     box-shadow: 0 0 15px rgba(140, 13, 79, 0.541);
@@ -1045,30 +1180,31 @@ a {
 
 
 .SGoogleBtn {
-     border: 1px solid gray;
-     padding: .9rem;
-     font-size: large;
-     font-weight: 600;
-     border-radius: 6px;
-     gap: .40rem;
-     margin-bottom: 2rem;
-     transition: transform 0.3s ease, box-shadow 0.3s ease;
-     -webkit-transition: transform 0.3s ease, box-shadow 0.3s ease;
-     -moz-transition: transform 0.3s ease, box-shadow 0.3s ease;
-     -ms-transition: transform 0.3s ease, box-shadow 0.3s ease;
-     -o-transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid gray;
+    padding: .9rem;
+    font-size: large;
+    font-weight: 600;
+    border-radius: 6px;
+    gap: .40rem;
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    -webkit-transition: transform 0.3s ease, box-shadow 0.3s ease;
+    -moz-transition: transform 0.3s ease, box-shadow 0.3s ease;
+    -ms-transition: transform 0.3s ease, box-shadow 0.3s ease;
+    -o-transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.SGoogleBtn:hover{
+
+.SGoogleBtn:hover {
     transform: translateY(-4px);
     cursor: pointer;
-     box-shadow: 0 0 5px rgba(91, 90, 91, 0.325);
+    box-shadow: 0 0 5px rgba(91, 90, 91, 0.325);
     -webkit-transform: translateY(-4px);
     -moz-transform: translateY(-4px);
     -ms-transform: translateY(-4px);
     -o-transform: translateY(-4px);
 }
 
-#log-reg:hover{
+#log-reg:hover {
     text-decoration: underline;
     color: #8c0d4f;
 }
