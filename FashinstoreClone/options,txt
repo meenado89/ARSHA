@@ -195,3 +195,42 @@ function filterSelection(category) {
     }
   }
 }
+
+
+
+
+
+// shoe
+ <div class="carousel-item active">
+      <div class="hero-card container-fluid mb-3  " style="width: 68rem;">
+                            <div class="row g-0">
+                                <div class="col-md-8 col-lg-6 col-md-12 ">
+                                    <div class="bag-card-body ">
+                                        <!-- pill -->
+                                        <h5 class="bag-card-pill">limited Time </h5>
+                                        <p class="bag-card-title">Season Sale Up to 50% Off
+                                        </p>
+                                        <p class="bag-card-text"><small class="text-muted">Curabitur aliquet quam id
+                                                dui
+                                                posuere blandit. Nulla quis lorem ut
+                                                libero malesuada feugiat. Mauris blandit aliquet elit, eget tincidunt
+                                                nibh pulvinar.</small>
+                                        </p>
+                                        <!-- sales Button -->
+                                        <button>Shop Sale <i class='bx bx-right-arrow-alt'></i></button>
+
+                                        <!-- CountDown Timer  -->
+                                        <div id="sale-count"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-lg-6 col-md-12">
+                                    <!-- off sticker -->
+                                    <div class="percent">50% off</div>
+                                    <img src="bag.webp" class="img-fluid rounded-start" alt="shoe">
+                                    <div class="b-p">
+                                        <p>Best Seller</p>
+                                        <del class="text-muted">$129.99</del><span>$64.99</span>
+                                    </div>
+                                </div>
+                            </div>
+    </div>
