@@ -127,7 +127,7 @@ function validateContactForm() {
   return true;
 }
 
-// Attach handlers only if needed
+// alerts for success log in/register
 document.addEventListener("DOMContentLoaded", function () {
   const loginBtn = document.querySelector(".signInbtn");
   const registerBtn = document.querySelector(".register-card .signInbtn");
