@@ -9,7 +9,7 @@ body {
 /* to remove blue underline from buttons */
 a {
     text-decoration: none;
-   
+      /*color not working fix it in the last  */
     color: inherit !important;
     /* Prevents default blue color */
 }
@@ -1066,4 +1066,9 @@ a {
     -moz-transform: translateY(-4px);
     -ms-transform: translateY(-4px);
     -o-transform: translateY(-4px);
+}
+
+#log-reg:hover{
+    text-decoration: underline;
+    color: #8c0d4f;
 }
