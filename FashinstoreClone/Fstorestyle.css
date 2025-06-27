@@ -226,9 +226,10 @@ a {
 
 /* HERO CAROUSEL */
 /* SHOE CARD1  */
-.carousel-inner{
+.carousel-inner {
     left: 5rem;
 }
+
 .hero-card-pill p {
     background-color: #8c0d4f57;
     color: #8c0d4f;
@@ -238,17 +239,34 @@ a {
     border-radius: 1rem;
     text-align: center;
     padding: 0.4rem;
-    
+
 
 }
 
-.hero-card-title {
+/* pill */
+.bag-card-pill p,
+.back-card-pill {
+    background-color: #8c0d4f57;
+    color: #8c0d4f;
+    font-weight: 600;
+    font-size: 1.2rem;
+    width: 12rem;
+    border-radius: 1rem;
+    text-align: center;
+    padding: .6rem;
+}
+
+.hero-card-title,
+.bag-card-title,
+.back-card-title {
     font-family: quicksand;
     font-size: 4rem;
     font-weight: 700;
 }
 
-.hero-card-text {
+.hero-card-text,
+.bag-card-text,
+.back-card-text {
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 1rem;
@@ -257,7 +275,8 @@ a {
 }
 
 /* button */
-.hero-btn {
+.hero-btn,
+.bag-btn {
     background-color: #8c0d4f;
     border: none;
     color: white;
@@ -267,6 +286,8 @@ a {
     padding: .8rem;
     margin-bottom: 1rem;
 }
+
+
 
 /* sticker */
 .percent {
@@ -295,8 +316,8 @@ a {
     width: auto;
     height: 7rem;
     align-items: center;
-    justify-content: flex-end;   
-   padding: 1rem;
+    justify-content: flex-end;
+    padding: 1rem;
     background: #ffffff;
     border-radius: 2rem;
     box-shadow: 9px 5px 16px 8px rgba(220, 220, 220, 0.268);
@@ -306,22 +327,23 @@ a {
     transform: translateY(-50%);
     font-size: 1.5rem;
     text-align: center;
-    
+
 }
 
-.b-p span{
-     color: #8c0d4f;
+.b-p span {
+    color: #8c0d4f;
 }
 
 /* IMG */
 .carouselImg {
-    
+
     width: 105%;
     height: 105%;
     z-index: 1;
 
 }
-.carouselImg img{
+
+.carouselImg img {
     position: relative;
     bottom: 12%;
 }
@@ -335,12 +357,12 @@ a {
     align-items: center;
     margin-top: 2rem;
     position: relative;
-    right: 10rem;
+    right: 6rem;
 }
 
 #sale-count div {
     background: #ffffff;
-    color:  #8c0d4f;
+    color: #8c0d4f;
     font-size: 2rem;
     border-radius: 10px;
     text-align: center;
@@ -354,7 +376,93 @@ a {
     color: #000000;
 }
 
+/* BAG CARD */
+.met-type {
+    position: relative;
+    list-style-type: none;
+    font-size: 1.5rem;
+    right: 2rem;
+}
 
+/* BAG PILL */
+.sticker {
+    background-color: #8c0d4f;
+    color: white;
+    font-weight: 600;
+    font-size: 1.2rem;
+    width: 12rem;
+    border-radius: 1rem;
+    text-align: center;
+    padding: .6rem;
+
+}
+
+.star {
+    z-index: 456;
+    width: 14rem;
+    height: 9rem;
+    align-items: center;
+    justify-content: flex-end;
+
+    background: #ffffff;
+    border-radius: 2rem;
+    box-shadow: 9px 5px 16px 8px rgba(220, 220, 220, 0.268);
+    position: absolute;
+    left: 78%;
+    top: 82%;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.star p {
+    font-size: 1rem;
+    text-wrap: pretty;
+}
+
+/* CARD 3 */
+.carousel-indicators [data-bs-target] {
+  background-color: #979797 !important;
+  width: 2rem !important;
+  height: 2rem !important;
+  border-radius: 50% !important;
+  border: none;
+  margin: 0 0.4rem;
+
+}
+
+
+.border {
+    width: 14rem;
+    height: auto;
+    border-radius: 22px;
+    background-color: white;
+   
+}
+
+.backbtn {
+    background-color: #8c0d4f;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: .6rem;
+    padding: .8rem;
+    margin-bottom: 1rem;
+}
+
+.a {
+    font-family: quicksand;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: rgb(73, 4, 4);
+}
+
+.b {
+    font-size: 1.5rem;
+    color: #8c0d4f;
+    font-weight: 700;
+}
 
 
 /* promocards */
