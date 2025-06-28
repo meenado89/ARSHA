@@ -129,19 +129,22 @@ a {
 
 /* MEGAMENU1 */
 .mega-menu {
-  width: 88rem;
-  height: 22rem;
+  width: 82rem;
+  height: 24rem;
   background: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+   position: relative;
+  left: -55rem !important;
+  right: 10% !important; /* opens to the left */
 }
 
 /* Force menu to open left or right, independent of Bootstrap classes */
-.custom-align-left {
+/* .custom-align-left {
     position: relative;
   left: -58rem !important;
-  right: 10% !important; /* opens to the left */
-}
+  right: 10% !important;
+} */
 
 
 
