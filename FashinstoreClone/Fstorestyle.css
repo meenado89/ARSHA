@@ -226,6 +226,8 @@ a {
 
 /* HERO CAROUSEL */
 /* SHOE CARD1  */
+
+
 .carousel-inner {
     left: 5rem;
 }
@@ -286,6 +288,16 @@ a {
     padding: .8rem;
     margin-bottom: 1rem;
 }
+
+.hero-btn:hover,
+.bag-btn:hover,
+.backbtn:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    color: #958787;
+}
+
+
 
 
 
@@ -357,7 +369,7 @@ a {
     align-items: center;
     margin-top: 2rem;
     position: relative;
-    right: 6rem;
+    right: 11rem;
 }
 
 #sale-count div {
@@ -368,7 +380,10 @@ a {
     text-align: center;
     width: 5.5rem;
     height: 5.5rem;
+    box-shadow: 9px 5px 16px 8px rgba(220, 220, 220, 0.268);
 }
+
+
 
 #sale-count div span {
     display: block;
@@ -397,37 +412,36 @@ a {
 
 }
 
-.star {
+.Bcstar {
     z-index: 456;
     width: 14rem;
     height: 9rem;
     align-items: center;
     justify-content: flex-end;
-
     background: #ffffff;
     border-radius: 2rem;
     box-shadow: 9px 5px 16px 8px rgba(220, 220, 220, 0.268);
     position: absolute;
-    left: 78%;
-    top: 82%;
+    left: 72%;
+    top: 85%;
     transform: translateY(-50%);
     font-size: 1.5rem;
     text-align: center;
 }
 
-.star p {
+.Bcstar p {
     font-size: 1rem;
     text-wrap: pretty;
 }
 
 /* CARD 3 */
 .carousel-indicators [data-bs-target] {
-  background-color: #979797 !important;
-  width: 2rem !important;
-  height: 2rem !important;
-  border-radius: 50% !important;
-  border: none;
-  margin: 0 0.4rem;
+    background-color: #979797 !important;
+    width: 2rem !important;
+    height: 2rem !important;
+    border-radius: 50% !important;
+    border: none;
+    margin: 0 0.4rem;
 
 }
 
@@ -437,7 +451,7 @@ a {
     height: auto;
     border-radius: 22px;
     background-color: white;
-   
+
 }
 
 .backbtn {
