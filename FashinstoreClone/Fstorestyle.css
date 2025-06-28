@@ -17,7 +17,7 @@ a {
 
 #navbarNavAltMarkup {
 
-    font-size: 9rem;
+    /* font-size: 9rem; */
     gap: 2rem;
     align-items: center;
     justify-content: center;
@@ -368,8 +368,7 @@ a {
     justify-content: center;
     align-items: center;
     margin-top: 2rem;
-    position: relative;
-    right: 11rem;
+    
 }
 
 #sale-count div {
