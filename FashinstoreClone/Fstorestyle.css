@@ -127,6 +127,24 @@ a {
     font-size: 20px;
 }
 
+/* MEGAMENU1 */
+.mega-menu {
+  width: 88rem;
+  height: 22rem;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Force menu to open left or right, independent of Bootstrap classes */
+.custom-align-left {
+    position: relative;
+  left: -58rem !important;
+  right: 10% !important; /* opens to the left */
+}
+
+
+
 /* brand-carousel */
 
 .brandcarousel-container {

@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- quicksand font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
@@ -14,120 +16,501 @@
 
 
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>TESTING</title>
+
+    <title>FashioStore Clone</title>
 
     <style>
-        /* body {
-            background-color: #f8f4f6;
-        } */
-
-        a {
-            /* text-decoration: none;
-            color: inherit; */
-            /* Prevents default blue color */
-        }
+        /* 30may/01:20 */
+        /* 2june/00:20 */
+        /* 17jun/3:50 */
+        /* 18jun/ */
+        /* 19/06..submenu */
+        /* 20/06..badges and pills */
+        /* 21/06...promocard hover */
+        /* 23/06...category cards */
+        /* 24/06..img hovers/js */
+        /* 25/06...fixed all buttons/hovers serchbar */
+        /* 26/27/06 ... contact log in, register pages linked /js css  */
+        /* 27/28/06...completed carousel started megamenu*/
     </style>
 </head>
 
 <body>
-    <!-- <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel"> -->
-    <div class="carousel-inner">
+    <!-- topnavHeading -->
+    <!-- done -->
+    <nav class="navbar navbar-light bg-light" style="font-size: 14px;">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row align-items-center gy-3">
+
+                    <!-- Left Column -->
+                    <div class="col-lg-6 col-12">
+                        <div
+                            class="contactheader d-flex flex-column flex-md-row flex-wrap gap-3 justify-content-center justify-content-lg-start align-items-center">
+                            <div class="d-flex align-items-center">
+                                <i class='bx bxs-phone bx-sm p-2'></i>
+                                <p class="mb-0 fw-normal text-center text-md-start">
+                                    Customer Support: <span style="color: #8c0d4f;">+1 (234) 567-890</span>
+                                </p>
+                            </div>
+
+                            <div class="d-flex align-items-center">
+                                <i class='bx bx-envelope bx-sm p-2' style="color: #8c0d4f;"></i>
+                                <p class="mb-0 fw-normal text-center text-md-start" style="color: #8c0d4f;">
+                                    support@example.com
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column -->
+                    <div class="col-lg-6 col-12">
+                        <div
+                            class="trackheader d-flex flex-column flex-md-row justify-content-center justify-content-lg-end align-items-center gap-3">
+                            <div class="d-flex align-items-center">
+                                <i class='bx bxs-truck bx-sm p-2' style="color: #8c0d4f;"></i>
+                                <p class="mb-0 fw-normal" style="color: #8c0d4f;">Track Order</p>
+                            </div>
+
+                            <!-- Language Dropdown -->
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle fw-normal" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false" style="color: #8c0d4f;">
+                                    English
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#"><i class="bx bx-check"
+                                                style="color:#570808;"></i> English</a></li>
+                                    <li><a class="dropdown-item" href="#">Hindi</a></li>
+                                    <li><a class="dropdown-item" href="#">Français</a></li>
+                                    <li><a class="dropdown-item" href="#">Deutsch</a></li>
+                                </ul>
+                            </div>
+
+                            <!-- Currency Dropdown -->
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle fw-normal" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false" style="color: #8c0d4f;">
+                                    USD
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#"><i class="bx bx-check"
+                                                style="color:#570808;"></i> USD</a></li>
+                                    <li><a class="dropdown-item" href="#">EUR</a></li>
+                                    <li><a class="dropdown-item" href="#">GBP</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </nav>
 
 
-        <!-- CARD3 -->
+    <!-- STORE NAVBAR -->
+    <nav class="navbar navbar-light bg-white pb-0" style="padding-left: 2rem; padding-right: 2rem;">
+        <div class="container-fluid">
+            <div class="row w-100 align-items-center">
+                <!-- Brand -->
+                <div class="col-lg-4 d-flex align-items-center">
+                    <a class="navbar-brand fw-bolder m-0 p-0" style="font-family: quicksand;">
+                        <h1 class="m-0 " style="font-weight: 800; font-size: 1.5rem;">Fashion <span
+                                style="color: #8c0d4f;">Store</span></h1>
+                    </a>
+                </div>
 
-        <!-- <div class="carousel-item active">
-            <div class="back-card mb-3" style="width: 90%; background-color: rgb(251, 241, 241); height:42rem; padding: 3rem;">
-                <div class="row g-0">
-                    <div class="col-12 col-md-6 col-lg-6">
-                        <div class="back-card-body"> -->
-                            <!-- pill -->
-                            <!-- <h5 class="back-card-pill">limited Time </h5>
-                            <p class="back-card-title">Season Sale Up to 50% Off
-                            </p>
-                            <p class="back-card-text"><small class="text-muted">Curabitur aliquet quam id
-                                    dui
-                                    posuere blandit. Nulla quis lorem ut
-                                    libero malesuada feugiat. Mauris blandit aliquet elit, eget tincidunt
-                                    nibh pulvinar.</small>
-                            </p> -->
-                            <!-- sales Button -->
-                            <!-- <button class="backbtn">Shop New Arrivals<i class='bx bx-right-arrow-alt'></i></button>
+                <!-- Search Bar -->
+                <div class="col-lg-4">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
+                            style="box-shadow: 2px 4px  8px rgb(222, 222, 222);
+                        border-top-right-radius: 0%; border-bottom-right-radius: 0%; border-top-left-radius: 8px; border-bottom-left-radius: 8px;">
+                        <button class="btn " type="submit"
+                            style="color: #000000;background-color: #8c0d4f;right: 2rem;position: relative; border: none;
+                       box-shadow: 2px 6px 8px rgb(222, 222, 222); border-top-right-radius: 8px; border-bottom-right-radius: 8px; border-top-left-radius: 0%; border-bottom-left-radius: 0%;">
+                            <i class='bx bx-search bx-md text-white'></i>
+                        </button>
+                    </form>
+                </div>
 
+                <!-- Icons (Account, Wishlist, Cart) -->
+                <div class="col-lg-4">
+                    <div class="d-flex justify-content-end align-items-center gap-4">
+                        <a class="d-flex align-items-center text-decoration-none text-dark" id="userAccount">
+                            <!-- dropdown -->
+                            <div class="dropdown" id="account">
+                                <a class="btn  " href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <i class='bx bx-user bx-md'></i>
+                                    <span class="ms-1">Account</span>
+                                </a>
+
+                                <ul class="dropdown-menu p-2" aria-labelledby="dropdownMenuLink">
+                                    <li>
+                                        <h5 class="dropdown-item" href="#">Welcome to FashionStore</h5>
+                                    </li>
+                                    <li>
+                                        <p class="text-muted ">Access account & manage orders</p>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#"><i class='bx bx-user-circle bx-sm '></i>My
+                                            Profile</a></li>
+                                    <li><a class="dropdown-item" href="#"><i
+                                                class='bx bx-shopping-bag bx-flip-horizontal bx-sm'></i>My Orders</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#"><i class='bx bx-heart bx-sm'></i>My
+                                            Wishlist</a></li>
+                                    <li><a class="dropdown-item" href="#"><i
+                                                class='bx bxs-left-arrow-alt bx-sm'></i>Returns & Refunds</a></li>
+                                    <li><a class="dropdown-item" href="#"><i class='bx bx-cog bx-sm'></i>Settings</a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <div class="footer">
+                                        <div class="dropdown-footer position-relative" style="left:4 rem;">
+                                            <a href="login.html" class="btn  w-75 mb-2 text-center text-white"
+                                                style="background-color: #8c0d4f; border-radius: 22px;">Sign In</a>
+                                            <a href="register.html" class="btn  w-75"
+                                                style="border: 1px solid #8c0d4f; border-radius: 22px">Register</a>
+                                        </div>
+                                    </div>
+                                </ul>
+                            </div>
+                        </a>
+
+
+                        <!-- whishlist -->
+                        <a class="d-flex align-items-center text-decoration-none text-dark" id="wishlist">
+                            <i class='bx bx-heart bx-md'></i>
+                            <span class="ms-1">Wishlist</span>
+                        </a>
+
+
+                        <!-- cart -->
+                        <!-- <a class="d-flex align-items-center text-decoration-none text-dark" id="cart">
+                            <i class='bx bx-cart-alt bx-md'></i>
+                            <span class="ms-1">Cart</span>
+                        </a> -->
+
+                        <div class="dropdown " id="cart">
+                            <a class="btn  " href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+                                data-popper-placement="bottom-end" aria-expanded="false">
+                                <i class='bx bx-cart-alt bx-md'></i>
+                                <span class="ms-1">Cart</span>
+                            </a>
+
+                            <ul class="dropdown-menu dropdown-menu-end " aria-labelledby="dropdownMenuLink"
+                                style="width: 24rem;">
+
+                                <li>
+                                    <h5 class="dropdown-item" href="#">Shoping Cart</h5>
+                                </li>
+                                <li>
+                                    <p class="text-muted ">Access account & manage orders</p>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <div class="cart-item d-flex ">
+                                    <div class="cart-item-image m-0">
+                                        <img src="purse.webp" alt="Product" style="width: 20%;">
+                                    </div>
+                                    <div class="cart-item-content">
+                                        <h6 class="cart-item-title">Wireless Headphones</h6>
+                                        <div class="cart-item-meta">1 × $89.99</div>
+                                    </div>
+                                    <button class="cart-item-remove">
+                                        <i class="bi bi-x"></i>
+                                    </button>
+                                </div>
+                                <li><a class="dropdown-item" href="#"><i
+                                            class='bx bx-shopping-bag bx-flip-horizontal bx-sm'></i>My Orders</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#"><i class='bx bx-heart bx-sm'></i>My
+                                        Wishlist</a></li>
+                                <li><a class="dropdown-item" href="#"><i class='bx bxs-left-arrow-alt bx-sm'></i>Returns
+                                        & Refunds</a></li>
+                                <li><a class="dropdown-item" href="#"><i class='bx bx-cog bx-sm'></i>Settings</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <div class="footer ">
+                                    <div class="total d-flex position-relative"
+                                        style="gap: 14rem; left: 2rem; right: 2rem; padding-top: 1rem;">
+                                        <h4>Total</h4>
+                                        <p>$279.99</p>
+                                    </div>
+                                    <div class="dropdown-footer  d-flex" style="left: 2rem;gap: 2rem; padding: 2rem;">
+
+                                        <a href="" class="btn  w-50"
+                                            style="border: 1px solid #8c0d4f; border-radius: 22px">View Cart</a>
+
+                                        <a href="" class="btn  w-50 mb-2 text-center text-white"
+                                            style="background-color: #8c0d4f; border-radius: 22px;">Check Out</a>
+
+                                    </div>
+                                </div>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <hr class="w-100">
+
+    <!-- home about nav bar -->
+    <!-- align(done) and text edit -->
+    <nav class="navbar navbar-expand-lg  ">
+        <div class="container-fluid w-100">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+                <div class="navbar-nav  " id="home-navbar">
+                    <a class="nav-link active " aria-current="page" href="#">Home</a>
+                    <a class="nav-link  " href="#">About</a>
+                    <a class="nav-link " href="#">category</a>
+                    <a class="nav-link" href="#">product Details</a>
+                    <a class="nav-link" href="#">Cart</a>
+                    <a class="nav-link" href="#">Checkout</a>
+
+                    <!-- dropdown -->
+                    <!-- <a class="nav-link" href="#">Dropdown</a> -->
+
+                    <div class="dropdown">
+                        <a class="nav-link">Dropdown<i class=' nav-link  bx bx-chevron-down'></i></a>
+                        <div class="dropdown-content">
+                            <a class="nav-link" href="#">dropdown 1</a>
+                            <a class="nav-link" href="#">dropdown 2</a>
+
+                            <!-- submenu -->
+                            <div class="submenu">
+                                <a class="nav-link" href="#">submenu<i class=' nav-link bx bx-chevron-down'></i></a>
+                                <div class="submenu-content">
+                                    <a class="nav-link" href="#">Dropdown1</a>
+                                    <a class="nav-link" href="#">Dropdown2</a>
+                                    <a class="nav-link" href="#">Dropdown4</a>
+                                    <a class="nav-link" href="#">dropdown 5</a>
+
+                                </div>
+                            </div>
+                            <!-- add hover on icon separately -->
+
+                            <a class="nav-link" href="#">dropdown 3</a>
+                            <a class="nav-link" href="#">dropdown 4</a>
+                            <a class="nav-link" href="#">dropdown 5</a>
 
                         </div>
                     </div>
-                    <div class="col-md-4 col-lg-6 col-md-12 p-4">
-                        <div class="container overflow-hidden">
-                            <div class="row gy-3 gx-3"> -->
-                                <!-- CARD 1 -->
-                                <!-- <div class="backS-card col-6">
-                                    <div class="border text-center">
-                                        <div class="bimg">
-                                            <img src="purse.webp" alt="purse" width="50%" height="50%">
-                                        </div>
-                                        <hr>
-                                        <div class="backS-card-text">
-                                            <p class="a">Modern Style</p>
-                                            <p class="b">$79.99</p>
-                                        </div>
-                                    </div>
-                                </div> -->
-                                <!-- CARD 2 -->
-                                <!-- <div class="backS-card col-6">
-                                    <div class="border text-center">
-                                        <div class="bimg">
-                                            <img src="chair.webp" alt="chair" width="50%" height="50%">
-                                        </div>
-                                        <hr>
-                                        <div class="backS-card-text">
-                                            <p class="a">Casual Collection</p>
-                                            <p class="b">$64.99</p>
-                                        </div>
-                                    </div>
-                                </div> -->
-                                <!-- CARD 3 -->
-                                <!-- <div class="backS-card col-6">
-                                    <div class="border text-center">
-                                        <div class="bimg">
-                                            <img src="backpack.webp" alt="backpack" width="50%" height="50%">
-                                        </div>
-                                        <hr>
-                                        <div class="backS-card-text">
-                                            <p class="a">Premium Design</p>
-                                            <p class="b">$89.99</p>
-                                        </div>
-                                    </div>
-                                </div> -->
-                                <!-- CARD 4 -->
-                                <!-- <div class="backS-card col-6">
-                                    <div class="border text-center">
-                                        <div class="bimg">
-                                            <img src="jecket.webp" alt="jacket" width="50%" height="50%">
-                                        </div>
-                                        <hr>
-                                        <div class="backS-card-text">
-                                            <p class="a">Elegant Series</p>
-                                            <p class="b">$74.99</p>
-                                        </div>
-                                    </div>
-                                </div>
+
+                    <!-- MEGAMENU 1 -->
+
+                    <div class="dropdown Mega-dropdown">
+                        <a class="nav-link dropdown-toggle MDropbtn" href="#" role="button" id="dropdownMenuLink"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            MegaMenu 1
+                        </a>
+
+                        <div class="dropdown-menu mega-menu p-4 custom-align-left"">
+                            <div class="card-header">
+                                <ul class="nav nav-pills card-header-pills">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="#">Active</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Link</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link disabled" href="#" tabindex="-1"
+                                            aria-disabled="true">Disabled</a>
+                                    </li>
+                                </ul>
                             </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Special title treatment</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional
+                                    content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- MEGAMENU2 -->
+                    <a class="nav-link" href="#">Megamenu2</a>
+
+
+                    <a class="nav-link" href="contact.html">Contact</a>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- top fotter -->
+    <!-- Done -->
+
+    <footer id="footer" style="background-color: #f8f4f6; padding-bottom: 1rem;">
+
+        <div class="footer container-fluid ">
+            <div class="row gy-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-widget footer-about">
+                        <a href="index.html" class="logo ">
+                            <span class="sitename fw-bolder"
+                                style="color: #8c0d4f; font-family: quicksand, sans-serif; font-size: 2rem; letter-spacing: 0.5px;">FashionStore</span>
+                        </a>
+                        <p class="pt-3 fw-normal" style="font-size: 1rem; font-family: quicksand;">Lorem ipsum
+                            dolor sit amet, consectetur adipiscing elit. Nullam in nibh vehicula,
+                            facilisis magna ut, consectetur lorem. Proin eget tortor.</p>
+
+                        <div class="social-links mt-1">
+                            <h5 style="font-family: quicksand; color: rgb(69, 65, 65); font-size: 1.2rem;">
+                                Connect With Us</h5>
+                            <div class="social-icons ">
+                                <a href="#" aria-label="Facebook"><i class='bx bxl-facebook-circle bx-sm'></i></a>
+                                <a href="#" aria-label="Instagram"> <i class='bx bxl-instagram bx-sm'></i></a>
+                                <a href="#" aria-label="podcast"><i class='bx bx-podcast bx-sm'></i></a>
+                                <a href="#" aria-label="TikTok"><i class='bx bxl-tiktok bx-sm'></i></a>
+                                <a href="#" aria-label="Pinterest"><i class='bx bxl-pinterest bx-sm'></i></a>
+                                <a href="#" aria-label="YouTube"><i class='bx bxl-youtube bx-sm'></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6 col-sm-6">
+                    <div class="footer-widget ">
+                        <h4 class=" px-4 pb-0 ">Shop </h4>
+                        <ul class="footer-links">
+                            <li><a href="category.html"><i class='bx bx-arrow-back bx-rotate-180'
+                                        style='color:#8c0d4f'></i>New Arrivals</a></li>
+                            <li><a href="category.html"><i class='bx bx-arrow-back bx-rotate-180'
+                                        style='color:#8c0d4f'></i>Bestsellers</a></li>
+                            <li><a href="category.html"><i class='bx bx-arrow-back bx-rotate-180'
+                                        style='color:#8c0d4f'></i>Women's Clothing</a></li>
+                            <li><a href="category.html"><i class='bx bx-arrow-back bx-rotate-180'
+                                        style='color:#8c0d4f'></i>Men's Clothing</a></li>
+                            <li><a href="category.html"><i class='bx bx-arrow-back bx-rotate-180'
+                                        style='color:#8c0d4f'></i>Accessories</a></li>
+                            <li><a href="category.html"><i class='bx bx-arrow-back bx-rotate-180'
+                                        style='color:#8c0d4f'></i>Sale</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6 col-sm-6">
+                    <div class="footer-widget">
+                        <h4 class=" px-4 pb-0 ">Support</h4>
+                        <ul class="footer-links">
+                            <li><a href="support.html"><i class='bx bx-arrow-back bx-rotate-180'
+                                        style='color:#8c0d4f'></i>Help Center</a></li>
+                            <li><a href="account.html"><i class='bx bx-arrow-back bx-rotate-180'
+                                        style='color:#8c0d4f'></i>Order Status</a></li>
+                            <li><a href="shiping-info.html"><i class='bx bx-arrow-back bx-rotate-180'
+                                        style='color:#8c0d4f'></i>Shipping Info</a></li>
+                            <li><a href="return-policy.html"><i class='bx bx-arrow-back bx-rotate-180'
+                                        style='color:#8c0d4f'></i>Returns &amp; Exchanges</a></li>
+                            <li><a href="#"><i class='bx bx-arrow-back bx-rotate-180' style='color:#8c0d4f'></i>Size
+                                    Guide</a></li>
+                            <li><a href="contact.html"><i class='bx bx-arrow-back bx-rotate-180'
+                                        style='color:#8c0d4f'></i>Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-widget">
+                        <h4>Contact Information</h4>
+                        <div class="footer-contact">
+                            <div class="contact-item mb-3">
+                                <i class='bx bx-map bx-sm' style='color:#8c0d4f'></i>
+                                <span>123 Fashion Street, New York, NY 10001</span>
+                            </div>
+                            <div class="contact-item mb-3">
+                                <i class='bx bx-phone bx-sm' style='color:#8c0d4f'></i>
+                                <span>+1 (555) 123-4567</span>
+                            </div>
+                            <div class="contact-item mb-3">
+                                <i class="bx bx-envelope bx-sm" style='color:#8c0d4f'></i>
+                                <span>hello@example.com</span>
+                            </div>
+                            <div class="contact-item mb-3">
+                                <i class='bx bx-time-five bx-sm' style='color:#8c0d4f'></i>
+                                <span>Monday-Friday: 9am-6pm<br>Saturday: 10am-4pm<br>Sunday: Closed</span>
+                            </div>
+                        </div>
+
+                        <div class="app-buttons mt-4 gap-2 d-flex">
+                            <a href="#" class="app-btn">
+                                <i class='bx bxl-apple bx-sm'></i>
+                                <span>App Store</span>
+                            </a>
+                            <a href="#" class="app-btn">
+                                <i class='bx bxl-play-store bx-sm'></i>
+                                <span>Google Play</span>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-    </div> -->
+        <hr>
+        <!--bottom footer  -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row gy-3 align-items-center">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="copyright">
+                            <p>© <span>Copyright</span> <strong class="sitename">MyWebsite</strong>. All Rights
+                                Reserved.</p>
+                        </div>
+                        <div class="credits mt-1">
+                            Designed by <a href="https://bootstrapmade.com/" style=" color: #8c0d4f;">BootstrapMade</a>
+                        </div>
+                    </div>
 
+                    <div class="col-lg-6 col-md-12">
+                        <div class="d-flex flex-wrap justify-content-lg-end justify-content-center align-items-center">
+                            <div class="payment-methods">
+                                <i class='bx bx-credit-card bx-md '></i>
+                                <i class='bx bxl-paypal bx-md '></i>
+                                <i class='bx bxl-apple bx-md '></i>
+                                <i class='bx bx-store bx-md'></i>
 
+                                <a href="#">Terms</a>
+                                <a href="#">Privacy</a>
+                                <a href="#">Cookies</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+            </div>
+        </div>
+        <!-- scroll-top -->
+
+        <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center active"><i
+                class="bx bx-up-arrow-alt bx-sm text-white"></i></a>
+    </footer>
 
 
 
     <script src="fstore.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
