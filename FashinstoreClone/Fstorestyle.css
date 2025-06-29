@@ -128,9 +128,7 @@ a {
 }
 
 /* MEGAMENU1 */
-.Mega-dropdown {
-    position: relative;
-}
+
 
 .dropdown-menu {
     top: 100%;
@@ -141,24 +139,66 @@ a {
 }
 
 
-.mega-menu {
-    padding: 20px;
-    top: 100%;
-    left: 13rem;
-    display: none;
-    position: absolute;
-    width: 76%;
 
-
+.dropdown-hover-wrapper {
+  position: relative;
 }
+
+.mega-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: -40%;
+  transform: translateX(-64%);
+  width: 80rem;
+  height: 30rem;
+  background-color: white;
+  padding: 20px;
+  z-index: 9999;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  -webkit-transform: translateX(-64%);
+  -moz-transform: translateX(-64%);
+  -ms-transform: translateX(-64%);
+  -o-transform: translateX(-64%);
+}
+
+.mega-menu-two{
+
+     display: none;
+  position: absolute;
+  top: 100%;
+  left: -40%;
+  transform: translateX(-64%);
+  width: 80rem;
+  height: 30rem;
+  background-color: white;
+  padding: 20px;
+  z-index: 9999;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  -webkit-transform: translateX(-78%);
+  -moz-transform: translateX(-64%);
+  -ms-transform: translateX(-64%);
+  -o-transform: translateX(-64%);
+}
+
+.dropdown-hover-wrapper:hover .mega-menu  {
+  display: block !important;
+}
+.dropdown-hover-wrapper:hover .mega-menu-two  {
+  display: block !important;
+}
+
+
+
 
 .backS-card {
     margin-bottom: 20px;
     z-index: 1;
 }
 
-.bimg {
-    padding: 20px;
+.mega-img {
+
+    overflow: hidden;
 }
 
 .backS-card-text .a {
@@ -167,19 +207,27 @@ a {
 }
 
 .backS-card-text .b {
-    color: #007bff;
+    color: #8c0d4f;
     font-weight: bold;
-    font-size: 1.1em;
+    font-size: 1.5em;
 }
 
-.border {
+.mega-border {
     padding: 15px;
     border-radius: 8px;
-    transition: box-shadow 0.3s ease;
+    transition: all.3s ease-in-out;
+    -webkit-transition: all.3s ease-in-out;
+    -moz-transition: all.3s ease-in-out;
+    -ms-transition: all.3s ease-in-out;
+    -o-transition: all.3s ease-in-out;
 }
 
-.border:hover {
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+.mega-border:hover img {
+    transform: scale(150%);
+    -webkit-transform: scale(150%);
+    -moz-transform: scale(150%);
+    -ms-transform: scale(150%);
+    -o-transform: scale(150%);
 }
 
 /* mega/category */
@@ -212,20 +260,26 @@ a {
     color: #8c0d4f;
     /* Icon also changes */
 }
+
 /* IMGS */
 .mega-img {
-  height: 200px;             /* fixed height of the image container */
-  overflow: hidden;          /* crop anything that overflows */
-  display: flex;
-  justify-content: center;   /* center the image horizontally */
-  align-items: center;       /* center the image vertically */
+    height: 200px;
+    /* fixed height of the image container */
+    overflow: hidden;
+    /* crop anything that overflows */
+    display: flex;
+    justify-content: center;
+    /* center the image horizontally */
+    align-items: center;
+    /* center the image vertically */
 }
 
 .mega-img img {
-  height: 260px;             /* bigger than container, so it's zoomed */
-  object-fit: cover;         /* crop the image */
+    height: 260px;
+    /* bigger than container, so it's zoomed */
+    object-fit: cover;
+    /* crop the image */
 }
-
 
 
 
