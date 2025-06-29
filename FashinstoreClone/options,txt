@@ -293,3 +293,37 @@ function filterSelection(category) {
                 </div>
             </div>
         </div>
+
+
+
+
+
+        <!-- CARD 3 -->
+                                        <div class="col-md-3">
+                                            <div class="border text-center p-2">
+                                                <div class="bimg">
+                                                    <img src="backpack.webp" alt="backpack" width="70%" height="70%">
+                                                </div>
+                                                <hr>
+                                                <div class="mega-fe-text">
+                                                    <p class="a">Premium Design</p>
+                                                    <p class="b">$89.99</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- CARD 4 -->
+                                        <div class="col-md-3">
+                                            <div class="border text-center p-2">
+                                                <div class="bimg">
+                                                    <img src="jecket.webp" alt="jacket" width="70%" height="70%">
+                                                </div>
+                                                <hr>
+                                                <div class="mega-fe-text">
+                                                    <p class="a">Elegant Series</p>
+                                                    <p class="b">$74.99</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                         transform: translate(-50%, -50%);     on hover   transition: opacity 0.3s ease;

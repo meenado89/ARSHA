@@ -17,7 +17,7 @@
 
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-    <title>FashioStore Clone</title>
+    <title>TEST FashioStore Clone</title>
 
     <style>
         /* 30may/01:20 */
@@ -276,11 +276,11 @@
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
-                <div class="navbar-nav  " id="home-navbar">
-                    <a class="nav-link active " aria-current="page" href="#">Home</a>
-                    <a class="nav-link  " href="#">About</a>
-                    <a class="nav-link " href="#">category</a>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav" id="home-navbar">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="#">category</a>
                     <a class="nav-link" href="#">product Details</a>
                     <a class="nav-link" href="#">Cart</a>
                     <a class="nav-link" href="#">Checkout</a>
@@ -317,47 +317,302 @@
                     <!-- MEGAMENU 1 -->
 
                     <div class="dropdown Mega-dropdown">
-                        <a class="nav-link dropdown-toggle MDropbtn" href="#" role="button" id="dropdownMenuLink"
-                            data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle MDropbtn" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
                             MegaMenu 1
-                        </a>
+                        </a></div>
+                        <div class="dropdown-menu mega-menu show">
+                            <nav>
+                                <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+                                    <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab"
+                                        data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
+                                        aria-selected="true">Featured</button>
+                                    <button class="nav-link" id="nav-Arrivals-tab" data-bs-toggle="tab"
+                                        data-bs-target="#nav-Arrivals" type="button" role="tab"
+                                        aria-controls="nav-Arrivals" aria-selected="false">New
+                                        Arrivals</button>
+                                    <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab"
+                                        data-bs-target="#nav-contact" type="button" role="tab"
+                                        aria-controls="nav-contact" aria-selected="false">Sales</button>
+                                    <button class="nav-link" id="nav-Category-tab" data-bs-toggle="tab"
+                                        data-bs-target="#nav-Category" type="button" role="tab"
+                                        aria-controls="nav-Category" aria-selected="false">Category</button>
+                                </div>
 
-                        <div class="dropdown-menu mega-menu p-3">
-                            <div class="card-header">
-                                <ul class="nav nav-pills card-header-pills">
-                                    <li class="nav-item">
-                                        <a class="nav-link active" href="#">Featured</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">New Arrivals</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Sales</a>
-                                    </li>
-                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Categories</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="fecard-body">
-                                <h5 class="fecard-title">Special title treatment</h5>
-                                <p class="fecard-text">With supporting text below as a natural lead-in to additional
-                                    content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
+                                <div class="tab-content" id="nav-tabContent">
+                                    <!-- FEATURED TAB -->
+                                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
+                                        aria-labelledby="nav-home-tab">
+                                        <div class="container overflow-hidden">
+                                            <div class="row">
+                                                <!-- CARD 1 -->
+                                                <div class="mega-img-card col-3">
+                                                    <div class="border text-center">
+                                                        <div class="mega-img">
+                                                            <img src="purse.webp" alt="purse" >
+                                                        </div>
+                                                        <hr>
+                                                        <div class="backS-card-text">
+                                                            <p class="a">Modern Style</p>
+                                                            <p class="b">$79.99</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- CARD 2 -->
+                                                <div class="mega-img-card col-3">
+                                                    <div class="border text-center">
+                                                        <div class="mega-img">
+                                                            <img src="sunglases.webp"
+                                                                alt="chair" width="70%" height="70%">
+                                                        </div>
+                                                        <hr>
+                                                        <div class="backS-card-text">
+                                                            <p class="a">Casual Collection</p>
+                                                            <p class="b">$64.99</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- CARD 3 -->
+                                                <div class="mega-img-card col-3">
+                                                    <div class="border text-center">
+                                                        <div class="mega-img">
+                                                            <img src="jecket.webp"
+                                                                alt="backpack" width="70%" height="70%">
+                                                        </div>
+                                                        <hr>
+                                                        <div class="backS-card-text">
+                                                            <p class="a">Premium Design</p>
+                                                            <p class="b">$89.99</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- CARD 4 -->
+                                                <div class="mega-img-card col-3">
+                                                    <div class="border text-center">
+                                                        <div class="mega-img">
+                                                            <img src="chair.webp"
+                                                                alt="jacket" width="70%" height="70%">
+                                                        </div>
+                                                        <hr>
+                                                        <div class="backS-card-text">
+                                                            <p class="a">Elegant Series</p>
+                                                            <p class="b">$74.99</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- NEW ARRIVALS TAB -->
+                                    <div class="tab-pane fade" id="nav-Arrivals" role="tabpanel"
+                                        aria-labelledby="nav-Arrivals-tab">
+                                        <div class="container overflow-hidden">
+                                            <div class="row pt-4">
+                                                <!-- NEW ARRIVAL CARD 1 -->
+                                                <div class="mega-img-card col-3">
+                                                    <div class="border text-center">
+                                                        <div class="mega-img">
+                                                            <img src="shoe.webp"
+                                                                alt="bag" width="70%" height="70%">
+                                                        </div>
+                                                        <hr>
+                                                        <div class="backS-card-text">
+                                                            <p class="a">Latest Arrival</p>
+                                                            <p class="b">$95.99</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- NEW ARRIVAL CARD 2 -->
+                                                <div class="mega-img-card col-3">
+                                                    <div class="border text-center">
+                                                        <div class="mega-img">
+                                                            <img src="backpack.webp"
+                                                                alt="watch" width="70%" height="70%">
+                                                        </div>
+                                                        <hr>
+                                                        <div class="backS-card-text">
+                                                            <p class="a">Smart Collection</p>
+                                                            <p class="b">$149.99</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- NEW ARRIVAL CARD 3 -->
+                                                <div class="mega-img-card col-3">
+                                                    <div class="border text-center">
+                                                        <div class="mega-img">
+                                                            <img src="product-5-variant.webp"
+                                                                alt="shoes" width="70%" height="70%">
+                                                        </div>
+                                                        <hr>
+                                                        <div class="backS-card-text">
+                                                            <p class="a">Sport Line</p>
+                                                            <p class="b">$119.99</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- NEW ARRIVAL CARD 4 -->
+                                                <div class="mega-img-card col-3">
+                                                    <div class="border text-center">
+                                                        <div class="mega-img">
+                                                            <img src="sweatshirt -4.webp"
+                                                                alt="hat" width="70%" height="70%">
+                                                        </div>
+                                                        <hr>
+                                                        <div class="backS-card-text">
+                                                            <p class="a">Urban Style</p>
+                                                            <p class="b">$39.99</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- SALES TAB -->
+                                    <div class="tab-pane fade" id="nav-contact" role="tabpanel"
+                                        aria-labelledby="nav-contact-tab">
+                                        <div class="container overflow-hidden">
+                                            <div class="row pt-4">
+                                                <!-- SALE CARD 1 -->
+                                                <div class="mega-img-card col-3">
+                                                    <div class="border text-center">
+                                                        <div class="mega-img">
+                                                            <img src="blue-tee.webp"  alt="sale item" >
+                                                              
+                                                        </div>
+                                                        <hr>
+                                                        <div class="backS-card-text">
+                                                            <p class="a">Winter Clearance</p>
+                                                            <p class="b"><s>$99.99</s> $49.99</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- SALE CARD 2 -->
+                                                <div class="mega-img-card col-3">
+                                                    <div class="border text-center">
+                                                        <div class="mega-img">
+                                                            <img src="bag.webp"alt="sale item" >
+                                                                
+                                                        </div>
+                                                        <hr>
+                                                        <div class="backS-card-text">
+                                                            <p class="a">Flash Sale</p>
+                                                            <p class="b"><s>$79.99</s> $55.99</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- SALE CARD 3 -->
+                                                <div class="mega-img-card col-3">
+                                                    <div class="border text-center">
+                                                        <div class="mega-img">
+                                                            <img src="yellowshoe.webp" alt="sale item" >
+                                                               
+                                                        </div>
+                                                        <hr>
+                                                        <div class="backS-card-text">
+                                                            <p class="a">End of Season</p>
+                                                            <p class="b"><s>$129.99</s> $97.49</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- SALE CARD 4 -->
+                                                <div class="mega-img-card col-3">
+                                                    <div class="border text-center">
+                                                        <div class="mega-img">
+                                                            <img src="grayshoe.webp"alt="sale item">
+                                                        </div>
+                                                        <hr>
+                                                        <div class="backS-card-text">
+                                                            <p class="a">Limited Time</p>
+                                                            <p class="b"><s>$89.99</s> $53.99</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- CATEGORY TAB -->
+                                    <div class="tab-pane fade" id="nav-Category" role="tabpanel"
+                                        aria-labelledby="nav-Category-tab">
+                                        <div class="container overflow-hidden">
+                                            <div class="row pt-4">
+                                                <div class="col-12">
+                                                    <div class="row justify-content-center gap-5">
+                                                        <div class="Megacat-card col-3">
+                                                            <h6 >Clothing</h6>
+                                                            <hr class="w-100">
+                                                            <ul class="list-unstyled">
+                                                                <li><p" class="text-decoration-none"><i class='bx bxs-chevron-right'></i>Shirts</a>
+                                                                </li>
+                                                                <li><p class="text-decoration-none"><i class='bx bxs-chevron-right'></i>Pants</p>
+                                                                </li>
+                                                                <li><p class="text-decoration-none"><i class='bx bxs-chevron-right'></i>Dresses</a>
+                                                                </li>
+                                                                <li><p class="text-decoration-none"><i class='bx bxs-chevron-right'></i>Jackets</p>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="Megacat-card col-3">
+                                                            <h6>Accessories</h6>
+                                                              <hr class="w-100">
+                                                            <ul class="list-unstyled">
+                                                                <li><p class="text-decoration-none"><i class='bx bxs-chevron-right'></i>Bags</p>
+                                                                </li>
+                                                                <li><p class="text-decoration-none"><i class='bx bxs-chevron-right'></i>Watches</p>
+                                                                </li>
+                                                                <li><p class="text-decoration-none"><i class='bx bxs-chevron-right'></i>Jewelry</p>
+                                                                </li>
+                                                                <li><p class="text-decoration-none"><i class='bx bxs-chevron-right'></i>Belts</p>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="Megacat-card  col-3">
+                                                            <h6>Footwear</h6>
+                                                              <hr class="w-100">
+                                                            <ul class="list-unstyled">
+                                                                <li><p class="text-decoration-none"><i class='bx bxs-chevron-right'></i>Sneakers</p>
+                                                                </li>
+                                                                <li><p class="text-decoration-none"><i class='bx bxs-chevron-right'></i>Boots</p>
+                                                                </li>
+                                                                <li><p class="text-decoration-none"><i class='bx bxs-chevron-right'></i>Sandals</p>
+                                                                </li>
+                                                                <li><p class="text-decoration-none"><i class='bx bxs-chevron-right'></i>Formal</p>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="Megacat-card col-3">
+                                                            <h6>Electronics</h6>
+                                                            <ul class="list-unstyled">
+                                                                <li><p class="text-decoration-none"><i class='bx bxs-chevron-right'></i>Phones</p>
+                                                                </li>
+                                                                <li><p class="text-decoration-none"><i class='bx bxs-chevron-right'></i>Laptops</p>
+                                                                </li>
+                                                                <li><p class="text-decoration-none"><i class='bx bxs-chevron-right'></i>Headphones</p>
+                                                                </li>
+                                                                <li><p class="text-decoration-none"><i class='bx bxs-chevron-right'></i>Tablets</p>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </nav>
                         </div>
+
+                        <!-- MEGAMENU2 -->
+                        <a class="nav-link" href="#">Megamenu2</a>
+
+
+                        <a class="nav-link" href="contact.html">Contact</a>
+
                     </div>
-
-
-                    <!-- MEGAMENU2 -->
-                    <a class="nav-link" href="#">Megamenu2</a>
-
-
-                    <a class="nav-link" href="contact.html">Contact</a>
-
                 </div>
             </div>
-        </div>
     </nav>
 
 
