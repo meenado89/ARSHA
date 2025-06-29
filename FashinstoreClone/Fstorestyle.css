@@ -187,6 +187,21 @@ a {
 .dropdown-hover-wrapper:hover .mega-menu-two  {
   display: block !important;
 }
+.category-links {
+    display: flex;
+    flex-direction: initial;   
+}
+.link-row{
+   
+    width: 12rem;
+    border: 1px solid black;
+    gap: 2rem;
+}
+.link-row a{
+    gap: 2rem;
+    font-size: 1.5rem;
+    
+}
 
 
 
