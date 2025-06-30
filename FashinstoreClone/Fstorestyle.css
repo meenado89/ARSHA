@@ -15,6 +15,7 @@ a {
 }
 
 
+
 #navbarNavAltMarkup {
 
     /* font-size: 9rem; */
@@ -28,18 +29,27 @@ a {
 #home-navbar {
     gap: 1.5rem;
     font-size: 21px;
-
+    position: relative;
 }
+
+#home-navbar .nav-link span {
+    position: relative;
+    display: inline-block; /* Ensure it's treated like a box */
+}
+
+#home-navbar .nav-link span::after{
+    content: "";
+    position: absolute;
+    top:28px;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    height: 2px;
+}
+.backbtn:hover
 
 .nav-link {
-    color: black;
-
-}
-
-.nav-link:hover {
-    color: #8c0d4f !important;
-    text-decoration: underline;
-
+    color: black!important;
 
 }
 
