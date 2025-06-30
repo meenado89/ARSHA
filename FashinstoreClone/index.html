@@ -6,16 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- quicksand font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <link rel="stylesheet" href="Fstorestyle.css">
-
-
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <title>FashioStore Clone</title>
 
@@ -29,9 +27,11 @@
         /* 21/06...promocard hover */
         /* 23/06...category cards */
         /* 24/06..img hovers/js */
-        /* 25/06...fixed all buttons/hovers serchbar */
+        /* 25/06...fixed all buttons/hovers searchbar */
         /* 26/27/06 ... contact log in, register pages linked /js css  */
         /* 27/28/06...completed carousel started megamenu*/
+        /* 29/06...meg1 done..started mega2 */
+        /* 30/06... fixed minor issues */
     </style>
 </head>
 
@@ -217,7 +217,7 @@
                                     <hr class="dropdown-divider">
                                 </li>
                                 <div class="cart-item d-flex ">
-                                    <div class="cart-item-image" >
+                                    <div class="cart-item-image">
                                         <img src="purse.webp" alt="Product" style="width: 60%;">
                                     </div>
                                     <div class="cart-item-content">
@@ -225,7 +225,7 @@
                                         <div class="cart-item-meta">1 × $89.99</div>
                                     </div>
                                     <div class="cart-item-remove">
-                                       <button class="cartbtn">X</button>
+                                        <button class="cartbtn">X</button>
                                     </div>
                                 </div>
                                 <li><a class="dropdown-item" href="#"><i
@@ -1169,7 +1169,7 @@
     <!-- Done -->
     <div class="p-list-container overflow-hidden ">
         <div class="row gx-2 gy-4">
-            <div class="col-lg-3 col-md-6 col-12 d-flex justify-content-center promo-main ">
+            <div class="col-lg-3 col-md-6 col-12 d-flex justify-content-center promo-main">
                 <!-- card 1 -->
                 <div class="p-4 promoM-card" style="  background-color: #f5f2ee;">
                     <h6 class="card-title text-muted pt-2">Etiam vel augue</h6>
@@ -2167,14 +2167,14 @@
                         <div class="footer-widget ">
                             <h4 class=" px-4 pb-0 ">Shop </h4>
                             <ul class="footer-links">
-                                <li><a href=""><i class='bx bx-arrow-back bx-rotate-180'
-                                            style='color:#8c0d4f'></i>New Arrivals</a></li>
+                                <li><a href=""><i class='bx bx-arrow-back bx-rotate-180' style='color:#8c0d4f'></i>New
+                                        Arrivals</a></li>
                                 <li><a href=""><i class='bx bx-arrow-back bx-rotate-180'
                                             style='color:#8c0d4f'></i>Bestsellers</a></li>
                                 <li><a href=""><i class='bx bx-arrow-back bx-rotate-180'
                                             style='color:#8c0d4f'></i>Women's Clothing</a></li>
-                                <li><a href=""><i class='bx bx-arrow-back bx-rotate-180'
-                                            style='color:#8c0d4f'></i>Men's Clothing</a></li>
+                                <li><a href=""><i class='bx bx-arrow-back bx-rotate-180' style='color:#8c0d4f'></i>Men's
+                                        Clothing</a></li>
                                 <li><a href=""><i class='bx bx-arrow-back bx-rotate-180'
                                             style='color:#8c0d4f'></i>Accessories</a></li>
                                 <li><a href=""><i class='bx bx-arrow-back bx-rotate-180'
@@ -2187,10 +2187,10 @@
                         <div class="footer-widget">
                             <h4 class=" px-4 pb-0 ">Support</h4>
                             <ul class="footer-links">
-                                <li><a href=""><i class='bx bx-arrow-back bx-rotate-180'
-                                            style='color:#8c0d4f'></i>Help Center</a></li>
-                                <li><a href=""><i class='bx bx-arrow-back bx-rotate-180'
-                                            style='color:#8c0d4f'></i>Order Status</a></li>
+                                <li><a href=""><i class='bx bx-arrow-back bx-rotate-180' style='color:#8c0d4f'></i>Help
+                                        Center</a></li>
+                                <li><a href=""><i class='bx bx-arrow-back bx-rotate-180' style='color:#8c0d4f'></i>Order
+                                        Status</a></li>
                                 <li><a href=""><i class='bx bx-arrow-back bx-rotate-180'
                                             style='color:#8c0d4f'></i>Shipping Info</a></li>
                                 <li><a href=""><i class='bx bx-arrow-back bx-rotate-180'
@@ -2284,6 +2284,7 @@
 
 
         <script src="fstore.js"></script>
+
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
