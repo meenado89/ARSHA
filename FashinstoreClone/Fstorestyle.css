@@ -10,7 +10,7 @@ body {
 a {
     text-decoration: none;
     /*color not working fix it in the last  */
-    color: inherit !important;
+    color: black !important;
     /* Prevents default blue color */
 }
 
@@ -44,15 +44,29 @@ a {
 }
 
 /* store navbar/ user */
-/* #cart:hover{
+.cart-item-remove{
+    margin-left: 2rem;
+}
+
+
+.cart-item-image{
+    width: 8rem;
+   margin-bottom: 2rem;
+}
+.cartbtn{
+    border: none;
+    background-color: transparent;
+}
+.cartbtn:hover{
     color: #8c0d4f;
     cursor: pointer;
-} */
+}
 
 /* Container */
 .dropdown {
     position: relative;
     display: inline-block;
+    z-index: 888;
 }
 
 /* Button */

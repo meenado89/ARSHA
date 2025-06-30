@@ -110,7 +110,7 @@
 
 
     <!-- STORE NAVBAR -->
-    <nav class="navbar navbar-light bg-white pb-0" style="padding-left: 2rem; padding-right: 2rem;">
+    <nav class="navbar navbar-light bg-white pb-0" style="padding-left: 2rem; padding-right: 2rem; z-index: 8899;">
         <div class="container-fluid">
             <div class="row w-100 align-items-center">
                 <!-- Brand -->
@@ -128,7 +128,7 @@
                             style="box-shadow: 2px 4px  8px rgb(222, 222, 222);
                         border-top-right-radius: 0%; border-bottom-right-radius: 0%; border-top-left-radius: 8px; border-bottom-left-radius: 8px;">
                         <button class="btn " type="submit"
-                            style="color: #000000;background-color: #8c0d4f;right: 2rem;position: relative; border: none;
+                            style="color: #000000;background-color: #8c0d4f;right: 3rem;position: relative; border: none;
                        box-shadow: 2px 6px 8px rgb(222, 222, 222); border-top-right-radius: 8px; border-bottom-right-radius: 8px; border-top-left-radius: 0%; border-bottom-left-radius: 0%;">
                             <i class='bx bx-search bx-md text-white'></i>
                         </button>
@@ -197,7 +197,7 @@
                             <span class="ms-1">Cart</span>
                         </a> -->
 
-                        <div class="dropdown " id="cart">
+                        <div class="dropdown" id="cart">
                             <a class="btn  " href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
                                 data-popper-placement="bottom-end" aria-expanded="false">
                                 <i class='bx bx-cart-alt bx-md'></i>
@@ -205,7 +205,7 @@
                             </a>
 
                             <ul class="dropdown-menu dropdown-menu-end " aria-labelledby="dropdownMenuLink"
-                                style="width: 24rem;">
+                                style="width: 24rem; padding: 1rem;">
 
                                 <li>
                                     <h5 class="dropdown-item" href="#">Shoping Cart</h5>
@@ -217,16 +217,16 @@
                                     <hr class="dropdown-divider">
                                 </li>
                                 <div class="cart-item d-flex ">
-                                    <div class="cart-item-image m-0">
-                                        <img src="purse.webp" alt="Product" style="width: 20%;">
+                                    <div class="cart-item-image" >
+                                        <img src="purse.webp" alt="Product" style="width: 60%;">
                                     </div>
                                     <div class="cart-item-content">
                                         <h6 class="cart-item-title">Wireless Headphones</h6>
                                         <div class="cart-item-meta">1 × $89.99</div>
                                     </div>
-                                    <button class="cart-item-remove">
-                                        <i class="bi bi-x"></i>
-                                    </button>
+                                    <div class="cart-item-remove">
+                                       <button class="cartbtn">X</button>
+                                    </div>
                                 </div>
                                 <li><a class="dropdown-item" href="#"><i
                                             class='bx bx-shopping-bag bx-flip-horizontal bx-sm'></i>My Orders</a>
@@ -240,9 +240,9 @@
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <div class="footer ">
+                                <div class="cart-footer">
                                     <div class="total d-flex position-relative"
-                                        style="gap: 14rem; left: 2rem; right: 2rem; padding-top: 1rem;">
+                                        style="gap: 7rem; left: 2rem; right: 2rem; padding-top: 1rem;">
                                         <h4>Total</h4>
                                         <p>$279.99</p>
                                     </div>
@@ -2167,17 +2167,17 @@
                         <div class="footer-widget ">
                             <h4 class=" px-4 pb-0 ">Shop </h4>
                             <ul class="footer-links">
-                                <li><a href="category.html"><i class='bx bx-arrow-back bx-rotate-180'
+                                <li><a href=""><i class='bx bx-arrow-back bx-rotate-180'
                                             style='color:#8c0d4f'></i>New Arrivals</a></li>
-                                <li><a href="category.html"><i class='bx bx-arrow-back bx-rotate-180'
+                                <li><a href=""><i class='bx bx-arrow-back bx-rotate-180'
                                             style='color:#8c0d4f'></i>Bestsellers</a></li>
-                                <li><a href="category.html"><i class='bx bx-arrow-back bx-rotate-180'
+                                <li><a href=""><i class='bx bx-arrow-back bx-rotate-180'
                                             style='color:#8c0d4f'></i>Women's Clothing</a></li>
-                                <li><a href="category.html"><i class='bx bx-arrow-back bx-rotate-180'
+                                <li><a href=""><i class='bx bx-arrow-back bx-rotate-180'
                                             style='color:#8c0d4f'></i>Men's Clothing</a></li>
-                                <li><a href="category.html"><i class='bx bx-arrow-back bx-rotate-180'
+                                <li><a href=""><i class='bx bx-arrow-back bx-rotate-180'
                                             style='color:#8c0d4f'></i>Accessories</a></li>
-                                <li><a href="category.html"><i class='bx bx-arrow-back bx-rotate-180'
+                                <li><a href=""><i class='bx bx-arrow-back bx-rotate-180'
                                             style='color:#8c0d4f'></i>Sale</a></li>
                             </ul>
                         </div>
@@ -2187,17 +2187,17 @@
                         <div class="footer-widget">
                             <h4 class=" px-4 pb-0 ">Support</h4>
                             <ul class="footer-links">
-                                <li><a href="support.html"><i class='bx bx-arrow-back bx-rotate-180'
+                                <li><a href=""><i class='bx bx-arrow-back bx-rotate-180'
                                             style='color:#8c0d4f'></i>Help Center</a></li>
-                                <li><a href="account.html"><i class='bx bx-arrow-back bx-rotate-180'
+                                <li><a href=""><i class='bx bx-arrow-back bx-rotate-180'
                                             style='color:#8c0d4f'></i>Order Status</a></li>
-                                <li><a href="shiping-info.html"><i class='bx bx-arrow-back bx-rotate-180'
+                                <li><a href=""><i class='bx bx-arrow-back bx-rotate-180'
                                             style='color:#8c0d4f'></i>Shipping Info</a></li>
-                                <li><a href="return-policy.html"><i class='bx bx-arrow-back bx-rotate-180'
+                                <li><a href=""><i class='bx bx-arrow-back bx-rotate-180'
                                             style='color:#8c0d4f'></i>Returns &amp; Exchanges</a></li>
                                 <li><a href="#"><i class='bx bx-arrow-back bx-rotate-180' style='color:#8c0d4f'></i>Size
                                         Guide</a></li>
-                                <li><a href="contact.html"><i class='bx bx-arrow-back bx-rotate-180'
+                                <li><a href=""><i class='bx bx-arrow-back bx-rotate-180'
                                             style='color:#8c0d4f'></i>Contact Us</a></li>
                             </ul>
                         </div>
