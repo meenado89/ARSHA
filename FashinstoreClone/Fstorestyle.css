@@ -473,7 +473,7 @@ a:hover {
     -o-transform: scale(1.05);
 }
 
-3 .brandcarousel-container:hover .brandcarousel-track {
+.brandcarousel-container:hover .brandcarousel-track {
     animation-play-state: paused;
 }
 
