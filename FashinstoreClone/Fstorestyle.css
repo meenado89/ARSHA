@@ -856,8 +856,9 @@ a:hover {
 
 .category-card:hover .category-link {
     opacity: 1;
-    color: #000;
+    color: #ffffff;
     background-color: #8c0d4f;
+    
 
 }
 
@@ -1284,7 +1285,19 @@ a:hover {
 .plist-card:hover .productC-action,
 .plist-card:hover .add-cart {
     opacity: 1;
+    
 }
+.add-cart {
+  background-color: #8c0d4f;
+  color: white;
+  font-weight: 600;
+}
+
+.add-cart:hover {
+  background-color: #70083d; /* darker pink */
+  color: white !important;
+}
+
 
 .plist-card:hover .product-title {
     color: #8c0d4f;
