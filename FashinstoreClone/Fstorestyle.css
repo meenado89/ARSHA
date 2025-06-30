@@ -1457,7 +1457,6 @@ a:hover {
     background-color: #8c0d4f;
     height: 2px;
     display: block;
-    /* Add this to make the pseudo-element appear */
     transform: translateX(-50%);
     /* Center it */
 }
@@ -1487,6 +1486,7 @@ a:hover {
     font-weight: 600;
     align-items: center;
     justify-content: center;
+    left: 2.5rem;
 }
 
 .app-btn:hover {
