@@ -9,9 +9,27 @@ body {
 /* to remove blue underline from buttons */
 a {
     text-decoration: none;
-    /*color not working fix it in the last  */
-    color: black !important;
-    /* Prevents default blue color */
+    color: #000;
+    transition: color 0.3s ease;
+}
+
+/* Hover styling */
+a:hover {
+    color: #8c0d4f;
+}
+
+/* Bootstrap-specific: override nav links, dropdowns */
+.nav-link,
+.dropdown-item,
+.btn {
+    color: #000 !important;
+}
+
+/* hover color override */
+.nav-link:hover,
+.dropdown-item:hover,
+.btn:hover {
+    color: #8c0d4f !important;
 }
 
 
@@ -35,18 +53,24 @@ a {
 #home-navbar .nav-link span {
     position: relative;
     display: inline-block;
-    /* Ensure it's treated like a box */
+   
 }
 
 #home-navbar .nav-link span::after {
     content: "";
     position: absolute;
-    top: 28px;
+    top: 33px;
     left: 0;
-    width: 100%;
-    background-color: black;
+    width: 0%;
+ background-color: #8c0d4f;
     height: 2px;
+     transition: width 0.3s ease;
 }
+
+#home-navbar .nav-link:hover span::after {
+  width: 100%;
+}
+
 
 .backbtn:hover .nav-link {
     color: black !important;
@@ -388,9 +412,6 @@ a {
     -ms-border-radius: 4px;
     -o-border-radius: 4px;
 }
-
-
-
 
 /* brand-carousel */
 
@@ -1352,7 +1373,7 @@ a {
 /* footer */
 .footer-main {
     background-color: #f8f4f6;
-      
+
 }
 
 
@@ -1412,6 +1433,7 @@ a {
     left: 2rem;
     margin-bottom: 4px;
 }
+
 .footer-widget h4::after {
     content: "";
     position: relative;
@@ -1421,19 +1443,22 @@ a {
     height: 4px;
     background-color: #8c0d4f;
     height: 2px;
-    display: block; /* Add this to make the pseudo-element appear */
-    transform: translateX(-50%); /* Center it */
+    display: block;
+    /* Add this to make the pseudo-element appear */
+    transform: translateX(-50%);
+    /* Center it */
 }
 
-.footer-contact{
+.footer-contact {
     position: relative;
     left: 2rem;
 }
+
 .contact-item {
-  display: flex;
-  align-items: flex-start; 
-  gap: 10px; 
-  line-height: 1.5;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    line-height: 1.5;
 }
 
 
