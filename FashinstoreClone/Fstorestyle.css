@@ -513,8 +513,19 @@ a:hover {
 #wishlist:hover,
 #cart:hover {
     cursor: pointer;
-    color: #8c0d4f;
+    color: #8c0d4f !important;
 }
+
+#wishlist span{
+    position: relative;
+    bottom: 0;
+    top:8px;
+}
+
+.acc-footer{
+    padding: 1rem;
+}
+
 
 /* HERO CAROUSEL */
 /* SHOE CARD1  */
@@ -1469,7 +1480,11 @@ a:hover {
     height: 2px;
     display: block;
     transform: translateX(-50%);
-    /* Center it */
+        /* Center it */:;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
 }
 
 .footer-contact {
@@ -1498,6 +1513,10 @@ a:hover {
     align-items: center;
     justify-content: center;
     left: 2.5rem;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
 }
 
 .app-btn:hover {
@@ -1538,6 +1557,10 @@ a:hover {
     border: none;
     border-radius: 50%;
     align-self: right;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
 .scroll-top:hover {
@@ -1573,7 +1596,10 @@ a:hover {
     height: 3rem;
     border-radius: 8px;
     font-size: large;
-
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
 }
 
 
@@ -1595,6 +1621,14 @@ a:hover {
     width: 28rem;
     border-top: .42rem solid #8c0d4f;
     transition: transform 0.3s ease;
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    -ms-border-radius: 18px;
+    -o-border-radius: 18px;
+    -webkit-transition: transform 0.3s ease;
+    -moz-transition: transform 0.3s ease;
+    -ms-transition: transform 0.3s ease;
+    -o-transition: transform 0.3s ease;
 }
 
 .form-body:hover {

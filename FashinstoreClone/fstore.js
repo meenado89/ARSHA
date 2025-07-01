@@ -208,7 +208,7 @@ var x = setInterval(function () {
 
 
 
-// contact velidation
+// contact validation
 
 document.addEventListener("DOMContentLoaded", function () {
   const contactForm = document.querySelector(".php-email-form");

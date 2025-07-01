@@ -64,9 +64,8 @@
                     </div>
 
                     <!-- Right Column -->
-                    <div class="col-lg-6 col-12">
-                        <div
-                            class="trackheader d-flex flex-column flex-md-row justify-content-center justify-content-lg-end align-items-center gap-3">
+                    <div class="col-lg-6 col-12" style="z-index: 78787;">
+                        <div class="trackheader d-flex flex-column flex-md-row justify-content-center justify-content-lg-end align-items-center gap-3">
                             <div class="d-flex align-items-center">
                                 <i class='bx bxs-truck bx-sm p-2' style="color: #8c0d4f;"></i>
                                 <p class="mb-0 fw-normal" style="color: #8c0d4f;">Track Order</p>
@@ -136,18 +135,18 @@
                 </div>
 
                 <!-- Icons (Account, Wishlist, Cart) -->
-                <div class="col-lg-4">
+                <div class="col-lg-4" style="z-index: 333;">
                     <div class="d-flex justify-content-end align-items-center gap-4">
                         <a class="d-flex align-items-center text-decoration-none text-dark" id="userAccount">
                             <!-- dropdown -->
-                            <div class="dropdown" id="account">
-                                <a class="btn  " href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+                            <div class="dropdown align-items-center" id="account">
+                                <a class="btn align-items-center" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
                                     aria-expanded="false">
                                     <i class='bx bx-user bx-md'></i>
                                     <span class="ms-1">Account</span>
                                 </a>
 
-                                <ul class="dropdown-menu p-2" aria-labelledby="dropdownMenuLink">
+                                <ul class="dropdown-menu p-2 text-align-center" aria-labelledby="dropdownMenuLink">
                                     <li>
                                         <h5 class="dropdown-item" href="#">Welcome to FashionStore</h5>
                                     </li>
@@ -171,11 +170,11 @@
                                     <li>
                                         <hr class="dropdown-divider">
                                     </li>
-                                    <div class="footer">
-                                        <div class="dropdown-footer position-relative" style="left:4 rem;">
-                                            <a href="login.html" class="btn  w-75 mb-2 text-center text-white"
+                                    <div class="acc-footer">
+                                        <div class="accdropdown-footer position-relative" style="left: 2.5rem;">
+                                            <a href="login.html" class="acc-btn  w-75 mb-2 text-center text-white"
                                                 style="background-color: #8c0d4f; border-radius: 22px;">Sign In</a>
-                                            <a href="register.html" class="btn  w-75"
+                                            <a href="register.html" class="acc-btn  w-75"
                                                 style="border: 1px solid #8c0d4f; border-radius: 22px">Register</a>
                                         </div>
                                     </div>
@@ -185,7 +184,7 @@
 
 
                         <!-- whishlist -->
-                        <a class="d-flex align-items-center text-decoration-none text-dark" id="wishlist">
+                        <a class="d-flex align-items-center text-decoration-none" id="wishlist">
                             <i class='bx bx-heart bx-md'></i>
                             <span class="ms-1">Wishlist</span>
                         </a>
@@ -198,7 +197,7 @@
                         </a> -->
 
                         <div class="dropdown" id="cart">
-                            <a class="btn  " href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+                            <a class="btn align-items-center" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
                                 data-popper-placement="bottom-end" aria-expanded="false">
                                 <i class='bx bx-cart-alt bx-md'></i>
                                 <span class="ms-1">Cart</span>
