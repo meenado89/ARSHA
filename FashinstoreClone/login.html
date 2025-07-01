@@ -23,8 +23,7 @@
 <!-- 27/6...1.15 -->
 
 <body>
-
-     <!-- topnavHeading -->
+<!-- topnavHeading -->
     <!-- done -->
     <nav class="navbar navbar-light bg-light" style="font-size: 14px;">
         <div class="container-fluid">
@@ -98,7 +97,7 @@
 
 
     <!-- STORE NAVBAR -->
-    <nav class="navbar navbar-light bg-white pb-0" style="padding-left: 2rem; padding-right: 2rem;">
+    <nav class="navbar navbar-light bg-white pb-0" style="padding-left: 2rem; padding-right: 2rem; z-index: 8899;">
         <div class="container-fluid">
             <div class="row w-100 align-items-center">
                 <!-- Brand -->
@@ -116,7 +115,7 @@
                             style="box-shadow: 2px 4px  8px rgb(222, 222, 222);
                         border-top-right-radius: 0%; border-bottom-right-radius: 0%; border-top-left-radius: 8px; border-bottom-left-radius: 8px;">
                         <button class="btn " type="submit"
-                            style="color: #000000;background-color: #8c0d4f;right: 2rem;position: relative; border: none;
+                            style="color: #000000;background-color: #8c0d4f;right: 3rem;position: relative; border: none;
                        box-shadow: 2px 6px 8px rgb(222, 222, 222); border-top-right-radius: 8px; border-bottom-right-radius: 8px; border-top-left-radius: 0%; border-bottom-left-radius: 0%;">
                             <i class='bx bx-search bx-md text-white'></i>
                         </button>
@@ -185,7 +184,7 @@
                             <span class="ms-1">Cart</span>
                         </a> -->
 
-                        <div class="dropdown " id="cart">
+                        <div class="dropdown" id="cart">
                             <a class="btn  " href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
                                 data-popper-placement="bottom-end" aria-expanded="false">
                                 <i class='bx bx-cart-alt bx-md'></i>
@@ -193,7 +192,7 @@
                             </a>
 
                             <ul class="dropdown-menu dropdown-menu-end " aria-labelledby="dropdownMenuLink"
-                                style="width: 24rem;">
+                                style="width: 24rem; padding: 1rem;">
 
                                 <li>
                                     <h5 class="dropdown-item" href="#">Shoping Cart</h5>
@@ -205,16 +204,16 @@
                                     <hr class="dropdown-divider">
                                 </li>
                                 <div class="cart-item d-flex ">
-                                    <div class="cart-item-image m-0">
-                                        <img src="purse.webp" alt="Product" style="width: 20%;">
+                                    <div class="cart-item-image">
+                                        <img src="purse.webp" alt="Product" style="width: 60%;">
                                     </div>
                                     <div class="cart-item-content">
                                         <h6 class="cart-item-title">Wireless Headphones</h6>
                                         <div class="cart-item-meta">1 × $89.99</div>
                                     </div>
-                                    <button class="cart-item-remove">
-                                        <i class="bi bi-x"></i>
-                                    </button>
+                                    <div class="cart-item-remove">
+                                        <button class="cartbtn">X</button>
+                                    </div>
                                 </div>
                                 <li><a class="dropdown-item" href="#"><i
                                             class='bx bx-shopping-bag bx-flip-horizontal bx-sm'></i>My Orders</a>
@@ -228,9 +227,9 @@
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <div class="footer ">
+                                <div class="cart-footer">
                                     <div class="total d-flex position-relative"
-                                        style="gap: 14rem; left: 2rem; right: 2rem; padding-top: 1rem;">
+                                        style="gap: 7rem; left: 2rem; right: 2rem; padding-top: 1rem;">
                                         <h4>Total</h4>
                                         <p>$279.99</p>
                                     </div>
@@ -266,18 +265,18 @@
             </button>
             <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
                 <div class="navbar-nav" id="home-navbar">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    <a class="nav-link" href="#">About</a>
-                    <a class="nav-link" href="#">category</a>
-                    <a class="nav-link" href="#">product Details</a>
-                    <a class="nav-link" href="#">Cart</a>
-                    <a class="nav-link" href="#">Checkout</a>
+                    <a class="nav-link active" aria-current="page" href="#"><span>Home</span></a>
+                    <a class="nav-link" href="#"><span>About</span></a>
+                    <a class="nav-link" href="#"><span>category</span></a>
+                    <a class="nav-link" href="#"><span>product Details</span></a>
+                    <a class="nav-link" href="#"><span>Cart</span></a>
+                    <a class="nav-link" href="#"><span>Checkout</span></a>
 
                     <!-- dropdown -->
                     <!-- <a class="nav-link" href="#">Dropdown</a> -->
 
                     <div class="dropdown">
-                        <a class="nav-link">Dropdown<i class=' nav-link  bx bx-chevron-down'></i></a>
+                        <a class="nav-link"><span>Dropdown</span><i class=' nav-link  bx bx-chevron-down'></i></a>
                         <div class="dropdown-content">
                             <a class="nav-link" href="#">dropdown 1</a>
                             <a class="nav-link" href="#">dropdown 2</a>
@@ -308,7 +307,7 @@
                         <div class="dropdown Mega-dropdown">
                             <a class="nav-link MDropbtn" href="#">
 
-                                MegaMenu 1
+                               <span> MegaMenu 1</span>
                             </a>
                         </div>
                         <div class="dropdown-menu mega-menu">
@@ -571,13 +570,13 @@
                                         <div class="container overflow-hidden">
                                             <div class="row pt-4">
                                                 <div class="col-12">
-                                                    <div class="row justify-content-center gap-5">
+                                                    <div class="row justify-content-center gap-5 p-5">
                                                         <div class="Megacat-card col-3">
                                                             <h6>Clothing</h6>
                                                             <hr class="w-100">
                                                             <ul class="list-unstyled">
                                                                 <li>
-                                                                    <p" class="text-decoration-none"><i
+                                                                    <p class="text-decoration-none"><i
                                                                             class='bx bxs-chevron-right'></i>Shirts</a>
                                                                 </li>
                                                                 <li>
@@ -641,6 +640,7 @@
                                                         </div>
                                                         <div class="Megacat-card col-3">
                                                             <h6>Electronics</h6>
+                                                            <hr>
                                                             <ul class="list-unstyled">
                                                                 <li>
                                                                     <p class="text-decoration-none"><i
@@ -676,8 +676,8 @@
 
                         <div class="dropdown Mega-dropdown">
                             <a class="nav-link MDropbtn" href="#">
-
-                                MegaMenu 2
+                               <span>
+                                MegaMenu 2</span>
                             </a>
                         </div>
                         <div class="dropdown-menu mega-menu-two">
@@ -897,13 +897,12 @@
 
 
                     <!-- CONTACT -->
-                    <a class="nav-link" href="contact.html">Contact</a>
+                    <a class="nav-link" href="contact.html"><span>Contact</span></a>
 
                 </div>
             </div>
         </div>
     </nav>
-
 
     <!-- Brand carousel not looking rite just yet-->
     <div class="brandcarousel-container">
@@ -991,148 +990,155 @@
         </div>
     </div>
 
-    <!-- top fotter -->
-    <!-- Done -->
+     <!-- top fotter -->
+        <!-- Done -->
 
-    <footer id="footer" style="background-color: #f8f4f6; padding-bottom: 1rem;">
+        <footer id="footer-main" class="footer-main">
 
-        <div class="footer container-fluid ">
-            <div class="row gy-4">
-                <div class="col-lg-4 col-md-6">
-                    <div class="footer-widget footer-about">
-                        <a href="index.html" class="logo ">
-                            <span class="sitename fw-bolder"
-                                style="color: #8c0d4f; font-family: quicksand, sans-serif; font-size: 2rem; letter-spacing: 0.5px;">FashionStore</span>
-                        </a>
-                        <p class="pt-3 fw-normal" style="font-size: 1rem; font-family: quicksand;">Lorem ipsum
-                            dolor sit amet, consectetur adipiscing elit. Nullam in nibh vehicula,
-                            facilisis magna ut, consectetur lorem. Proin eget tortor.</p>
+            <div class="footer container w-80">
+                <div class="row gy-4" style="padding-top: 4rem; padding-bottom: 3rem; left: 2rem; position: relative;">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer-widget footer-about">
+                            <a href="index.html" class="logo ">
+                                <span class="sitename fw-bolder"
+                                    style="color: #8c0d4f; font-family: quicksand, sans-serif; font-size: 2rem; letter-spacing: 0.5px;">FashionStore</span>
+                            </a>
+                            <p class="pt-3 fw-normal" style="font-size: 1.2rem; font-family: quicksand;">Lorem ipsum
+                                dolor sit amet, consectetur adipiscing elit. Nullam in nibh vehicula,
+                                facilisis magna ut, consectetur lorem. Proin eget tortor.</p>
 
-                        <div class="social-links mt-1">
-                            <h5 style="font-family: quicksand; color: rgb(69, 65, 65); font-size: 1.2rem;">
-                                Connect With Us</h5>
-                            <div class="social-icons ">
-                                <a href="#" aria-label="Facebook"><i class='bx bxl-facebook-circle bx-sm'></i></a>
-                                <a href="#" aria-label="Instagram"> <i class='bx bxl-instagram bx-sm'></i></a>
-                                <a href="#" aria-label="podcast"><i class='bx bx-podcast bx-sm'></i></a>
-                                <a href="#" aria-label="TikTok"><i class='bx bxl-tiktok bx-sm'></i></a>
-                                <a href="#" aria-label="Pinterest"><i class='bx bxl-pinterest bx-sm'></i></a>
-                                <a href="#" aria-label="YouTube"><i class='bx bxl-youtube bx-sm'></i></a>
+                            <div class="social-links mt-1">
+                                <h5 style="font-family: quicksand; color: rgb(69, 65, 65); font-size: 1rem;">
+                                    Connect With Us</h5>
+                                <div class="social-icons">
+                                    <a href="#" aria-label="Facebook"><i class='bx bxl-facebook-circle bx-sm'></i></a>
+                                    <a href="#" aria-label="Instagram"> <i class='bx bxl-instagram bx-sm'></i></a>
+                                    <a href="#" aria-label="podcast"><i class='bx bx-podcast bx-sm'></i></a>
+                                    <a href="#" aria-label="TikTok"><i class='bx bxl-tiktok bx-sm'></i></a>
+                                    <a href="#" aria-label="Pinterest"><i class='bx bxl-pinterest bx-sm'></i></a>
+                                    <a href="#" aria-label="YouTube"><i class='bx bxl-youtube bx-sm'></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-lg-2 col-md-6 col-sm-6">
-                    <div class="footer-widget ">
-                        <h4 class=" px-4 pb-0 ">Shop </h4>
-                        <ul class="footer-links">
-                            <li><a href="category.html"><i class='bx bx-arrow-back bx-rotate-180'
-                                        style='color:#8c0d4f'></i>New Arrivals</a></li>
-                            <li><a href="category.html"><i class='bx bx-arrow-back bx-rotate-180'
-                                        style='color:#8c0d4f'></i>Bestsellers</a></li>
-                            <li><a href="category.html"><i class='bx bx-arrow-back bx-rotate-180'
-                                        style='color:#8c0d4f'></i>Women's Clothing</a></li>
-                            <li><a href="category.html"><i class='bx bx-arrow-back bx-rotate-180'
-                                        style='color:#8c0d4f'></i>Men's Clothing</a></li>
-                            <li><a href="category.html"><i class='bx bx-arrow-back bx-rotate-180'
-                                        style='color:#8c0d4f'></i>Accessories</a></li>
-                            <li><a href="category.html"><i class='bx bx-arrow-back bx-rotate-180'
-                                        style='color:#8c0d4f'></i>Sale</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-lg-2 col-md-6 col-sm-6">
-                    <div class="footer-widget">
-                        <h4 class=" px-4 pb-0 ">Support</h4>
-                        <ul class="footer-links">
-                            <li><a href="support.html"><i class='bx bx-arrow-back bx-rotate-180'
-                                        style='color:#8c0d4f'></i>Help Center</a></li>
-                            <li><a href="account.html"><i class='bx bx-arrow-back bx-rotate-180'
-                                        style='color:#8c0d4f'></i>Order Status</a></li>
-                            <li><a href="shiping-info.html"><i class='bx bx-arrow-back bx-rotate-180'
-                                        style='color:#8c0d4f'></i>Shipping Info</a></li>
-                            <li><a href="return-policy.html"><i class='bx bx-arrow-back bx-rotate-180'
-                                        style='color:#8c0d4f'></i>Returns &amp; Exchanges</a></li>
-                            <li><a href="#"><i class='bx bx-arrow-back bx-rotate-180' style='color:#8c0d4f'></i>Size
-                                    Guide</a></li>
-                            <li><a href="contact.html"><i class='bx bx-arrow-back bx-rotate-180'
-                                        style='color:#8c0d4f'></i>Contact Us</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <div class="footer-widget">
-                        <h4>Contact Information</h4>
-                        <div class="footer-contact">
-                            <div class="contact-item mb-3">
-                                <i class='bx bx-map bx-sm' style='color:#8c0d4f'></i>
-                                <span>123 Fashion Street, New York, NY 10001</span>
-                            </div>
-                            <div class="contact-item mb-3">
-                                <i class='bx bx-phone bx-sm' style='color:#8c0d4f'></i>
-                                <span>+1 (555) 123-4567</span>
-                            </div>
-                            <div class="contact-item mb-3">
-                                <i class="bx bx-envelope bx-sm" style='color:#8c0d4f'></i>
-                                <span>hello@example.com</span>
-                            </div>
-                            <div class="contact-item mb-3">
-                                <i class='bx bx-time-five bx-sm' style='color:#8c0d4f'></i>
-                                <span>Monday-Friday: 9am-6pm<br>Saturday: 10am-4pm<br>Sunday: Closed</span>
-                            </div>
+                    <div class="col-lg-2 col-md-6 col-sm-6">
+                        <div class="footer-widget">
+                            <h4 class="pb-0">Shop </h4>
+                            <ul class="footer-links pt-2">
+                                <li><a href=""><i class='bx bx-arrow-back bx-rotate-180' style='color:#8c0d4f'></i>New
+                                        Arrivals</a></li>
+                                <li><a href=""><i class='bx bx-arrow-back bx-rotate-180'
+                                            style='color:#8c0d4f'></i>Bestsellers</a></li>
+                                <li><a href=""><i class='bx bx-arrow-back bx-rotate-180'
+                                            style='color:#8c0d4f'></i>Women's Clothing</a></li>
+                                <li><a href=""><i class='bx bx-arrow-back bx-rotate-180' style='color:#8c0d4f'></i>Men's
+                                        Clothing</a></li>
+                                <li><a href=""><i class='bx bx-arrow-back bx-rotate-180'
+                                            style='color:#8c0d4f'></i>Accessories</a></li>
+                                <li><a href=""><i class='bx bx-arrow-back bx-rotate-180'
+                                            style='color:#8c0d4f'></i>Sale</a></li>
+                            </ul>
                         </div>
+                    </div>
 
-                        <div class="app-buttons mt-4 gap-2 d-flex">
-                            <a href="#" class="app-btn">
-                                <i class='bx bxl-apple bx-sm'></i>
-                                <span>App Store</span>
-                            </a>
-                            <a href="#" class="app-btn">
-                                <i class='bx bxl-play-store bx-sm'></i>
-                                <span>Google Play</span>
-                            </a>
+                    <div class="col-lg-2 col-md-6 col-sm-6">
+                        <div class="footer-widget">
+                            <h4 class="pb-0 ">Support</h4>
+                            <ul class="footer-links pt-2">
+                                <li><a href=""><i class='bx bx-arrow-back bx-rotate-180' style='color:#8c0d4f'></i>Help
+                                        Center</a></li>
+                                <li><a href=""><i class='bx bx-arrow-back bx-rotate-180' style='color:#8c0d4f'></i>Order
+                                        Status</a></li>
+                                <li><a href=""><i class='bx bx-arrow-back bx-rotate-180'
+                                            style='color:#8c0d4f'></i>Shipping Info</a></li>
+                                <li><a href=""><i class='bx bx-arrow-back bx-rotate-180'
+                                            style='color:#8c0d4f'></i>Returns &amp; Exchanges</a></li>
+                                <li><a href="#"><i class='bx bx-arrow-back bx-rotate-180' style='color:#8c0d4f'></i>Size
+                                        Guide</a></li>
+                                <li><a href=""><i class='bx bx-arrow-back bx-rotate-180'
+                                            style='color:#8c0d4f'></i>Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer-widget">
+                            <h4>Contact Information</h4>
+                            <div class="footer-contact pt-2">
+                                <div class="contact-item mb-3">
+                                    <i class='bx bx-map bx-sm' style='color:#8c0d4f'></i>
+                                    <span>123 Fashion Street, New York, NY 10001</span>
+                                </div>
+                                <div class="contact-item mb-3">
+                                    <i class='bx bx-phone bx-sm' style='color:#8c0d4f'></i>
+                                    <span>+1 (555) 123-4567</span>
+                                </div>
+                                <div class="contact-item mb-3">
+                                    <i class="bx bx-envelope bx-sm" style='color:#8c0d4f'></i>
+                                    <span>hello@example.com</span>
+                                </div>
+                                <div class="contact-item mb-3">
+                                    <i class='bx bx-time-five bx-sm' style='color:#8c0d4f'></i>
+                                    <span>Monday-Friday: 9am-6pm<br>Saturday: 10am-4pm<br>Sunday: Closed</span>
+                                </div>
+                            </div>
+
+                            <div class="app-buttons mt-4 gap-2 d-flex">
+                                <a href="#" class="app-btn">
+                                    <i class='bx bxl-apple bx-sm'></i>
+                                    <span>App Store</span>
+                                </a>
+                                <a href="#" class="app-btn">
+                                    <i class='bx bxl-play-store bx-sm'></i>
+                                    <span>Google Play</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <hr>
-        <!--bottom footer  -->
-        <div class="footer-bottom">
-            <div class="container">
-                <div class="row gy-3 align-items-center">
-                    <div class="col-lg-6 col-md-12">
-                        <div class="copyright">
-                            <p>© <span>Copyright</span> <strong class="sitename">MyWebsite</strong>. All Rights
-                                Reserved.</p>
+            <hr>
+            <!--bottom footer  -->
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="row gy-3 align-items-center">
+                        <div class="col-lg-6 col-md-12">
+                            <div class="copyright">
+                                <p>© <span>Copyright</span> <strong class="sitename">MyWebsite</strong>. All Rights
+                                    Reserved.</p>
+                            </div>
+                            <div class="credits mt-1" >
+                                Designed by <a href="https://bootstrapmade.com/"
+                                    style=" color: #8c0d4f;">BootstrapMade</a>
+                            </div>
                         </div>
-                        <div class="credits mt-1">
-                            Designed by <a href="https://bootstrapmade.com/" style=" color: #8c0d4f;">BootstrapMade</a>
-                        </div>
-                    </div>
 
-                    <div class="col-lg-6 col-md-12">
-                        <div class="d-flex flex-wrap justify-content-lg-end justify-content-center align-items-center">
-                            <div class="payment-methods">
-                                <i class='bx bx-credit-card bx-md '></i>
-                                <i class='bx bxl-paypal bx-md '></i>
-                                <i class='bx bxl-apple bx-md '></i>
-                                <i class='bx bx-store bx-md'></i>
+                        <div class="col-lg-6 col-md-12">
+                            <div
+                                class="d-flex flex-wrap justify-content-lg-end justify-content-center align-items-center">
+                                <div class="payment-methods">
+                                    <i class='bx bx-credit-card bx-md '></i>
+                                    <i class='bx bxl-paypal bx-md '></i>
+                                    <i class='bx bxl-apple bx-md '></i>
+                                    <i class='bx bx-store bx-md'></i>
 
-                                <a href="#">Terms</a>
-                                <a href="#">Privacy</a>
-                                <a href="#">Cookies</a>
+                                    <a href="#">Terms</a>
+                                    <a href="#">Privacy</a>
+                                    <a href="#">Cookies</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
+                </div>
             </div>
-        </div>
+            <!-- scroll-top -->
+
+            <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center active"><i
+                    class="bx bx-up-arrow-alt bx-sm text-white"></i></a>
+        </footer>
 
 
 

@@ -68,6 +68,7 @@ function isValidEmail(email) {
 function validateLoginForm() {
   const email = document.getElementById("floatingInput")?.value.trim();
   const password = document.getElementById("floatingPassword")?.value.trim();
+  const name = document.getElementById("floatingName")?.value.trim();
 
   if (!email) {
     alert("Email cannot be empty");
@@ -82,7 +83,11 @@ function validateLoginForm() {
     return false;
   }
   return true;
-}
+ }
+  if (!isName) {
+    alert("Name cannot be empty");
+    return false;
+  }
 
 // REGISTER validation
 function validateRegisterForm() {
