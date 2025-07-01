@@ -68,7 +68,6 @@ function isValidEmail(email) {
 function validateLoginForm() {
   const email = document.getElementById("floatingInput")?.value.trim();
   const password = document.getElementById("floatingPassword")?.value.trim();
-  
 
   if (!email) {
     alert("Email cannot be empty");
@@ -83,8 +82,7 @@ function validateLoginForm() {
     return false;
   }
   return true;
- }
- 
+}
 
 // REGISTER validation
 function validateRegisterForm() {
@@ -153,15 +151,24 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  if (contactForm) {
-    contactForm.addEventListener("submit", function (e) {
-      if (!validateContactForm()) {
-        e.preventDefault();
-      } else {
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const contactForm = document.querySelector(".php-email-form");
+
+    if (contactForm) {
+      contactForm.addEventListener("submit", function (e) {
+        e.preventDefault(); // ✅ always stop the submit
+
+        if (!validateContactForm()) {
+          return;
+        }
+
         alert("Message sent (demo only)");
-      }
-    });
-  }
+        contactForm.reset();
+      });
+    }
+  });
+
 });
 
 //  need to add regeX
@@ -198,3 +205,31 @@ var x = setInterval(function () {
     document.getElementById("sale-count").innerHTML = "EXPIRED";
   }
 }, 1000);
+
+
+
+// contact velidation
+
+document.addEventListener("DOMContentLoaded", function () {
+  const contactForm = document.querySelector(".php-email-form");
+
+  if (contactForm) {
+    console.log("Contact form found");
+
+    contactForm.addEventListener("submit", function (e) {
+      e.preventDefault(); // STOP DEFAULT ALWAYS
+
+      console.log("Submit handler triggered");
+
+      if (!validateContactForm()) {
+        console.log("Validation failed");
+        return;
+      }
+
+      alert("Message sent (demo only)");
+      contactForm.reset();
+    });
+  } else {
+    console.log("Contact form not found");
+  }
+});
